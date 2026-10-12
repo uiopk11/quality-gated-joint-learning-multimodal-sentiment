@@ -1,0 +1,28 @@
+{
+  "format_version": 1,
+  "family": "exploratory_a3like",
+  "manifest_sha256": "9c8b4a787f7660ceb19b304a66d5f3fd32994dccd089b5f1c117b5dfaf58e9b3",
+  "manifest_fingerprint": "ac192930c154f4589c4114d9b4f7132845a1cd1c24c3fd1a7aba79f3bd888182",
+  "removed_files": {
+    "exploratory_recipe.json": {
+      "bytes": 1505,
+      "sha256": "950a02a253215777dabc39252386c3911373089f72f9d229b1e45fa26ca16966"
+    },
+    "masks/exploratory_a3like/test/a3like_v1_s0.npz": {
+      "bytes": 5154,
+      "sha256": "c35ad45d7a8f1937acd0d0971a90226ed3f166b98f90f460ead258935d8f22c7"
+    },
+    "masks/exploratory_a3like/valid/a3like_v1_s0.npz": {
+      "bytes": 5213,
+      "sha256": "b9bb285de62cd38b0fd77dade9dc86acd543397e8d321b4e55a395a074f33f20"
+    },
+    "metadata/exploratory_a3like/test/a3like_v1_s0.jsonl": {
+      "bytes": 1683425,
+      "sha256": "f087f5dff8a17a9740ed8a26c9eeeba16d239603426380b00fcf7d389d88c346"
+    },
+    "metadata/exploratory_a3like/valid/a3like_v1_s0.jsonl": {
+      "bytes": 1688790,
+      "sha256": "3bbb10e062b3e6089de4406c62cf989b354c0aeb33b628c52dda92b38ddfbb3e"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "recipe_id": "mixed_v1",
+  "condition_id": "mixed_v1_s0",
+  "root_seed": 20260924,
+  "rng": "numpy.Generator(PCG64)",
+  "seed_derivation": "SHA256(canonical UTF-8 JSON identity), first 16 bytes big-endian",
+  "seed_identity_fields": [
+    "root_seed",
+    "recipe_id",
+    "family",
+    "split",
+    "index",
+    "id",
+    "condition",
+    "stage"
+  ],
+  "quota_seed_scope": "quota/* stages use index=-1,id=''; all other stages use original sample index and ID",
+  "max_attempts_per_k": 32,
+  "class_order": [
+    "NONE",
+    "TAV",
+    "OTHER"
+  ],
+  "groups": [
+    0.2,
+    0.6,
+    0.2
+  ],
+  "other_modalities": [
+    "T",
+    "A",
+    "V",
+    "TA",
+    "TV",
+    "AV"
+  ],
+  "rates": [
+    0.1,
+    0.2,
+    0.4,
+    0.6
+  ],
+  "single_fraction": 0.3333333333333333,
+  "shared_only_fraction": 0.75,
+  "extra_max_length": 3,
+  "extra_k_divisor": 4,
+  "rounding": "r=0 -> 0; L>=2 -> min(L-1,max(1,floor(r*L+0.5))); L<=1 -> 0",
+  "quota_algorithm": "hierarchical largest remainder, ties use listed category order; seeded permutation",
+  "segment_algorithm": "uniform positive composition of k; uniform weak composition of remaining gaps",
+  "preservation": "retain >=1 original observed proxy per selected modality when any existed",
+  "fallback": "at most max_attempts_per_k per k; decrease common k by one, finally zero",
+  "coordinates": "masks original-50; intervals content-0-based half-open; original_position=content_position+1",
+  "mask_semantics": "true means artificial removal",
+  "pairing": {
+    "base_rate": 0.4,
+    "rate_panel": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "shape_min_length": 20,
+    "shapes": [
+      [
+        8
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "position_order": [
+      "head",
+      "center",
+      "tail"
+    ],
+    "random_attempts": 32,
+    "failure": "keep fixed-budget candidate and mark inapplicable; compare common applicable intersection"
+  }
+}

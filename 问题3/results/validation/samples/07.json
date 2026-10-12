@@ -1,0 +1,901 @@
+{
+  "sample": {
+    "sample_id": "07",
+    "raw_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+    "body_length": 48,
+    "token_ids": [
+      2004,
+      11409,
+      2078,
+      1521,
+      1055,
+      5482,
+      3559,
+      2745,
+      8670,
+      4215,
+      3489,
+      4311,
+      1999,
+      2256,
+      2281,
+      2654,
+      3277,
+      1010,
+      19973,
+      1523,
+      24935,
+      6936,
+      1996,
+      7832,
+      1997,
+      3652,
+      1996,
+      17792,
+      1010,
+      1996,
+      2925,
+      1997,
+      11359,
+      3065,
+      1010,
+      1998,
+      16743,
+      1998,
+      6316,
+      3686,
+      10415,
+      13797,
+      1010,
+      2247,
+      2007,
+      3971,
+      1996,
+      2877
+    ],
+    "wordpieces": [
+      "as",
+      "lin",
+      "##n",
+      "’",
+      "s",
+      "associate",
+      "editor",
+      "michael",
+      "ba",
+      "##ad",
+      "##ke",
+      "reports",
+      "in",
+      "our",
+      "november",
+      "28",
+      "issue",
+      ",",
+      "attendees",
+      "“",
+      "enthusiastically",
+      "discussed",
+      "the",
+      "topics",
+      "of",
+      "growing",
+      "the",
+      "hobby",
+      ",",
+      "the",
+      "future",
+      "of",
+      "stamp",
+      "shows",
+      ",",
+      "and",
+      "dealers",
+      "and",
+      "phil",
+      "##ate",
+      "##lic",
+      "partnerships",
+      ",",
+      "along",
+      "with",
+      "ways",
+      "the",
+      "leading"
+    ],
+    "text_offsets": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        19
+      ],
+      [
+        20,
+        26
+      ],
+      [
+        27,
+        34
+      ],
+      [
+        35,
+        37
+      ],
+      [
+        37,
+        39
+      ],
+      [
+        39,
+        41
+      ],
+      [
+        42,
+        49
+      ],
+      [
+        50,
+        52
+      ],
+      [
+        53,
+        56
+      ],
+      [
+        57,
+        65
+      ],
+      [
+        66,
+        68
+      ],
+      [
+        69,
+        74
+      ],
+      [
+        74,
+        75
+      ],
+      [
+        76,
+        85
+      ],
+      [
+        86,
+        87
+      ],
+      [
+        87,
+        103
+      ],
+      [
+        104,
+        113
+      ],
+      [
+        114,
+        117
+      ],
+      [
+        118,
+        124
+      ],
+      [
+        125,
+        127
+      ],
+      [
+        128,
+        135
+      ],
+      [
+        136,
+        139
+      ],
+      [
+        140,
+        145
+      ],
+      [
+        145,
+        146
+      ],
+      [
+        147,
+        150
+      ],
+      [
+        151,
+        157
+      ],
+      [
+        158,
+        160
+      ],
+      [
+        161,
+        166
+      ],
+      [
+        167,
+        172
+      ],
+      [
+        172,
+        173
+      ],
+      [
+        174,
+        177
+      ],
+      [
+        178,
+        185
+      ],
+      [
+        186,
+        189
+      ],
+      [
+        190,
+        194
+      ],
+      [
+        194,
+        197
+      ],
+      [
+        197,
+        200
+      ],
+      [
+        201,
+        213
+      ],
+      [
+        213,
+        214
+      ],
+      [
+        215,
+        220
+      ],
+      [
+        221,
+        225
+      ],
+      [
+        226,
+        230
+      ],
+      [
+        231,
+        234
+      ],
+      [
+        235,
+        242
+      ]
+    ],
+    "original_token_fragments": [
+      "As",
+      "Lin",
+      "n",
+      "’",
+      "s",
+      "associate",
+      "editor",
+      "Michael",
+      "Ba",
+      "ad",
+      "ke",
+      "reports",
+      "in",
+      "our",
+      "November",
+      "28",
+      "issue",
+      ",",
+      "attendees",
+      "“",
+      "enthusiastically",
+      "discussed",
+      "the",
+      "topics",
+      "of",
+      "growing",
+      "the",
+      "hobby",
+      ",",
+      "the",
+      "future",
+      "of",
+      "stamp",
+      "shows",
+      ",",
+      "and",
+      "dealers",
+      "and",
+      "phil",
+      "ate",
+      "lic",
+      "partnerships",
+      ",",
+      "along",
+      "with",
+      "ways",
+      "the",
+      "leading"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\07.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\07.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 63,
+    "retained_wordpiece_count": 48,
+    "truncated_wordpiece_count": 15,
+    "model_visible_text_end_char": 242,
+    "audio_nonzero_body_rows": 48,
+    "vision_nonzero_body_rows": 48,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": true,
+    "attachment2_test_id": "ChhZna-aBK4$_$8",
+    "attachment2_test_index": 310
+  },
+  "fidelity_validation": {
+    "protocol": {
+      "fractions": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "random_repeats": 10,
+      "seed": 20260932,
+      "metric": "absolute change of fixed-class margin or raw intensity",
+      "claim_boundary": "masking faithfulness only; not causal or human-rationale agreement",
+      "unavailable_modalities_excluded": []
+    },
+    "results": {
+      "text": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47
+            ],
+            "top_absolute_output_change": 1.9029676914215088,
+            "random_mean_absolute_output_change": 0.26947160959243777,
+            "random_std_absolute_output_change": 0.27041013906799166,
+            "top_to_random_mean_ratio": 7.061848534989091,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47,
+              17,
+              22,
+              0,
+              1,
+              11
+            ],
+            "top_absolute_output_change": 1.5546026229858398,
+            "random_mean_absolute_output_change": 0.367400586605072,
+            "random_std_absolute_output_change": 0.38561496322134153,
+            "top_to_random_mean_ratio": 4.231355854248869,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47,
+              17,
+              22,
+              0,
+              1,
+              11,
+              10,
+              23,
+              2,
+              3,
+              16
+            ],
+            "top_absolute_output_change": 0.7585263252258301,
+            "random_mean_absolute_output_change": 0.3625518918037415,
+            "random_std_absolute_output_change": 0.3063637763518022,
+            "top_to_random_mean_ratio": 2.092186918270005,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47
+            ],
+            "top_absolute_output_change": 0.6894075870513916,
+            "random_mean_absolute_output_change": 0.09614108800888062,
+            "random_std_absolute_output_change": 0.10615727759380686,
+            "top_to_random_mean_ratio": 7.170790359556889,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47,
+              22,
+              17,
+              0,
+              1,
+              23
+            ],
+            "top_absolute_output_change": 0.4907570481300354,
+            "random_mean_absolute_output_change": 0.22240980863571166,
+            "random_std_absolute_output_change": 0.11991649439071346,
+            "top_to_random_mean_ratio": 2.2065440869734916,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              20,
+              19,
+              21,
+              18,
+              47,
+              22,
+              17,
+              0,
+              1,
+              23,
+              10,
+              11,
+              2,
+              3,
+              9
+            ],
+            "top_absolute_output_change": 0.42254674434661865,
+            "random_mean_absolute_output_change": 0.2462102472782135,
+            "random_std_absolute_output_change": 0.1626306405930109,
+            "top_to_random_mean_ratio": 1.7162029160758197,
+            "top_percentile_among_random": 0.8,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "audio": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.048067569732666016,
+            "random_mean_absolute_output_change": 0.001460719108581543,
+            "random_std_absolute_output_change": 0.0012821196456797481,
+            "top_to_random_mean_ratio": 32.906785055576414,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              37,
+              36,
+              38,
+              41
+            ],
+            "top_absolute_output_change": 0.05141139030456543,
+            "random_mean_absolute_output_change": 0.011741375923156739,
+            "random_std_absolute_output_change": 0.012782221993444757,
+            "top_to_random_mean_ratio": 4.378651245052988,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              37,
+              36,
+              38,
+              41,
+              15,
+              35,
+              6,
+              39,
+              34
+            ],
+            "top_absolute_output_change": 0.049309492111206055,
+            "random_mean_absolute_output_change": 0.012511634826660156,
+            "random_std_absolute_output_change": 0.012571162609202682,
+            "top_to_random_mean_ratio": 3.9410910559934145,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.025011062622070312,
+            "random_mean_absolute_output_change": 0.0021389245986938475,
+            "random_std_absolute_output_change": 0.0033619779312038167,
+            "top_to_random_mean_ratio": 11.693288598085005,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              36,
+              37,
+              41,
+              38
+            ],
+            "top_absolute_output_change": 0.026750922203063965,
+            "random_mean_absolute_output_change": 0.0048987030982971195,
+            "random_std_absolute_output_change": 0.004505635443639077,
+            "top_to_random_mean_ratio": 5.4608172135116915,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              36,
+              37,
+              41,
+              38,
+              35,
+              39,
+              6,
+              40,
+              34
+            ],
+            "top_absolute_output_change": 0.027604341506958008,
+            "random_mean_absolute_output_change": 0.010931158065795898,
+            "random_std_absolute_output_change": 0.007113830865593914,
+            "top_to_random_mean_ratio": 2.525289758029689,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "vision": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              43,
+              46,
+              44,
+              45
+            ],
+            "top_absolute_output_change": 0.04899001121520996,
+            "random_mean_absolute_output_change": 0.01042490005493164,
+            "random_std_absolute_output_change": 0.010684356308859657,
+            "top_to_random_mean_ratio": 4.699326704051669,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              43,
+              46,
+              44,
+              45,
+              42,
+              41,
+              40,
+              39,
+              38
+            ],
+            "top_absolute_output_change": 0.06752967834472656,
+            "random_mean_absolute_output_change": 0.015734362602233886,
+            "random_std_absolute_output_change": 0.011280406138453051,
+            "top_to_random_mean_ratio": 4.291859800862797,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              43,
+              46,
+              44,
+              45,
+              42,
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              5,
+              6,
+              4
+            ],
+            "top_absolute_output_change": 0.06553339958190918,
+            "random_mean_absolute_output_change": 0.014323234558105469,
+            "random_std_absolute_output_change": 0.009140335210576384,
+            "top_to_random_mean_ratio": 4.575321259737666,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              44,
+              43,
+              45
+            ],
+            "top_absolute_output_change": 0.022177815437316895,
+            "random_mean_absolute_output_change": 0.0048356294631958004,
+            "random_std_absolute_output_change": 0.00423121644838347,
+            "top_to_random_mean_ratio": 4.586334748374182,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              44,
+              43,
+              45,
+              42,
+              41,
+              40,
+              39,
+              38
+            ],
+            "top_absolute_output_change": 0.02902674674987793,
+            "random_mean_absolute_output_change": 0.0031456351280212402,
+            "random_std_absolute_output_change": 0.0030845235194100875,
+            "top_to_random_mean_ratio": 9.227626717195642,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              44,
+              43,
+              45,
+              42,
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              5,
+              6,
+              35
+            ],
+            "top_absolute_output_change": 0.029424667358398438,
+            "random_mean_absolute_output_change": 0.011226403713226318,
+            "random_std_absolute_output_change": 0.008531517108609506,
+            "top_to_random_mean_ratio": 2.6210234470484925,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      }
+    },
+    "aggregate": {
+      "comparison_count": 18,
+      "top_at_least_random_mean_rate": 1.0,
+      "mean_top_percentile": 0.9833333333333333
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "sample": {
+    "sample_id": "15",
+    "raw_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+    "body_length": 21,
+    "token_ids": [
+      2174,
+      1010,
+      2750,
+      2037,
+      5635,
+      1010,
+      1996,
+      2155,
+      3188,
+      25090,
+      4371,
+      2495,
+      2138,
+      2027,
+      3373,
+      1999,
+      2049,
+      2373,
+      2000,
+      10938,
+      3268
+    ],
+    "wordpieces": [
+      "however",
+      ",",
+      "despite",
+      "their",
+      "poverty",
+      ",",
+      "the",
+      "family",
+      "prior",
+      "##iti",
+      "##ze",
+      "education",
+      "because",
+      "they",
+      "believed",
+      "in",
+      "its",
+      "power",
+      "to",
+      "transform",
+      "lives"
+    ],
+    "text_offsets": [
+      [
+        0,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        23,
+        30
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        32,
+        35
+      ],
+      [
+        36,
+        42
+      ],
+      [
+        43,
+        48
+      ],
+      [
+        48,
+        51
+      ],
+      [
+        51,
+        53
+      ],
+      [
+        54,
+        63
+      ],
+      [
+        64,
+        71
+      ],
+      [
+        72,
+        76
+      ],
+      [
+        77,
+        85
+      ],
+      [
+        86,
+        88
+      ],
+      [
+        89,
+        92
+      ],
+      [
+        93,
+        98
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        102,
+        111
+      ],
+      [
+        112,
+        117
+      ]
+    ],
+    "original_token_fragments": [
+      "However",
+      ",",
+      "despite",
+      "their",
+      "poverty",
+      ",",
+      "the",
+      "family",
+      "prior",
+      "iti",
+      "ze",
+      "education",
+      "because",
+      "they",
+      "believed",
+      "in",
+      "its",
+      "power",
+      "to",
+      "transform",
+      "lives"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\15.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\15.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 21,
+    "retained_wordpiece_count": 21,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 117,
+    "audio_nonzero_body_rows": 21,
+    "vision_nonzero_body_rows": 21,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": true,
+    "attachment2_test_id": "SKTyBOhDX6U$_$9",
+    "attachment2_test_index": 416
+  },
+  "fidelity_validation": {
+    "protocol": {
+      "fractions": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "random_repeats": 10,
+      "seed": 20260940,
+      "metric": "absolute change of fixed-class margin or raw intensity",
+      "claim_boundary": "masking faithfulness only; not causal or human-rationale agreement",
+      "unavailable_modalities_excluded": []
+    },
+    "results": {
+      "text": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              2,
+              4,
+              1
+            ],
+            "top_absolute_output_change": 0.8957784175872803,
+            "random_mean_absolute_output_change": 1.141173255443573,
+            "random_std_absolute_output_change": 0.7147396450511558,
+            "top_to_random_mean_ratio": 0.7849626805695618,
+            "top_percentile_among_random": 0.5,
+            "top_at_least_random_mean": false
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              2,
+              4,
+              1,
+              20,
+              3
+            ],
+            "top_absolute_output_change": 1.5149785280227661,
+            "random_mean_absolute_output_change": 1.295871412754059,
+            "random_std_absolute_output_change": 0.9538893586691966,
+            "top_to_random_mean_ratio": 1.1690809081149869,
+            "top_percentile_among_random": 0.7,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              2,
+              4,
+              1,
+              20,
+              3,
+              5,
+              19
+            ],
+            "top_absolute_output_change": 1.6612422466278076,
+            "random_mean_absolute_output_change": 1.7331929087638855,
+            "random_std_absolute_output_change": 0.7721294461194128,
+            "top_to_random_mean_ratio": 0.9584866394431575,
+            "top_percentile_among_random": 0.5,
+            "top_at_least_random_mean": false
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              2,
+              4,
+              1
+            ],
+            "top_absolute_output_change": 0.3587039113044739,
+            "random_mean_absolute_output_change": 0.24721908569335938,
+            "random_std_absolute_output_change": 0.14191962571840613,
+            "top_to_random_mean_ratio": 1.4509555777153702,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              2,
+              4,
+              1,
+              3,
+              20
+            ],
+            "top_absolute_output_change": 0.5419490337371826,
+            "random_mean_absolute_output_change": 0.6225421369075775,
+            "random_std_absolute_output_change": 0.31614040563518947,
+            "top_to_random_mean_ratio": 0.8705419305900578,
+            "top_percentile_among_random": 0.4,
+            "top_at_least_random_mean": false
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              2,
+              4,
+              1,
+              3,
+              20,
+              5,
+              0
+            ],
+            "top_absolute_output_change": 0.43500643968582153,
+            "random_mean_absolute_output_change": 0.6458285570144653,
+            "random_std_absolute_output_change": 0.32017950094282177,
+            "top_to_random_mean_ratio": 0.6735633396218468,
+            "top_percentile_among_random": 0.4,
+            "top_at_least_random_mean": false
+          }
+        ]
+      },
+      "audio": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              20,
+              19,
+              18
+            ],
+            "top_absolute_output_change": 0.08894133567810059,
+            "random_mean_absolute_output_change": 0.012766432762145997,
+            "random_std_absolute_output_change": 0.011895076584719378,
+            "top_to_random_mean_ratio": 6.966811899234868,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16
+            ],
+            "top_absolute_output_change": 0.11043477058410645,
+            "random_mean_absolute_output_change": 0.017374849319458006,
+            "random_std_absolute_output_change": 0.014693573971474494,
+            "top_to_random_mean_ratio": 6.356013140236624,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16,
+              0,
+              1
+            ],
+            "top_absolute_output_change": 0.12347841262817383,
+            "random_mean_absolute_output_change": 0.03858184814453125,
+            "random_std_absolute_output_change": 0.021303864018725496,
+            "top_to_random_mean_ratio": 3.2004276250741546,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              20,
+              19,
+              18
+            ],
+            "top_absolute_output_change": 0.0480266809463501,
+            "random_mean_absolute_output_change": 0.006051063537597656,
+            "random_std_absolute_output_change": 0.0072431316885029524,
+            "top_to_random_mean_ratio": 7.936899133175729,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16
+            ],
+            "top_absolute_output_change": 0.05392301082611084,
+            "random_mean_absolute_output_change": 0.0188122034072876,
+            "random_std_absolute_output_change": 0.011522118869966106,
+            "top_to_random_mean_ratio": 2.8663846365397996,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16,
+              0,
+              1
+            ],
+            "top_absolute_output_change": 0.05735516548156738,
+            "random_mean_absolute_output_change": 0.02029227018356323,
+            "random_std_absolute_output_change": 0.016476881514356757,
+            "top_to_random_mean_ratio": 2.8264538645865827,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "vision": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              20,
+              19,
+              18
+            ],
+            "top_absolute_output_change": 0.11361432075500488,
+            "random_mean_absolute_output_change": 0.011661934852600097,
+            "random_std_absolute_output_change": 0.028047114070040912,
+            "top_to_random_mean_ratio": 9.742321680837884,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16
+            ],
+            "top_absolute_output_change": 0.1368849277496338,
+            "random_mean_absolute_output_change": 0.030273175239562987,
+            "random_std_absolute_output_change": 0.04207852220653954,
+            "top_to_random_mean_ratio": 4.521657429933002,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16,
+              15,
+              14
+            ],
+            "top_absolute_output_change": 0.1261882781982422,
+            "random_mean_absolute_output_change": 0.03948123455047607,
+            "random_std_absolute_output_change": 0.05362780924050092,
+            "top_to_random_mean_ratio": 3.1961583682727213,
+            "top_percentile_among_random": 0.8,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              20,
+              19,
+              18
+            ],
+            "top_absolute_output_change": 0.049332261085510254,
+            "random_mean_absolute_output_change": 0.005037450790405273,
+            "random_std_absolute_output_change": 0.011504255204614424,
+            "top_to_random_mean_ratio": 9.79310034739642,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16
+            ],
+            "top_absolute_output_change": 0.05824887752532959,
+            "random_mean_absolute_output_change": 0.01342928409576416,
+            "random_std_absolute_output_change": 0.018342545243117927,
+            "top_to_random_mean_ratio": 4.337452176151545,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              16,
+              4,
+              3
+            ],
+            "top_absolute_output_change": 0.06014883518218994,
+            "random_mean_absolute_output_change": 0.013617992401123047,
+            "random_std_absolute_output_change": 0.01901688574196274,
+            "top_to_random_mean_ratio": 4.416865086312546,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      }
+    },
+    "aggregate": {
+      "comparison_count": 18,
+      "top_at_least_random_mean_rate": 0.7777777777777778,
+      "mean_top_percentile": 0.8444444444444444
+    }
+  }
+}

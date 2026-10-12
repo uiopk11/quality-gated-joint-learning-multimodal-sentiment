@@ -1,0 +1,4838 @@
+{
+  "protocol": {
+    "model": "M1 complete-input joint predictor (legacy run id mt_m0_avstd_s1111_v1)",
+    "predictor": "frozen complete-input M1 EMT multitask model",
+    "classification_target": "fixed original argmax class logit margin",
+    "regression_target": "raw intensity output",
+    "modality_method": "exact three-player Shapley masking sensitivity over 8 coalitions",
+    "local_method": "multi-scale contiguous occlusion",
+    "window_sizes": [
+      1,
+      3,
+      5
+    ],
+    "causal_claim": false
+  },
+  "sample": {
+    "sample_id": "15",
+    "raw_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+    "body_length": 21,
+    "token_ids": [
+      2174,
+      1010,
+      2750,
+      2037,
+      5635,
+      1010,
+      1996,
+      2155,
+      3188,
+      25090,
+      4371,
+      2495,
+      2138,
+      2027,
+      3373,
+      1999,
+      2049,
+      2373,
+      2000,
+      10938,
+      3268
+    ],
+    "wordpieces": [
+      "however",
+      ",",
+      "despite",
+      "their",
+      "poverty",
+      ",",
+      "the",
+      "family",
+      "prior",
+      "##iti",
+      "##ze",
+      "education",
+      "because",
+      "they",
+      "believed",
+      "in",
+      "its",
+      "power",
+      "to",
+      "transform",
+      "lives"
+    ],
+    "text_offsets": [
+      [
+        0,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        23,
+        30
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        32,
+        35
+      ],
+      [
+        36,
+        42
+      ],
+      [
+        43,
+        48
+      ],
+      [
+        48,
+        51
+      ],
+      [
+        51,
+        53
+      ],
+      [
+        54,
+        63
+      ],
+      [
+        64,
+        71
+      ],
+      [
+        72,
+        76
+      ],
+      [
+        77,
+        85
+      ],
+      [
+        86,
+        88
+      ],
+      [
+        89,
+        92
+      ],
+      [
+        93,
+        98
+      ],
+      [
+        99,
+        101
+      ],
+      [
+        102,
+        111
+      ],
+      [
+        112,
+        117
+      ]
+    ],
+    "original_token_fragments": [
+      "However",
+      ",",
+      "despite",
+      "their",
+      "poverty",
+      ",",
+      "the",
+      "family",
+      "prior",
+      "iti",
+      "ze",
+      "education",
+      "because",
+      "they",
+      "believed",
+      "in",
+      "its",
+      "power",
+      "to",
+      "transform",
+      "lives"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\15.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\15.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 21,
+    "retained_wordpiece_count": 21,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 117,
+    "audio_nonzero_body_rows": 21,
+    "vision_nonzero_body_rows": 21,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": true,
+    "attachment2_test_id": "SKTyBOhDX6U$_$9",
+    "attachment2_test_index": 416
+  },
+  "modality_explanation": {
+    "target_class": 2,
+    "original_prediction": {
+      "logits": [
+        -2.1653382778167725,
+        -0.6405602693557739,
+        2.1197705268859863
+      ],
+      "probabilities": [
+        0.012786980718374252,
+        0.05874495953321457,
+        0.9284681081771851
+      ],
+      "pred_class": 2,
+      "intensity": 1.0749760866165161,
+      "classification_margin": 2.7603306770324707
+    },
+    "classification": {
+      "signed_shapley": {
+        "text": 2.915546290576458,
+        "audio": 0.15977050736546516,
+        "vision": 0.177737046033144
+      },
+      "absolute_share": {
+        "text": 0.8962490110565794,
+        "audio": 0.049114006416270596,
+        "vision": 0.05463698252715003
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "text",
+      "primary_opposing_modality": null
+    },
+    "regression": {
+      "signed_shapley": {
+        "text": 0.9137776916225749,
+        "audio": 0.05463905011614163,
+        "vision": 0.05794529741009076
+      },
+      "absolute_share": {
+        "text": 0.8903073737805015,
+        "audio": 0.05323564983117987,
+        "vision": 0.05645697638831861
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "text",
+      "primary_opposing_modality": null
+    },
+    "leave_one_modality_out": {
+      "text": {
+        "classification_margin_delta": 2.866540588438511,
+        "intensity_delta": 0.922745019197464
+      },
+      "audio": {
+        "classification_margin_delta": 0.13684773445129395,
+        "intensity_delta": 0.06125950813293457
+      },
+      "vision": {
+        "classification_margin_delta": 0.15084266662597656,
+        "intensity_delta": 0.06401550769805908
+      }
+    },
+    "coalitions": [
+      {
+        "retained_modalities": [],
+        "classification_margin": -0.49272316694259644,
+        "intensity": 0.04861404746770859,
+        "pred_class": 1,
+        "probabilities": [
+          0.21333327889442444,
+          0.48832154273986816,
+          0.2983451187610626
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio"
+        ],
+        "classification_margin": -0.330396443605423,
+        "intensity": 0.0896008238196373,
+        "pred_class": 1,
+        "probabilities": [
+          0.190188929438591,
+          0.4711932837963104,
+          0.33861780166625977
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text"
+        ],
+        "classification_margin": 2.4514622688293457,
+        "intensity": 0.9463925957679749,
+        "pred_class": 2,
+        "probabilities": [
+          0.015245206654071808,
+          0.07812225818634033,
+          0.9066326022148132
+        ]
+      },
+      {
+        "retained_modalities": [
+          "vision"
+        ],
+        "classification_margin": -0.3084582984447479,
+        "intensity": 0.09345731884241104,
+        "pred_class": 1,
+        "probabilities": [
+          0.18300463259220123,
+          0.47100508213043213,
+          0.34599027037620544
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio"
+        ],
+        "classification_margin": 2.609488010406494,
+        "intensity": 1.010960578918457,
+        "pred_class": 2,
+        "probabilities": [
+          0.013580878265202045,
+          0.0675995796918869,
+          0.9188196063041687
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio",
+          "vision"
+        ],
+        "classification_margin": -0.10620991140604019,
+        "intensity": 0.15223106741905212,
+        "pred_class": 1,
+        "probabilities": [
+          0.16329918801784515,
+          0.44054603576660156,
+          0.39615482091903687
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "vision"
+        ],
+        "classification_margin": 2.6234829425811768,
+        "intensity": 1.0137165784835815,
+        "pred_class": 2,
+        "probabilities": [
+          0.014108200557529926,
+          0.06668799370527267,
+          0.9192038178443909
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 2.7603306770324707,
+        "intensity": 1.0749760866165161,
+        "pred_class": 2,
+        "probabilities": [
+          0.012786980718374252,
+          0.05874495953321457,
+          0.9284681081771851
+        ]
+      }
+    ],
+    "efficiency_error": {
+      "classification": 0.0,
+      "regression": -2.220446049250313e-16
+    },
+    "interpretation_scope": "masking sensitivity relative to UNK/zero-row baselines, not causal effect"
+  },
+  "local_explanation": {
+    "text": {
+      "modality": "text",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "however",
+          "text_char_start": 0,
+          "text_char_end": 7,
+          "original_text_fragment": "However",
+          "classification_signed": 0.24422029389275443,
+          "classification_absolute": 0.2479854000939263,
+          "classification_share": 0.06030830878483517,
+          "intensity_signed": 0.09344674348831176,
+          "intensity_absolute": 0.09413529634475708,
+          "intensity_share": 0.06228888358582781
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": ",",
+          "text_char_start": 7,
+          "text_char_end": 8,
+          "original_text_fragment": ",",
+          "classification_signed": 0.3288974046707153,
+          "classification_absolute": 0.3288974046707153,
+          "classification_share": 0.07998554040640958,
+          "intensity_signed": 0.12329318046569823,
+          "intensity_absolute": 0.12329318046569823,
+          "intensity_share": 0.08158251859991163
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "despite",
+          "text_char_start": 9,
+          "text_char_end": 16,
+          "original_text_fragment": "despite",
+          "classification_signed": 0.4202425184704009,
+          "classification_absolute": 0.4202425184704009,
+          "classification_share": 0.10220003096484899,
+          "intensity_signed": 0.16519231285367694,
+          "intensity_absolute": 0.16519231285367694,
+          "intensity_share": 0.10930697776668144
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "their",
+          "text_char_start": 17,
+          "text_char_end": 22,
+          "original_text_fragment": "their",
+          "classification_signed": 0.3204152872165044,
+          "classification_absolute": 0.3204152872165044,
+          "classification_share": 0.07792274897439769,
+          "intensity_signed": 0.12255268444617588,
+          "intensity_absolute": 0.12255268444617588,
+          "intensity_share": 0.08109253586073936
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "poverty",
+          "text_char_start": 23,
+          "text_char_end": 30,
+          "original_text_fragment": "poverty",
+          "classification_signed": 0.39960641242839673,
+          "classification_absolute": 0.39960641242839673,
+          "classification_share": 0.09718147481264643,
+          "intensity_signed": 0.14500513429994935,
+          "intensity_absolute": 0.14500513429994935,
+          "intensity_share": 0.09594921650512153
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 30,
+          "text_char_end": 31,
+          "original_text_fragment": ",",
+          "classification_signed": 0.25580691496531166,
+          "classification_absolute": 0.25871721108754475,
+          "classification_share": 0.06291820989586223,
+          "intensity_signed": 0.09215952864399662,
+          "intensity_absolute": 0.09657273601602624,
+          "intensity_share": 0.06390172597148436
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 32,
+          "text_char_end": 35,
+          "original_text_fragment": "the",
+          "classification_signed": 0.21682198489153826,
+          "classification_absolute": 0.21682198489153826,
+          "classification_share": 0.052729584932125276,
+          "intensity_signed": 0.08254529458505136,
+          "intensity_absolute": 0.08254529458505136,
+          "intensity_share": 0.0546198338414483
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "family",
+          "text_char_start": 36,
+          "text_char_end": 42,
+          "original_text_fragment": "family",
+          "classification_signed": 0.16884604471701165,
+          "classification_absolute": 0.16884604471701165,
+          "classification_share": 0.04106217300709964,
+          "intensity_signed": 0.0623722169134352,
+          "intensity_absolute": 0.0623722169134352,
+          "intensity_share": 0.04127140306737185
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "prior",
+          "text_char_start": 43,
+          "text_char_end": 48,
+          "original_text_fragment": "prior",
+          "classification_signed": 0.1251397874620226,
+          "classification_absolute": 0.1251397874620226,
+          "classification_share": 0.03043311800077679,
+          "intensity_signed": 0.044836107006779424,
+          "intensity_absolute": 0.045435798609698264,
+          "intensity_share": 0.030064654599520353
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "##iti",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "iti",
+          "classification_signed": 0.12870695149457012,
+          "classification_absolute": 0.12870695149457012,
+          "classification_share": 0.031300627256884414,
+          "intensity_signed": 0.04525003874743425,
+          "intensity_absolute": 0.04701248186605947,
+          "intensity_share": 0.031107938507051992
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "##ze",
+          "text_char_start": 51,
+          "text_char_end": 53,
+          "original_text_fragment": "ze",
+          "classification_signed": 0.07078329722086589,
+          "classification_absolute": 0.07078329722086589,
+          "classification_share": 0.01721400108227298,
+          "intensity_signed": 0.021254352728525796,
+          "intensity_absolute": 0.023016795847151012,
+          "intensity_share": 0.015230105738354163
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "education",
+          "text_char_start": 54,
+          "text_char_end": 63,
+          "original_text_fragment": "education",
+          "classification_signed": 0.05620606033890336,
+          "classification_absolute": 0.05620606033890336,
+          "classification_share": 0.013668919384825841,
+          "intensity_signed": 0.011102035752049199,
+          "intensity_absolute": 0.014126137009373417,
+          "intensity_share": 0.00934719853084439
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "because",
+          "text_char_start": 64,
+          "text_char_end": 71,
+          "original_text_fragment": "because",
+          "classification_signed": 0.06574437883165148,
+          "classification_absolute": 0.06574437883165148,
+          "classification_share": 0.015988571496324665,
+          "intensity_signed": 0.02112069880520856,
+          "intensity_absolute": 0.022883141923833776,
+          "intensity_share": 0.01514166756485751
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "they",
+          "text_char_start": 72,
+          "text_char_end": 76,
+          "original_text_fragment": "they",
+          "classification_signed": 0.08679041156062374,
+          "classification_absolute": 0.08679041156062374,
+          "classification_share": 0.02110681894167374,
+          "intensity_signed": 0.03298067914115058,
+          "intensity_absolute": 0.03414343065685696,
+          "intensity_share": 0.02259254774762494
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "believed",
+          "text_char_start": 77,
+          "text_char_end": 85,
+          "original_text_fragment": "believed",
+          "classification_signed": 0.08739759303905346,
+          "classification_absolute": 0.08739759303905346,
+          "classification_share": 0.021254481215645122,
+          "intensity_signed": 0.03593871107807866,
+          "intensity_absolute": 0.03593871107807866,
+          "intensity_share": 0.023780476372737537
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "in",
+          "text_char_start": 86,
+          "text_char_end": 88,
+          "original_text_fragment": "in",
+          "classification_signed": 0.1519572946760389,
+          "classification_absolute": 0.1519572946760389,
+          "classification_share": 0.03695494753303905,
+          "intensity_signed": 0.059802767082496926,
+          "intensity_absolute": 0.059802767082496926,
+          "intensity_share": 0.039571210178906455
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "its",
+          "text_char_start": 89,
+          "text_char_end": 92,
+          "original_text_fragment": "its",
+          "classification_signed": 0.11249786306310584,
+          "classification_absolute": 0.11249786306310584,
+          "classification_share": 0.027358690715962267,
+          "intensity_signed": 0.04098726687607942,
+          "intensity_absolute": 0.04098726687607942,
+          "intensity_share": 0.02712108203914483
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "power",
+          "text_char_start": 93,
+          "text_char_end": 98,
+          "original_text_fragment": "power",
+          "classification_signed": 0.13777507742245992,
+          "classification_absolute": 0.13777507742245992,
+          "classification_share": 0.033505931836717795,
+          "intensity_signed": 0.04614937901496887,
+          "intensity_absolute": 0.04614937901496887,
+          "intensity_share": 0.030536827403122562
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "to",
+          "text_char_start": 99,
+          "text_char_end": 101,
+          "original_text_fragment": "to",
+          "classification_signed": 0.1252590917405628,
+          "classification_absolute": 0.14920544510795958,
+          "classification_share": 0.03628571703229874,
+          "intensity_signed": 0.037158647605351036,
+          "intensity_absolute": 0.0543467538697379,
+          "intensity_share": 0.03596099185434053
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "transform",
+          "text_char_start": 102,
+          "text_char_end": 111,
+          "original_text_fragment": "transform",
+          "classification_signed": 0.25564154148101803,
+          "classification_absolute": 0.25564154148101803,
+          "classification_share": 0.062170228634544876,
+          "intensity_signed": 0.08510660966237386,
+          "intensity_absolute": 0.08510660966237386,
+          "intensity_share": 0.056314644001642294
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "lives",
+          "text_char_start": 112,
+          "text_char_end": 117,
+          "original_text_fragment": "lives",
+          "classification_signed": 0.32258280913035076,
+          "classification_absolute": 0.32258280913035076,
+          "classification_share": 0.0784498750908087,
+          "intensity_signed": 0.11065147320429485,
+          "intensity_absolute": 0.11065147320429485,
+          "intensity_share": 0.07321756026326613
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "however"
+          ],
+          "original_text_fragment": "However",
+          "classification_margin_delta": -0.0056476593017578125,
+          "intensity_delta": -0.0010328292846679688,
+          "absolute_classification_delta": 0.0056476593017578125,
+          "absolute_intensity_delta": 0.0010328292846679688
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.09601902961730957,
+          "intensity_delta": 0.030512332916259766,
+          "absolute_classification_delta": 0.09601902961730957,
+          "absolute_intensity_delta": 0.030512332916259766
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "despite"
+          ],
+          "original_text_fragment": "despite",
+          "classification_margin_delta": 0.8773305416107178,
+          "intensity_delta": 0.35659414529800415,
+          "absolute_classification_delta": 0.8773305416107178,
+          "absolute_intensity_delta": 0.35659414529800415
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "their"
+          ],
+          "original_text_fragment": "their",
+          "classification_margin_delta": 0.1911301612854004,
+          "intensity_delta": 0.08274197578430176,
+          "absolute_classification_delta": 0.1911301612854004,
+          "absolute_intensity_delta": 0.08274197578430176
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "poverty"
+          ],
+          "original_text_fragment": "poverty",
+          "classification_margin_delta": 1.0147238969802856,
+          "intensity_delta": 0.3452884554862976,
+          "absolute_classification_delta": 1.0147238969802856,
+          "absolute_intensity_delta": 0.3452884554862976
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.013096332550048828,
+          "intensity_delta": -0.0198594331741333,
+          "absolute_classification_delta": 0.013096332550048828,
+          "absolute_intensity_delta": 0.0198594331741333
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.16598153114318848,
+          "intensity_delta": 0.08097106218338013,
+          "absolute_classification_delta": 0.16598153114318848,
+          "absolute_intensity_delta": 0.08097106218338013
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "family"
+          ],
+          "original_text_fragment": "family",
+          "classification_margin_delta": 0.14158964157104492,
+          "intensity_delta": 0.05211913585662842,
+          "absolute_classification_delta": 0.14158964157104492,
+          "absolute_intensity_delta": 0.05211913585662842
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "prior"
+          ],
+          "original_text_fragment": "prior",
+          "classification_margin_delta": 0.13990211486816406,
+          "intensity_delta": 0.047835350036621094,
+          "absolute_classification_delta": 0.13990211486816406,
+          "absolute_intensity_delta": 0.047835350036621094
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "##iti"
+          ],
+          "original_text_fragment": "iti",
+          "classification_margin_delta": 0.6460092067718506,
+          "intensity_delta": 0.2379683256149292,
+          "absolute_classification_delta": 0.6460092067718506,
+          "absolute_intensity_delta": 0.2379683256149292
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "##ze"
+          ],
+          "original_text_fragment": "ze",
+          "classification_margin_delta": 0.22384929656982422,
+          "intensity_delta": 0.08960741758346558,
+          "absolute_classification_delta": 0.22384929656982422,
+          "absolute_intensity_delta": 0.08960741758346558
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "education"
+          ],
+          "original_text_fragment": "education",
+          "classification_margin_delta": 0.049288272857666016,
+          "intensity_delta": -0.005677461624145508,
+          "absolute_classification_delta": 0.049288272857666016,
+          "absolute_intensity_delta": 0.005677461624145508
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "because"
+          ],
+          "original_text_fragment": "because",
+          "classification_margin_delta": 0.08519339561462402,
+          "intensity_delta": 0.02963864803314209,
+          "absolute_classification_delta": 0.08519339561462402,
+          "absolute_intensity_delta": 0.02963864803314209
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "they"
+          ],
+          "original_text_fragment": "they",
+          "classification_margin_delta": 0.1424560546875,
+          "intensity_delta": 0.05267322063446045,
+          "absolute_classification_delta": 0.1424560546875,
+          "absolute_intensity_delta": 0.05267322063446045
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "believed"
+          ],
+          "original_text_fragment": "believed",
+          "classification_margin_delta": 0.11773300170898438,
+          "intensity_delta": 0.04717838764190674,
+          "absolute_classification_delta": 0.11773300170898438,
+          "absolute_intensity_delta": 0.04717838764190674
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "in"
+          ],
+          "original_text_fragment": "in",
+          "classification_margin_delta": 0.4706451892852783,
+          "intensity_delta": 0.18080580234527588,
+          "absolute_classification_delta": 0.4706451892852783,
+          "absolute_intensity_delta": 0.18080580234527588
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": 0.10320138931274414,
+          "intensity_delta": 0.02739238739013672,
+          "absolute_classification_delta": 0.10320138931274414,
+          "absolute_intensity_delta": 0.02739238739013672
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "power"
+          ],
+          "original_text_fragment": "power",
+          "classification_margin_delta": 0.11233282089233398,
+          "intensity_delta": 0.024321317672729492,
+          "absolute_classification_delta": 0.11233282089233398,
+          "absolute_intensity_delta": 0.024321317672729492
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": -0.08381223678588867,
+          "intensity_delta": -0.060158371925354004,
+          "absolute_classification_delta": 0.08381223678588867,
+          "absolute_intensity_delta": 0.060158371925354004
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "transform"
+          ],
+          "original_text_fragment": "transform",
+          "classification_margin_delta": 0.3568108081817627,
+          "intensity_delta": 0.1154908537864685,
+          "absolute_classification_delta": 0.3568108081817627,
+          "absolute_intensity_delta": 0.1154908537864685
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "lives"
+          ],
+          "original_text_fragment": "lives",
+          "classification_margin_delta": 0.5088458061218262,
+          "intensity_delta": 0.17831212282180786,
+          "absolute_classification_delta": 0.5088458061218262,
+          "absolute_intensity_delta": 0.17831212282180786
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite"
+          ],
+          "original_text_fragment": "However, despite",
+          "classification_margin_delta": 1.8542072772979736,
+          "intensity_delta": 0.674902081489563,
+          "absolute_classification_delta": 1.8542072772979736,
+          "absolute_intensity_delta": 0.674902081489563
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their"
+          ],
+          "original_text_fragment": ", despite their",
+          "classification_margin_delta": 1.956223964691162,
+          "intensity_delta": 0.7146211266517639,
+          "absolute_classification_delta": 1.956223964691162,
+          "absolute_intensity_delta": 0.7146211266517639
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "despite their poverty",
+          "classification_margin_delta": 0.9840966463088989,
+          "intensity_delta": 0.3993419408798218,
+          "absolute_classification_delta": 0.9840966463088989,
+          "absolute_intensity_delta": 0.3993419408798218
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": "their poverty,",
+          "classification_margin_delta": 1.6193525791168213,
+          "intensity_delta": 0.5535005927085876,
+          "absolute_classification_delta": 1.6193525791168213,
+          "absolute_intensity_delta": 0.5535005927085876
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "poverty, the",
+          "classification_margin_delta": 1.3693934679031372,
+          "intensity_delta": 0.4650822877883911,
+          "absolute_classification_delta": 1.3693934679031372,
+          "absolute_intensity_delta": 0.4650822877883911
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": ", the family",
+          "classification_margin_delta": 0.22466158866882324,
+          "intensity_delta": 0.10431188344955444,
+          "absolute_classification_delta": 0.22466158866882324,
+          "absolute_intensity_delta": 0.10431188344955444
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "the family prior",
+          "classification_margin_delta": 0.37370800971984863,
+          "intensity_delta": 0.1334800124168396,
+          "absolute_classification_delta": 0.37370800971984863,
+          "absolute_intensity_delta": 0.1334800124168396
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": "family prioriti",
+          "classification_margin_delta": 0.4564700126647949,
+          "intensity_delta": 0.19194966554641724,
+          "absolute_classification_delta": 0.4564700126647949,
+          "absolute_intensity_delta": 0.19194966554641724
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "prioritize",
+          "classification_margin_delta": 0.1515190601348877,
+          "intensity_delta": 0.06696796417236328,
+          "absolute_classification_delta": 0.1515190601348877,
+          "absolute_intensity_delta": 0.06696796417236328
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "itize education",
+          "classification_margin_delta": 0.1465158462524414,
+          "intensity_delta": 0.02572798728942871,
+          "absolute_classification_delta": 0.1465158462524414,
+          "absolute_intensity_delta": 0.02572798728942871
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "ze education because",
+          "classification_margin_delta": 0.23514533042907715,
+          "intensity_delta": 0.05738794803619385,
+          "absolute_classification_delta": 0.23514533042907715,
+          "absolute_intensity_delta": 0.05738794803619385
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "education because they",
+          "classification_margin_delta": 0.18306922912597656,
+          "intensity_delta": 0.0523453950881958,
+          "absolute_classification_delta": 0.18306922912597656,
+          "absolute_intensity_delta": 0.0523453950881958
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "because they believed",
+          "classification_margin_delta": 0.3902475833892822,
+          "intensity_delta": 0.16646701097488403,
+          "absolute_classification_delta": 0.3902475833892822,
+          "absolute_intensity_delta": 0.16646701097488403
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "they believed in",
+          "classification_margin_delta": 0.3893697261810303,
+          "intensity_delta": 0.17539328336715698,
+          "absolute_classification_delta": 0.3893697261810303,
+          "absolute_intensity_delta": 0.17539328336715698
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "believed in its",
+          "classification_margin_delta": 0.26691675186157227,
+          "intensity_delta": 0.12944865226745605,
+          "absolute_classification_delta": 0.26691675186157227,
+          "absolute_intensity_delta": 0.12944865226745605
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "in its power",
+          "classification_margin_delta": 0.6011524200439453,
+          "intensity_delta": 0.22581106424331665,
+          "absolute_classification_delta": 0.6011524200439453,
+          "absolute_intensity_delta": 0.22581106424331665
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "its power to",
+          "classification_margin_delta": 0.0903315544128418,
+          "intensity_delta": 0.027129173278808594,
+          "absolute_classification_delta": 0.0903315544128418,
+          "absolute_intensity_delta": 0.027129173278808594
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "power to transform",
+          "classification_margin_delta": 0.6691188812255859,
+          "intensity_delta": 0.22047609090805054,
+          "absolute_classification_delta": 0.6691188812255859,
+          "absolute_intensity_delta": 0.22047609090805054
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "to transform lives",
+          "classification_margin_delta": 0.81212317943573,
+          "intensity_delta": 0.2770112156867981,
+          "absolute_classification_delta": 0.81212317943573,
+          "absolute_intensity_delta": 0.2770112156867981
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "However, despite their poverty",
+          "classification_margin_delta": 0.6011972427368164,
+          "intensity_delta": 0.2820284962654114,
+          "absolute_classification_delta": 0.6011972427368164,
+          "absolute_intensity_delta": 0.2820284962654114
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": ", despite their poverty,",
+          "classification_margin_delta": 0.7904239892959595,
+          "intensity_delta": 0.3318673372268677,
+          "absolute_classification_delta": 0.7904239892959595,
+          "absolute_intensity_delta": 0.3318673372268677
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "despite their poverty, the",
+          "classification_margin_delta": 0.9393343925476074,
+          "intensity_delta": 0.403422474861145,
+          "absolute_classification_delta": 0.9393343925476074,
+          "absolute_intensity_delta": 0.403422474861145
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": "their poverty, the family",
+          "classification_margin_delta": 1.9305497407913208,
+          "intensity_delta": 0.691973090171814,
+          "absolute_classification_delta": 1.9305497407913208,
+          "absolute_intensity_delta": 0.691973090171814
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "poverty, the family prior",
+          "classification_margin_delta": 2.025759220123291,
+          "intensity_delta": 0.7262893319129944,
+          "absolute_classification_delta": 2.025759220123291,
+          "absolute_intensity_delta": 0.7262893319129944
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "the",
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": ", the family prioriti",
+          "classification_margin_delta": 0.5350461006164551,
+          "intensity_delta": 0.22143244743347168,
+          "absolute_classification_delta": 0.5350461006164551,
+          "absolute_intensity_delta": 0.22143244743347168
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "the family prioritize",
+          "classification_margin_delta": 0.21678709983825684,
+          "intensity_delta": 0.09510862827301025,
+          "absolute_classification_delta": 0.21678709983825684,
+          "absolute_intensity_delta": 0.09510862827301025
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "family prioritize education",
+          "classification_margin_delta": 0.4239156246185303,
+          "intensity_delta": 0.09511464834213257,
+          "absolute_classification_delta": 0.4239156246185303,
+          "absolute_intensity_delta": 0.09511464834213257
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "prioritize education because",
+          "classification_margin_delta": 0.09411001205444336,
+          "intensity_delta": -0.013493061065673828,
+          "absolute_classification_delta": 0.09411001205444336,
+          "absolute_intensity_delta": 0.013493061065673828
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "itize education because they",
+          "classification_margin_delta": 0.03439974784851074,
+          "intensity_delta": -0.026161909103393555,
+          "absolute_classification_delta": 0.03439974784851074,
+          "absolute_intensity_delta": 0.026161909103393555
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "ze education because they believed",
+          "classification_margin_delta": 0.4081556797027588,
+          "intensity_delta": 0.1077006459236145,
+          "absolute_classification_delta": 0.4081556797027588,
+          "absolute_intensity_delta": 0.1077006459236145
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "education",
+            "because",
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "education because they believed in",
+          "classification_margin_delta": 0.38103294372558594,
+          "intensity_delta": 0.1390497088432312,
+          "absolute_classification_delta": 0.38103294372558594,
+          "absolute_intensity_delta": 0.1390497088432312
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "because they believed in its",
+          "classification_margin_delta": 0.2673947811126709,
+          "intensity_delta": 0.13480889797210693,
+          "absolute_classification_delta": 0.2673947811126709,
+          "absolute_intensity_delta": 0.13480889797210693
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "they believed in its power",
+          "classification_margin_delta": 0.49782752990722656,
+          "intensity_delta": 0.20835763216018677,
+          "absolute_classification_delta": 0.49782752990722656,
+          "absolute_intensity_delta": 0.20835763216018677
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "believed in its power to",
+          "classification_margin_delta": 0.045592308044433594,
+          "intensity_delta": 0.005918264389038086,
+          "absolute_classification_delta": 0.045592308044433594,
+          "absolute_intensity_delta": 0.005918264389038086
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "in",
+            "its",
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "in its power to transform",
+          "classification_margin_delta": 1.1972732543945312,
+          "intensity_delta": 0.4145393371582031,
+          "absolute_classification_delta": 1.1972732543945312,
+          "absolute_intensity_delta": 0.4145393371582031
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.9409744739532471,
+          "intensity_delta": 0.3065261244773865,
+          "absolute_classification_delta": 0.9409744739532471,
+          "absolute_intensity_delta": 0.3065261244773865
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "poverty, the family prior",
+          "classification_margin_delta": 2.025759220123291,
+          "intensity_delta": 0.7262893319129944,
+          "absolute_classification_delta": 2.025759220123291,
+          "absolute_intensity_delta": 0.7262893319129944
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their"
+          ],
+          "original_text_fragment": ", despite their",
+          "classification_margin_delta": 1.956223964691162,
+          "intensity_delta": 0.7146211266517639,
+          "absolute_classification_delta": 1.956223964691162,
+          "absolute_intensity_delta": 0.7146211266517639
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "in",
+            "its",
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "in its power to transform",
+          "classification_margin_delta": 1.1972732543945312,
+          "intensity_delta": 0.4145393371582031,
+          "absolute_classification_delta": 1.1972732543945312,
+          "absolute_intensity_delta": 0.4145393371582031
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "poverty, the family prior",
+          "classification_margin_delta": 2.025759220123291,
+          "intensity_delta": 0.7262893319129944,
+          "absolute_classification_delta": 2.025759220123291,
+          "absolute_intensity_delta": 0.7262893319129944
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their"
+          ],
+          "original_text_fragment": ", despite their",
+          "classification_margin_delta": 1.956223964691162,
+          "intensity_delta": 0.7146211266517639,
+          "absolute_classification_delta": 1.956223964691162,
+          "absolute_intensity_delta": 0.7146211266517639
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "in",
+            "its",
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "in its power to transform",
+          "classification_margin_delta": 1.1972732543945312,
+          "intensity_delta": 0.4145393371582031,
+          "absolute_classification_delta": 1.1972732543945312,
+          "absolute_intensity_delta": 0.4145393371582031
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0056476593017578125,
+          0.09601902961730957,
+          0.8773305416107178,
+          0.1911301612854004,
+          1.0147238969802856,
+          0.013096332550048828,
+          0.16598153114318848,
+          0.14158964157104492,
+          0.13990211486816406,
+          0.6460092067718506,
+          0.22384929656982422,
+          0.049288272857666016,
+          0.08519339561462402,
+          0.1424560546875,
+          0.11773300170898438,
+          0.4706451892852783,
+          0.10320138931274414,
+          0.11233282089233398,
+          0.08381223678588867,
+          0.3568108081817627,
+          0.5088458061218262
+        ],
+        "3": [
+          0.6180690924326578,
+          0.635071873664856,
+          0.5327253209220039,
+          0.5066303544574314,
+          0.44142696592542857,
+          0.3570452928543091,
+          0.21864034069908989,
+          0.11720440122816299,
+          0.10907745361328125,
+          0.08383387989468045,
+          0.05924224853515625,
+          0.06274782286749946,
+          0.08982912699381511,
+          0.10696517096625435,
+          0.11628156238132054,
+          0.13971543312072754,
+          0.10648896959092884,
+          0.15117809507581922,
+          0.17461929056379533,
+          0.246873676776886,
+          0.27070772647857666
+        ],
+        "5": [
+          0.12023944854736328,
+          0.1391621232032776,
+          0.15539704163869222,
+          0.2130752682685852,
+          0.2514905834197998,
+          0.24884453773498535,
+          0.22589906215667727,
+          0.2052823114395142,
+          0.1318247222900391,
+          0.05217034339904786,
+          0.0470947265625,
+          0.05366456031799316,
+          0.047403726577758785,
+          0.06355242729187012,
+          0.06400012969970703,
+          0.09556483268737792,
+          0.11796249389648436,
+          0.1340833783149719,
+          0.14558933575948077,
+          0.21382477283477783,
+          0.1881948947906494
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.05324675324675325
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.18571428571428572
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.7389610389610389
+        }
+      ]
+    },
+    "audio": {
+      "modality": "audio",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "however",
+          "text_char_start": 0,
+          "text_char_end": 7,
+          "original_text_fragment": "However",
+          "classification_signed": 0.004837846755981445,
+          "classification_absolute": 0.004837846755981445,
+          "classification_share": 0.047997059765573655,
+          "intensity_signed": 0.0013198826048109267,
+          "intensity_absolute": 0.0013198826048109267,
+          "intensity_share": 0.029546705520017803
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": ",",
+          "text_char_start": 7,
+          "text_char_end": 8,
+          "original_text_fragment": ",",
+          "classification_signed": 0.0038507715861002606,
+          "classification_absolute": 0.0038507715861002606,
+          "classification_share": 0.03820412743192231,
+          "intensity_signed": 0.0010031747817993166,
+          "intensity_absolute": 0.0010031747817993166,
+          "intensity_share": 0.022456928938144865
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "despite",
+          "text_char_start": 9,
+          "text_char_end": 16,
+          "original_text_fragment": "despite",
+          "classification_signed": 0.0025607926504952567,
+          "classification_absolute": 0.0025607926504952567,
+          "classification_share": 0.025406037870277266,
+          "intensity_signed": 0.0006707861309959775,
+          "intensity_absolute": 0.0006707861309959775,
+          "intensity_share": 0.01501612356069302
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "their",
+          "text_char_start": 17,
+          "text_char_end": 22,
+          "original_text_fragment": "their",
+          "classification_signed": 0.001669732729593913,
+          "classification_absolute": 0.001669732729593913,
+          "classification_share": 0.01656568834384155,
+          "intensity_signed": 0.00044629176457722984,
+          "intensity_absolute": 0.00044629176457722984,
+          "intensity_share": 0.009990624390311958
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "poverty",
+          "text_char_start": 23,
+          "text_char_end": 30,
+          "original_text_fragment": "poverty",
+          "classification_signed": 0.0011747377890127678,
+          "classification_absolute": 0.0011747377890127678,
+          "classification_share": 0.011654763516105868,
+          "intensity_signed": 0.00031094286176893446,
+          "intensity_absolute": 0.00031094286176893446,
+          "intensity_share": 0.0069607229739605475
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 30,
+          "text_char_end": 31,
+          "original_text_fragment": ",",
+          "classification_signed": 0.0009905832785147208,
+          "classification_absolute": 0.0009905832785147208,
+          "classification_share": 0.009827736846535057,
+          "intensity_signed": 0.00030162775958025894,
+          "intensity_absolute": 0.00030162775958025894,
+          "intensity_share": 0.0067521964123902515
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 32,
+          "text_char_end": 35,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0010815867671260127,
+          "classification_absolute": 0.0010815867671260127,
+          "classification_share": 0.01073059716891949,
+          "intensity_signed": 0.0003857497815732602,
+          "intensity_absolute": 0.0003857497815732602,
+          "intensity_share": 0.008635340112076877
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "family",
+          "text_char_start": 36,
+          "text_char_end": 42,
+          "original_text_fragment": "family",
+          "classification_signed": 0.0011253639503761574,
+          "classification_absolute": 0.0011253639503761574,
+          "classification_share": 0.01116491768108284,
+          "intensity_signed": 0.00035197028407344105,
+          "intensity_absolute": 0.00035197028407344105,
+          "intensity_share": 0.007879157053368934
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "prior",
+          "text_char_start": 43,
+          "text_char_end": 48,
+          "original_text_fragment": "prior",
+          "classification_signed": 0.0008336190824155455,
+          "classification_absolute": 0.0008336190824155455,
+          "classification_share": 0.00827046968177573,
+          "intensity_signed": 0.00016521259590431496,
+          "intensity_absolute": 0.00024155069280553743,
+          "intensity_share": 0.005407319683180367
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "##iti",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "iti",
+          "classification_signed": 0.0008246280528880933,
+          "classification_absolute": 0.0008246280528880933,
+          "classification_share": 0.008181268224319558,
+          "intensity_signed": 9.506543477376302e-05,
+          "intensity_absolute": 0.00016946969208893954,
+          "intensity_share": 0.003793724584647647
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "##ze",
+          "text_char_start": 51,
+          "text_char_end": 53,
+          "original_text_fragment": "ze",
+          "classification_signed": 0.0008011588343867551,
+          "classification_absolute": 0.0008011588343867551,
+          "classification_share": 0.007948426313470003,
+          "intensity_signed": 4.871068177399811e-05,
+          "intensity_absolute": 0.00013230729986120154,
+          "intensity_share": 0.0029618125224914332
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "education",
+          "text_char_start": 54,
+          "text_char_end": 63,
+          "original_text_fragment": "education",
+          "classification_signed": 0.0009986347622341581,
+          "classification_absolute": 0.0009986347622341581,
+          "classification_share": 0.00990761691814038,
+          "intensity_signed": 0.00010164490452519169,
+          "intensity_absolute": 0.0001078172966285988,
+          "intensity_share": 0.0024135827700418563
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "because",
+          "text_char_start": 64,
+          "text_char_end": 71,
+          "original_text_fragment": "because",
+          "classification_signed": 0.0009380234612358941,
+          "classification_absolute": 0.0009380234612358941,
+          "classification_share": 0.009306282402348619,
+          "intensity_signed": 8.586865884286386e-05,
+          "intensity_absolute": 0.0001352389653523763,
+          "intensity_share": 0.0030274403719950244
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "they",
+          "text_char_start": 72,
+          "text_char_end": 76,
+          "original_text_fragment": "they",
+          "classification_signed": 0.0013777927116111473,
+          "classification_absolute": 0.0013777927116111473,
+          "classification_share": 0.013669304229616168,
+          "intensity_signed": 0.00023072119112367982,
+          "intensity_absolute": 0.00023842122819688587,
+          "intensity_share": 0.005337263930577739
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "believed",
+          "text_char_start": 77,
+          "text_char_end": 85,
+          "original_text_fragment": "believed",
+          "classification_signed": 0.0013183929302074291,
+          "classification_absolute": 0.0017205256002920644,
+          "classification_share": 0.017069612625351713,
+          "intensity_signed": 0.00022600933357521343,
+          "intensity_absolute": 0.0004606043850934064,
+          "intensity_share": 0.010311024691118872
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "in",
+          "text_char_start": 86,
+          "text_char_end": 88,
+          "original_text_fragment": "in",
+          "classification_signed": 0.003073185461538809,
+          "classification_absolute": 0.003073185461538809,
+          "classification_share": 0.030489569783457605,
+          "intensity_signed": 0.0009253060376202618,
+          "intensity_absolute": 0.0009253060376202618,
+          "intensity_share": 0.020713770232146374
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "its",
+          "text_char_start": 89,
+          "text_char_end": 92,
+          "original_text_fragment": "its",
+          "classification_signed": 0.00626375057079174,
+          "classification_absolute": 0.00626375057079174,
+          "classification_share": 0.06214368202780053,
+          "intensity_signed": 0.0024397214253743488,
+          "intensity_absolute": 0.0024397214253743488,
+          "intensity_share": 0.054615259147793874
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "power",
+          "text_char_start": 93,
+          "text_char_end": 98,
+          "original_text_fragment": "power",
+          "classification_signed": 0.007828925053278606,
+          "classification_absolute": 0.007828925053278606,
+          "classification_share": 0.0776720310989221,
+          "intensity_signed": 0.0031581411759058634,
+          "intensity_absolute": 0.0031581411759058634,
+          "intensity_share": 0.07069770218579427
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "to",
+          "text_char_start": 99,
+          "text_char_end": 101,
+          "original_text_fragment": "to",
+          "classification_signed": 0.014301992598034089,
+          "classification_absolute": 0.014301992598034089,
+          "classification_share": 0.14189238066416898,
+          "intensity_signed": 0.006669877824329195,
+          "intensity_absolute": 0.006669877824329195,
+          "intensity_share": 0.14931094266386097
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "transform",
+          "text_char_start": 102,
+          "text_char_end": 111,
+          "original_text_fragment": "transform",
+          "classification_signed": 0.017929732004801434,
+          "classification_absolute": 0.017929732004801434,
+          "classification_share": 0.1778837697889399,
+          "intensity_signed": 0.008249521255493164,
+          "intensity_absolute": 0.008249521255493164,
+          "intensity_share": 0.18467261734394985
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "lives",
+          "text_char_start": 112,
+          "text_char_end": 117,
+          "original_text_fragment": "lives",
+          "classification_signed": 0.02661126454671224,
+          "classification_absolute": 0.02661126454671224,
+          "classification_share": 0.26401465761743065,
+          "intensity_signed": 0.01695265505048964,
+          "intensity_absolute": 0.01695265505048964,
+          "intensity_share": 0.3794997409114375
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "however"
+          ],
+          "original_text_fragment": "However",
+          "classification_margin_delta": 0.006638050079345703,
+          "intensity_delta": 0.0018205642700195312,
+          "absolute_classification_delta": 0.006638050079345703,
+          "absolute_intensity_delta": 0.0018205642700195312
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.006420612335205078,
+          "intensity_delta": 0.0016007423400878906,
+          "absolute_classification_delta": 0.006420612335205078,
+          "absolute_intensity_delta": 0.0016007423400878906
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "despite"
+          ],
+          "original_text_fragment": "despite",
+          "classification_margin_delta": 0.002836465835571289,
+          "intensity_delta": 0.000701904296875,
+          "absolute_classification_delta": 0.002836465835571289,
+          "absolute_intensity_delta": 0.000701904296875
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "their"
+          ],
+          "original_text_fragment": "their",
+          "classification_margin_delta": 0.0014739036560058594,
+          "intensity_delta": 0.0003947019577026367,
+          "absolute_classification_delta": 0.0014739036560058594,
+          "absolute_intensity_delta": 0.0003947019577026367
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "poverty"
+          ],
+          "original_text_fragment": "poverty",
+          "classification_margin_delta": 0.0006794929504394531,
+          "intensity_delta": 5.5789947509765625e-05,
+          "absolute_classification_delta": 0.0006794929504394531,
+          "absolute_intensity_delta": 5.5789947509765625e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.0011124610900878906,
+          "intensity_delta": 0.0002963542938232422,
+          "absolute_classification_delta": 0.0011124610900878906,
+          "absolute_intensity_delta": 0.0002963542938232422
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.0017962455749511719,
+          "intensity_delta": 0.0007766485214233398,
+          "absolute_classification_delta": 0.0017962455749511719,
+          "absolute_intensity_delta": 0.0007766485214233398
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "family"
+          ],
+          "original_text_fragment": "family",
+          "classification_margin_delta": 0.0017657279968261719,
+          "intensity_delta": 0.000559687614440918,
+          "absolute_classification_delta": 0.0017657279968261719,
+          "absolute_intensity_delta": 0.000559687614440918
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "prior"
+          ],
+          "original_text_fragment": "prior",
+          "classification_margin_delta": 0.00043654441833496094,
+          "intensity_delta": -0.00016808509826660156,
+          "absolute_classification_delta": 0.00043654441833496094,
+          "absolute_intensity_delta": 0.00016808509826660156
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "##iti"
+          ],
+          "original_text_fragment": "iti",
+          "classification_margin_delta": 0.0007123947143554688,
+          "intensity_delta": -0.00015938282012939453,
+          "absolute_classification_delta": 0.0007123947143554688,
+          "absolute_intensity_delta": 0.00015938282012939453
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "##ze"
+          ],
+          "original_text_fragment": "ze",
+          "classification_margin_delta": 0.0006725788116455078,
+          "intensity_delta": -0.00020074844360351562,
+          "absolute_classification_delta": 0.0006725788116455078,
+          "absolute_intensity_delta": 0.00020074844360351562
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "education"
+          ],
+          "original_text_fragment": "education",
+          "classification_margin_delta": 0.0013015270233154297,
+          "intensity_delta": 6.306171417236328e-05,
+          "absolute_classification_delta": 0.0013015270233154297,
+          "absolute_intensity_delta": 6.306171417236328e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "because"
+          ],
+          "original_text_fragment": "because",
+          "classification_margin_delta": 0.0002765655517578125,
+          "intensity_delta": -0.00015974044799804688,
+          "absolute_classification_delta": 0.0002765655517578125,
+          "absolute_intensity_delta": 0.00015974044799804688
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "they"
+          ],
+          "original_text_fragment": "they",
+          "classification_margin_delta": 0.002058267593383789,
+          "intensity_delta": 0.00038433074951171875,
+          "absolute_classification_delta": 0.002058267593383789,
+          "absolute_intensity_delta": 0.00038433074951171875
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "believed"
+          ],
+          "original_text_fragment": "believed",
+          "classification_margin_delta": -0.0018095970153808594,
+          "intensity_delta": -0.0010210275650024414,
+          "absolute_classification_delta": 0.0018095970153808594,
+          "absolute_intensity_delta": 0.0010210275650024414
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "in"
+          ],
+          "original_text_fragment": "in",
+          "classification_margin_delta": 0.0026307106018066406,
+          "intensity_delta": 0.0008497238159179688,
+          "absolute_classification_delta": 0.0026307106018066406,
+          "absolute_intensity_delta": 0.0008497238159179688
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": 0.004388093948364258,
+          "intensity_delta": 0.0012682676315307617,
+          "absolute_classification_delta": 0.004388093948364258,
+          "absolute_intensity_delta": 0.0012682676315307617
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "power"
+          ],
+          "original_text_fragment": "power",
+          "classification_margin_delta": 0.001477956771850586,
+          "intensity_delta": 0.00028955936431884766,
+          "absolute_classification_delta": 0.001477956771850586,
+          "absolute_intensity_delta": 0.00028955936431884766
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.014507293701171875,
+          "intensity_delta": 0.00708615779876709,
+          "absolute_classification_delta": 0.014507293701171875,
+          "absolute_intensity_delta": 0.00708615779876709
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "transform"
+          ],
+          "original_text_fragment": "transform",
+          "classification_margin_delta": 0.016007661819458008,
+          "intensity_delta": 0.006100654602050781,
+          "absolute_classification_delta": 0.016007661819458008,
+          "absolute_intensity_delta": 0.006100654602050781
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "lives"
+          ],
+          "original_text_fragment": "lives",
+          "classification_margin_delta": 0.02809882164001465,
+          "intensity_delta": 0.024064183235168457,
+          "absolute_classification_delta": 0.02809882164001465,
+          "absolute_intensity_delta": 0.024064183235168457
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite"
+          ],
+          "original_text_fragment": "However, despite",
+          "classification_margin_delta": 0.014423847198486328,
+          "intensity_delta": 0.0038993358612060547,
+          "absolute_classification_delta": 0.014423847198486328,
+          "absolute_intensity_delta": 0.0038993358612060547
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their"
+          ],
+          "original_text_fragment": ", despite their",
+          "classification_margin_delta": 0.009278535842895508,
+          "intensity_delta": 0.0023963451385498047,
+          "absolute_classification_delta": 0.009278535842895508,
+          "absolute_intensity_delta": 0.0023963451385498047
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "despite their poverty",
+          "classification_margin_delta": 0.0039594173431396484,
+          "intensity_delta": 0.0009074211120605469,
+          "absolute_classification_delta": 0.0039594173431396484,
+          "absolute_intensity_delta": 0.0009074211120605469
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": "their poverty,",
+          "classification_margin_delta": 0.0023691654205322266,
+          "intensity_delta": 0.0005805492401123047,
+          "absolute_classification_delta": 0.0023691654205322266,
+          "absolute_intensity_delta": 0.0005805492401123047
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "poverty, the",
+          "classification_margin_delta": 0.0013580322265625,
+          "intensity_delta": 0.0004611015319824219,
+          "absolute_classification_delta": 0.0013580322265625,
+          "absolute_intensity_delta": 0.0004611015319824219
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": ", the family",
+          "classification_margin_delta": 0.0038270950317382812,
+          "intensity_delta": 0.0014679431915283203,
+          "absolute_classification_delta": 0.0038270950317382812,
+          "absolute_intensity_delta": 0.0014679431915283203
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "the family prior",
+          "classification_margin_delta": 0.004855155944824219,
+          "intensity_delta": 0.001758575439453125,
+          "absolute_classification_delta": 0.004855155944824219,
+          "absolute_intensity_delta": 0.001758575439453125
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": "family prioriti",
+          "classification_margin_delta": 0.002810239791870117,
+          "intensity_delta": 0.0005320310592651367,
+          "absolute_classification_delta": 0.002810239791870117,
+          "absolute_intensity_delta": 0.0005320310592651367
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "prioritize",
+          "classification_margin_delta": 0.0009946823120117188,
+          "intensity_delta": -0.0004429817199707031,
+          "absolute_classification_delta": 0.0009946823120117188,
+          "absolute_intensity_delta": 0.0004429817199707031
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "itize education",
+          "classification_margin_delta": 0.0027637481689453125,
+          "intensity_delta": 0.00011730194091796875,
+          "absolute_classification_delta": 0.0027637481689453125,
+          "absolute_intensity_delta": 0.00011730194091796875
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "ze education because",
+          "classification_margin_delta": 0.002759218215942383,
+          "intensity_delta": 0.00018489360809326172,
+          "absolute_classification_delta": 0.002759218215942383,
+          "absolute_intensity_delta": 0.00018489360809326172
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "education because they",
+          "classification_margin_delta": 0.004095792770385742,
+          "intensity_delta": 0.0005608797073364258,
+          "absolute_classification_delta": 0.004095792770385742,
+          "absolute_intensity_delta": 0.0005608797073364258
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "because they believed",
+          "classification_margin_delta": 0.0020155906677246094,
+          "intensity_delta": -0.00010395050048828125,
+          "absolute_classification_delta": 0.0020155906677246094,
+          "absolute_intensity_delta": 0.00010395050048828125
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "they believed in",
+          "classification_margin_delta": 0.004387378692626953,
+          "intensity_delta": 0.0008962154388427734,
+          "absolute_classification_delta": 0.004387378692626953,
+          "absolute_intensity_delta": 0.0008962154388427734
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "believed in its",
+          "classification_margin_delta": 0.004023075103759766,
+          "intensity_delta": 0.0005325078964233398,
+          "absolute_classification_delta": 0.004023075103759766,
+          "absolute_intensity_delta": 0.0005325078964233398
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "in its power",
+          "classification_margin_delta": 0.009299039840698242,
+          "intensity_delta": 0.0026602745056152344,
+          "absolute_classification_delta": 0.009299039840698242,
+          "absolute_intensity_delta": 0.0026602745056152344
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "its power to",
+          "classification_margin_delta": 0.022855281829833984,
+          "intensity_delta": 0.008893251419067383,
+          "absolute_classification_delta": 0.022855281829833984,
+          "absolute_intensity_delta": 0.008893251419067383
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "power to transform",
+          "classification_margin_delta": 0.03634238243103027,
+          "intensity_delta": 0.014351129531860352,
+          "absolute_classification_delta": 0.03634238243103027,
+          "absolute_intensity_delta": 0.014351129531860352
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "to transform lives",
+          "classification_margin_delta": 0.08894133567810059,
+          "intensity_delta": 0.0480266809463501,
+          "absolute_classification_delta": 0.08894133567810059,
+          "absolute_intensity_delta": 0.0480266809463501
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "However, despite their poverty",
+          "classification_margin_delta": 0.015337705612182617,
+          "intensity_delta": 0.004196524620056152,
+          "absolute_classification_delta": 0.015337705612182617,
+          "absolute_intensity_delta": 0.004196524620056152
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": ", despite their poverty,",
+          "classification_margin_delta": 0.00932455062866211,
+          "intensity_delta": 0.002386331558227539,
+          "absolute_classification_delta": 0.00932455062866211,
+          "absolute_intensity_delta": 0.002386331558227539
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "despite their poverty, the",
+          "classification_margin_delta": 0.004680156707763672,
+          "intensity_delta": 0.0013799667358398438,
+          "absolute_classification_delta": 0.004680156707763672,
+          "absolute_intensity_delta": 0.0013799667358398438
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": "their poverty, the family",
+          "classification_margin_delta": 0.004065513610839844,
+          "intensity_delta": 0.0014414787292480469,
+          "absolute_classification_delta": 0.004065513610839844,
+          "absolute_intensity_delta": 0.0014414787292480469
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "poverty, the family prior",
+          "classification_margin_delta": 0.003246784210205078,
+          "intensity_delta": 0.0010607242584228516,
+          "absolute_classification_delta": 0.003246784210205078,
+          "absolute_intensity_delta": 0.0010607242584228516
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "the",
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": ", the family prioriti",
+          "classification_margin_delta": 0.005106449127197266,
+          "intensity_delta": 0.00164031982421875,
+          "absolute_classification_delta": 0.005106449127197266,
+          "absolute_intensity_delta": 0.00164031982421875
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "the family prioritize",
+          "classification_margin_delta": 0.0058574676513671875,
+          "intensity_delta": 0.0018069744110107422,
+          "absolute_classification_delta": 0.0058574676513671875,
+          "absolute_intensity_delta": 0.0018069744110107422
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "family prioritize education",
+          "classification_margin_delta": 0.00438237190246582,
+          "intensity_delta": 0.0008264780044555664,
+          "absolute_classification_delta": 0.00438237190246582,
+          "absolute_intensity_delta": 0.0008264780044555664
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "prioritize education because",
+          "classification_margin_delta": 0.002303600311279297,
+          "intensity_delta": -0.00013887882232666016,
+          "absolute_classification_delta": 0.002303600311279297,
+          "absolute_intensity_delta": 0.00013887882232666016
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "itize education because they",
+          "classification_margin_delta": 0.004948616027832031,
+          "intensity_delta": 0.0005960464477539062,
+          "absolute_classification_delta": 0.004948616027832031,
+          "absolute_intensity_delta": 0.0005960464477539062
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "ze education because they believed",
+          "classification_margin_delta": 0.004334449768066406,
+          "intensity_delta": 0.00033974647521972656,
+          "absolute_classification_delta": 0.004334449768066406,
+          "absolute_intensity_delta": 0.00033974647521972656
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "education",
+            "because",
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "education because they believed in",
+          "classification_margin_delta": 0.006430625915527344,
+          "intensity_delta": 0.0011968612670898438,
+          "absolute_classification_delta": 0.006430625915527344,
+          "absolute_intensity_delta": 0.0011968612670898438
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "because they believed in its",
+          "classification_margin_delta": 0.008026599884033203,
+          "intensity_delta": 0.0015993118286132812,
+          "absolute_classification_delta": 0.008026599884033203,
+          "absolute_intensity_delta": 0.0015993118286132812
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "they believed in its power",
+          "classification_margin_delta": 0.010471105575561523,
+          "intensity_delta": 0.002473592758178711,
+          "absolute_classification_delta": 0.010471105575561523,
+          "absolute_intensity_delta": 0.002473592758178711
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "believed in its power to",
+          "classification_margin_delta": 0.02173614501953125,
+          "intensity_delta": 0.007458090782165527,
+          "absolute_classification_delta": 0.02173614501953125,
+          "absolute_intensity_delta": 0.007458090782165527
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "in",
+            "its",
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "in its power to transform",
+          "classification_margin_delta": 0.04895949363708496,
+          "intensity_delta": 0.017847299575805664,
+          "absolute_classification_delta": 0.04895949363708496,
+          "absolute_intensity_delta": 0.017847299575805664
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.11043930053710938,
+          "intensity_delta": 0.05392444133758545,
+          "absolute_classification_delta": 0.11043930053710938,
+          "absolute_intensity_delta": 0.05392444133758545
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.11043930053710938,
+          "intensity_delta": 0.05392444133758545,
+          "absolute_classification_delta": 0.11043930053710938,
+          "absolute_intensity_delta": 0.05392444133758545
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "However, despite their poverty",
+          "classification_margin_delta": 0.015337705612182617,
+          "intensity_delta": 0.004196524620056152,
+          "absolute_classification_delta": 0.015337705612182617,
+          "absolute_intensity_delta": 0.004196524620056152
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "education",
+            "because",
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "education because they believed in",
+          "classification_margin_delta": 0.006430625915527344,
+          "intensity_delta": 0.0011968612670898438,
+          "absolute_classification_delta": 0.006430625915527344,
+          "absolute_intensity_delta": 0.0011968612670898438
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.11043930053710938,
+          "intensity_delta": 0.05392444133758545,
+          "absolute_classification_delta": 0.11043930053710938,
+          "absolute_intensity_delta": 0.05392444133758545
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "However, despite their poverty",
+          "classification_margin_delta": 0.015337705612182617,
+          "intensity_delta": 0.004196524620056152,
+          "absolute_classification_delta": 0.015337705612182617,
+          "absolute_intensity_delta": 0.004196524620056152
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "the family prioritize",
+          "classification_margin_delta": 0.0058574676513671875,
+          "intensity_delta": 0.0018069744110107422,
+          "absolute_classification_delta": 0.0058574676513671875,
+          "absolute_intensity_delta": 0.0018069744110107422
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.006638050079345703,
+          0.006420612335205078,
+          0.002836465835571289,
+          0.0014739036560058594,
+          0.0006794929504394531,
+          0.0011124610900878906,
+          0.0017962455749511719,
+          0.0017657279968261719,
+          0.00043654441833496094,
+          0.0007123947143554688,
+          0.0006725788116455078,
+          0.0013015270233154297,
+          0.0002765655517578125,
+          0.002058267593383789,
+          0.0018095970153808594,
+          0.0026307106018066406,
+          0.004388093948364258,
+          0.001477956771850586,
+          0.014507293701171875,
+          0.016007661819458008,
+          0.02809882164001465
+        ],
+        "3": [
+          0.004807949066162109,
+          0.00395039717356364,
+          0.003073533376057943,
+          0.001734124289618598,
+          0.0008540683322482639,
+          0.0008393658532036677,
+          0.0011155870225694445,
+          0.0012769434187147354,
+          0.0009622308943006727,
+          0.0007298522525363499,
+          0.0007241831885443794,
+          0.0010687510172526042,
+          0.0009856224060058594,
+          0.0011665291256374782,
+          0.0011584493849012588,
+          0.0019677215152316624,
+          0.004019710752699111,
+          0.007610744900173612,
+          0.016459888882107206,
+          0.020880619684855144,
+          0.029647111892700195
+        ],
+        "5": [
+          0.0030675411224365236,
+          0.0024662256240844727,
+          0.00195616086324056,
+          0.0016703963279724122,
+          0.0014661884307861329,
+          0.0010569381713867187,
+          0.0009182548522949219,
+          0.0009063434600830079,
+          0.000835866928100586,
+          0.0009039402008056641,
+          0.0008730602264404296,
+          0.0008959865570068358,
+          0.0010417556762695314,
+          0.0013684558868408202,
+          0.0020399570465087892,
+          0.003824958801269531,
+          0.007985305786132813,
+          0.009580302238464355,
+          0.012075662612915039,
+          0.015939879417419433,
+          0.022087860107421874
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.877922077922078
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.8155844155844156
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.8857142857142857
+        }
+      ]
+    },
+    "vision": {
+      "modality": "vision",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "however",
+          "text_char_start": 0,
+          "text_char_end": 7,
+          "original_text_fragment": "However",
+          "classification_signed": 0.0010788334740532768,
+          "classification_absolute": 0.0010788334740532768,
+          "classification_share": 0.01027965186550652,
+          "intensity_signed": 0.00045079125298394095,
+          "intensity_absolute": 0.00045079125298394095,
+          "intensity_share": 0.01016802170532703
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": ",",
+          "text_char_start": 7,
+          "text_char_end": 8,
+          "original_text_fragment": ",",
+          "classification_signed": 0.001303707758585612,
+          "classification_absolute": 0.001303707758585612,
+          "classification_share": 0.012422363798435573,
+          "intensity_signed": 0.0005378055572509766,
+          "intensity_absolute": 0.0005378055572509766,
+          "intensity_share": 0.012130711372894001
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "despite",
+          "text_char_start": 9,
+          "text_char_end": 16,
+          "original_text_fragment": "despite",
+          "classification_signed": 0.001611026128133138,
+          "classification_absolute": 0.001611026128133138,
+          "classification_share": 0.01535064321022887,
+          "intensity_signed": 0.0006594328653244745,
+          "intensity_absolute": 0.0006594328653244745,
+          "intensity_share": 0.014874129973555892
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "their",
+          "text_char_start": 17,
+          "text_char_end": 22,
+          "original_text_fragment": "their",
+          "classification_signed": 0.0016677876313527424,
+          "classification_absolute": 0.0016677876313527424,
+          "classification_share": 0.015891494515359532,
+          "intensity_signed": 0.0006872564554214478,
+          "intensity_absolute": 0.0006872564554214478,
+          "intensity_share": 0.015501717279550548
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "poverty",
+          "text_char_start": 23,
+          "text_char_end": 30,
+          "original_text_fragment": "poverty",
+          "classification_signed": 0.0016989142806441695,
+          "classification_absolute": 0.0016989142806441695,
+          "classification_share": 0.016188084421170874,
+          "intensity_signed": 0.0007065490440086082,
+          "intensity_absolute": 0.0007065490440086082,
+          "intensity_share": 0.01593687980368493
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 30,
+          "text_char_end": 31,
+          "original_text_fragment": ",",
+          "classification_signed": 0.0014764044019911023,
+          "classification_absolute": 0.0014764044019911023,
+          "classification_share": 0.014067901701407884,
+          "intensity_signed": 0.0006258037355211046,
+          "intensity_absolute": 0.0006258037355211046,
+          "intensity_share": 0.014115593246171551
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 32,
+          "text_char_end": 35,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0010222223069932725,
+          "classification_absolute": 0.0010222223069932725,
+          "classification_share": 0.009740233036676097,
+          "intensity_signed": 0.0004536284340752495,
+          "intensity_absolute": 0.0004536284340752495,
+          "intensity_share": 0.01023201699966207
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "family",
+          "text_char_start": 36,
+          "text_char_end": 42,
+          "original_text_fragment": "family",
+          "classification_signed": 0.0006606649469446254,
+          "classification_absolute": 0.0007486678935863354,
+          "classification_share": 0.007133673077490688,
+          "intensity_signed": 0.00030215492954960575,
+          "intensity_absolute": 0.00032006281393545644,
+          "intensity_share": 0.007219318515214631
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "prior",
+          "text_char_start": 43,
+          "text_char_end": 48,
+          "original_text_fragment": "prior",
+          "classification_signed": 0.0008631300043176723,
+          "classification_absolute": 0.0008631300043176723,
+          "classification_share": 0.008224323931777302,
+          "intensity_signed": 0.0003515543761076751,
+          "intensity_absolute": 0.0003515543761076751,
+          "intensity_share": 0.007929640389435163
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "##iti",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "iti",
+          "classification_signed": 0.0008735868665907119,
+          "classification_absolute": 0.0008735868665907119,
+          "classification_share": 0.008323962018986938,
+          "intensity_signed": 0.00034600098927815756,
+          "intensity_absolute": 0.00034600098927815756,
+          "intensity_share": 0.007804378513906662
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "##ze",
+          "text_char_start": 51,
+          "text_char_end": 53,
+          "original_text_fragment": "ze",
+          "classification_signed": 0.0007501231299506294,
+          "classification_absolute": 0.000792890124850803,
+          "classification_share": 0.007555044079640548,
+          "intensity_signed": 0.0003109119556568287,
+          "intensity_absolute": 0.0003109119556568287,
+          "intensity_share": 0.00701291227954889
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "education",
+          "text_char_start": 54,
+          "text_char_end": 63,
+          "original_text_fragment": "education",
+          "classification_signed": 0.0005026782000506365,
+          "classification_absolute": 0.0008139045150191695,
+          "classification_share": 0.0077552794452388375,
+          "intensity_signed": 0.0002502909413090459,
+          "intensity_absolute": 0.0003177951883386683,
+          "intensity_share": 0.007168170082020612
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "because",
+          "text_char_start": 64,
+          "text_char_end": 71,
+          "original_text_fragment": "because",
+          "classification_signed": -7.4022787588614e-05,
+          "classification_absolute": 0.0007825039051197193,
+          "classification_share": 0.007456079109047763,
+          "intensity_signed": 7.63098398844401e-05,
+          "intensity_absolute": 0.0002701794659649884,
+          "intensity_share": 0.0060941525730170585
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "they",
+          "text_char_start": 72,
+          "text_char_end": 76,
+          "original_text_fragment": "they",
+          "classification_signed": -0.0007526733257152415,
+          "classification_absolute": 0.001024131421689634,
+          "classification_share": 0.009758424013246544,
+          "intensity_signed": -0.00014199327539514615,
+          "intensity_absolute": 0.00028696236787018953,
+          "intensity_share": 0.006472706747972487
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "believed",
+          "text_char_start": 77,
+          "text_char_end": 85,
+          "original_text_fragment": "believed",
+          "classification_signed": -0.0017338399533872251,
+          "classification_absolute": 0.0017338399533872251,
+          "classification_share": 0.016520873276542905,
+          "intensity_signed": -0.00044441311447708694,
+          "intensity_absolute": 0.00045447967670581956,
+          "intensity_share": 0.010251217579724001
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "in",
+          "text_char_start": 86,
+          "text_char_end": 88,
+          "original_text_fragment": "in",
+          "classification_signed": -0.0017650304017243564,
+          "classification_absolute": 0.0017650304017243564,
+          "classification_share": 0.016818071090798845,
+          "intensity_signed": -0.0004233563387835467,
+          "intensity_absolute": 0.0005190522582442672,
+          "intensity_share": 0.01170771303367489
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "its",
+          "text_char_start": 89,
+          "text_char_end": 92,
+          "original_text_fragment": "its",
+          "classification_signed": 0.0020757039388020833,
+          "classification_absolute": 0.0041181564331054694,
+          "classification_share": 0.03923980436106651,
+          "intensity_signed": 0.0011790081306740092,
+          "intensity_absolute": 0.0016016147754810476,
+          "intensity_share": 0.0361259312217487
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "power",
+          "text_char_start": 93,
+          "text_char_end": 98,
+          "original_text_fragment": "power",
+          "classification_signed": 0.0026810288429260252,
+          "classification_absolute": 0.00416940450668335,
+          "classification_share": 0.03972812101774124,
+          "intensity_signed": 0.001479644576708476,
+          "intensity_absolute": 0.0017144789298375448,
+          "intensity_share": 0.038671688628650135
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "to",
+          "text_char_start": 99,
+          "text_char_end": 101,
+          "original_text_fragment": "to",
+          "classification_signed": 0.007541953949701218,
+          "classification_absolute": 0.01110241526649112,
+          "classification_share": 0.10578923119341159,
+          "intensity_signed": 0.003633983929951986,
+          "intensity_absolute": 0.004653513999212356,
+          "intensity_share": 0.10496439546425727
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "transform",
+          "text_char_start": 102,
+          "text_char_end": 111,
+          "original_text_fragment": "transform",
+          "classification_signed": 0.0127727476755778,
+          "classification_absolute": 0.013329369227091473,
+          "classification_share": 0.1270087353949952,
+          "intensity_signed": 0.005964112281799316,
+          "intensity_absolute": 0.005964112281799316,
+          "intensity_share": 0.1345261753259958
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "lives",
+          "text_char_start": 112,
+          "text_char_end": 117,
+          "original_text_fragment": "lives",
+          "classification_signed": 0.05297251807318793,
+          "classification_absolute": 0.05297251807318793,
+          "classification_share": 0.5047480054412297,
+          "intensity_signed": 0.023102227846781412,
+          "intensity_absolute": 0.023102227846781412,
+          "intensity_share": 0.5210925292639877
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "however"
+          ],
+          "original_text_fragment": "However",
+          "classification_margin_delta": 0.0007038116455078125,
+          "intensity_delta": 0.0002961158752441406,
+          "absolute_classification_delta": 0.0007038116455078125,
+          "absolute_intensity_delta": 0.0002961158752441406
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.0007622241973876953,
+          "intensity_delta": 0.0003082752227783203,
+          "absolute_classification_delta": 0.0007622241973876953,
+          "absolute_intensity_delta": 0.0003082752227783203
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "despite"
+          ],
+          "original_text_fragment": "despite",
+          "classification_margin_delta": 0.0017545223236083984,
+          "intensity_delta": 0.00067901611328125,
+          "absolute_classification_delta": 0.0017545223236083984,
+          "absolute_intensity_delta": 0.00067901611328125
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "their"
+          ],
+          "original_text_fragment": "their",
+          "classification_margin_delta": 0.0016064643859863281,
+          "intensity_delta": 0.0006202459335327148,
+          "absolute_classification_delta": 0.0016064643859863281,
+          "absolute_intensity_delta": 0.0006202459335327148
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "poverty"
+          ],
+          "original_text_fragment": "poverty",
+          "classification_margin_delta": 0.002106189727783203,
+          "intensity_delta": 0.0008291006088256836,
+          "absolute_classification_delta": 0.002106189727783203,
+          "absolute_intensity_delta": 0.0008291006088256836
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.0019450187683105469,
+          "intensity_delta": 0.0007759332656860352,
+          "absolute_classification_delta": 0.0019450187683105469,
+          "absolute_intensity_delta": 0.0007759332656860352
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.0006978511810302734,
+          "intensity_delta": 0.00034177303314208984,
+          "absolute_classification_delta": 0.0006978511810302734,
+          "absolute_intensity_delta": 0.00034177303314208984
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "family"
+          ],
+          "original_text_fragment": "family",
+          "classification_margin_delta": -0.0003960132598876953,
+          "intensity_delta": -8.058547973632812e-05,
+          "absolute_classification_delta": 0.0003960132598876953,
+          "absolute_intensity_delta": 8.058547973632812e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "prior"
+          ],
+          "original_text_fragment": "prior",
+          "classification_margin_delta": 0.0011985301971435547,
+          "intensity_delta": 0.00042235851287841797,
+          "absolute_classification_delta": 0.0011985301971435547,
+          "absolute_intensity_delta": 0.00042235851287841797
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "##iti"
+          ],
+          "original_text_fragment": "iti",
+          "classification_margin_delta": 0.0009369850158691406,
+          "intensity_delta": 0.00029850006103515625,
+          "absolute_classification_delta": 0.0009369850158691406,
+          "absolute_intensity_delta": 0.00029850006103515625
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "##ze"
+          ],
+          "original_text_fragment": "ze",
+          "classification_margin_delta": 0.0006647109985351562,
+          "intensity_delta": 0.0001958608627319336,
+          "absolute_classification_delta": 0.0006647109985351562,
+          "absolute_intensity_delta": 0.0001958608627319336
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "education"
+          ],
+          "original_text_fragment": "education",
+          "classification_margin_delta": 0.0009527206420898438,
+          "intensity_delta": 0.00037932395935058594,
+          "absolute_classification_delta": 0.0009527206420898438,
+          "absolute_intensity_delta": 0.00037932395935058594
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "because"
+          ],
+          "original_text_fragment": "because",
+          "classification_margin_delta": 0.00011038780212402344,
+          "intensity_delta": 0.00012564659118652344,
+          "absolute_classification_delta": 0.00011038780212402344,
+          "absolute_intensity_delta": 0.00012564659118652344
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "they"
+          ],
+          "original_text_fragment": "they",
+          "classification_margin_delta": -0.00048065185546875,
+          "intensity_delta": -8.749961853027344e-05,
+          "absolute_classification_delta": 0.00048065185546875,
+          "absolute_intensity_delta": 8.749961853027344e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "believed"
+          ],
+          "original_text_fragment": "believed",
+          "classification_margin_delta": -0.0034356117248535156,
+          "intensity_delta": -0.0009464025497436523,
+          "absolute_classification_delta": 0.0034356117248535156,
+          "absolute_intensity_delta": 0.0009464025497436523
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "in"
+          ],
+          "original_text_fragment": "in",
+          "classification_margin_delta": -0.004138469696044922,
+          "intensity_delta": -0.0013562440872192383,
+          "absolute_classification_delta": 0.004138469696044922,
+          "absolute_intensity_delta": 0.0013562440872192383
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": 0.0004885196685791016,
+          "intensity_delta": 0.00042939186096191406,
+          "absolute_classification_delta": 0.0004885196685791016,
+          "absolute_intensity_delta": 0.00042939186096191406
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "power"
+          ],
+          "original_text_fragment": "power",
+          "classification_margin_delta": 1.7881393432617188e-05,
+          "intensity_delta": 0.0002143383026123047,
+          "absolute_classification_delta": 1.7881393432617188e-05,
+          "absolute_intensity_delta": 0.0002143383026123047
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": -0.008327960968017578,
+          "intensity_delta": -0.0028548240661621094,
+          "absolute_classification_delta": 0.008327960968017578,
+          "absolute_intensity_delta": 0.0028548240661621094
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "transform"
+          ],
+          "original_text_fragment": "transform",
+          "classification_margin_delta": -0.0008747577667236328,
+          "intensity_delta": 0.0008143186569213867,
+          "absolute_classification_delta": 0.0008747577667236328,
+          "absolute_intensity_delta": 0.0008143186569213867
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "lives"
+          ],
+          "original_text_fragment": "lives",
+          "classification_margin_delta": 0.09366226196289062,
+          "intensity_delta": 0.04120981693267822,
+          "absolute_classification_delta": 0.09366226196289062,
+          "absolute_intensity_delta": 0.04120981693267822
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite"
+          ],
+          "original_text_fragment": "However, despite",
+          "classification_margin_delta": 0.003205537796020508,
+          "intensity_delta": 0.00133514404296875,
+          "absolute_classification_delta": 0.003205537796020508,
+          "absolute_intensity_delta": 0.00133514404296875
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their"
+          ],
+          "original_text_fragment": ", despite their",
+          "classification_margin_delta": 0.0042476654052734375,
+          "intensity_delta": 0.0017282962799072266,
+          "absolute_classification_delta": 0.0042476654052734375,
+          "absolute_intensity_delta": 0.0017282962799072266
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "despite their poverty",
+          "classification_margin_delta": 0.005802154541015625,
+          "intensity_delta": 0.0023527145385742188,
+          "absolute_classification_delta": 0.005802154541015625,
+          "absolute_intensity_delta": 0.0023527145385742188
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": "their poverty,",
+          "classification_margin_delta": 0.006053924560546875,
+          "intensity_delta": 0.0024710893630981445,
+          "absolute_classification_delta": 0.006053924560546875,
+          "absolute_intensity_delta": 0.0024710893630981445
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "poverty, the",
+          "classification_margin_delta": 0.0051381587982177734,
+          "intensity_delta": 0.0021805763244628906,
+          "absolute_classification_delta": 0.0051381587982177734,
+          "absolute_intensity_delta": 0.0021805763244628906
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": ", the family",
+          "classification_margin_delta": 0.0020437240600585938,
+          "intensity_delta": 0.0010274648666381836,
+          "absolute_classification_delta": 0.0020437240600585938,
+          "absolute_intensity_delta": 0.0010274648666381836
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "the family prior",
+          "classification_margin_delta": 0.0010113716125488281,
+          "intensity_delta": 0.0005341768264770508,
+          "absolute_classification_delta": 0.0010113716125488281,
+          "absolute_intensity_delta": 0.0005341768264770508
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": "family prioriti",
+          "classification_margin_delta": 0.0015687942504882812,
+          "intensity_delta": 0.0006232261657714844,
+          "absolute_classification_delta": 0.0015687942504882812,
+          "absolute_intensity_delta": 0.0006232261657714844
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "prioritize",
+          "classification_margin_delta": 0.0032052993774414062,
+          "intensity_delta": 0.0011813640594482422,
+          "absolute_classification_delta": 0.0032052993774414062,
+          "absolute_intensity_delta": 0.0011813640594482422
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "itize education",
+          "classification_margin_delta": 0.0030965805053710938,
+          "intensity_delta": 0.001179814338684082,
+          "absolute_classification_delta": 0.0030965805053710938,
+          "absolute_intensity_delta": 0.001179814338684082
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "ze education because",
+          "classification_margin_delta": 0.002256155014038086,
+          "intensity_delta": 0.0009860992431640625,
+          "absolute_classification_delta": 0.002256155014038086,
+          "absolute_intensity_delta": 0.0009860992431640625
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "education because they",
+          "classification_margin_delta": 0.0012288093566894531,
+          "intensity_delta": 0.0007413625717163086,
+          "absolute_classification_delta": 0.0012288093566894531,
+          "absolute_intensity_delta": 0.0007413625717163086
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "because they believed",
+          "classification_margin_delta": -0.0036628246307373047,
+          "intensity_delta": -0.0008244514465332031,
+          "absolute_classification_delta": 0.0036628246307373047,
+          "absolute_intensity_delta": 0.0008244514465332031
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "they believed in",
+          "classification_margin_delta": -0.007999897003173828,
+          "intensity_delta": -0.0024161338806152344,
+          "absolute_classification_delta": 0.007999897003173828,
+          "absolute_intensity_delta": 0.0024161338806152344
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "believed in its",
+          "classification_margin_delta": -0.007068157196044922,
+          "intensity_delta": -0.0020056962966918945,
+          "absolute_classification_delta": 0.007068157196044922,
+          "absolute_intensity_delta": 0.0020056962966918945
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "in its power",
+          "classification_margin_delta": -0.0024776458740234375,
+          "intensity_delta": -0.0001823902130126953,
+          "absolute_classification_delta": 0.0024776458740234375,
+          "absolute_intensity_delta": 0.0001823902130126953
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "its power to",
+          "classification_margin_delta": -0.003956794738769531,
+          "intensity_delta": -0.0003788471221923828,
+          "absolute_classification_delta": 0.003956794738769531,
+          "absolute_intensity_delta": 0.0003788471221923828
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "power to transform",
+          "classification_margin_delta": -0.0010542869567871094,
+          "intensity_delta": 0.0014362335205078125,
+          "absolute_classification_delta": 0.0010542869567871094,
+          "absolute_intensity_delta": 0.0014362335205078125
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "to transform lives",
+          "classification_margin_delta": 0.11361432075500488,
+          "intensity_delta": 0.049332261085510254,
+          "absolute_classification_delta": 0.11361432075500488,
+          "absolute_intensity_delta": 0.049332261085510254
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "however",
+            ",",
+            "despite",
+            "their",
+            "poverty"
+          ],
+          "original_text_fragment": "However, despite their poverty",
+          "classification_margin_delta": 0.007320880889892578,
+          "intensity_delta": 0.003056049346923828,
+          "absolute_classification_delta": 0.007320880889892578,
+          "absolute_intensity_delta": 0.003056049346923828
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ",",
+            "despite",
+            "their",
+            "poverty",
+            ","
+          ],
+          "original_text_fragment": ", despite their poverty,",
+          "classification_margin_delta": 0.009038686752319336,
+          "intensity_delta": 0.0037419795989990234,
+          "absolute_classification_delta": 0.009038686752319336,
+          "absolute_intensity_delta": 0.0037419795989990234
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "despite their poverty, the",
+          "classification_margin_delta": 0.00916147232055664,
+          "intensity_delta": 0.0038601160049438477,
+          "absolute_classification_delta": 0.00916147232055664,
+          "absolute_intensity_delta": 0.0038601160049438477
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "their",
+            "poverty",
+            ",",
+            "the",
+            "family"
+          ],
+          "original_text_fragment": "their poverty, the family",
+          "classification_margin_delta": 0.006318569183349609,
+          "intensity_delta": 0.0028107166290283203,
+          "absolute_classification_delta": 0.006318569183349609,
+          "absolute_intensity_delta": 0.0028107166290283203
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "poverty",
+            ",",
+            "the",
+            "family",
+            "prior"
+          ],
+          "original_text_fragment": "poverty, the family prior",
+          "classification_margin_delta": 0.005756855010986328,
+          "intensity_delta": 0.0025063753128051758,
+          "absolute_classification_delta": 0.005756855010986328,
+          "absolute_intensity_delta": 0.0025063753128051758
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "the",
+            "family",
+            "prior",
+            "##iti"
+          ],
+          "original_text_fragment": ", the family prioriti",
+          "classification_margin_delta": 0.004377841949462891,
+          "intensity_delta": 0.0018970966339111328,
+          "absolute_classification_delta": 0.004377841949462891,
+          "absolute_intensity_delta": 0.0018970966339111328
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "family",
+            "prior",
+            "##iti",
+            "##ze"
+          ],
+          "original_text_fragment": "the family prioritize",
+          "classification_margin_delta": 0.0032405853271484375,
+          "intensity_delta": 0.0013930797576904297,
+          "absolute_classification_delta": 0.0032405853271484375,
+          "absolute_intensity_delta": 0.0013930797576904297
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "family",
+            "prior",
+            "##iti",
+            "##ze",
+            "education"
+          ],
+          "original_text_fragment": "family prioritize education",
+          "classification_margin_delta": 0.004309654235839844,
+          "intensity_delta": 0.0017511844635009766,
+          "absolute_classification_delta": 0.004309654235839844,
+          "absolute_intensity_delta": 0.0017511844635009766
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "prior",
+            "##iti",
+            "##ze",
+            "education",
+            "because"
+          ],
+          "original_text_fragment": "prioritize education because",
+          "classification_margin_delta": 0.005520820617675781,
+          "intensity_delta": 0.0022624731063842773,
+          "absolute_classification_delta": 0.005520820617675781,
+          "absolute_intensity_delta": 0.0022624731063842773
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "##iti",
+            "##ze",
+            "education",
+            "because",
+            "they"
+          ],
+          "original_text_fragment": "itize education because they",
+          "classification_margin_delta": 0.004059791564941406,
+          "intensity_delta": 0.0017997026443481445,
+          "absolute_classification_delta": 0.004059791564941406,
+          "absolute_intensity_delta": 0.0017997026443481445
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "##ze",
+            "education",
+            "because",
+            "they",
+            "believed"
+          ],
+          "original_text_fragment": "ze education because they believed",
+          "classification_margin_delta": -0.0009622573852539062,
+          "intensity_delta": 0.00022649765014648438,
+          "absolute_classification_delta": 0.0009622573852539062,
+          "absolute_intensity_delta": 0.00022649765014648438
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "education",
+            "because",
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "education because they believed in",
+          "classification_margin_delta": -0.006040334701538086,
+          "intensity_delta": -0.001518845558166504,
+          "absolute_classification_delta": 0.006040334701538086,
+          "absolute_intensity_delta": 0.001518845558166504
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "because",
+            "they",
+            "believed",
+            "in",
+            "its"
+          ],
+          "original_text_fragment": "because they believed in its",
+          "classification_margin_delta": -0.00616455078125,
+          "intensity_delta": -0.0014691352844238281,
+          "absolute_classification_delta": 0.00616455078125,
+          "absolute_intensity_delta": 0.0014691352844238281
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in",
+            "its",
+            "power"
+          ],
+          "original_text_fragment": "they believed in its power",
+          "classification_margin_delta": -0.00496983528137207,
+          "intensity_delta": -0.000825047492980957,
+          "absolute_classification_delta": 0.00496983528137207,
+          "absolute_intensity_delta": 0.000825047492980957
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "believed",
+            "in",
+            "its",
+            "power",
+            "to"
+          ],
+          "original_text_fragment": "believed in its power to",
+          "classification_margin_delta": -0.011489629745483398,
+          "intensity_delta": -0.002936244010925293,
+          "absolute_classification_delta": 0.011489629745483398,
+          "absolute_intensity_delta": 0.002936244010925293
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "in",
+            "its",
+            "power",
+            "to",
+            "transform"
+          ],
+          "original_text_fragment": "in its power to transform",
+          "classification_margin_delta": -0.0008268356323242188,
+          "intensity_delta": 0.002153158187866211,
+          "absolute_classification_delta": 0.0008268356323242188,
+          "absolute_intensity_delta": 0.002153158187866211
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.13691926002502441,
+          "intensity_delta": 0.05826389789581299,
+          "absolute_classification_delta": 0.13691926002502441,
+          "absolute_intensity_delta": 0.05826389789581299
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.13691926002502441,
+          "intensity_delta": 0.05826389789581299,
+          "absolute_classification_delta": 0.13691926002502441,
+          "absolute_intensity_delta": 0.05826389789581299
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "despite their poverty, the",
+          "classification_margin_delta": 0.00916147232055664,
+          "intensity_delta": 0.0038601160049438477,
+          "absolute_classification_delta": 0.00916147232055664,
+          "absolute_intensity_delta": 0.0038601160049438477
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "they believed in",
+          "classification_margin_delta": -0.007999897003173828,
+          "intensity_delta": -0.0024161338806152344,
+          "absolute_classification_delta": 0.007999897003173828,
+          "absolute_intensity_delta": 0.0024161338806152344
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "power",
+            "to",
+            "transform",
+            "lives"
+          ],
+          "original_text_fragment": "its power to transform lives",
+          "classification_margin_delta": 0.13691926002502441,
+          "intensity_delta": 0.05826389789581299,
+          "absolute_classification_delta": 0.13691926002502441,
+          "absolute_intensity_delta": 0.05826389789581299
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "despite",
+            "their",
+            "poverty",
+            ",",
+            "the"
+          ],
+          "original_text_fragment": "despite their poverty, the",
+          "classification_margin_delta": 0.00916147232055664,
+          "intensity_delta": 0.0038601160049438477,
+          "absolute_classification_delta": 0.00916147232055664,
+          "absolute_intensity_delta": 0.0038601160049438477
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "they",
+            "believed",
+            "in"
+          ],
+          "original_text_fragment": "they believed in",
+          "classification_margin_delta": -0.007999897003173828,
+          "intensity_delta": -0.0024161338806152344,
+          "absolute_classification_delta": 0.007999897003173828,
+          "absolute_intensity_delta": 0.0024161338806152344
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0007038116455078125,
+          0.0007622241973876953,
+          0.0017545223236083984,
+          0.0016064643859863281,
+          0.002106189727783203,
+          0.0019450187683105469,
+          0.0006978511810302734,
+          0.0003960132598876953,
+          0.0011985301971435547,
+          0.0009369850158691406,
+          0.0006647109985351562,
+          0.0009527206420898438,
+          0.00011038780212402344,
+          0.00048065185546875,
+          0.0034356117248535156,
+          0.004138469696044922,
+          0.0004885196685791016,
+          1.7881393432617188e-05,
+          0.008327960968017578,
+          0.0008747577667236328,
+          0.09366226196289062
+        ],
+        "3": [
+          0.0010685125986735027,
+          0.001242200533548991,
+          0.0014728175269232858,
+          0.0017893049452039932,
+          0.0018882486555311417,
+          0.001470645268758138,
+          0.0009103616078694662,
+          0.0005137655470106337,
+          0.0006428294711642795,
+          0.0008745193481445312,
+          0.0009508927663167318,
+          0.0007312827640109592,
+          0.0007941987779405382,
+          0.0014323923322889537,
+          0.0020812087588840057,
+          0.0019495222303602428,
+          0.0015002886454264324,
+          0.0008320808410644531,
+          0.013180600272284614,
+          0.019111434618632,
+          0.0378714402516683
+        ],
+        "5": [
+          0.0014641761779785156,
+          0.0016359567642211914,
+          0.0017014026641845703,
+          0.0015919804573059082,
+          0.0015038585662841798,
+          0.0013861370086669922,
+          0.0011542129516601564,
+          0.0009601402282714843,
+          0.0009282302856445313,
+          0.0008603477478027344,
+          0.000723724365234375,
+          0.000835714340209961,
+          0.0009099102020263672,
+          0.0008878707885742188,
+          0.0011850643157958983,
+          0.001179647445678711,
+          0.006414804458618165,
+          0.007710278034210205,
+          0.009949048360188803,
+          0.013774609565734864,
+          0.027383852005004882
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.6662337662337662
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.31428571428571433
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.6610389610389611
+        }
+      ]
+    }
+  }
+}

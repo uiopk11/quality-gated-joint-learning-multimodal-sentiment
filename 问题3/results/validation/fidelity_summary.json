@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "sample_count": 20,
+  "comparison_count": 354,
+  "top_at_least_random_mean_rate": 0.9548022598870056,
+  "mean_top_percentile": 0.9324858757062148,
+  "claim_boundary": "Faithfulness to frozen M1 under the declared masking baseline, not causal validity."
+}

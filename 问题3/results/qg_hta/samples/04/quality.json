@@ -1,0 +1,234 @@
+{
+  "sample_id": "04",
+  "official_text": "If I blow it at the team exercise, should I kiss my chances of cheering \"GO BLUE\" goodbye?] Absolutely not.",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "If I blow it at the team exercise should I kiss my chances of cheering go blue. Goodbye. Absolutely not.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "If",
+      "start": 0.0,
+      "end": 0.54
+    },
+    {
+      "index": 1,
+      "word": "I",
+      "start": 0.54,
+      "end": 0.64
+    },
+    {
+      "index": 2,
+      "word": "blow",
+      "start": 0.64,
+      "end": 0.92
+    },
+    {
+      "index": 3,
+      "word": "it",
+      "start": 0.92,
+      "end": 1.06
+    },
+    {
+      "index": 4,
+      "word": "at",
+      "start": 1.06,
+      "end": 1.16
+    },
+    {
+      "index": 5,
+      "word": "the",
+      "start": 1.16,
+      "end": 1.22
+    },
+    {
+      "index": 6,
+      "word": "team",
+      "start": 1.22,
+      "end": 1.42
+    },
+    {
+      "index": 7,
+      "word": "exercise",
+      "start": 1.42,
+      "end": 1.84
+    },
+    {
+      "index": 8,
+      "word": "should",
+      "start": 1.84,
+      "end": 2.3
+    },
+    {
+      "index": 9,
+      "word": "I",
+      "start": 2.3,
+      "end": 2.42
+    },
+    {
+      "index": 10,
+      "word": "kiss",
+      "start": 2.42,
+      "end": 2.64
+    },
+    {
+      "index": 11,
+      "word": "my",
+      "start": 2.64,
+      "end": 2.82
+    },
+    {
+      "index": 12,
+      "word": "chances",
+      "start": 2.82,
+      "end": 3.16
+    },
+    {
+      "index": 13,
+      "word": "of",
+      "start": 3.16,
+      "end": 3.38
+    },
+    {
+      "index": 14,
+      "word": "cheering",
+      "start": 3.38,
+      "end": 3.58
+    },
+    {
+      "index": 15,
+      "word": "go",
+      "start": 3.58,
+      "end": 3.94
+    },
+    {
+      "index": 16,
+      "word": "blue",
+      "start": 3.94,
+      "end": 4.38
+    },
+    {
+      "index": 17,
+      "word": "Goodbye",
+      "start": 4.38,
+      "end": 5.04
+    },
+    {
+      "index": 18,
+      "word": "Absolutely",
+      "start": 5.04,
+      "end": 5.72
+    },
+    {
+      "index": 19,
+      "word": "not",
+      "start": 5.72,
+      "end": 6.36
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -4.213158369349812,
+  "rms_dbfs": -22.670855861635,
+  "signal_activity_ratio": 0.4002932551319648,
+  "speech_present": true,
+  "exact_match_count": 20,
+  "reliable_match_count": 20,
+  "official_word_recall": 1.0,
+  "asr_word_precision": 1.0,
+  "word_f1": 1.0,
+  "character_similarity": 1.0,
+  "consistency_score": 1.0,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.0,
+    0.54,
+    0.64,
+    0.92,
+    1.06,
+    1.16,
+    1.22,
+    1.42,
+    1.84,
+    2.3,
+    2.42,
+    2.64,
+    2.82,
+    3.16,
+    3.38,
+    3.58,
+    3.94,
+    4.38,
+    5.04,
+    5.72
+  ],
+  "official_asr_ends": [
+    0.54,
+    0.64,
+    0.92,
+    1.06,
+    1.16,
+    1.22,
+    1.42,
+    1.84,
+    2.3,
+    2.42,
+    2.64,
+    2.82,
+    3.16,
+    3.38,
+    3.58,
+    3.94,
+    4.38,
+    5.04,
+    5.72,
+    6.36
+  ],
+  "official_comparison_unit_count": 20,
+  "asr_comparison_unit_count": 20,
+  "numeric_equivalence_count": 0
+}

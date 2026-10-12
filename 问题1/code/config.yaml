@@ -1,0 +1,116 @@
+project_root: <PROJECT_ROOT>
+data_root: <PROJECT_ROOT>/华为杯正式题目与数据/E题数据/附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条
+label_file: <PROJECT_ROOT>/华为杯正式题目与数据/E题数据/附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/label-100.xlsx
+output_root: <PROJECT_ROOT>/解答/第一问/输出
+
+tools:
+  ffmpeg: <PROJECT_ROOT>/.envs/q1/Library/bin/ffmpeg.exe
+  ffprobe: <PROJECT_ROOT>/.envs/q1/Library/bin/ffprobe.exe
+  openface: <PROJECT_ROOT>/工具/OpenFace_2.2.0_win_x64/FeatureExtraction.exe
+  mfa_env: <PROJECT_ROOT>/.envs/mfa
+  # MFA/Kaldi在Windows下不能可靠处理中文工作路径，以下两个目录必须保持纯英文。
+  mfa_root: <PROJECT_ROOT>/q1_work/mfa_data
+  mfa_work_root: <PROJECT_ROOT>/q1_work/mfa_io
+  mfa_dictionary: english_us_arpa
+  mfa_acoustic_model: english_us_arpa
+
+audio:
+  sample_rate: 16000
+  channels: 1
+  # 65个ComParE_2016 LLD + 下列9个关键声学量的一阶变化率 = 固定74维。
+  opensmile_feature_set: ComParE_2016
+  opensmile_feature_level: LowLevelDescriptors
+  delta_fields:
+    - F0final_sma
+    - voicingFinalUnclipped_sma
+    - jitterLocal_sma
+    - shimmerLocal_sma
+    - logHNR_sma
+    - audspec_lengthL1norm_sma
+    - pcm_RMSenergy_sma
+    - pcm_zcr_sma
+    - pcm_fftMag_spectralFlux_sma
+  target_dimension: 74
+  pooling: [mean]
+
+vision:
+  confidence_threshold: 0.80
+  # 31个连续字段 + 4个关键AU状态字段，顺序不得在样本间改变。
+  feature_fields:
+    - gaze_0_x
+    - gaze_0_y
+    - gaze_0_z
+    - gaze_1_x
+    - gaze_1_y
+    - gaze_1_z
+    - gaze_angle_x
+    - gaze_angle_y
+    - pose_Tx
+    - pose_Ty
+    - pose_Tz
+    - pose_Rx
+    - pose_Ry
+    - pose_Rz
+    - AU01_r
+    - AU02_r
+    - AU04_r
+    - AU05_r
+    - AU06_r
+    - AU07_r
+    - AU09_r
+    - AU10_r
+    - AU12_r
+    - AU14_r
+    - AU15_r
+    - AU17_r
+    - AU20_r
+    - AU23_r
+    - AU25_r
+    - AU26_r
+    - AU45_r
+    - AU12_c
+    - AU25_c
+    - AU26_c
+    - AU45_c
+  target_dimension: 35
+  pooling: [mean]
+
+text:
+  bert_model: <PROJECT_ROOT>/模型/bert-base-uncased
+  hidden_layer: -1
+  device: auto
+  model_max_tokens: 512
+
+sequence:
+  standard_length: 50
+  unaligned_length: 500
+  truncation: keep_special_tokens
+  padding_value: 0.0
+
+alignment:
+  # 阈值可在全量quality_audit.csv与人工复核后调整；代码不会用ASR覆盖官方文本。
+  low_threshold: 0.35
+  high_threshold: 0.75
+  threshold_status: provisional_until_manual_review
+  minimum_contiguous_matches: 2
+  mfa_minimum_word_match_ratio: 0.90
+  # 只有官方首词和末词均有可靠ASR锚点时，才允许全文MFA。
+  mfa_require_edge_anchors: true
+  # 在ASR定位出的官方文本窗口两端保留少量上下文，避免切断首尾音素。
+  mfa_window_padding_seconds: 0.03
+
+quality:
+  asr_model: <PROJECT_ROOT>/模型/whisper-small
+  asr_device: auto
+  asr_chunk_length_seconds: 30
+  silence_peak_dbfs: -50.0
+  energy_margin_db: 12.0
+  minimum_signal_activity_ratio: 0.02
+  minimum_asr_words_for_speech: 1
+
+runtime:
+  overwrite: false
+  continue_on_error: true
+  random_seed: 2026
+  save_frame_level_features: true
+  openface_quiet: true

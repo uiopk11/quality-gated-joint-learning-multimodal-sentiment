@@ -1,0 +1,236 @@
+{
+  "status": "passed",
+  "sample_count": 20,
+  "class_order": {
+    "0": "negative",
+    "1": "neutral",
+    "2": "positive"
+  },
+  "predicted_class_counts": {
+    "0": 8,
+    "1": 3,
+    "2": 9
+  },
+  "intensity_range": [
+    -1.9408255815505981,
+    1.5190097093582153
+  ],
+  "classification_margin_range": [
+    0.04208308458328247,
+    4.082180976867676
+  ],
+  "most_influential_modality_counts": {
+    "classification": {
+      "text": 19,
+      "vision": 1
+    },
+    "regression": {
+      "audio": 1,
+      "text": 18,
+      "vision": 1
+    }
+  },
+  "primary_supporting_modality_counts": {
+    "classification": {
+      "audio": 2,
+      "text": 18
+    },
+    "regression": {
+      "vision": 6,
+      "text": 10,
+      "None": 3,
+      "audio": 1
+    }
+  },
+  "max_probability_sum_error": 7.450580596923828e-08,
+  "max_shapley_efficiency_error": {
+    "classification": 8.881784197001252e-16,
+    "regression": 2.220446049250313e-16
+  },
+  "window_scale_spearman": {
+    "count": 177,
+    "mean": 0.646259418317008,
+    "min": -0.3362637362637363,
+    "max": 1.0
+  },
+  "samples": [
+    {
+      "sample_id": "01",
+      "pred_class": 1,
+      "intensity": 0.05109817534685135,
+      "margin": 0.10912874341011047,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "audio"
+    },
+    {
+      "sample_id": "02",
+      "pred_class": 2,
+      "intensity": 0.37435147166252136,
+      "margin": 0.763283908367157,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "03",
+      "pred_class": 0,
+      "intensity": -0.41741612553596497,
+      "margin": 1.2770103216171265,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "04",
+      "pred_class": 0,
+      "intensity": -0.8112455010414124,
+      "margin": 2.364853858947754,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "05",
+      "pred_class": 2,
+      "intensity": 0.37356314063072205,
+      "margin": 0.8617141246795654,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "06",
+      "pred_class": 2,
+      "intensity": 0.8387113809585571,
+      "margin": 1.9903514385223389,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "07",
+      "pred_class": 2,
+      "intensity": 1.0942620038986206,
+      "margin": 2.6342403888702393,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "08",
+      "pred_class": 2,
+      "intensity": 1.0957659482955933,
+      "margin": 2.5706939697265625,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "09",
+      "pred_class": 0,
+      "intensity": -1.9370590448379517,
+      "margin": 4.066644668579102,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "10",
+      "pred_class": 0,
+      "intensity": -1.8852566480636597,
+      "margin": 4.082180976867676,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "11",
+      "pred_class": 0,
+      "intensity": -1.5930311679840088,
+      "margin": 3.4831881523132324,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "12",
+      "pred_class": 0,
+      "intensity": -0.9237427115440369,
+      "margin": 2.4434046745300293,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "13",
+      "pred_class": 1,
+      "intensity": 0.0981336459517479,
+      "margin": 0.13570713996887207,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "14",
+      "pred_class": 1,
+      "intensity": 0.23007580637931824,
+      "margin": 0.04208308458328247,
+      "most_influential_classification": "vision",
+      "most_influential_intensity": "vision"
+    },
+    {
+      "sample_id": "15",
+      "pred_class": 2,
+      "intensity": 1.0749760866165161,
+      "margin": 2.7603306770324707,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "16",
+      "pred_class": 0,
+      "intensity": -1.9408255815505981,
+      "margin": 4.001716613769531,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "17",
+      "pred_class": 2,
+      "intensity": 1.5190097093582153,
+      "margin": 3.687856674194336,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "18",
+      "pred_class": 0,
+      "intensity": -0.32950180768966675,
+      "margin": 0.4744816720485687,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "19",
+      "pred_class": 2,
+      "intensity": 0.4012809991836548,
+      "margin": 1.212575912475586,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    },
+    {
+      "sample_id": "20",
+      "pred_class": 2,
+      "intensity": 0.6879358291625977,
+      "margin": 1.929922342300415,
+      "most_influential_classification": "text",
+      "most_influential_intensity": "text"
+    }
+  ],
+  "unavailable_observations": [
+    {
+      "sample_id": "13",
+      "modality": "vision"
+    }
+  ],
+  "attachment2_test_overlap_samples": [
+    "03",
+    "07",
+    "08",
+    "12",
+    "15"
+  ],
+  "truncated_text_samples": [
+    "07",
+    "18"
+  ],
+  "claim_boundary": "All attribution values are masking sensitivities, not causal effects."
+}

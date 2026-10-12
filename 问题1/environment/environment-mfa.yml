@@ -1,0 +1,9 @@
+name: huawei-e-mfa
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pytorch=*=cpu*
+  - kaldi=*=cpu*
+  - montreal-forced-aligner=3.3.*

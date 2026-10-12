@@ -1,0 +1,4189 @@
+{
+  "protocol": {
+    "model": "M1 complete-input joint predictor (legacy run id mt_m0_avstd_s1111_v1)",
+    "predictor": "frozen complete-input M1 EMT multitask model",
+    "classification_target": "fixed original argmax class logit margin",
+    "regression_target": "raw intensity output",
+    "modality_method": "exact three-player Shapley masking sensitivity over 8 coalitions",
+    "local_method": "multi-scale contiguous occlusion",
+    "window_sizes": [
+      1,
+      3,
+      5
+    ],
+    "causal_claim": false
+  },
+  "sample": {
+    "sample_id": "09",
+    "raw_text": "(uhh) I did not like this movie at all, I would not recommend it",
+    "body_length": 18,
+    "token_ids": [
+      1006,
+      7910,
+      2232,
+      1007,
+      1045,
+      2106,
+      2025,
+      2066,
+      2023,
+      3185,
+      2012,
+      2035,
+      1010,
+      1045,
+      2052,
+      2025,
+      16755,
+      2009
+    ],
+    "wordpieces": [
+      "(",
+      "uh",
+      "##h",
+      ")",
+      "i",
+      "did",
+      "not",
+      "like",
+      "this",
+      "movie",
+      "at",
+      "all",
+      ",",
+      "i",
+      "would",
+      "not",
+      "recommend",
+      "it"
+    ],
+    "text_offsets": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        12,
+        15
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        21,
+        25
+      ],
+      [
+        26,
+        31
+      ],
+      [
+        32,
+        34
+      ],
+      [
+        35,
+        38
+      ],
+      [
+        38,
+        39
+      ],
+      [
+        40,
+        41
+      ],
+      [
+        42,
+        47
+      ],
+      [
+        48,
+        51
+      ],
+      [
+        52,
+        61
+      ],
+      [
+        62,
+        64
+      ]
+    ],
+    "original_token_fragments": [
+      "(",
+      "uh",
+      "h",
+      ")",
+      "I",
+      "did",
+      "not",
+      "like",
+      "this",
+      "movie",
+      "at",
+      "all",
+      ",",
+      "I",
+      "would",
+      "not",
+      "recommend",
+      "it"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\09.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\09.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 18,
+    "retained_wordpiece_count": 18,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 64,
+    "audio_nonzero_body_rows": 18,
+    "vision_nonzero_body_rows": 18,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "modality_explanation": {
+    "target_class": 0,
+    "original_prediction": {
+      "logits": [
+        2.4030256271362305,
+        -1.6636192798614502,
+        -1.9213054180145264
+      ],
+      "probabilities": [
+        0.9705184102058411,
+        0.016629625111818314,
+        0.012851996347308159
+      ],
+      "pred_class": 0,
+      "intensity": -1.9370590448379517,
+      "classification_margin": 4.066644668579102
+    },
+    "classification": {
+      "signed_shapley": {
+        "text": 5.083552281061808,
+        "audio": -0.0738387902577718,
+        "vision": -0.005827029546101887
+      },
+      "absolute_share": {
+        "text": 0.9845705104360172,
+        "audio": 0.014300924116568262,
+        "vision": 0.0011285654474144542
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "text",
+      "primary_opposing_modality": "audio"
+    },
+    "regression": {
+      "signed_shapley": {
+        "text": -1.9831073631842928,
+        "audio": 0.004622782270113627,
+        "vision": 0.007103639344374338
+      },
+      "absolute_share": {
+        "text": 0.994121604665087,
+        "audio": 0.0023173771696371826,
+        "vision": 0.003561018165275802
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "vision",
+      "primary_opposing_modality": "text"
+    },
+    "leave_one_modality_out": {
+      "text": {
+        "classification_margin_delta": 5.115952968597412,
+        "intensity_delta": -1.9749731793999672
+      },
+      "audio": {
+        "classification_margin_delta": -0.04223918914794922,
+        "intensity_delta": 0.012256264686584473
+      },
+      "vision": {
+        "classification_margin_delta": -0.0006933212280273438,
+        "intensity_delta": 0.00828862190246582
+      }
+    },
+    "coalitions": [
+      {
+        "retained_modalities": [],
+        "classification_margin": -0.937241792678833,
+        "intensity": 0.034321896731853485,
+        "pred_class": 1,
+        "probabilities": [
+          0.19803115725517273,
+          0.5055597424507141,
+          0.29640907049179077
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio"
+        ],
+        "classification_margin": -1.0522418022155762,
+        "intensity": 0.03316321223974228,
+        "pred_class": 1,
+        "probabilities": [
+          0.17838184535503387,
+          0.510897159576416,
+          0.3107209801673889
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text"
+        ],
+        "classification_margin": 4.104348182678223,
+        "intensity": -1.9550676345825195,
+        "pred_class": 0,
+        "probabilities": [
+          0.9717605113983154,
+          0.016034798696637154,
+          0.012204664759337902
+        ]
+      },
+      {
+        "retained_modalities": [
+          "vision"
+        ],
+        "classification_margin": -0.9577641487121582,
+        "intensity": 0.042092569172382355,
+        "pred_class": 1,
+        "probabilities": [
+          0.19132249057292938,
+          0.4985603094100952,
+          0.3101171851158142
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio"
+        ],
+        "classification_margin": 4.067337989807129,
+        "intensity": -1.9453476667404175,
+        "pred_class": 0,
+        "probabilities": [
+          0.9707264304161072,
+          0.016621660441160202,
+          0.012651992030441761
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio",
+          "vision"
+        ],
+        "classification_margin": -1.0493083000183105,
+        "intensity": 0.03791413456201553,
+        "pred_class": 1,
+        "probabilities": [
+          0.17436160147190094,
+          0.49792009592056274,
+          0.3277183473110199
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "vision"
+        ],
+        "classification_margin": 4.108883857727051,
+        "intensity": -1.9493153095245361,
+        "pred_class": 0,
+        "probabilities": [
+          0.9717454314231873,
+          0.015961986035108566,
+          0.012292537838220596
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 4.066644668579102,
+        "intensity": -1.9370590448379517,
+        "pred_class": 0,
+        "probabilities": [
+          0.9705184102058411,
+          0.016629625111818314,
+          0.012851996347308159
+        ]
+      }
+    ],
+    "efficiency_error": {
+      "classification": -8.881784197001252e-16,
+      "regression": 2.220446049250313e-16
+    },
+    "interpretation_scope": "masking sensitivity relative to UNK/zero-row baselines, not causal effect"
+  },
+  "local_explanation": {
+    "text": {
+      "modality": "text",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "(",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "(",
+          "classification_signed": 0.018555418650309245,
+          "classification_absolute": 0.018555418650309245,
+          "classification_share": 0.017813630725327077,
+          "intensity_signed": -0.01801185343000624,
+          "intensity_absolute": 0.01801185343000624,
+          "intensity_share": 0.030194543374479185
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "uh",
+          "text_char_start": 1,
+          "text_char_end": 3,
+          "original_text_fragment": "uh",
+          "classification_signed": 0.0231095822652181,
+          "classification_absolute": 0.0231095822652181,
+          "classification_share": 0.0221857330436628,
+          "intensity_signed": -0.01877722104390462,
+          "intensity_absolute": 0.01877722104390462,
+          "intensity_share": 0.031477583218495295
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "##h",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "h",
+          "classification_signed": 0.030566147395542687,
+          "classification_absolute": 0.030566147395542687,
+          "classification_share": 0.02934420789212648,
+          "intensity_signed": -0.021445073400224956,
+          "intensity_absolute": 0.021445073400224956,
+          "intensity_share": 0.03594989274525525
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": ")",
+          "text_char_start": 4,
+          "text_char_end": 5,
+          "original_text_fragment": ")",
+          "classification_signed": 0.03841341733932495,
+          "classification_absolute": 0.03841341733932495,
+          "classification_share": 0.036877768390809466,
+          "intensity_signed": -0.024093773961067204,
+          "intensity_absolute": 0.024093773961067204,
+          "intensity_share": 0.040390096763189616
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "i",
+          "text_char_start": 6,
+          "text_char_end": 7,
+          "original_text_fragment": "I",
+          "classification_signed": 0.044730873461122866,
+          "classification_absolute": 0.044730873461122866,
+          "classification_share": 0.04294267226595267,
+          "intensity_signed": -0.025908487814444082,
+          "intensity_absolute": 0.025908487814444082,
+          "intensity_share": 0.04343222989907076
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "did",
+          "text_char_start": 8,
+          "text_char_end": 11,
+          "original_text_fragment": "did",
+          "classification_signed": 0.06612956435592086,
+          "classification_absolute": 0.06612956435592086,
+          "classification_share": 0.06348591005482344,
+          "intensity_signed": -0.035360535868891964,
+          "intensity_absolute": 0.035360535868891964,
+          "intensity_share": 0.059277366329186
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "not",
+          "text_char_start": 12,
+          "text_char_end": 15,
+          "original_text_fragment": "not",
+          "classification_signed": 0.08822650909423829,
+          "classification_absolute": 0.08822650909423829,
+          "classification_share": 0.08469948767031883,
+          "intensity_signed": -0.04968879399476229,
+          "intensity_absolute": 0.04968879399476229,
+          "intensity_share": 0.08329683845866666
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "like",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "like",
+          "classification_signed": 0.11170602021393952,
+          "classification_absolute": 0.11170602021393952,
+          "classification_share": 0.10724036096344704,
+          "intensity_signed": -0.06226105778305619,
+          "intensity_absolute": 0.06226105778305619,
+          "intensity_share": 0.10437261312817565
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "this",
+          "text_char_start": 21,
+          "text_char_end": 25,
+          "original_text_fragment": "this",
+          "classification_signed": 0.09750054500721118,
+          "classification_absolute": 0.09750054500721118,
+          "classification_share": 0.0936027764723943,
+          "intensity_signed": -0.05783719751569959,
+          "intensity_absolute": 0.05783719751569959,
+          "intensity_share": 0.09695658338729363
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "movie",
+          "text_char_start": 26,
+          "text_char_end": 31,
+          "original_text_fragment": "movie",
+          "classification_signed": 0.0913497147736726,
+          "classification_absolute": 0.0913497147736726,
+          "classification_share": 0.08769783730075198,
+          "intensity_signed": -0.054226400234081124,
+          "intensity_absolute": 0.054226400234081124,
+          "intensity_share": 0.0909035486143895
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "at",
+          "text_char_start": 32,
+          "text_char_end": 34,
+          "original_text_fragment": "at",
+          "classification_signed": 0.05471109284294976,
+          "classification_absolute": 0.05471109284294976,
+          "classification_share": 0.05252391351822986,
+          "intensity_signed": -0.03231324972929778,
+          "intensity_absolute": 0.03231324972929778,
+          "intensity_share": 0.05416898512488736
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "all",
+          "text_char_start": 35,
+          "text_char_end": 38,
+          "original_text_fragment": "all",
+          "classification_signed": 0.03975720582184969,
+          "classification_absolute": 0.03975720582184969,
+          "classification_share": 0.038167836389369256,
+          "intensity_signed": -0.02302759841636375,
+          "intensity_absolute": 0.02302759841636375,
+          "intensity_share": 0.03860279131711447
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": ",",
+          "text_char_start": 38,
+          "text_char_end": 39,
+          "original_text_fragment": ",",
+          "classification_signed": 0.02268099961457429,
+          "classification_absolute": 0.02268099961457429,
+          "classification_share": 0.021774283794377153,
+          "intensity_signed": -0.01288180086347792,
+          "intensity_absolute": 0.01288180086347792,
+          "intensity_share": 0.02159467355345633
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "i",
+          "text_char_start": 40,
+          "text_char_end": 41,
+          "original_text_fragment": "I",
+          "classification_signed": 0.029832414344505027,
+          "classification_absolute": 0.029832414344505027,
+          "classification_share": 0.028639807206349736,
+          "intensity_signed": -0.017397338372689707,
+          "intensity_absolute": 0.017397338372689707,
+          "intensity_share": 0.02916438833660265
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "would",
+          "text_char_start": 42,
+          "text_char_end": 47,
+          "original_text_fragment": "would",
+          "classification_signed": 0.03708864649136861,
+          "classification_absolute": 0.03708864649136861,
+          "classification_share": 0.03560595776093832,
+          "intensity_signed": -0.01895217994848887,
+          "intensity_absolute": 0.01895217994848887,
+          "intensity_share": 0.03177087920015256
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "not",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "not",
+          "classification_signed": 0.07000595274425689,
+          "classification_absolute": 0.07000595274425689,
+          "classification_share": 0.06720733249206999,
+          "intensity_signed": -0.037058061645144504,
+          "intensity_absolute": 0.037058061645144504,
+          "intensity_share": 0.06212304880598018
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "recommend",
+          "text_char_start": 52,
+          "text_char_end": 61,
+          "original_text_fragment": "recommend",
+          "classification_signed": 0.08616554578145344,
+          "classification_absolute": 0.08616554578145344,
+          "classification_share": 0.08272091526059397,
+          "intensity_signed": -0.039029603004455564,
+          "intensity_absolute": 0.039029603004455564,
+          "intensity_share": 0.06542808297803966
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "it",
+          "text_char_start": 62,
+          "text_char_end": 64,
+          "original_text_fragment": "it",
+          "classification_signed": 0.0911119408077664,
+          "classification_absolute": 0.0911119408077664,
+          "classification_share": 0.08746956879845769,
+          "intensity_signed": -0.048256542947557234,
+          "intensity_absolute": 0.048256542947557234,
+          "intensity_share": 0.08089585476556532
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "("
+          ],
+          "original_text_fragment": "(",
+          "classification_margin_delta": 0.013528823852539062,
+          "intensity_delta": -0.015668392181396484,
+          "absolute_classification_delta": 0.013528823852539062,
+          "absolute_intensity_delta": 0.015668392181396484
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "uh"
+          ],
+          "original_text_fragment": "uh",
+          "classification_margin_delta": 0.011655807495117188,
+          "intensity_delta": -0.015330076217651367,
+          "absolute_classification_delta": 0.011655807495117188,
+          "absolute_intensity_delta": 0.015330076217651367
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "##h"
+          ],
+          "original_text_fragment": "h",
+          "classification_margin_delta": 0.030080795288085938,
+          "intensity_delta": -0.020933866500854492,
+          "absolute_classification_delta": 0.030080795288085938,
+          "absolute_intensity_delta": 0.020933866500854492
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ")"
+          ],
+          "original_text_fragment": ")",
+          "classification_margin_delta": 0.033949851989746094,
+          "intensity_delta": -0.025198817253112793,
+          "absolute_classification_delta": 0.033949851989746094,
+          "absolute_intensity_delta": 0.025198817253112793
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 0.03444957733154297,
+          "intensity_delta": -0.0233304500579834,
+          "absolute_classification_delta": 0.03444957733154297,
+          "absolute_intensity_delta": 0.0233304500579834
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "did"
+          ],
+          "original_text_fragment": "did",
+          "classification_margin_delta": 0.03257274627685547,
+          "intensity_delta": -0.018577098846435547,
+          "absolute_classification_delta": 0.03257274627685547,
+          "absolute_intensity_delta": 0.018577098846435547
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": 0.06570911407470703,
+          "intensity_delta": -0.06035459041595459,
+          "absolute_classification_delta": 0.06570911407470703,
+          "absolute_intensity_delta": 0.06035459041595459
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "like"
+          ],
+          "original_text_fragment": "like",
+          "classification_margin_delta": 0.05816364288330078,
+          "intensity_delta": -0.03787243366241455,
+          "absolute_classification_delta": 0.05816364288330078,
+          "absolute_intensity_delta": 0.03787243366241455
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": 0.024666309356689453,
+          "intensity_delta": -0.03420531749725342,
+          "absolute_classification_delta": 0.024666309356689453,
+          "absolute_intensity_delta": 0.03420531749725342
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": 0.0789942741394043,
+          "intensity_delta": -0.055169105529785156,
+          "absolute_classification_delta": 0.0789942741394043,
+          "absolute_intensity_delta": 0.055169105529785156
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "at"
+          ],
+          "original_text_fragment": "at",
+          "classification_margin_delta": 0.04384660720825195,
+          "intensity_delta": -0.029870271682739258,
+          "absolute_classification_delta": 0.04384660720825195,
+          "absolute_intensity_delta": 0.029870271682739258
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "all"
+          ],
+          "original_text_fragment": "all",
+          "classification_margin_delta": 0.03844738006591797,
+          "intensity_delta": -0.017842411994934082,
+          "absolute_classification_delta": 0.03844738006591797,
+          "absolute_intensity_delta": 0.017842411994934082
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.021988391876220703,
+          "intensity_delta": -0.013037562370300293,
+          "absolute_classification_delta": 0.021988391876220703,
+          "absolute_intensity_delta": 0.013037562370300293
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 0.023714065551757812,
+          "intensity_delta": -0.020521998405456543,
+          "absolute_classification_delta": 0.023714065551757812,
+          "absolute_intensity_delta": 0.020521998405456543
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": 0.005826473236083984,
+          "intensity_delta": -0.0024428367614746094,
+          "absolute_classification_delta": 0.005826473236083984,
+          "absolute_intensity_delta": 0.0024428367614746094
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": 0.0888054370880127,
+          "intensity_delta": -0.0587921142578125,
+          "absolute_classification_delta": 0.0888054370880127,
+          "absolute_intensity_delta": 0.0587921142578125
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "recommend"
+          ],
+          "original_text_fragment": "recommend",
+          "classification_margin_delta": 0.10030937194824219,
+          "intensity_delta": -0.045209646224975586,
+          "absolute_classification_delta": 0.10030937194824219,
+          "absolute_intensity_delta": 0.045209646224975586
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "it",
+          "classification_margin_delta": 0.06282281875610352,
+          "intensity_delta": -0.043902039527893066,
+          "absolute_classification_delta": 0.06282281875610352,
+          "absolute_intensity_delta": 0.043902039527893066
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h"
+          ],
+          "original_text_fragment": "(uhh",
+          "classification_margin_delta": 0.0634775161743164,
+          "intensity_delta": -0.06153392791748047,
+          "absolute_classification_delta": 0.0634775161743164,
+          "absolute_intensity_delta": 0.06153392791748047
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")"
+          ],
+          "original_text_fragment": "uhh)",
+          "classification_margin_delta": 0.07588052749633789,
+          "intensity_delta": -0.06213212013244629,
+          "absolute_classification_delta": 0.07588052749633789,
+          "absolute_intensity_delta": 0.06213212013244629
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "h) I",
+          "classification_margin_delta": 0.08407926559448242,
+          "intensity_delta": -0.06301820278167725,
+          "absolute_classification_delta": 0.08407926559448242,
+          "absolute_intensity_delta": 0.06301820278167725
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": ") I did",
+          "classification_margin_delta": 0.1410963535308838,
+          "intensity_delta": -0.07350265979766846,
+          "absolute_classification_delta": 0.1410963535308838,
+          "absolute_intensity_delta": 0.07350265979766846
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "I did not",
+          "classification_margin_delta": 0.19112777709960938,
+          "intensity_delta": -0.09962058067321777,
+          "absolute_classification_delta": 0.19112777709960938,
+          "absolute_intensity_delta": 0.09962058067321777
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": "did not like",
+          "classification_margin_delta": 0.2770977020263672,
+          "intensity_delta": -0.13016939163208008,
+          "absolute_classification_delta": 0.2770977020263672,
+          "absolute_intensity_delta": 0.13016939163208008
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "not like this",
+          "classification_margin_delta": 0.326995849609375,
+          "intensity_delta": -0.16438257694244385,
+          "absolute_classification_delta": 0.326995849609375,
+          "absolute_intensity_delta": 0.16438257694244385
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "like this movie",
+          "classification_margin_delta": 0.5472240447998047,
+          "intensity_delta": -0.32877111434936523,
+          "absolute_classification_delta": 0.5472240447998047,
+          "absolute_intensity_delta": 0.32877111434936523
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "this movie at",
+          "classification_margin_delta": 0.13096857070922852,
+          "intensity_delta": -0.08524107933044434,
+          "absolute_classification_delta": 0.13096857070922852,
+          "absolute_intensity_delta": 0.08524107933044434
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "movie at all",
+          "classification_margin_delta": 0.11177921295166016,
+          "intensity_delta": -0.06699490547180176,
+          "absolute_classification_delta": 0.11177921295166016,
+          "absolute_intensity_delta": 0.06699490547180176
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "at all,",
+          "classification_margin_delta": 0.06532859802246094,
+          "intensity_delta": -0.040486693382263184,
+          "absolute_classification_delta": 0.06532859802246094,
+          "absolute_intensity_delta": 0.040486693382263184
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "all, I",
+          "classification_margin_delta": 0.05097627639770508,
+          "intensity_delta": -0.031888723373413086,
+          "absolute_classification_delta": 0.05097627639770508,
+          "absolute_intensity_delta": 0.031888723373413086
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": ", I would",
+          "classification_margin_delta": 0.04097747802734375,
+          "intensity_delta": -0.024516701698303223,
+          "absolute_classification_delta": 0.04097747802734375,
+          "absolute_intensity_delta": 0.024516701698303223
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "I would not",
+          "classification_margin_delta": 0.09902620315551758,
+          "intensity_delta": -0.08421945571899414,
+          "absolute_classification_delta": 0.09902620315551758,
+          "absolute_intensity_delta": 0.08421945571899414
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": "would not recommend",
+          "classification_margin_delta": 0.24451684951782227,
+          "intensity_delta": -0.09765040874481201,
+          "absolute_classification_delta": 0.24451684951782227,
+          "absolute_intensity_delta": 0.09765040874481201
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": 0.4234452247619629,
+          "intensity_delta": -0.2072434425354004,
+          "absolute_classification_delta": 0.4234452247619629,
+          "absolute_intensity_delta": 0.2072434425354004
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "(uhh) I",
+          "classification_margin_delta": 0.10489130020141602,
+          "intensity_delta": -0.08927929401397705,
+          "absolute_classification_delta": 0.10489130020141602,
+          "absolute_intensity_delta": 0.08927929401397705
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": "uhh) I did",
+          "classification_margin_delta": 0.18230581283569336,
+          "intensity_delta": -0.09739077091217041,
+          "absolute_classification_delta": 0.18230581283569336,
+          "absolute_intensity_delta": 0.09739077091217041
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "h) I did not",
+          "classification_margin_delta": 0.25981855392456055,
+          "intensity_delta": -0.14809775352478027,
+          "absolute_classification_delta": 0.25981855392456055,
+          "absolute_intensity_delta": 0.14809775352478027
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ")",
+            "i",
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": ") I did not like",
+          "classification_margin_delta": 0.3180115222930908,
+          "intensity_delta": -0.17190074920654297,
+          "absolute_classification_delta": 0.3180115222930908,
+          "absolute_intensity_delta": 0.17190074920654297
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "i",
+            "did",
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "I did not like this",
+          "classification_margin_delta": 0.28177523612976074,
+          "intensity_delta": -0.14899206161499023,
+          "absolute_classification_delta": 0.28177523612976074,
+          "absolute_intensity_delta": 0.14899206161499023
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "did",
+            "not",
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "did not like this movie",
+          "classification_margin_delta": 0.7555191516876221,
+          "intensity_delta": -0.4264695644378662,
+          "absolute_classification_delta": 0.7555191516876221,
+          "absolute_intensity_delta": 0.4264695644378662
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "not",
+            "like",
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "not like this movie at",
+          "classification_margin_delta": 0.7011539936065674,
+          "intensity_delta": -0.38180840015411377,
+          "absolute_classification_delta": 0.7011539936065674,
+          "absolute_intensity_delta": 0.38180840015411377
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "like this movie at all",
+          "classification_margin_delta": 0.7606301307678223,
+          "intensity_delta": -0.44434285163879395,
+          "absolute_classification_delta": 0.7606301307678223,
+          "absolute_intensity_delta": 0.44434285163879395
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "this movie at all,",
+          "classification_margin_delta": 0.08980035781860352,
+          "intensity_delta": -0.06604313850402832,
+          "absolute_classification_delta": 0.08980035781860352,
+          "absolute_intensity_delta": 0.06604313850402832
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "movie at all, I",
+          "classification_margin_delta": 0.09204244613647461,
+          "intensity_delta": -0.04400002956390381,
+          "absolute_classification_delta": 0.09204244613647461,
+          "absolute_intensity_delta": 0.04400002956390381
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "at",
+            "all",
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": "at all, I would",
+          "classification_margin_delta": 0.0856785774230957,
+          "intensity_delta": -0.04734599590301514,
+          "absolute_classification_delta": 0.0856785774230957,
+          "absolute_intensity_delta": 0.04734599590301514
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "all",
+            ",",
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "all, I would not",
+          "classification_margin_delta": 0.18854570388793945,
+          "intensity_delta": -0.11301398277282715,
+          "absolute_classification_delta": 0.18854570388793945,
+          "absolute_intensity_delta": 0.11301398277282715
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            ",",
+            "i",
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": ", I would not recommend",
+          "classification_margin_delta": 0.19249868392944336,
+          "intensity_delta": -0.08260321617126465,
+          "absolute_classification_delta": 0.19249868392944336,
+          "absolute_intensity_delta": 0.08260321617126465
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "i",
+            "would",
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "I would not recommend it",
+          "classification_margin_delta": 0.34682297706604004,
+          "intensity_delta": -0.15893220901489258,
+          "absolute_classification_delta": 0.34682297706604004,
+          "absolute_intensity_delta": 0.15893220901489258
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "like this movie at all",
+          "classification_margin_delta": 0.7606301307678223,
+          "intensity_delta": -0.44434285163879395,
+          "absolute_classification_delta": 0.7606301307678223,
+          "absolute_intensity_delta": 0.44434285163879395
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": 0.4234452247619629,
+          "intensity_delta": -0.2072434425354004,
+          "absolute_classification_delta": 0.4234452247619629,
+          "absolute_intensity_delta": 0.2072434425354004
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "h) I did not",
+          "classification_margin_delta": 0.25981855392456055,
+          "intensity_delta": -0.14809775352478027,
+          "absolute_classification_delta": 0.25981855392456055,
+          "absolute_intensity_delta": 0.14809775352478027
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "like this movie at all",
+          "classification_margin_delta": 0.7606301307678223,
+          "intensity_delta": -0.44434285163879395,
+          "absolute_classification_delta": 0.7606301307678223,
+          "absolute_intensity_delta": 0.44434285163879395
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": 0.4234452247619629,
+          "intensity_delta": -0.2072434425354004,
+          "absolute_classification_delta": 0.4234452247619629,
+          "absolute_intensity_delta": 0.2072434425354004
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "h) I did not",
+          "classification_margin_delta": 0.25981855392456055,
+          "intensity_delta": -0.14809775352478027,
+          "absolute_classification_delta": 0.25981855392456055,
+          "absolute_intensity_delta": 0.14809775352478027
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.013528823852539062,
+          0.011655807495117188,
+          0.030080795288085938,
+          0.033949851989746094,
+          0.03444957733154297,
+          0.03257274627685547,
+          0.06570911407470703,
+          0.05816364288330078,
+          0.024666309356689453,
+          0.0789942741394043,
+          0.04384660720825195,
+          0.03844738006591797,
+          0.021988391876220703,
+          0.023714065551757812,
+          0.005826473236083984,
+          0.0888054370880127,
+          0.10030937194824219,
+          0.06282281875610352
+        ],
+        "3": [
+          0.02115917205810547,
+          0.02322634061177572,
+          0.0248263676961263,
+          0.033450682957967125,
+          0.04625593291388617,
+          0.06770242585076226,
+          0.08835792541503906,
+          0.12792417738172743,
+          0.11168760723537868,
+          0.08777464760674371,
+          0.034230709075927734,
+          0.02534267637464735,
+          0.017475816938612197,
+          0.0212199952867296,
+          0.04272450341118706,
+          0.08522091971503365,
+          0.1113270123799642,
+          0.14114840825398764
+        ],
+        "5": [
+          0.020978260040283202,
+          0.02871971130371094,
+          0.03646771113077799,
+          0.04325135946273804,
+          0.045872097015380864,
+          0.07189721107482912,
+          0.09265113830566407,
+          0.11268360137939455,
+          0.10355515480041504,
+          0.0959658432006836,
+          0.06917222023010253,
+          0.048667888641357425,
+          0.025942630767822265,
+          0.03622353553771973,
+          0.04067729711532593,
+          0.04852449099222819,
+          0.053932166099548345,
+          0.06936459541320801
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.6738906088751291
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.6449948400412797
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.8761609907120743
+        }
+      ]
+    },
+    "audio": {
+      "modality": "audio",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "(",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "(",
+          "classification_signed": 0.00022283130221896702,
+          "classification_absolute": 0.00022283130221896702,
+          "classification_share": 0.006150638906584179,
+          "intensity_signed": 0.00013158056471082897,
+          "intensity_absolute": 0.00013158056471082897,
+          "intensity_share": 0.009756712548746178
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "uh",
+          "text_char_start": 1,
+          "text_char_end": 3,
+          "original_text_fragment": "uh",
+          "classification_signed": 0.00013387680053710937,
+          "classification_absolute": 0.00013387680053710937,
+          "classification_share": 0.00369529706945484,
+          "intensity_signed": 0.00014876683553059894,
+          "intensity_absolute": 0.00014876683553059894,
+          "intensity_share": 0.011031076316236529
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "##h",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "h",
+          "classification_signed": 9.398687453497024e-05,
+          "classification_absolute": 0.00010780152820405507,
+          "classification_share": 0.002975561633210504,
+          "intensity_signed": 0.00014679204849969772,
+          "intensity_absolute": 0.00014679204849969772,
+          "intensity_share": 0.010884645652651534
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": ")",
+          "text_char_start": 4,
+          "text_char_end": 5,
+          "original_text_fragment": ")",
+          "classification_signed": 6.671349207560221e-05,
+          "classification_absolute": 0.00010598103205362957,
+          "classification_share": 0.002925311895670978,
+          "intensity_signed": 0.0001320679982503255,
+          "intensity_absolute": 0.0001320679982503255,
+          "intensity_share": 0.009792855796359815
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "i",
+          "text_char_start": 6,
+          "text_char_end": 7,
+          "original_text_fragment": "I",
+          "classification_signed": 5.141010990849248e-05,
+          "classification_absolute": 0.00010891313906069157,
+          "classification_share": 0.0030062445620258247,
+          "intensity_signed": 0.00012178774233217592,
+          "intensity_absolute": 0.00012178774233217592,
+          "intensity_share": 0.00903057375158092
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "did",
+          "text_char_start": 8,
+          "text_char_end": 11,
+          "original_text_fragment": "did",
+          "classification_signed": -2.2481988977502896e-05,
+          "classification_absolute": 9.842978583441839e-05,
+          "classification_share": 0.0027168807267706706,
+          "intensity_signed": 0.00014739124863236039,
+          "intensity_absolute": 0.00014739124863236039,
+          "intensity_share": 0.01092907640476457
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "not",
+          "text_char_start": 12,
+          "text_char_end": 15,
+          "original_text_fragment": "not",
+          "classification_signed": -0.00020964233963577836,
+          "classification_absolute": 0.00022827784220377605,
+          "classification_share": 0.006300975508323885,
+          "intensity_signed": 0.0002886463094640661,
+          "intensity_absolute": 0.0002886463094640661,
+          "intensity_share": 0.021403153846364004
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "like",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "like",
+          "classification_signed": -0.00021838082207573787,
+          "classification_absolute": 0.000292329434995298,
+          "classification_share": 0.008068941744347113,
+          "intensity_signed": 0.00033302572038438586,
+          "intensity_absolute": 0.0003410789701673719,
+          "intensity_share": 0.025291041086948192
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "this",
+          "text_char_start": 21,
+          "text_char_end": 25,
+          "original_text_fragment": "this",
+          "classification_signed": -0.0005853193777578848,
+          "classification_absolute": 0.0005853193777578848,
+          "classification_share": 0.01615611497022816,
+          "intensity_signed": 0.0006083523785626447,
+          "intensity_absolute": 0.0006083523785626447,
+          "intensity_share": 0.04510939209773169
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "movie",
+          "text_char_start": 26,
+          "text_char_end": 31,
+          "original_text_fragment": "movie",
+          "classification_signed": -0.0007743623521592881,
+          "classification_absolute": 0.0007743623521592881,
+          "classification_share": 0.02137412097652568,
+          "intensity_signed": 0.000707299621016891,
+          "intensity_absolute": 0.000707299621016891,
+          "intensity_share": 0.052446340409504084
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "at",
+          "text_char_start": 32,
+          "text_char_end": 34,
+          "original_text_fragment": "at",
+          "classification_signed": -0.0012624917206940827,
+          "classification_absolute": 0.0012624917206940827,
+          "classification_share": 0.03484757580831692,
+          "intensity_signed": 0.0008956600118566442,
+          "intensity_absolute": 0.0008956600118566442,
+          "intensity_share": 0.06641328296695388
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "all",
+          "text_char_start": 35,
+          "text_char_end": 38,
+          "original_text_fragment": "all",
+          "classification_signed": -0.0017659646493417246,
+          "classification_absolute": 0.0017659646493417246,
+          "classification_share": 0.04874454698119589,
+          "intensity_signed": 0.0010642872916327582,
+          "intensity_absolute": 0.0010642872916327582,
+          "intensity_share": 0.0789170132881321
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": ",",
+          "text_char_start": 38,
+          "text_char_end": 39,
+          "original_text_fragment": ",",
+          "classification_signed": -0.0022116802356861257,
+          "classification_absolute": 0.0022116802356861257,
+          "classification_share": 0.06104728721266911,
+          "intensity_signed": 0.0011345563111481846,
+          "intensity_absolute": 0.0011345563111481846,
+          "intensity_share": 0.08412746838840442
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "i",
+          "text_char_start": 40,
+          "text_char_end": 41,
+          "original_text_fragment": "I",
+          "classification_signed": -0.0029909451802571613,
+          "classification_absolute": 0.0029909451802571613,
+          "classification_share": 0.08255673062967125,
+          "intensity_signed": 0.001206595809371383,
+          "intensity_absolute": 0.001206595809371383,
+          "intensity_share": 0.08946920466886753
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "would",
+          "text_char_start": 42,
+          "text_char_end": 47,
+          "original_text_fragment": "would",
+          "classification_signed": -0.003510705629984538,
+          "classification_absolute": 0.003510705629984538,
+          "classification_share": 0.0969032735631029,
+          "intensity_signed": 0.0012891680002212525,
+          "intensity_absolute": 0.0012891680002212525,
+          "intensity_share": 0.09559194120228265
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "not",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "not",
+          "classification_signed": -0.004638830820719401,
+          "classification_absolute": 0.004638830820719401,
+          "classification_share": 0.1280420346821004,
+          "intensity_signed": 0.0011911255972726004,
+          "intensity_absolute": 0.0011911255972726004,
+          "intensity_share": 0.0883220868338919
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "recommend",
+          "text_char_start": 52,
+          "text_char_end": 61,
+          "original_text_fragment": "recommend",
+          "classification_signed": -0.004834105173746745,
+          "classification_absolute": 0.004834105173746745,
+          "classification_share": 0.1334320405799603,
+          "intensity_signed": 0.0004030179977416993,
+          "intensity_absolute": 0.0012447309494018556,
+          "intensity_share": 0.09229692926559045
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "it",
+          "text_char_start": 62,
+          "text_char_end": 64,
+          "original_text_fragment": "it",
+          "classification_signed": -0.012356122334798178,
+          "classification_absolute": 0.012356122334798178,
+          "classification_share": 0.34105642254984136,
+          "intensity_signed": 0.0026862700780232746,
+          "intensity_absolute": 0.0026862700780232746,
+          "intensity_share": 0.19918720547498964
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "("
+          ],
+          "original_text_fragment": "(",
+          "classification_margin_delta": 0.000255584716796875,
+          "intensity_delta": 0.00011336803436279297,
+          "absolute_classification_delta": 0.000255584716796875,
+          "absolute_intensity_delta": 0.00011336803436279297
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "uh"
+          ],
+          "original_text_fragment": "uh",
+          "classification_margin_delta": 5.1021575927734375e-05,
+          "intensity_delta": 0.00016760826110839844,
+          "absolute_classification_delta": 5.1021575927734375e-05,
+          "absolute_intensity_delta": 0.00016760826110839844
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "##h"
+          ],
+          "original_text_fragment": "h",
+          "classification_margin_delta": -4.38690185546875e-05,
+          "intensity_delta": 0.00017523765563964844,
+          "absolute_classification_delta": 4.38690185546875e-05,
+          "absolute_intensity_delta": 0.00017523765563964844
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ")"
+          ],
+          "original_text_fragment": ")",
+          "classification_margin_delta": -0.000152587890625,
+          "intensity_delta": 0.00020170211791992188,
+          "absolute_classification_delta": 0.000152587890625,
+          "absolute_intensity_delta": 0.00020170211791992188
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 7.104873657226562e-05,
+          "intensity_delta": 1.3232231140136719e-05,
+          "absolute_classification_delta": 7.104873657226562e-05,
+          "absolute_intensity_delta": 1.3232231140136719e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "did"
+          ],
+          "original_text_fragment": "did",
+          "classification_margin_delta": -6.008148193359375e-05,
+          "intensity_delta": 1.0251998901367188e-05,
+          "absolute_classification_delta": 6.008148193359375e-05,
+          "absolute_intensity_delta": 1.0251998901367188e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": -0.0006618499755859375,
+          "intensity_delta": 0.00046133995056152344,
+          "absolute_classification_delta": 0.0006618499755859375,
+          "absolute_intensity_delta": 0.00046133995056152344
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "like"
+          ],
+          "original_text_fragment": "like",
+          "classification_margin_delta": 0.00024890899658203125,
+          "intensity_delta": -3.62396240234375e-05,
+          "absolute_classification_delta": 0.00024890899658203125,
+          "absolute_intensity_delta": 3.62396240234375e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": -0.0010156631469726562,
+          "intensity_delta": 0.0009877681732177734,
+          "absolute_classification_delta": 0.0010156631469726562,
+          "absolute_intensity_delta": 0.0009877681732177734
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": -0.0005192756652832031,
+          "intensity_delta": 0.0007505416870117188,
+          "absolute_classification_delta": 0.0005192756652832031,
+          "absolute_intensity_delta": 0.0007505416870117188
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "at"
+          ],
+          "original_text_fragment": "at",
+          "classification_margin_delta": -0.0014905929565429688,
+          "intensity_delta": 0.0011194944381713867,
+          "absolute_classification_delta": 0.0014905929565429688,
+          "absolute_intensity_delta": 0.0011194944381713867
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "all"
+          ],
+          "original_text_fragment": "all",
+          "classification_margin_delta": -0.0022406578063964844,
+          "intensity_delta": 0.0013501644134521484,
+          "absolute_classification_delta": 0.0022406578063964844,
+          "absolute_intensity_delta": 0.0013501644134521484
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.0024366378784179688,
+          "intensity_delta": 0.001195669174194336,
+          "absolute_classification_delta": 0.0024366378784179688,
+          "absolute_intensity_delta": 0.001195669174194336
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -0.0019588470458984375,
+          "intensity_delta": 0.0009747743606567383,
+          "absolute_classification_delta": 0.0019588470458984375,
+          "absolute_intensity_delta": 0.0009747743606567383
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": -0.0033354759216308594,
+          "intensity_delta": 0.0017724037170410156,
+          "absolute_classification_delta": 0.0033354759216308594,
+          "absolute_intensity_delta": 0.0017724037170410156
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": -0.00298309326171875,
+          "intensity_delta": 0.0013153553009033203,
+          "absolute_classification_delta": 0.00298309326171875,
+          "absolute_intensity_delta": 0.0013153553009033203
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "recommend"
+          ],
+          "original_text_fragment": "recommend",
+          "classification_margin_delta": -0.000621795654296875,
+          "intensity_delta": -0.0021042823791503906,
+          "absolute_classification_delta": 0.000621795654296875,
+          "absolute_intensity_delta": 0.0021042823791503906
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "it",
+          "classification_margin_delta": -0.020046234130859375,
+          "intensity_delta": 0.005706071853637695,
+          "absolute_classification_delta": 0.020046234130859375,
+          "absolute_intensity_delta": 0.005706071853637695
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h"
+          ],
+          "original_text_fragment": "(uhh",
+          "classification_margin_delta": 0.0005640983581542969,
+          "intensity_delta": 0.00047576427459716797,
+          "absolute_classification_delta": 0.0005640983581542969,
+          "absolute_intensity_delta": 0.00047576427459716797
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")"
+          ],
+          "original_text_fragment": "uhh)",
+          "classification_margin_delta": 0.00012111663818359375,
+          "intensity_delta": 0.00057220458984375,
+          "absolute_classification_delta": 0.00012111663818359375,
+          "absolute_intensity_delta": 0.00057220458984375
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "h) I",
+          "classification_margin_delta": 0.0002636909484863281,
+          "intensity_delta": 0.0003437995910644531,
+          "absolute_classification_delta": 0.0002636909484863281,
+          "absolute_intensity_delta": 0.0003437995910644531
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": ") I did",
+          "classification_margin_delta": 0.000278472900390625,
+          "intensity_delta": 0.00018775463104248047,
+          "absolute_classification_delta": 0.000278472900390625,
+          "absolute_intensity_delta": 0.00018775463104248047
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "I did not",
+          "classification_margin_delta": -0.0003871917724609375,
+          "intensity_delta": 0.0004703998565673828,
+          "absolute_classification_delta": 0.0003871917724609375,
+          "absolute_intensity_delta": 0.0004703998565673828
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": "did not like",
+          "classification_margin_delta": 1.239776611328125e-05,
+          "intensity_delta": 0.0002651214599609375,
+          "absolute_classification_delta": 1.239776611328125e-05,
+          "absolute_intensity_delta": 0.0002651214599609375
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "not like this",
+          "classification_margin_delta": -0.0010423660278320312,
+          "intensity_delta": 0.0012888908386230469,
+          "absolute_classification_delta": 0.0010423660278320312,
+          "absolute_intensity_delta": 0.0012888908386230469
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "like this movie",
+          "classification_margin_delta": -0.0010800361633300781,
+          "intensity_delta": 0.0016217231750488281,
+          "absolute_classification_delta": 0.0010800361633300781,
+          "absolute_intensity_delta": 0.0016217231750488281
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "this movie at",
+          "classification_margin_delta": -0.002345561981201172,
+          "intensity_delta": 0.002430438995361328,
+          "absolute_classification_delta": 0.002345561981201172,
+          "absolute_intensity_delta": 0.002430438995361328
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "movie at all",
+          "classification_margin_delta": -0.0035223960876464844,
+          "intensity_delta": 0.0026749372482299805,
+          "absolute_classification_delta": 0.0035223960876464844,
+          "absolute_intensity_delta": 0.0026749372482299805
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "at all,",
+          "classification_margin_delta": -0.005424976348876953,
+          "intensity_delta": 0.0031414031982421875,
+          "absolute_classification_delta": 0.005424976348876953,
+          "absolute_intensity_delta": 0.0031414031982421875
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "all, I",
+          "classification_margin_delta": -0.006566047668457031,
+          "intensity_delta": 0.0036325454711914062,
+          "absolute_classification_delta": 0.006566047668457031,
+          "absolute_intensity_delta": 0.0036325454711914062
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": ", I would",
+          "classification_margin_delta": -0.008104324340820312,
+          "intensity_delta": 0.004144549369812012,
+          "absolute_classification_delta": 0.008104324340820312,
+          "absolute_intensity_delta": 0.004144549369812012
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "I would not",
+          "classification_margin_delta": -0.009264945983886719,
+          "intensity_delta": 0.004378795623779297,
+          "absolute_classification_delta": 0.009264945983886719,
+          "absolute_intensity_delta": 0.004378795623779297
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": "would not recommend",
+          "classification_margin_delta": -0.010426521301269531,
+          "intensity_delta": 0.002384662628173828,
+          "absolute_classification_delta": 0.010426521301269531,
+          "absolute_intensity_delta": 0.002384662628173828
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": -0.028916358947753906,
+          "intensity_delta": 0.0031957626342773438,
+          "absolute_classification_delta": 0.028916358947753906,
+          "absolute_intensity_delta": 0.0031957626342773438
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "(uhh) I",
+          "classification_margin_delta": 0.0011243820190429688,
+          "intensity_delta": 0.0006139278411865234,
+          "absolute_classification_delta": 0.0011243820190429688,
+          "absolute_intensity_delta": 0.0006139278411865234
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": "uhh) I did",
+          "classification_margin_delta": 0.0008254051208496094,
+          "intensity_delta": 0.0005205869674682617,
+          "absolute_classification_delta": 0.0008254051208496094,
+          "absolute_intensity_delta": 0.0005205869674682617
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "h) I did not",
+          "classification_margin_delta": -2.2411346435546875e-05,
+          "intensity_delta": 0.0008074045181274414,
+          "absolute_classification_delta": 2.2411346435546875e-05,
+          "absolute_intensity_delta": 0.0008074045181274414
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ")",
+            "i",
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": ") I did not like",
+          "classification_margin_delta": 0.0003986358642578125,
+          "intensity_delta": 0.0004926919937133789,
+          "absolute_classification_delta": 0.0003986358642578125,
+          "absolute_intensity_delta": 0.0004926919937133789
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "i",
+            "did",
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "I did not like this",
+          "classification_margin_delta": -0.0006260871887207031,
+          "intensity_delta": 0.0013097524642944336,
+          "absolute_classification_delta": 0.0006260871887207031,
+          "absolute_intensity_delta": 0.0013097524642944336
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "did",
+            "not",
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "did not like this movie",
+          "classification_margin_delta": -0.0011262893676757812,
+          "intensity_delta": 0.0019121170043945312,
+          "absolute_classification_delta": 0.0011262893676757812,
+          "absolute_intensity_delta": 0.0019121170043945312
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "not",
+            "like",
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "not like this movie at",
+          "classification_margin_delta": -0.0023865699768066406,
+          "intensity_delta": 0.002786397933959961,
+          "absolute_classification_delta": 0.0023865699768066406,
+          "absolute_intensity_delta": 0.002786397933959961
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "like this movie at all",
+          "classification_margin_delta": -0.003814697265625,
+          "intensity_delta": 0.0033735036849975586,
+          "absolute_classification_delta": 0.003814697265625,
+          "absolute_intensity_delta": 0.0033735036849975586
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "this movie at all,",
+          "classification_margin_delta": -0.005860805511474609,
+          "intensity_delta": 0.00415349006652832,
+          "absolute_classification_delta": 0.005860805511474609,
+          "absolute_intensity_delta": 0.00415349006652832
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "movie at all, I",
+          "classification_margin_delta": -0.007481575012207031,
+          "intensity_delta": 0.0046384334564208984,
+          "absolute_classification_delta": 0.007481575012207031,
+          "absolute_intensity_delta": 0.0046384334564208984
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "at",
+            "all",
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": "at all, I would",
+          "classification_margin_delta": -0.01099395751953125,
+          "intensity_delta": 0.006010770797729492,
+          "absolute_classification_delta": 0.01099395751953125,
+          "absolute_intensity_delta": 0.006010770797729492
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "all",
+            ",",
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "all, I would not",
+          "classification_margin_delta": -0.014258384704589844,
+          "intensity_delta": 0.007217764854431152,
+          "absolute_classification_delta": 0.014258384704589844,
+          "absolute_intensity_delta": 0.007217764854431152
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            ",",
+            "i",
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": ", I would not recommend",
+          "classification_margin_delta": -0.015255451202392578,
+          "intensity_delta": 0.004858732223510742,
+          "absolute_classification_delta": 0.015255451202392578,
+          "absolute_intensity_delta": 0.004858732223510742
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "i",
+            "would",
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "I would not recommend it",
+          "classification_margin_delta": -0.03691673278808594,
+          "intensity_delta": 0.006437420845031738,
+          "absolute_classification_delta": 0.03691673278808594,
+          "absolute_intensity_delta": 0.006437420845031738
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "i",
+            "would",
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "I would not recommend it",
+          "classification_margin_delta": -0.03691673278808594,
+          "intensity_delta": 0.006437420845031738,
+          "absolute_classification_delta": 0.03691673278808594,
+          "absolute_intensity_delta": 0.006437420845031738
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "this movie at all,",
+          "classification_margin_delta": -0.005860805511474609,
+          "intensity_delta": 0.00415349006652832,
+          "absolute_classification_delta": 0.005860805511474609,
+          "absolute_intensity_delta": 0.00415349006652832
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "(uhh) I",
+          "classification_margin_delta": 0.0011243820190429688,
+          "intensity_delta": 0.0006139278411865234,
+          "absolute_classification_delta": 0.0011243820190429688,
+          "absolute_intensity_delta": 0.0006139278411865234
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "all",
+            ",",
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "all, I would not",
+          "classification_margin_delta": -0.014258384704589844,
+          "intensity_delta": 0.007217764854431152,
+          "absolute_classification_delta": 0.014258384704589844,
+          "absolute_intensity_delta": 0.007217764854431152
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "it",
+          "classification_margin_delta": -0.020046234130859375,
+          "intensity_delta": 0.005706071853637695,
+          "absolute_classification_delta": 0.020046234130859375,
+          "absolute_intensity_delta": 0.005706071853637695
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "not",
+            "like",
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "not like this movie at",
+          "classification_margin_delta": -0.0023865699768066406,
+          "intensity_delta": 0.002786397933959961,
+          "absolute_classification_delta": 0.0023865699768066406,
+          "absolute_intensity_delta": 0.002786397933959961
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.000255584716796875,
+          5.1021575927734375e-05,
+          4.38690185546875e-05,
+          0.000152587890625,
+          7.104873657226562e-05,
+          6.008148193359375e-05,
+          0.0006618499755859375,
+          0.00024890899658203125,
+          0.0010156631469726562,
+          0.0005192756652832031,
+          0.0014905929565429688,
+          0.0022406578063964844,
+          0.0024366378784179688,
+          0.0019588470458984375,
+          0.0033354759216308594,
+          0.00298309326171875,
+          0.000621795654296875,
+          0.020046234130859375
+        ],
+        "3": [
+          0.00018803278605143228,
+          0.00011420249938964844,
+          0.00010543399386935764,
+          7.369783189561631e-05,
+          0.00010326173570421008,
+          7.534027099609376e-05,
+          0.00016021728515625,
+          0.00023719999525282116,
+          0.0004964404635959201,
+          0.0007719993591308594,
+          0.00125477049085829,
+          0.00172371334499783,
+          0.0022328164842393664,
+          0.002659479777018229,
+          0.003088421291775174,
+          0.005400869581434462,
+          0.006557146708170573,
+          0.009638786315917969
+        ],
+        "5": [
+          0.00022487640380859376,
+          0.0001949787139892578,
+          0.00013147989908854165,
+          0.00011854171752929686,
+          0.00011987686157226563,
+          0.00011995315551757813,
+          0.00018239974975585937,
+          0.0003340911865234375,
+          0.0005525779724121093,
+          0.0008267974853515625,
+          0.0012215042114257814,
+          0.0016963768005371093,
+          0.002154006958007813,
+          0.0033962440490722654,
+          0.00387122631072998,
+          0.004428704579671224,
+          0.005217218399047851,
+          0.0073833465576171875
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.8534571723426212
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.8348813209494325
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.9958720330237358
+        }
+      ]
+    },
+    "vision": {
+      "modality": "vision",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "(",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "(",
+          "classification_signed": 3.7097930908203124e-05,
+          "classification_absolute": 3.7097930908203124e-05,
+          "classification_share": 0.00594635457410856,
+          "intensity_signed": 0.00011865297953287761,
+          "intensity_absolute": 0.00011865297953287761,
+          "intensity_share": 0.01192875066762391
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "uh",
+          "text_char_start": 1,
+          "text_char_end": 3,
+          "original_text_fragment": "uh",
+          "classification_signed": 2.7770996093749998e-05,
+          "classification_absolute": 2.8724670410156248e-05,
+          "classification_share": 0.004604221073834186,
+          "intensity_signed": 0.00012820879618326823,
+          "intensity_absolute": 0.00012820879618326823,
+          "intensity_share": 0.012889442549924713
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "##h",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "h",
+          "classification_signed": 2.1630241757347473e-05,
+          "classification_absolute": 2.4309612455822173e-05,
+          "classification_share": 0.003896540094895718,
+          "intensity_signed": 0.00012281849270775205,
+          "intensity_absolute": 0.00012281849270775205,
+          "intensity_share": 0.012347529599778844
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": ")",
+          "text_char_start": 4,
+          "text_char_end": 5,
+          "original_text_fragment": ")",
+          "classification_signed": 1.2453397115071617e-05,
+          "classification_absolute": 1.6061464945475262e-05,
+          "classification_share": 0.002574460709998586,
+          "intensity_signed": 0.00010917981465657554,
+          "intensity_absolute": 0.00010917981465657554,
+          "intensity_share": 0.010976368162881266
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "i",
+          "text_char_start": 6,
+          "text_char_end": 7,
+          "original_text_fragment": "I",
+          "classification_signed": -9.939405653211806e-06,
+          "classification_absolute": 2.6914808485243055e-05,
+          "classification_share": 0.004314121856108467,
+          "intensity_signed": 8.789168463812934e-05,
+          "intensity_absolute": 8.789168463812934e-05,
+          "intensity_share": 0.008836170789248182
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "did",
+          "text_char_start": 8,
+          "text_char_end": 11,
+          "original_text_fragment": "did",
+          "classification_signed": -1.6622190122251158e-05,
+          "classification_absolute": 2.529003002025463e-05,
+          "classification_share": 0.004053689303115043,
+          "intensity_signed": 5.563983210810909e-05,
+          "intensity_absolute": 6.153671829788775e-05,
+          "intensity_share": 0.006186580163171655
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "not",
+          "text_char_start": 12,
+          "text_char_end": 15,
+          "original_text_fragment": "not",
+          "classification_signed": -3.685421413845486e-05,
+          "classification_absolute": 4.119873046875e-05,
+          "classification_share": 0.006603663691555008,
+          "intensity_signed": 1.7150243123372397e-05,
+          "intensity_absolute": 4.161905359338831e-05,
+          "intensity_share": 0.004184162212297761
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "like",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "like",
+          "classification_signed": -9.491885149920428e-05,
+          "classification_absolute": 9.491885149920428e-05,
+          "classification_share": 0.01521435651433108,
+          "intensity_signed": -1.834940027307581e-05,
+          "intensity_absolute": 3.616015116373698e-05,
+          "intensity_share": 0.0036353526816938235
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "this",
+          "text_char_start": 21,
+          "text_char_end": 25,
+          "original_text_fragment": "this",
+          "classification_signed": -0.0001460322627314815,
+          "classification_absolute": 0.0001460322627314815,
+          "classification_share": 0.023407224936869878,
+          "intensity_signed": -5.262692769368489e-05,
+          "intensity_absolute": 5.4640240139431423e-05,
+          "intensity_share": 0.0054932442793125865
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "movie",
+          "text_char_start": 26,
+          "text_char_end": 31,
+          "original_text_fragment": "movie",
+          "classification_signed": -0.0002147780524359809,
+          "classification_absolute": 0.0002147780524359809,
+          "classification_share": 0.034426352717111225,
+          "intensity_signed": -7.715313522904008e-05,
+          "intensity_absolute": 7.715313522904008e-05,
+          "intensity_share": 0.0077565731344965685
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "at",
+          "text_char_start": 32,
+          "text_char_end": 34,
+          "original_text_fragment": "at",
+          "classification_signed": -0.00025711765995732063,
+          "classification_absolute": 0.00025711765995732063,
+          "classification_share": 0.04121288535348554,
+          "intensity_signed": -0.00011703968048095704,
+          "intensity_absolute": 0.00011703968048095704,
+          "intensity_share": 0.01176655800951757
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "all",
+          "text_char_start": 35,
+          "text_char_end": 38,
+          "original_text_fragment": "all",
+          "classification_signed": -0.0003489741572627314,
+          "classification_absolute": 0.0003489741572627314,
+          "classification_share": 0.055936383121196386,
+          "intensity_signed": -0.00015002533241554542,
+          "intensity_absolute": 0.00015002533241554542,
+          "intensity_share": 0.015082763123673192
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": ",",
+          "text_char_start": 38,
+          "text_char_end": 39,
+          "original_text_fragment": ",",
+          "classification_signed": -0.00039615984316225403,
+          "classification_absolute": 0.00039615984316225403,
+          "classification_share": 0.06349968415475978,
+          "intensity_signed": -0.00014094423364709922,
+          "intensity_absolute": 0.00020578349078143084,
+          "intensity_share": 0.020688397060983934
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "i",
+          "text_char_start": 40,
+          "text_char_end": 41,
+          "original_text_fragment": "I",
+          "classification_signed": -0.00041346373381438077,
+          "classification_absolute": 0.00041346373381438077,
+          "classification_share": 0.06627329084413974,
+          "intensity_signed": 1.0348249364782283e-05,
+          "intensity_absolute": 0.000434689168576841,
+          "intensity_share": 0.04370137800402288
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "would",
+          "text_char_start": 42,
+          "text_char_end": 47,
+          "original_text_fragment": "would",
+          "classification_signed": -0.00022396246592203776,
+          "classification_absolute": 0.00027240117390950526,
+          "classification_share": 0.043662649824795424,
+          "intensity_signed": 5.04245360692342e-05,
+          "intensity_absolute": 0.0005906114975611368,
+          "intensity_share": 0.0593769943542513
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "not",
+          "text_char_start": 48,
+          "text_char_end": 51,
+          "original_text_fragment": "not",
+          "classification_signed": -0.0001003129141671317,
+          "classification_absolute": 0.00025498980567568823,
+          "classification_share": 0.040871815764673955,
+          "intensity_signed": 0.0006450846081688291,
+          "intensity_absolute": 0.0010641472680228098,
+          "intensity_share": 0.1069838067602835
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "recommend",
+          "text_char_start": 52,
+          "text_char_end": 61,
+          "original_text_fragment": "recommend",
+          "classification_signed": -0.00039012908935546873,
+          "classification_absolute": 0.0004676310221354167,
+          "classification_share": 0.07495565923476141,
+          "intensity_signed": 0.0018172327677408854,
+          "intensity_absolute": 0.0018172327677408854,
+          "intensity_share": 0.18269508845675936
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "it",
+          "text_char_start": 62,
+          "text_char_end": 64,
+          "original_text_fragment": "it",
+          "classification_signed": -0.0031727049085828987,
+          "classification_absolute": 0.0031727049085828987,
+          "classification_share": 0.5085466462302599,
+          "intensity_signed": 0.0047294166353013785,
+          "intensity_absolute": 0.0047294166353013785,
+          "intensity_share": 0.4754708399900788
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "("
+          ],
+          "original_text_fragment": "(",
+          "classification_margin_delta": 2.47955322265625e-05,
+          "intensity_delta": 0.00013303756713867188,
+          "absolute_classification_delta": 2.47955322265625e-05,
+          "absolute_intensity_delta": 0.00013303756713867188
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "uh"
+          ],
+          "original_text_fragment": "uh",
+          "classification_margin_delta": -2.384185791015625e-06,
+          "intensity_delta": 0.0001786947250366211,
+          "absolute_classification_delta": 2.384185791015625e-06,
+          "absolute_intensity_delta": 0.0001786947250366211
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "##h"
+          ],
+          "original_text_fragment": "h",
+          "classification_margin_delta": -9.059906005859375e-06,
+          "intensity_delta": 0.00018715858459472656,
+          "absolute_classification_delta": 9.059906005859375e-06,
+          "absolute_intensity_delta": 0.00018715858459472656
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            ")"
+          ],
+          "original_text_fragment": ")",
+          "classification_margin_delta": 2.384185791015625e-06,
+          "intensity_delta": 0.0001709461212158203,
+          "absolute_classification_delta": 2.384185791015625e-06,
+          "absolute_intensity_delta": 0.0001709461212158203
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -9.489059448242188e-05,
+          "intensity_delta": 0.00015175342559814453,
+          "absolute_classification_delta": 9.489059448242188e-05,
+          "absolute_intensity_delta": 0.00015175342559814453
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "did"
+          ],
+          "original_text_fragment": "did",
+          "classification_margin_delta": -2.193450927734375e-05,
+          "intensity_delta": 0.00010442733764648438,
+          "absolute_classification_delta": 2.193450927734375e-05,
+          "absolute_intensity_delta": 0.00010442733764648438
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": -1.9073486328125e-06,
+          "intensity_delta": 4.9114227294921875e-05,
+          "absolute_classification_delta": 1.9073486328125e-06,
+          "absolute_intensity_delta": 4.9114227294921875e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "like"
+          ],
+          "original_text_fragment": "like",
+          "classification_margin_delta": -0.00014734268188476562,
+          "intensity_delta": 8.463859558105469e-06,
+          "absolute_classification_delta": 0.00014734268188476562,
+          "absolute_intensity_delta": 8.463859558105469e-06
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": -0.00020742416381835938,
+          "intensity_delta": -3.6835670471191406e-05,
+          "absolute_classification_delta": 0.00020742416381835938,
+          "absolute_intensity_delta": 3.6835670471191406e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": -0.00027179718017578125,
+          "intensity_delta": -4.38690185546875e-05,
+          "absolute_classification_delta": 0.00027179718017578125,
+          "absolute_intensity_delta": 4.38690185546875e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "at"
+          ],
+          "original_text_fragment": "at",
+          "classification_margin_delta": -0.00013828277587890625,
+          "intensity_delta": -0.00010347366333007812,
+          "absolute_classification_delta": 0.00013828277587890625,
+          "absolute_intensity_delta": 0.00010347366333007812
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "all"
+          ],
+          "original_text_fragment": "all",
+          "classification_margin_delta": -0.0003910064697265625,
+          "intensity_delta": -3.528594970703125e-05,
+          "absolute_classification_delta": 0.0003910064697265625,
+          "absolute_intensity_delta": 3.528594970703125e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.0004811286926269531,
+          "intensity_delta": -8.916854858398438e-05,
+          "absolute_classification_delta": 0.0004811286926269531,
+          "absolute_intensity_delta": 8.916854858398438e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -0.0011057853698730469,
+          "intensity_delta": -0.00011801719665527344,
+          "absolute_classification_delta": 0.0011057853698730469,
+          "absolute_intensity_delta": 0.00011801719665527344
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": -0.0004858970642089844,
+          "intensity_delta": -0.0006296634674072266,
+          "absolute_classification_delta": 0.0004858970642089844,
+          "absolute_intensity_delta": 0.0006296634674072266
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "not"
+          ],
+          "original_text_fragment": "not",
+          "classification_margin_delta": 0.0003476142883300781,
+          "intensity_delta": -0.0005288124084472656,
+          "absolute_classification_delta": 0.0003476142883300781,
+          "absolute_intensity_delta": 0.0005288124084472656
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "recommend"
+          ],
+          "original_text_fragment": "recommend",
+          "classification_margin_delta": -0.0011715888977050781,
+          "intensity_delta": 0.0031038522720336914,
+          "absolute_classification_delta": 0.0011715888977050781,
+          "absolute_intensity_delta": 0.0031038522720336914
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "it",
+          "classification_margin_delta": -0.00868082046508789,
+          "intensity_delta": 0.00905919075012207,
+          "absolute_classification_delta": 0.00868082046508789,
+          "absolute_intensity_delta": 0.00905919075012207
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h"
+          ],
+          "original_text_fragment": "(uhh",
+          "classification_margin_delta": 0.00014734268188476562,
+          "intensity_delta": 0.0003619194030761719,
+          "absolute_classification_delta": 0.00014734268188476562,
+          "absolute_intensity_delta": 0.0003619194030761719
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")"
+          ],
+          "original_text_fragment": "uhh)",
+          "classification_margin_delta": 0.00010585784912109375,
+          "intensity_delta": 0.0004150867462158203,
+          "absolute_classification_delta": 0.00010585784912109375,
+          "absolute_intensity_delta": 0.0004150867462158203
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "h) I",
+          "classification_margin_delta": -9.5367431640625e-07,
+          "intensity_delta": 0.0003979206085205078,
+          "absolute_classification_delta": 9.5367431640625e-07,
+          "absolute_intensity_delta": 0.0003979206085205078
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": ") I did",
+          "classification_margin_delta": -2.288818359375e-05,
+          "intensity_delta": 0.00031936168670654297,
+          "absolute_classification_delta": 2.288818359375e-05,
+          "absolute_intensity_delta": 0.00031936168670654297
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "I did not",
+          "classification_margin_delta": -1.049041748046875e-05,
+          "intensity_delta": 0.00019824504852294922,
+          "absolute_classification_delta": 1.049041748046875e-05,
+          "absolute_intensity_delta": 0.00019824504852294922
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": "did not like",
+          "classification_margin_delta": -3.4332275390625e-05,
+          "intensity_delta": 5.555152893066406e-05,
+          "absolute_classification_delta": 3.4332275390625e-05,
+          "absolute_intensity_delta": 5.555152893066406e-05
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "not like this",
+          "classification_margin_delta": -0.00025844573974609375,
+          "intensity_delta": -5.9604644775390625e-05,
+          "absolute_classification_delta": 0.00025844573974609375,
+          "absolute_intensity_delta": 5.9604644775390625e-05
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "like this movie",
+          "classification_margin_delta": -0.000530242919921875,
+          "intensity_delta": -0.00015056133270263672,
+          "absolute_classification_delta": 0.000530242919921875,
+          "absolute_intensity_delta": 0.00015056133270263672
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "this movie at",
+          "classification_margin_delta": -0.0004954338073730469,
+          "intensity_delta": -0.0002633333206176758,
+          "absolute_classification_delta": 0.0004954338073730469,
+          "absolute_intensity_delta": 0.0002633333206176758
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "movie at all",
+          "classification_margin_delta": -0.0007066726684570312,
+          "intensity_delta": -0.00026798248291015625,
+          "absolute_classification_delta": 0.0007066726684570312,
+          "absolute_intensity_delta": 0.00026798248291015625
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "at all,",
+          "classification_margin_delta": -0.0009412765502929688,
+          "intensity_delta": -0.0003402233123779297,
+          "absolute_classification_delta": 0.0009412765502929688,
+          "absolute_intensity_delta": 0.0003402233123779297
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "all, I",
+          "classification_margin_delta": -0.0019736289978027344,
+          "intensity_delta": -0.0003757476806640625,
+          "absolute_classification_delta": 0.0019736289978027344,
+          "absolute_intensity_delta": 0.0003757476806640625
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": ", I would",
+          "classification_margin_delta": -0.0018568038940429688,
+          "intensity_delta": -0.0009914636611938477,
+          "absolute_classification_delta": 0.0018568038940429688,
+          "absolute_intensity_delta": 0.0009914636611938477
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "I would not",
+          "classification_margin_delta": -0.0002560615539550781,
+          "intensity_delta": -0.0016398429870605469,
+          "absolute_classification_delta": 0.0002560615539550781,
+          "absolute_intensity_delta": 0.0016398429870605469
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": "would not recommend",
+          "classification_margin_delta": 0.0005812644958496094,
+          "intensity_delta": 0.001684427261352539,
+          "absolute_classification_delta": 0.0005812644958496094,
+          "absolute_intensity_delta": 0.001684427261352539
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": -0.002475261688232422,
+          "intensity_delta": 0.010254502296447754,
+          "absolute_classification_delta": 0.002475261688232422,
+          "absolute_intensity_delta": 0.010254502296447754
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "(uhh) I",
+          "classification_margin_delta": 0.000186920166015625,
+          "intensity_delta": 0.0005114078521728516,
+          "absolute_classification_delta": 0.000186920166015625,
+          "absolute_intensity_delta": 0.0005114078521728516
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "uh",
+            "##h",
+            ")",
+            "i",
+            "did"
+          ],
+          "original_text_fragment": "uhh) I did",
+          "classification_margin_delta": 9.72747802734375e-05,
+          "intensity_delta": 0.0005053281784057617,
+          "absolute_classification_delta": 9.72747802734375e-05,
+          "absolute_intensity_delta": 0.0005053281784057617
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "##h",
+            ")",
+            "i",
+            "did",
+            "not"
+          ],
+          "original_text_fragment": "h) I did not",
+          "classification_margin_delta": 9.775161743164062e-05,
+          "intensity_delta": 0.0003879070281982422,
+          "absolute_classification_delta": 9.775161743164062e-05,
+          "absolute_intensity_delta": 0.0003879070281982422
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ")",
+            "i",
+            "did",
+            "not",
+            "like"
+          ],
+          "original_text_fragment": ") I did not like",
+          "classification_margin_delta": -3.24249267578125e-05,
+          "intensity_delta": 0.0002205371856689453,
+          "absolute_classification_delta": 3.24249267578125e-05,
+          "absolute_intensity_delta": 0.0002205371856689453
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "i",
+            "did",
+            "not",
+            "like",
+            "this"
+          ],
+          "original_text_fragment": "I did not like this",
+          "classification_margin_delta": -0.0002651214599609375,
+          "intensity_delta": 4.5299530029296875e-05,
+          "absolute_classification_delta": 0.0002651214599609375,
+          "absolute_intensity_delta": 4.5299530029296875e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "did",
+            "not",
+            "like",
+            "this",
+            "movie"
+          ],
+          "original_text_fragment": "did not like this movie",
+          "classification_margin_delta": -0.0004229545593261719,
+          "intensity_delta": -0.00013267993927001953,
+          "absolute_classification_delta": 0.0004229545593261719,
+          "absolute_intensity_delta": 0.00013267993927001953
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "not",
+            "like",
+            "this",
+            "movie",
+            "at"
+          ],
+          "original_text_fragment": "not like this movie at",
+          "classification_margin_delta": -0.0005207061767578125,
+          "intensity_delta": -0.0003185272216796875,
+          "absolute_classification_delta": 0.0005207061767578125,
+          "absolute_intensity_delta": 0.0003185272216796875
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "like",
+            "this",
+            "movie",
+            "at",
+            "all"
+          ],
+          "original_text_fragment": "like this movie at all",
+          "classification_margin_delta": -0.0009217262268066406,
+          "intensity_delta": -0.00042498111724853516,
+          "absolute_classification_delta": 0.0009217262268066406,
+          "absolute_intensity_delta": 0.00042498111724853516
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "this",
+            "movie",
+            "at",
+            "all",
+            ","
+          ],
+          "original_text_fragment": "this movie at all,",
+          "classification_margin_delta": -0.0012636184692382812,
+          "intensity_delta": -0.0005639791488647461,
+          "absolute_classification_delta": 0.0012636184692382812,
+          "absolute_intensity_delta": 0.0005639791488647461
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "movie",
+            "at",
+            "all",
+            ",",
+            "i"
+          ],
+          "original_text_fragment": "movie at all, I",
+          "classification_margin_delta": -0.0022897720336914062,
+          "intensity_delta": -0.0006759166717529297,
+          "absolute_classification_delta": 0.0022897720336914062,
+          "absolute_intensity_delta": 0.0006759166717529297
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "at",
+            "all",
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": "at all, I would",
+          "classification_margin_delta": -0.0023107528686523438,
+          "intensity_delta": -0.0013134479522705078,
+          "absolute_classification_delta": 0.0023107528686523438,
+          "absolute_intensity_delta": 0.0013134479522705078
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "all",
+            ",",
+            "i",
+            "would",
+            "not"
+          ],
+          "original_text_fragment": "all, I would not",
+          "classification_margin_delta": -0.000926971435546875,
+          "intensity_delta": -0.001956462860107422,
+          "absolute_classification_delta": 0.000926971435546875,
+          "absolute_intensity_delta": 0.001956462860107422
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            ",",
+            "i",
+            "would",
+            "not",
+            "recommend"
+          ],
+          "original_text_fragment": ", I would not recommend",
+          "classification_margin_delta": -0.0006775856018066406,
+          "intensity_delta": 0.001458883285522461,
+          "absolute_classification_delta": 0.0006775856018066406,
+          "absolute_intensity_delta": 0.001458883285522461
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "i",
+            "would",
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "I would not recommend it",
+          "classification_margin_delta": -6.103515625e-05,
+          "intensity_delta": 0.008554458618164062,
+          "absolute_classification_delta": 6.103515625e-05,
+          "absolute_intensity_delta": 0.008554458618164062
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "it",
+          "classification_margin_delta": -0.00868082046508789,
+          "intensity_delta": 0.00905919075012207,
+          "absolute_classification_delta": 0.00868082046508789,
+          "absolute_intensity_delta": 0.00905919075012207
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "at",
+            "all",
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": "at all, I would",
+          "classification_margin_delta": -0.0023107528686523438,
+          "intensity_delta": -0.0013134479522705078,
+          "absolute_classification_delta": 0.0023107528686523438,
+          "absolute_intensity_delta": 0.0013134479522705078
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "recommend"
+          ],
+          "original_text_fragment": "recommend",
+          "classification_margin_delta": -0.0011715888977050781,
+          "intensity_delta": 0.0031038522720336914,
+          "absolute_classification_delta": 0.0011715888977050781,
+          "absolute_intensity_delta": 0.0031038522720336914
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "not",
+            "recommend",
+            "it"
+          ],
+          "original_text_fragment": "not recommend it",
+          "classification_margin_delta": -0.002475261688232422,
+          "intensity_delta": 0.010254502296447754,
+          "absolute_classification_delta": 0.002475261688232422,
+          "absolute_intensity_delta": 0.010254502296447754
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "at",
+            "all",
+            ",",
+            "i",
+            "would"
+          ],
+          "original_text_fragment": "at all, I would",
+          "classification_margin_delta": -0.0023107528686523438,
+          "intensity_delta": -0.0013134479522705078,
+          "absolute_classification_delta": 0.0023107528686523438,
+          "absolute_intensity_delta": 0.0013134479522705078
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "(",
+            "uh",
+            "##h",
+            ")",
+            "i"
+          ],
+          "original_text_fragment": "(uhh) I",
+          "classification_margin_delta": 0.000186920166015625,
+          "intensity_delta": 0.0005114078521728516,
+          "absolute_classification_delta": 0.000186920166015625,
+          "absolute_intensity_delta": 0.0005114078521728516
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          2.47955322265625e-05,
+          2.384185791015625e-06,
+          9.059906005859375e-06,
+          2.384185791015625e-06,
+          9.489059448242188e-05,
+          2.193450927734375e-05,
+          1.9073486328125e-06,
+          0.00014734268188476562,
+          0.00020742416381835938,
+          0.00027179718017578125,
+          0.00013828277587890625,
+          0.0003910064697265625,
+          0.0004811286926269531,
+          0.0011057853698730469,
+          0.0004858970642089844,
+          0.0003476142883300781,
+          0.0011715888977050781,
+          0.00868082046508789
+        ],
+        "3": [
+          4.9114227294921875e-05,
+          4.220008850097656e-05,
+          2.8239356146918402e-05,
+          1.4411078559027779e-05,
+          3.814697265625e-06,
+          7.523430718315972e-06,
+          3.3696492513020836e-05,
+          9.144677056206598e-05,
+          0.0001426802741156684,
+          0.00019248326619466147,
+          0.0002381536695692274,
+          0.00040239757961697055,
+          0.000530189938015408,
+          0.00045405493842230906,
+          0.00029934777153862844,
+          0.00036806530422634544,
+          0.0005094210306803385,
+          0.0008250872294108073
+        ],
+        "5": [
+          3.7384033203125e-05,
+          2.841949462890625e-05,
+          2.5463104248046874e-05,
+          2.071857452392578e-05,
+          2.7179718017578125e-05,
+          3.662109375e-05,
+          5.3558349609375004e-05,
+          8.6517333984375e-05,
+          0.00013576507568359374,
+          0.00021675109863281253,
+          0.0002922630310058594,
+          0.0003085136413574219,
+          0.0002987480163574219,
+          0.0002506446838378906,
+          0.00019881725311279296,
+          0.00011103947957356771,
+          7.386207580566407e-05,
+          1.220703125e-05
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.8879712076474069
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.44398560382370345
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.5356037151702786
+        }
+      ]
+    }
+  }
+}

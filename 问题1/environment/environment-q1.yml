@@ -1,0 +1,27 @@
+name: huawei-e-q1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip>=24
+  - ffmpeg=7.1
+  - numpy>=1.26,<3
+  - pandas>=2.2,<3
+  - scipy>=1.13,<2
+  - scikit-learn>=1.5,<2
+  - openpyxl>=3.1,<4
+  - pyyaml>=6,<7
+  - matplotlib>=3.9,<4
+  - seaborn>=0.13,<1
+  - tqdm>=4.66,<5
+  - pytest>=8,<10
+  - pip:
+      - transformers>=4.50,<5
+      - tokenizers>=0.21,<1
+      - safetensors>=0.5,<1
+      - opensmile>=2.5,<3
+      - soundfile>=0.12,<1
+      - librosa>=0.10,<1
+      - opencv-python-headless>=4.10,<5
+      - praatio>=6,<7
+      - pympi-ling>=1.70,<2

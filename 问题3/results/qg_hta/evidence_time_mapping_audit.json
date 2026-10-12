@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "evidence_rows": 354,
+  "mapped_time_rows": 320,
+  "fully_covered_rows": 181,
+  "unmapped_rows": 34,
+  "visual_evidence_rows": 114,
+  "keyframe_images": 102,
+  "keyframe_failures": [],
+  "output_csv": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\tables\\attachment4_top_local_evidence_timed.csv",
+  "claim_boundary": "Only verified QG-HTA word intervals are mapped; 50 slots were not divided uniformly.",
+  "time_mapping_provenance": "Reconstructed from raw text/audio/video by QG-HTA; not supplied by Attachment 4 and not the original feature extractor's row timestamps."
+}

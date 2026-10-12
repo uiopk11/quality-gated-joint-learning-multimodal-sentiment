@@ -1,0 +1,384 @@
+{
+  "sample_id": "12",
+  "official_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "Or worse, an individual previously had good credit, but usually by no fault of their own or perhaps by fault of their own, they have let their credit sag and credit score is very low.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "Or",
+      "start": 0.0,
+      "end": 0.64
+    },
+    {
+      "index": 1,
+      "word": "worse",
+      "start": 0.64,
+      "end": 1.12
+    },
+    {
+      "index": 2,
+      "word": "an",
+      "start": 1.12,
+      "end": 1.2
+    },
+    {
+      "index": 3,
+      "word": "individual",
+      "start": 1.2,
+      "end": 1.62
+    },
+    {
+      "index": 4,
+      "word": "previously",
+      "start": 1.62,
+      "end": 2.18
+    },
+    {
+      "index": 5,
+      "word": "had",
+      "start": 2.18,
+      "end": 2.68
+    },
+    {
+      "index": 6,
+      "word": "good",
+      "start": 2.68,
+      "end": 2.96
+    },
+    {
+      "index": 7,
+      "word": "credit",
+      "start": 2.96,
+      "end": 3.92
+    },
+    {
+      "index": 8,
+      "word": "but",
+      "start": 3.92,
+      "end": 4.04
+    },
+    {
+      "index": 9,
+      "word": "usually",
+      "start": 4.04,
+      "end": 4.8
+    },
+    {
+      "index": 10,
+      "word": "by",
+      "start": 4.8,
+      "end": 5.26
+    },
+    {
+      "index": 11,
+      "word": "no",
+      "start": 5.26,
+      "end": 5.48
+    },
+    {
+      "index": 12,
+      "word": "fault",
+      "start": 5.48,
+      "end": 5.76
+    },
+    {
+      "index": 13,
+      "word": "of",
+      "start": 5.76,
+      "end": 5.92
+    },
+    {
+      "index": 14,
+      "word": "their",
+      "start": 5.92,
+      "end": 6.04
+    },
+    {
+      "index": 15,
+      "word": "own",
+      "start": 6.04,
+      "end": 6.38
+    },
+    {
+      "index": 16,
+      "word": "or",
+      "start": 6.84,
+      "end": 7.02
+    },
+    {
+      "index": 17,
+      "word": "perhaps",
+      "start": 7.02,
+      "end": 7.4
+    },
+    {
+      "index": 18,
+      "word": "by",
+      "start": 7.4,
+      "end": 7.68
+    },
+    {
+      "index": 19,
+      "word": "fault",
+      "start": 7.68,
+      "end": 7.98
+    },
+    {
+      "index": 20,
+      "word": "of",
+      "start": 7.98,
+      "end": 8.14
+    },
+    {
+      "index": 21,
+      "word": "their",
+      "start": 8.14,
+      "end": 8.3
+    },
+    {
+      "index": 22,
+      "word": "own",
+      "start": 8.3,
+      "end": 8.68
+    },
+    {
+      "index": 23,
+      "word": "they",
+      "start": 8.68,
+      "end": 8.8
+    },
+    {
+      "index": 24,
+      "word": "have",
+      "start": 8.8,
+      "end": 9.0
+    },
+    {
+      "index": 25,
+      "word": "let",
+      "start": 9.0,
+      "end": 9.18
+    },
+    {
+      "index": 26,
+      "word": "their",
+      "start": 9.18,
+      "end": 9.38
+    },
+    {
+      "index": 27,
+      "word": "credit",
+      "start": 9.38,
+      "end": 9.68
+    },
+    {
+      "index": 28,
+      "word": "sag",
+      "start": 9.68,
+      "end": 10.18
+    },
+    {
+      "index": 29,
+      "word": "and",
+      "start": 10.18,
+      "end": 10.8
+    },
+    {
+      "index": 30,
+      "word": "credit",
+      "start": 10.8,
+      "end": 11.24
+    },
+    {
+      "index": 31,
+      "word": "score",
+      "start": 11.24,
+      "end": 11.5
+    },
+    {
+      "index": 32,
+      "word": "is",
+      "start": 11.5,
+      "end": 11.68
+    },
+    {
+      "index": 33,
+      "word": "very",
+      "start": 11.68,
+      "end": 11.9
+    },
+    {
+      "index": 34,
+      "word": "low",
+      "start": 12.04,
+      "end": 12.86
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -8.20901971320168,
+  "rms_dbfs": -26.692188710048214,
+  "signal_activity_ratio": 0.5315175097276265,
+  "speech_present": true,
+  "exact_match_count": 34,
+  "reliable_match_count": 34,
+  "official_word_recall": 0.9714285714285714,
+  "asr_word_precision": 0.9714285714285714,
+  "word_f1": 0.9714285714285714,
+  "character_similarity": 0.9972144846796658,
+  "consistency_score": 0.9791643454038996,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    -1,
+    32,
+    33,
+    34
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.0,
+    0.64,
+    1.12,
+    1.2,
+    1.62,
+    2.18,
+    2.68,
+    2.96,
+    3.92,
+    4.04,
+    4.8,
+    5.26,
+    5.48,
+    5.76,
+    5.92,
+    6.04,
+    6.84,
+    7.02,
+    7.4,
+    7.68,
+    7.98,
+    8.14,
+    8.3,
+    8.68,
+    8.8,
+    9.0,
+    9.18,
+    9.38,
+    9.68,
+    10.18,
+    10.8,
+    null,
+    11.5,
+    11.68,
+    12.04
+  ],
+  "official_asr_ends": [
+    0.64,
+    1.12,
+    1.2,
+    1.62,
+    2.18,
+    2.68,
+    2.96,
+    3.92,
+    4.04,
+    4.8,
+    5.26,
+    5.48,
+    5.76,
+    5.92,
+    6.04,
+    6.38,
+    7.02,
+    7.4,
+    7.68,
+    7.98,
+    8.14,
+    8.3,
+    8.68,
+    8.8,
+    9.0,
+    9.18,
+    9.38,
+    9.68,
+    10.18,
+    10.8,
+    11.24,
+    null,
+    11.68,
+    11.9,
+    12.86
+  ],
+  "official_comparison_unit_count": 35,
+  "asr_comparison_unit_count": 35,
+  "numeric_equivalence_count": 0
+}

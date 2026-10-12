@@ -1,0 +1,23 @@
+{
+  "method": "M2",
+  "decision_rule": "valid_symmetric_threshold",
+  "class_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "neutral_threshold": 0.07450816035270691,
+  "calibration_split": "valid",
+  "calibration_conditions": [
+    "clean",
+    "main_mixed/mixed_v1_s0"
+  ],
+  "calibration_objective": [
+    "mean_condition_Accuracy:max",
+    "mean_condition_Macro_F1:max",
+    "threshold:min"
+  ],
+  "threshold_candidates": "zero_and_unique_abs_valid_predictions",
+  "threshold_boundary": "abs(raw_intensity)<=threshold_is_neutral",
+  "calibration_identity_sha256": "e26e8c7a887a4bebf2a0cef2b9f21f5f3b3363a1746db6b1099e463cd038deef"
+}

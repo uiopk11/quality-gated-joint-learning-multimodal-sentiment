@@ -1,0 +1,3323 @@
+{
+  "protocol": {
+    "model": "M1 complete-input joint predictor (legacy run id mt_m0_avstd_s1111_v1)",
+    "predictor": "frozen complete-input M1 EMT multitask model",
+    "classification_target": "fixed original argmax class logit margin",
+    "regression_target": "raw intensity output",
+    "modality_method": "exact three-player Shapley masking sensitivity over 8 coalitions",
+    "local_method": "multi-scale contiguous occlusion",
+    "window_sizes": [
+      1,
+      3,
+      5
+    ],
+    "causal_claim": false
+  },
+  "sample": {
+    "sample_id": "11",
+    "raw_text": "I would be ashamed to have made this film if I was a director",
+    "body_length": 14,
+    "token_ids": [
+      1045,
+      2052,
+      2022,
+      14984,
+      2000,
+      2031,
+      2081,
+      2023,
+      2143,
+      2065,
+      1045,
+      2001,
+      1037,
+      2472
+    ],
+    "wordpieces": [
+      "i",
+      "would",
+      "be",
+      "ashamed",
+      "to",
+      "have",
+      "made",
+      "this",
+      "film",
+      "if",
+      "i",
+      "was",
+      "a",
+      "director"
+    ],
+    "text_offsets": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        11,
+        18
+      ],
+      [
+        19,
+        21
+      ],
+      [
+        22,
+        26
+      ],
+      [
+        27,
+        31
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        37,
+        41
+      ],
+      [
+        42,
+        44
+      ],
+      [
+        45,
+        46
+      ],
+      [
+        47,
+        50
+      ],
+      [
+        51,
+        52
+      ],
+      [
+        53,
+        61
+      ]
+    ],
+    "original_token_fragments": [
+      "I",
+      "would",
+      "be",
+      "ashamed",
+      "to",
+      "have",
+      "made",
+      "this",
+      "film",
+      "if",
+      "I",
+      "was",
+      "a",
+      "director"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\11.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\11.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 14,
+    "retained_wordpiece_count": 14,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 61,
+    "audio_nonzero_body_rows": 14,
+    "vision_nonzero_body_rows": 14,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "modality_explanation": {
+    "target_class": 0,
+    "original_prediction": {
+      "logits": [
+        2.0726356506347656,
+        -1.4105525016784668,
+        -1.8695006370544434
+      ],
+      "probabilities": [
+        0.9522756934165955,
+        0.029243765398859978,
+        0.018480539321899414
+      ],
+      "pred_class": 0,
+      "intensity": -1.5930311679840088,
+      "classification_margin": 3.4831881523132324
+    },
+    "classification": {
+      "signed_shapley": {
+        "text": 4.456595718860626,
+        "audio": -0.0046443939208984375,
+        "vision": 0.023101925849914547
+      },
+      "absolute_share": {
+        "text": 0.9938126218892792,
+        "audio": 0.0010356912744139927,
+        "vision": 0.005151686836306747
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "text",
+      "primary_opposing_modality": "audio"
+    },
+    "regression": {
+      "signed_shapley": {
+        "text": -1.6023669069012003,
+        "audio": -0.016200979550679524,
+        "vision": -0.004707848032315572
+      },
+      "absolute_share": {
+        "text": 0.9871193617086631,
+        "audio": 0.009980423662174357,
+        "vision": 0.0029002146291625037
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": null,
+      "primary_opposing_modality": "text"
+    },
+    "leave_one_modality_out": {
+      "text": {
+        "classification_margin_delta": 4.400783538818359,
+        "intensity_delta": -1.582924835383892
+      },
+      "audio": {
+        "classification_margin_delta": -0.036869049072265625,
+        "intensity_delta": 0.0047664642333984375
+      },
+      "vision": {
+        "classification_margin_delta": 0.0008921623229980469,
+        "intensity_delta": -0.007029891014099121
+      }
+    },
+    "coalitions": [
+      {
+        "retained_modalities": [],
+        "classification_margin": -0.9918650984764099,
+        "intensity": 0.03024456650018692,
+        "pred_class": 1,
+        "probabilities": [
+          0.19252796471118927,
+          0.5191051363945007,
+          0.2883668839931488
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio"
+        ],
+        "classification_margin": -0.9647880792617798,
+        "intensity": -0.0072336867451667786,
+        "pred_class": 1,
+        "probabilities": [
+          0.20207007229328156,
+          0.5302786231040955,
+          0.2676512897014618
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text"
+        ],
+        "classification_margin": 3.5200395584106445,
+        "intensity": -1.5918742418289185,
+        "pred_class": 0,
+        "probabilities": [
+          0.9530593156814575,
+          0.02820890210568905,
+          0.018731778487563133
+        ]
+      },
+      {
+        "retained_modalities": [
+          "vision"
+        ],
+        "classification_margin": -0.9470566511154175,
+        "intensity": 0.027548931539058685,
+        "pred_class": 1,
+        "probabilities": [
+          0.20123355090618134,
+          0.5188022255897522,
+          0.27996423840522766
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio"
+        ],
+        "classification_margin": 3.4822959899902344,
+        "intensity": -1.5860012769699097,
+        "pred_class": 0,
+        "probabilities": [
+          0.9524329900741577,
+          0.029274702072143555,
+          0.01829223707318306
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio",
+          "vision"
+        ],
+        "classification_margin": -0.917595386505127,
+        "intensity": -0.01010633260011673,
+        "pred_class": 1,
+        "probabilities": [
+          0.2112577259540558,
+          0.52883380651474,
+          0.2599084675312042
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "vision"
+        ],
+        "classification_margin": 3.520057201385498,
+        "intensity": -1.5977976322174072,
+        "pred_class": 0,
+        "probabilities": [
+          0.9528996348381042,
+          0.028203675523400307,
+          0.018896646797657013
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 3.4831881523132324,
+        "intensity": -1.5930311679840088,
+        "pred_class": 0,
+        "probabilities": [
+          0.9522756934165955,
+          0.029243765398859978,
+          0.018480539321899414
+        ]
+      }
+    ],
+    "efficiency_error": {
+      "classification": 0.0,
+      "regression": 2.220446049250313e-16
+    },
+    "interpretation_scope": "masking sensitivity relative to UNK/zero-row baselines, not causal effect"
+  },
+  "local_explanation": {
+    "text": {
+      "modality": "text",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "i",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "I",
+          "classification_signed": 0.5575585683186849,
+          "classification_absolute": 0.5575585683186849,
+          "classification_share": 0.05820079169302527,
+          "intensity_signed": -0.21381238566504587,
+          "intensity_absolute": 0.21381238566504587,
+          "intensity_share": 0.05441312676755912
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "would",
+          "text_char_start": 2,
+          "text_char_end": 7,
+          "original_text_fragment": "would",
+          "classification_signed": 0.9696400388081869,
+          "classification_absolute": 0.9696400388081869,
+          "classification_share": 0.10121594595177351,
+          "intensity_signed": -0.35160591284434,
+          "intensity_absolute": 0.35160591284434,
+          "intensity_share": 0.08948020970961981
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "be",
+          "text_char_start": 8,
+          "text_char_end": 10,
+          "original_text_fragment": "be",
+          "classification_signed": 1.0770146052042644,
+          "classification_absolute": 1.0770146052042644,
+          "classification_share": 0.1124242478720394,
+          "intensity_signed": -0.365324296270098,
+          "intensity_absolute": 0.365324296270098,
+          "intensity_share": 0.09297140192502842
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "ashamed",
+          "text_char_start": 11,
+          "text_char_end": 18,
+          "original_text_fragment": "ashamed",
+          "classification_signed": 2.045581404368083,
+          "classification_absolute": 2.045581404368083,
+          "classification_share": 0.2135281636255022,
+          "intensity_signed": -0.6906805247068406,
+          "intensity_absolute": 0.6906805247068406,
+          "intensity_share": 0.17577132788571423
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "to",
+          "text_char_start": 19,
+          "text_char_end": 21,
+          "original_text_fragment": "to",
+          "classification_signed": 1.055412772849754,
+          "classification_absolute": 1.055412772849754,
+          "classification_share": 0.1101693390310835,
+          "intensity_signed": -0.37046331078917893,
+          "intensity_absolute": 0.37046331078917893,
+          "intensity_share": 0.09427923003618911
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "have",
+          "text_char_start": 22,
+          "text_char_end": 26,
+          "original_text_fragment": "have",
+          "classification_signed": 0.8832587948551884,
+          "classification_absolute": 0.8832587948551884,
+          "classification_share": 0.09219903352111508,
+          "intensity_signed": -0.34425812120790833,
+          "intensity_absolute": 0.34425812120790833,
+          "intensity_share": 0.08761026977825817
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "made",
+          "text_char_start": 27,
+          "text_char_end": 31,
+          "original_text_fragment": "made",
+          "classification_signed": 0.5805002548076489,
+          "classification_absolute": 0.5805002548076489,
+          "classification_share": 0.060595561305224484,
+          "intensity_signed": -0.2533384994224266,
+          "intensity_absolute": 0.2533384994224266,
+          "intensity_share": 0.06447212981277382
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "this",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "this",
+          "classification_signed": 0.49684975765369555,
+          "classification_absolute": 0.49684975765369555,
+          "classification_share": 0.05186369807773207,
+          "intensity_signed": -0.23876988578725744,
+          "intensity_absolute": 0.23876988578725744,
+          "intensity_share": 0.0607645624607126
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "film",
+          "text_char_start": 37,
+          "text_char_end": 41,
+          "original_text_fragment": "film",
+          "classification_signed": 0.3792315589057075,
+          "classification_absolute": 0.3792315589057075,
+          "classification_share": 0.03958611384961593,
+          "intensity_signed": -0.20662949526751484,
+          "intensity_absolute": 0.20662949526751484,
+          "intensity_share": 0.05258515256231066
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "if",
+          "text_char_start": 42,
+          "text_char_end": 44,
+          "original_text_fragment": "if",
+          "classification_signed": 0.3520542727576362,
+          "classification_absolute": 0.3520542727576362,
+          "classification_share": 0.036749210859037984,
+          "intensity_signed": -0.19633181624942359,
+          "intensity_absolute": 0.19633181624942359,
+          "intensity_share": 0.049964495615426235
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "i",
+          "text_char_start": 45,
+          "text_char_end": 46,
+          "original_text_fragment": "I",
+          "classification_signed": 0.29027579625447597,
+          "classification_absolute": 0.29027579625447597,
+          "classification_share": 0.030300460097453838,
+          "intensity_signed": -0.16761907686789831,
+          "intensity_absolute": 0.16761907686789831,
+          "intensity_share": 0.04265738885942022
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "was",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "was",
+          "classification_signed": 0.2559691361018589,
+          "classification_absolute": 0.2559691361018589,
+          "classification_share": 0.02671935688304743,
+          "intensity_signed": -0.14816158612569175,
+          "intensity_absolute": 0.14816158612569175,
+          "intensity_share": 0.03770565088109328
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "a",
+          "text_char_start": 51,
+          "text_char_end": 52,
+          "original_text_fragment": "a",
+          "classification_signed": 0.3373566118876139,
+          "classification_absolute": 0.3373566118876139,
+          "classification_share": 0.03521499446048026,
+          "intensity_signed": -0.1955577596028646,
+          "intensity_absolute": 0.1955577596028646,
+          "intensity_share": 0.04976750589332254
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "director",
+          "text_char_start": 53,
+          "text_char_end": 61,
+          "original_text_fragment": "director",
+          "classification_signed": 0.2992102411058214,
+          "classification_absolute": 0.2992102411058214,
+          "classification_share": 0.031233082772868924,
+          "intensity_signed": -0.18687389161851672,
+          "intensity_absolute": 0.18687389161851672,
+          "intensity_share": 0.047557547812571765
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 0.3908414840698242,
+          "intensity_delta": -0.20548486709594727,
+          "absolute_classification_delta": 0.3908414840698242,
+          "absolute_intensity_delta": 0.20548486709594727
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": 0.5315799713134766,
+          "intensity_delta": -0.32319796085357666,
+          "absolute_classification_delta": 0.5315799713134766,
+          "absolute_intensity_delta": 0.32319796085357666
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "be"
+          ],
+          "original_text_fragment": "be",
+          "classification_margin_delta": 0.15932512283325195,
+          "intensity_delta": -0.08896470069885254,
+          "absolute_classification_delta": 0.15932512283325195,
+          "absolute_intensity_delta": 0.08896470069885254
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "ashamed"
+          ],
+          "original_text_fragment": "ashamed",
+          "classification_margin_delta": 5.856080055236816,
+          "intensity_delta": -2.085766315460205,
+          "absolute_classification_delta": 5.856080055236816,
+          "absolute_intensity_delta": 2.085766315460205
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.3540525436401367,
+          "intensity_delta": -0.21917951107025146,
+          "absolute_classification_delta": 0.3540525436401367,
+          "absolute_intensity_delta": 0.21917951107025146
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "have"
+          ],
+          "original_text_fragment": "have",
+          "classification_margin_delta": 0.8983335494995117,
+          "intensity_delta": -0.5171517133712769,
+          "absolute_classification_delta": 0.8983335494995117,
+          "absolute_intensity_delta": 0.5171517133712769
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "made"
+          ],
+          "original_text_fragment": "made",
+          "classification_margin_delta": 0.47260594367980957,
+          "intensity_delta": -0.25692856311798096,
+          "absolute_classification_delta": 0.47260594367980957,
+          "absolute_intensity_delta": 0.25692856311798096
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": 0.570075511932373,
+          "intensity_delta": -0.33446061611175537,
+          "absolute_classification_delta": 0.570075511932373,
+          "absolute_intensity_delta": 0.33446061611175537
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "film"
+          ],
+          "original_text_fragment": "film",
+          "classification_margin_delta": 0.6917262077331543,
+          "intensity_delta": -0.3899792432785034,
+          "absolute_classification_delta": 0.6917262077331543,
+          "absolute_intensity_delta": 0.3899792432785034
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "if"
+          ],
+          "original_text_fragment": "if",
+          "classification_margin_delta": 0.9109029769897461,
+          "intensity_delta": -0.5250016450881958,
+          "absolute_classification_delta": 0.9109029769897461,
+          "absolute_intensity_delta": 0.5250016450881958
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 0.7625925540924072,
+          "intensity_delta": -0.43182528018951416,
+          "absolute_classification_delta": 0.7625925540924072,
+          "absolute_intensity_delta": 0.43182528018951416
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "was"
+          ],
+          "original_text_fragment": "was",
+          "classification_margin_delta": 0.6353819370269775,
+          "intensity_delta": -0.34890103340148926,
+          "absolute_classification_delta": 0.6353819370269775,
+          "absolute_intensity_delta": 0.34890103340148926
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": 0.8839917182922363,
+          "intensity_delta": -0.506747841835022,
+          "absolute_classification_delta": 0.8839917182922363,
+          "absolute_intensity_delta": 0.506747841835022
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": 0.5674867630004883,
+          "intensity_delta": -0.3592003583908081,
+          "absolute_classification_delta": 0.5674867630004883,
+          "absolute_intensity_delta": 0.3592003583908081
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "i",
+            "would",
+            "be"
+          ],
+          "original_text_fragment": "I would be",
+          "classification_margin_delta": 0.2920417785644531,
+          "intensity_delta": -0.17348229885101318,
+          "absolute_classification_delta": 0.2920417785644531,
+          "absolute_intensity_delta": 0.17348229885101318
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed"
+          ],
+          "original_text_fragment": "would be ashamed",
+          "classification_margin_delta": 5.851324558258057,
+          "intensity_delta": -1.9537643194198608,
+          "absolute_classification_delta": 5.851324558258057,
+          "absolute_intensity_delta": 1.9537643194198608
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "be ashamed to",
+          "classification_margin_delta": 5.7233076095581055,
+          "intensity_delta": -1.9528042078018188,
+          "absolute_classification_delta": 5.7233076095581055,
+          "absolute_intensity_delta": 1.9528042078018188
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "ashamed to have",
+          "classification_margin_delta": 6.0432448387146,
+          "intensity_delta": -1.9393274784088135,
+          "absolute_classification_delta": 6.0432448387146,
+          "absolute_intensity_delta": 1.9393274784088135
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "to have made",
+          "classification_margin_delta": 0.9273452758789062,
+          "intensity_delta": -0.5270209312438965,
+          "absolute_classification_delta": 0.9273452758789062,
+          "absolute_intensity_delta": 0.5270209312438965
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "have made this",
+          "classification_margin_delta": 1.3771400451660156,
+          "intensity_delta": -0.7484822869300842,
+          "absolute_classification_delta": 1.3771400451660156,
+          "absolute_intensity_delta": 0.7484822869300842
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "made this film",
+          "classification_margin_delta": 1.53123140335083,
+          "intensity_delta": -0.8246212601661682,
+          "absolute_classification_delta": 1.53123140335083,
+          "absolute_intensity_delta": 0.8246212601661682
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "this film if",
+          "classification_margin_delta": 1.3876628875732422,
+          "intensity_delta": -0.7694777846336365,
+          "absolute_classification_delta": 1.3876628875732422,
+          "absolute_intensity_delta": 0.7694777846336365
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "film if I",
+          "classification_margin_delta": 0.9661095142364502,
+          "intensity_delta": -0.5616947412490845,
+          "absolute_classification_delta": 0.9661095142364502,
+          "absolute_intensity_delta": 0.5616947412490845
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "if I was",
+          "classification_margin_delta": 0.6059587001800537,
+          "intensity_delta": -0.3723558187484741,
+          "absolute_classification_delta": 0.6059587001800537,
+          "absolute_intensity_delta": 0.3723558187484741
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "I was a",
+          "classification_margin_delta": 0.9123759269714355,
+          "intensity_delta": -0.5081454515457153,
+          "absolute_classification_delta": 0.9123759269714355,
+          "absolute_intensity_delta": 0.5081454515457153
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "was a director",
+          "classification_margin_delta": 0.6242232322692871,
+          "intensity_delta": -0.38242244720458984,
+          "absolute_classification_delta": 0.6242232322692871,
+          "absolute_intensity_delta": 0.38242244720458984
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i",
+            "would",
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "I would be ashamed to",
+          "classification_margin_delta": 5.9224348068237305,
+          "intensity_delta": -1.8906242847442627,
+          "absolute_classification_delta": 5.9224348068237305,
+          "absolute_intensity_delta": 1.8906242847442627
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "would be ashamed to have",
+          "classification_margin_delta": 5.421722412109375,
+          "intensity_delta": -1.7381227016448975,
+          "absolute_classification_delta": 5.421722412109375,
+          "absolute_intensity_delta": 1.7381227016448975
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "be ashamed to have made",
+          "classification_margin_delta": 5.776938438415527,
+          "intensity_delta": -1.9126951694488525,
+          "absolute_classification_delta": 5.776938438415527,
+          "absolute_intensity_delta": 1.9126951694488525
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "ashamed to have made this",
+          "classification_margin_delta": 6.058631896972656,
+          "intensity_delta": -1.9137872457504272,
+          "absolute_classification_delta": 6.058631896972656,
+          "absolute_intensity_delta": 1.9137872457504272
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "to",
+            "have",
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "to have made this film",
+          "classification_margin_delta": 1.3870882987976074,
+          "intensity_delta": -0.7544676661491394,
+          "absolute_classification_delta": 1.3870882987976074,
+          "absolute_intensity_delta": 0.7544676661491394
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "have",
+            "made",
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "have made this film if",
+          "classification_margin_delta": 2.6977133750915527,
+          "intensity_delta": -1.228732943534851,
+          "absolute_classification_delta": 2.6977133750915527,
+          "absolute_intensity_delta": 1.228732943534851
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "made",
+            "this",
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "made this film if I",
+          "classification_margin_delta": 1.4462485313415527,
+          "intensity_delta": -0.8056991696357727,
+          "absolute_classification_delta": 1.4462485313415527,
+          "absolute_intensity_delta": 0.8056991696357727
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "this",
+            "film",
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "this film if I was",
+          "classification_margin_delta": 0.7581222057342529,
+          "intensity_delta": -0.46535253524780273,
+          "absolute_classification_delta": 0.7581222057342529,
+          "absolute_intensity_delta": 0.46535253524780273
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "film",
+            "if",
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "film if I was a",
+          "classification_margin_delta": 0.8426103591918945,
+          "intensity_delta": -0.501189112663269,
+          "absolute_classification_delta": 0.8426103591918945,
+          "absolute_intensity_delta": 0.501189112663269
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "if",
+            "i",
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "if I was a director",
+          "classification_margin_delta": 0.6103477478027344,
+          "intensity_delta": -0.36973583698272705,
+          "absolute_classification_delta": 0.6103477478027344,
+          "absolute_intensity_delta": 0.36973583698272705
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "ashamed to have made this",
+          "classification_margin_delta": 6.058631896972656,
+          "intensity_delta": -1.9137872457504272,
+          "absolute_classification_delta": 6.058631896972656,
+          "absolute_intensity_delta": 1.9137872457504272
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "film if I",
+          "classification_margin_delta": 0.9661095142364502,
+          "intensity_delta": -0.5616947412490845,
+          "absolute_classification_delta": 0.9661095142364502,
+          "absolute_intensity_delta": 0.5616947412490845
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": 0.8839917182922363,
+          "intensity_delta": -0.506747841835022,
+          "absolute_classification_delta": 0.8839917182922363,
+          "absolute_intensity_delta": 0.506747841835022
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "ashamed"
+          ],
+          "original_text_fragment": "ashamed",
+          "classification_margin_delta": 5.856080055236816,
+          "intensity_delta": -2.085766315460205,
+          "absolute_classification_delta": 5.856080055236816,
+          "absolute_intensity_delta": 2.085766315460205
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "have",
+            "made",
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "have made this film if",
+          "classification_margin_delta": 2.6977133750915527,
+          "intensity_delta": -1.228732943534851,
+          "absolute_classification_delta": 2.6977133750915527,
+          "absolute_intensity_delta": 1.228732943534851
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "I was a",
+          "classification_margin_delta": 0.9123759269714355,
+          "intensity_delta": -0.5081454515457153,
+          "absolute_classification_delta": 0.9123759269714355,
+          "absolute_intensity_delta": 0.5081454515457153
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.3908414840698242,
+          0.5315799713134766,
+          0.15932512283325195,
+          5.856080055236816,
+          0.3540525436401367,
+          0.8983335494995117,
+          0.47260594367980957,
+          0.570075511932373,
+          0.6917262077331543,
+          0.9109029769897461,
+          0.7625925540924072,
+          0.6353819370269775,
+          0.8839917182922363,
+          0.5674867630004883
+        ],
+        "3": [
+          0.09734725952148438,
+          1.0238943894704184,
+          1.318519327375624,
+          1.9575418896145294,
+          1.4104330804612901,
+          0.9275255733066134,
+          0.4261907471550835,
+          0.4773371484544542,
+          0.4316670894622803,
+          0.328859011332194,
+          0.27604934904310435,
+          0.23806198438008627,
+          0.2560998598734538,
+          0.20807441075642905
+        ],
+        "5": [
+          1.1844869613647462,
+          1.1344157218933106,
+          1.1414063771565754,
+          1.1589863777160645,
+          0.9826726341247559,
+          0.8536837768554688,
+          0.6946648216247558,
+          0.4939121723175049,
+          0.28527131080627444,
+          0.25420168876647947,
+          0.18286644220352172,
+          0.14740535418192546,
+          0.1452958106994629,
+          0.12206954956054687
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": -0.01978021978021978
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": -0.3362637362637363
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.5692307692307692
+        }
+      ]
+    },
+    "audio": {
+      "modality": "audio",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "i",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "I",
+          "classification_signed": -0.000967211193508572,
+          "classification_absolute": 0.000967211193508572,
+          "classification_share": 0.024571898016760574,
+          "intensity_signed": 0.00019788212246365017,
+          "intensity_absolute": 0.00019788212246365017,
+          "intensity_share": 0.027806620671032817
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "would",
+          "text_char_start": 2,
+          "text_char_end": 7,
+          "original_text_fragment": "would",
+          "classification_signed": -0.0011316394805908204,
+          "classification_absolute": 0.0011316394805908204,
+          "classification_share": 0.028749181249597595,
+          "intensity_signed": 0.00024699529012044277,
+          "intensity_absolute": 0.00024699529012044277,
+          "intensity_share": 0.034708058789759966
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "be",
+          "text_char_start": 8,
+          "text_char_end": 10,
+          "original_text_fragment": "be",
+          "classification_signed": -0.0014874571845644997,
+          "classification_absolute": 0.0014874571845644997,
+          "classification_share": 0.037788692364934644,
+          "intensity_signed": 0.00015315555390857516,
+          "intensity_absolute": 0.00015315555390857516,
+          "intensity_share": 0.02152159244188405
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "ashamed",
+          "text_char_start": 11,
+          "text_char_end": 18,
+          "original_text_fragment": "ashamed",
+          "classification_signed": -0.001605639855066935,
+          "classification_absolute": 0.001605639855066935,
+          "classification_share": 0.040791110602465645,
+          "intensity_signed": 0.0002326736847559611,
+          "intensity_absolute": 0.0002326736847559611,
+          "intensity_share": 0.03269557053254753
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "to",
+          "text_char_start": 19,
+          "text_char_end": 21,
+          "original_text_fragment": "to",
+          "classification_signed": -0.001397740399395978,
+          "classification_absolute": 0.001397740399395978,
+          "classification_share": 0.03550944693193295,
+          "intensity_signed": 0.00013445924829553677,
+          "intensity_absolute": 0.00013559835928457752,
+          "intensity_share": 0.019054435505831475
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "have",
+          "text_char_start": 22,
+          "text_char_end": 26,
+          "original_text_fragment": "have",
+          "classification_signed": -0.0015578941062644675,
+          "classification_absolute": 0.0015578941062644675,
+          "classification_share": 0.039578134906793336,
+          "intensity_signed": 0.00019402680573640048,
+          "intensity_absolute": 0.00019402680573640048,
+          "intensity_share": 0.02726486718432756
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "made",
+          "text_char_start": 27,
+          "text_char_end": 31,
+          "original_text_fragment": "made",
+          "classification_signed": -0.00160877439710829,
+          "classification_absolute": 0.00160877439710829,
+          "classification_share": 0.040870743311315946,
+          "intensity_signed": 7.026548738832827e-05,
+          "intensity_absolute": 0.00010795328352186415,
+          "intensity_share": 0.015169718050888356
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "this",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "this",
+          "classification_signed": -0.002204449971516927,
+          "classification_absolute": 0.002204449971516927,
+          "classification_share": 0.056003818242292315,
+          "intensity_signed": 0.00013346407148573134,
+          "intensity_absolute": 0.00017033947838677302,
+          "intensity_share": 0.023936297032960473
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "film",
+          "text_char_start": 37,
+          "text_char_end": 41,
+          "original_text_fragment": "film",
+          "classification_signed": -0.002714234811288339,
+          "classification_absolute": 0.002714234811288339,
+          "classification_share": 0.06895484814912595,
+          "intensity_signed": 0.0002491288714938694,
+          "intensity_absolute": 0.00030075973934597436,
+          "intensity_share": 0.04226310027904855
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "if",
+          "text_char_start": 42,
+          "text_char_end": 44,
+          "original_text_fragment": "if",
+          "classification_signed": -0.0037278245996545858,
+          "classification_absolute": 0.0037278245996545858,
+          "classification_share": 0.0947049894602693,
+          "intensity_signed": 0.0004165225558810764,
+          "intensity_absolute": 0.0005616753189652055,
+          "intensity_share": 0.07892725396462141
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "i",
+          "text_char_start": 45,
+          "text_char_end": 46,
+          "original_text_fragment": "I",
+          "classification_signed": -0.00419740080833435,
+          "classification_absolute": 0.00419740080833435,
+          "classification_share": 0.10663452334926476,
+          "intensity_signed": 0.0008865396181742349,
+          "intensity_absolute": 0.0008865396181742349,
+          "intensity_share": 0.12457755438185981
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "was",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "was",
+          "classification_signed": -0.004448897497994559,
+          "classification_absolute": 0.004448897497994559,
+          "classification_share": 0.11302377013565316,
+          "intensity_signed": 0.001324718339102609,
+          "intensity_absolute": 0.001324718339102609,
+          "intensity_share": 0.18615092608051756
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "a",
+          "text_char_start": 51,
+          "text_char_end": 52,
+          "original_text_fragment": "a",
+          "classification_signed": -0.00286161740620931,
+          "classification_absolute": 0.00445158322652181,
+          "classification_share": 0.11309200078467298,
+          "intensity_signed": 0.0015053240458170573,
+          "intensity_absolute": 0.0015053240458170573,
+          "intensity_share": 0.21152984518198917
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "director",
+          "text_char_start": 53,
+          "text_char_end": 61,
+          "original_text_fragment": "director",
+          "classification_signed": -0.00786174668206109,
+          "classification_absolute": 0.00786174668206109,
+          "classification_share": 0.1997268424949208,
+          "intensity_signed": 0.00022190146976047094,
+          "intensity_absolute": 0.0010987255308363174,
+          "intensity_share": 0.15439415990273125
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -0.00067138671875,
+          "intensity_delta": 0.00020134449005126953,
+          "absolute_classification_delta": 0.00067138671875,
+          "absolute_intensity_delta": 0.00020134449005126953
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": -0.00046062469482421875,
+          "intensity_delta": 0.00035011768341064453,
+          "absolute_classification_delta": 0.00046062469482421875,
+          "absolute_intensity_delta": 0.00035011768341064453
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "be"
+          ],
+          "original_text_fragment": "be",
+          "classification_margin_delta": -0.0022008419036865234,
+          "intensity_delta": 3.528594970703125e-05,
+          "absolute_classification_delta": 0.0022008419036865234,
+          "absolute_intensity_delta": 3.528594970703125e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "ashamed"
+          ],
+          "original_text_fragment": "ashamed",
+          "classification_margin_delta": -0.00255584716796875,
+          "intensity_delta": 0.0005537271499633789,
+          "absolute_classification_delta": 0.00255584716796875,
+          "absolute_intensity_delta": 0.0005537271499633789
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": -0.0013353824615478516,
+          "intensity_delta": -5.125999450683594e-06,
+          "absolute_classification_delta": 0.0013353824615478516,
+          "absolute_intensity_delta": 5.125999450683594e-06
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "have"
+          ],
+          "original_text_fragment": "have",
+          "classification_margin_delta": -0.0019047260284423828,
+          "intensity_delta": 0.0005819797515869141,
+          "absolute_classification_delta": 0.0019047260284423828,
+          "absolute_intensity_delta": 0.0005819797515869141
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "made"
+          ],
+          "original_text_fragment": "made",
+          "classification_margin_delta": -0.0006837844848632812,
+          "intensity_delta": -0.0001436471939086914,
+          "absolute_classification_delta": 0.0006837844848632812,
+          "absolute_intensity_delta": 0.0001436471939086914
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": -0.0019865036010742188,
+          "intensity_delta": 0.00012886524200439453,
+          "absolute_classification_delta": 0.0019865036010742188,
+          "absolute_intensity_delta": 0.00012886524200439453
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "film"
+          ],
+          "original_text_fragment": "film",
+          "classification_margin_delta": -0.00220489501953125,
+          "intensity_delta": -6.639957427978516e-05,
+          "absolute_classification_delta": 0.00220489501953125,
+          "absolute_intensity_delta": 6.639957427978516e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "if"
+          ],
+          "original_text_fragment": "if",
+          "classification_margin_delta": -0.004061222076416016,
+          "intensity_delta": -0.0005131959915161133,
+          "absolute_classification_delta": 0.004061222076416016,
+          "absolute_intensity_delta": 0.0005131959915161133
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -0.006360292434692383,
+          "intensity_delta": 0.0003813505172729492,
+          "absolute_classification_delta": 0.006360292434692383,
+          "absolute_intensity_delta": 0.0003813505172729492
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "was"
+          ],
+          "original_text_fragment": "was",
+          "classification_margin_delta": -0.004473686218261719,
+          "intensity_delta": 0.001898050308227539,
+          "absolute_classification_delta": 0.004473686218261719,
+          "absolute_intensity_delta": 0.001898050308227539
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": 0.00397491455078125,
+          "intensity_delta": 0.0018297433853149414,
+          "absolute_classification_delta": 0.00397491455078125,
+          "absolute_intensity_delta": 0.0018297433853149414
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": -0.01124715805053711,
+          "intensity_delta": -0.0013152360916137695,
+          "absolute_classification_delta": 0.01124715805053711,
+          "absolute_intensity_delta": 0.0013152360916137695
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "i",
+            "would",
+            "be"
+          ],
+          "original_text_fragment": "I would be",
+          "classification_margin_delta": -0.003032207489013672,
+          "intensity_delta": 0.0006300210952758789,
+          "absolute_classification_delta": 0.003032207489013672,
+          "absolute_intensity_delta": 0.0006300210952758789
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed"
+          ],
+          "original_text_fragment": "would be ashamed",
+          "classification_margin_delta": -0.004789829254150391,
+          "intensity_delta": 0.00081634521484375,
+          "absolute_classification_delta": 0.004789829254150391,
+          "absolute_intensity_delta": 0.00081634521484375
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "be ashamed to",
+          "classification_margin_delta": -0.005181550979614258,
+          "intensity_delta": 0.00022101402282714844,
+          "absolute_classification_delta": 0.005181550979614258,
+          "absolute_intensity_delta": 0.00022101402282714844
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "ashamed to have",
+          "classification_margin_delta": -0.004988431930541992,
+          "intensity_delta": 0.0009212493896484375,
+          "absolute_classification_delta": 0.004988431930541992,
+          "absolute_intensity_delta": 0.0009212493896484375
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "to have made",
+          "classification_margin_delta": -0.0033864974975585938,
+          "intensity_delta": 0.0003362894058227539,
+          "absolute_classification_delta": 0.0033864974975585938,
+          "absolute_intensity_delta": 0.0003362894058227539
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "have made this",
+          "classification_margin_delta": -0.004630088806152344,
+          "intensity_delta": 0.0005993843078613281,
+          "absolute_classification_delta": 0.004630088806152344,
+          "absolute_intensity_delta": 0.0005993843078613281
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "made this film",
+          "classification_margin_delta": -0.0047893524169921875,
+          "intensity_delta": -7.784366607666016e-05,
+          "absolute_classification_delta": 0.0047893524169921875,
+          "absolute_intensity_delta": 7.784366607666016e-05
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "this film if",
+          "classification_margin_delta": -0.00849771499633789,
+          "intensity_delta": -0.00041997432708740234,
+          "absolute_classification_delta": 0.00849771499633789,
+          "absolute_intensity_delta": 0.00041997432708740234
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "film if I",
+          "classification_margin_delta": -0.012694835662841797,
+          "intensity_delta": 0.0006244182586669922,
+          "absolute_classification_delta": 0.012694835662841797,
+          "absolute_intensity_delta": 0.0006244182586669922
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "if I was",
+          "classification_margin_delta": -0.014233112335205078,
+          "intensity_delta": 0.0031543970108032227,
+          "absolute_classification_delta": 0.014233112335205078,
+          "absolute_intensity_delta": 0.0031543970108032227
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "I was a",
+          "classification_margin_delta": -0.00851297378540039,
+          "intensity_delta": 0.0069427490234375,
+          "absolute_classification_delta": 0.00851297378540039,
+          "absolute_intensity_delta": 0.0069427490234375
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "was a director",
+          "classification_margin_delta": -0.02039170265197754,
+          "intensity_delta": 0.003112196922302246,
+          "absolute_classification_delta": 0.02039170265197754,
+          "absolute_intensity_delta": 0.003112196922302246
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i",
+            "would",
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "I would be ashamed to",
+          "classification_margin_delta": -0.006097555160522461,
+          "intensity_delta": 0.0009114742279052734,
+          "absolute_classification_delta": 0.006097555160522461,
+          "absolute_intensity_delta": 0.0009114742279052734
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "would be ashamed to have",
+          "classification_margin_delta": -0.006853580474853516,
+          "intensity_delta": 0.0011022090911865234,
+          "absolute_classification_delta": 0.006853580474853516,
+          "absolute_intensity_delta": 0.0011022090911865234
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "be ashamed to have made",
+          "classification_margin_delta": -0.006433010101318359,
+          "intensity_delta": 0.00039136409759521484,
+          "absolute_classification_delta": 0.006433010101318359,
+          "absolute_intensity_delta": 0.00039136409759521484
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "ashamed to have made this",
+          "classification_margin_delta": -0.007129192352294922,
+          "intensity_delta": 0.0008689165115356445,
+          "absolute_classification_delta": 0.007129192352294922,
+          "absolute_intensity_delta": 0.0008689165115356445
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "to",
+            "have",
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "to have made this film",
+          "classification_margin_delta": -0.007113933563232422,
+          "intensity_delta": 0.0003380775451660156,
+          "absolute_classification_delta": 0.007113933563232422,
+          "absolute_intensity_delta": 0.0003380775451660156
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "have",
+            "made",
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "have made this film if",
+          "classification_margin_delta": -0.01137685775756836,
+          "intensity_delta": 2.586841583251953e-05,
+          "absolute_classification_delta": 0.01137685775756836,
+          "absolute_intensity_delta": 2.586841583251953e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "made",
+            "this",
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "made this film if I",
+          "classification_margin_delta": -0.015579700469970703,
+          "intensity_delta": 0.0008262395858764648,
+          "absolute_classification_delta": 0.015579700469970703,
+          "absolute_intensity_delta": 0.0008262395858764648
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "this",
+            "film",
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "this film if I was",
+          "classification_margin_delta": -0.018206119537353516,
+          "intensity_delta": 0.0031331777572631836,
+          "absolute_classification_delta": 0.018206119537353516,
+          "absolute_intensity_delta": 0.0031331777572631836
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "film",
+            "if",
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "film if I was a",
+          "classification_margin_delta": -0.015536308288574219,
+          "intensity_delta": 0.0070084333419799805,
+          "absolute_classification_delta": 0.015536308288574219,
+          "absolute_intensity_delta": 0.0070084333419799805
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "if",
+            "i",
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "if I was a director",
+          "classification_margin_delta": -0.027704238891601562,
+          "intensity_delta": 0.004717707633972168,
+          "absolute_classification_delta": 0.027704238891601562,
+          "absolute_intensity_delta": 0.004717707633972168
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "if",
+            "i",
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "if I was a director",
+          "classification_margin_delta": -0.027704238891601562,
+          "intensity_delta": 0.004717707633972168,
+          "absolute_classification_delta": 0.027704238891601562,
+          "absolute_intensity_delta": 0.004717707633972168
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "ashamed to have made this",
+          "classification_margin_delta": -0.007129192352294922,
+          "intensity_delta": 0.0008689165115356445,
+          "absolute_classification_delta": 0.007129192352294922,
+          "absolute_intensity_delta": 0.0008689165115356445
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "i",
+            "would",
+            "be"
+          ],
+          "original_text_fragment": "I would be",
+          "classification_margin_delta": -0.003032207489013672,
+          "intensity_delta": 0.0006300210952758789,
+          "absolute_classification_delta": 0.003032207489013672,
+          "absolute_intensity_delta": 0.0006300210952758789
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "film",
+            "if",
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "film if I was a",
+          "classification_margin_delta": -0.015536308288574219,
+          "intensity_delta": 0.0070084333419799805,
+          "absolute_classification_delta": 0.015536308288574219,
+          "absolute_intensity_delta": 0.0070084333419799805
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": -0.01124715805053711,
+          "intensity_delta": -0.0013152360916137695,
+          "absolute_classification_delta": 0.01124715805053711,
+          "absolute_intensity_delta": 0.0013152360916137695
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "would be ashamed to have",
+          "classification_margin_delta": -0.006853580474853516,
+          "intensity_delta": 0.0011022090911865234,
+          "absolute_classification_delta": 0.006853580474853516,
+          "absolute_intensity_delta": 0.0011022090911865234
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.00067138671875,
+          0.00046062469482421875,
+          0.0022008419036865234,
+          0.00255584716796875,
+          0.0013353824615478516,
+          0.0019047260284423828,
+          0.0006837844848632812,
+          0.0019865036010742188,
+          0.00220489501953125,
+          0.004061222076416016,
+          0.006360292434692383,
+          0.004473686218261719,
+          0.00397491455078125,
+          0.01124715805053711
+        ],
+        "3": [
+          0.0010107358296712239,
+          0.0013036727905273438,
+          0.001444843080308702,
+          0.0016622013515896266,
+          0.0015062756008572048,
+          0.0014450020260281032,
+          0.001422882080078125,
+          0.001990795135498047,
+          0.0028868781195746525,
+          0.0039361847771538635,
+          0.003937880198160808,
+          0.004793087641398112,
+          0.004817446072896322,
+          0.006797234217325847
+        ],
+        "5": [
+          0.0012195110321044922,
+          0.0012951135635375977,
+          0.001292276382446289,
+          0.0013256669044494629,
+          0.001345090866088867,
+          0.001556262969970703,
+          0.0019053077697753905,
+          0.002376232147216797,
+          0.002712516784667969,
+          0.0035361289978027345,
+          0.0038513183593749997,
+          0.0040964444478352865,
+          0.0043240547180175785,
+          0.0055408477783203125
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.9164835164835166
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.7978021978021977
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.9296703296703297
+        }
+      ]
+    },
+    "vision": {
+      "modality": "vision",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "i",
+          "text_char_start": 0,
+          "text_char_end": 1,
+          "original_text_fragment": "I",
+          "classification_signed": 0.00027867952982584633,
+          "classification_absolute": 0.00027867952982584633,
+          "classification_share": 0.03257841714512174,
+          "intensity_signed": -0.00027925703260633683,
+          "intensity_absolute": 0.00027925703260633683,
+          "intensity_share": 0.07288273630950522
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "would",
+          "text_char_start": 2,
+          "text_char_end": 7,
+          "original_text_fragment": "would",
+          "classification_signed": 0.0002010091145833333,
+          "classification_absolute": 0.0002010091145833333,
+          "classification_share": 0.023498528180235418,
+          "intensity_signed": -0.00022995313008626305,
+          "intensity_absolute": 0.00022995313008626305,
+          "intensity_share": 0.06001500906603186
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "be",
+          "text_char_start": 8,
+          "text_char_end": 10,
+          "original_text_fragment": "be",
+          "classification_signed": 0.0001854215349469866,
+          "classification_absolute": 0.0001854215349469866,
+          "classification_share": 0.02167629648638601,
+          "intensity_signed": -0.00020974477132161461,
+          "intensity_absolute": 0.00020974477132161461,
+          "intensity_share": 0.054740869792454516
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "ashamed",
+          "text_char_start": 11,
+          "text_char_end": 18,
+          "original_text_fragment": "ashamed",
+          "classification_signed": 0.00015885035196940104,
+          "classification_absolute": 0.00015885035196940104,
+          "classification_share": 0.018570050815510563,
+          "intensity_signed": -0.0001884798208872477,
+          "intensity_absolute": 0.0001884798208872477,
+          "intensity_share": 0.04919097276505377
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "to",
+          "text_char_start": 19,
+          "text_char_end": 21,
+          "original_text_fragment": "to",
+          "classification_signed": 0.00011952364886248554,
+          "classification_absolute": 0.00012310522573965568,
+          "classification_share": 0.014391345497809568,
+          "intensity_signed": -0.0001578021932531286,
+          "intensity_absolute": 0.0001578021932531286,
+          "intensity_share": 0.041184479877153776
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "have",
+          "text_char_start": 22,
+          "text_char_end": 26,
+          "original_text_fragment": "have",
+          "classification_signed": 2.5584962632921012e-05,
+          "classification_absolute": 8.538740652578848e-05,
+          "classification_share": 0.009982026848099084,
+          "intensity_signed": -0.00011564625634087456,
+          "intensity_absolute": 0.00012414985232883028,
+          "intensity_share": 0.03240162249701147
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "made",
+          "text_char_start": 27,
+          "text_char_end": 31,
+          "original_text_fragment": "made",
+          "classification_signed": -6.642871432834201e-05,
+          "classification_absolute": 0.00011612574259440103,
+          "classification_share": 0.01357542438044028,
+          "intensity_signed": -0.00010398847085458259,
+          "intensity_absolute": 0.00010398847085458259,
+          "intensity_share": 0.027139743732818106
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "this",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "this",
+          "classification_signed": -0.00020548149391456884,
+          "classification_absolute": 0.0002201468856246383,
+          "classification_share": 0.02573578718738636,
+          "intensity_signed": -8.351537916395398e-05,
+          "intensity_absolute": 9.011162651909721e-05,
+          "intensity_share": 0.023518053789786456
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "film",
+          "text_char_start": 37,
+          "text_char_end": 41,
+          "original_text_fragment": "film",
+          "classification_signed": -0.0004239700458667897,
+          "classification_absolute": 0.0004239700458667897,
+          "classification_share": 0.04956328518250444,
+          "intensity_signed": -3.8291789867259845e-05,
+          "intensity_absolute": 6.574171560781973e-05,
+          "intensity_share": 0.017157799316494214
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "if",
+          "text_char_start": 42,
+          "text_char_end": 44,
+          "original_text_fragment": "if",
+          "classification_signed": -0.0006467059806541161,
+          "classification_absolute": 0.0006467059806541161,
+          "classification_share": 0.07560173946454246,
+          "intensity_signed": -4.793096471715856e-05,
+          "intensity_absolute": 0.00014885796440972218,
+          "intensity_share": 0.03885014341944027
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "i",
+          "text_char_start": 45,
+          "text_char_end": 46,
+          "original_text_fragment": "I",
+          "classification_signed": -0.000933980941772461,
+          "classification_absolute": 0.000933980941772461,
+          "classification_share": 0.109184986588975,
+          "intensity_signed": 3.9657950401306174e-05,
+          "intensity_absolute": 0.00021664798259735107,
+          "intensity_share": 0.056542525143449915
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "was",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "was",
+          "classification_signed": -0.001238766170683361,
+          "classification_absolute": 0.001238766170683361,
+          "classification_share": 0.1448152330349047,
+          "intensity_signed": 7.463296254475912e-05,
+          "intensity_absolute": 0.0002718301046462286,
+          "intensity_share": 0.07094439718495643
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "a",
+          "text_char_start": 51,
+          "text_char_end": 52,
+          "original_text_fragment": "a",
+          "classification_signed": -0.001487611134847005,
+          "classification_absolute": 0.001487611134847005,
+          "classification_share": 0.17390590593812194,
+          "intensity_signed": 8.100986480712893e-05,
+          "intensity_absolute": 0.00035708586374918626,
+          "intensity_share": 0.09319512781678568
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "director",
+          "text_char_start": 53,
+          "text_char_end": 61,
+          "original_text_fragment": "director",
+          "classification_signed": -0.002454355027940538,
+          "classification_absolute": 0.002454355027940538,
+          "classification_share": 0.28692097324996246,
+          "intensity_signed": 0.000927816496955024,
+          "intensity_absolute": 0.0013879431618584526,
+          "intensity_share": 0.3622365192890583
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": 0.0003559589385986328,
+          "intensity_delta": -0.00028526782989501953,
+          "absolute_classification_delta": 0.0003559589385986328,
+          "absolute_intensity_delta": 0.00028526782989501953
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "would"
+          ],
+          "original_text_fragment": "would",
+          "classification_margin_delta": 0.0001735687255859375,
+          "intensity_delta": -0.00016927719116210938,
+          "absolute_classification_delta": 0.0001735687255859375,
+          "absolute_intensity_delta": 0.00016927719116210938
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "be"
+          ],
+          "original_text_fragment": "be",
+          "classification_margin_delta": 0.00015115737915039062,
+          "intensity_delta": -0.00012445449829101562,
+          "absolute_classification_delta": 0.00015115737915039062,
+          "absolute_intensity_delta": 0.00012445449829101562
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "ashamed"
+          ],
+          "original_text_fragment": "ashamed",
+          "classification_margin_delta": 0.00018167495727539062,
+          "intensity_delta": -0.00015413761138916016,
+          "absolute_classification_delta": 0.00018167495727539062,
+          "absolute_intensity_delta": 0.00015413761138916016
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.00015783309936523438,
+          "intensity_delta": -7.092952728271484e-05,
+          "absolute_classification_delta": 0.00015783309936523438,
+          "absolute_intensity_delta": 7.092952728271484e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "have"
+          ],
+          "original_text_fragment": "have",
+          "classification_margin_delta": -6.818771362304688e-05,
+          "intensity_delta": 3.826618194580078e-05,
+          "absolute_classification_delta": 6.818771362304688e-05,
+          "absolute_intensity_delta": 3.826618194580078e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "made"
+          ],
+          "original_text_fragment": "made",
+          "classification_margin_delta": -0.00010204315185546875,
+          "intensity_delta": -2.562999725341797e-05,
+          "absolute_classification_delta": 0.00010204315185546875,
+          "absolute_intensity_delta": 2.562999725341797e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": -0.00016617774963378906,
+          "intensity_delta": -5.936622619628906e-05,
+          "absolute_classification_delta": 0.00016617774963378906,
+          "absolute_intensity_delta": 5.936622619628906e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "film"
+          ],
+          "original_text_fragment": "film",
+          "classification_margin_delta": -0.00046443939208984375,
+          "intensity_delta": 1.537799835205078e-05,
+          "absolute_classification_delta": 0.00046443939208984375,
+          "absolute_intensity_delta": 1.537799835205078e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "if"
+          ],
+          "original_text_fragment": "if",
+          "classification_margin_delta": -0.0009593963623046875,
+          "intensity_delta": 0.00011932849884033203,
+          "absolute_classification_delta": 0.0009593963623046875,
+          "absolute_intensity_delta": 0.00011932849884033203
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "i"
+          ],
+          "original_text_fragment": "I",
+          "classification_margin_delta": -0.0016064643859863281,
+          "intensity_delta": 0.00043022632598876953,
+          "absolute_classification_delta": 0.0016064643859863281,
+          "absolute_intensity_delta": 0.00043022632598876953
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "was"
+          ],
+          "original_text_fragment": "was",
+          "classification_margin_delta": -0.0023169517517089844,
+          "intensity_delta": 0.0006862878799438477,
+          "absolute_classification_delta": 0.0023169517517089844,
+          "absolute_intensity_delta": 0.0006862878799438477
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.0029435157775878906,
+          "intensity_delta": 0.0008252859115600586,
+          "absolute_classification_delta": 0.0029435157775878906,
+          "absolute_intensity_delta": 0.0008252859115600586
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": -0.005269050598144531,
+          "intensity_delta": 0.003473639488220215,
+          "absolute_classification_delta": 0.005269050598144531,
+          "absolute_intensity_delta": 0.003473639488220215
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "i",
+            "would",
+            "be"
+          ],
+          "original_text_fragment": "I would be",
+          "classification_margin_delta": 0.0007524490356445312,
+          "intensity_delta": -0.00083160400390625,
+          "absolute_classification_delta": 0.0007524490356445312,
+          "absolute_intensity_delta": 0.00083160400390625
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed"
+          ],
+          "original_text_fragment": "would be ashamed",
+          "classification_margin_delta": 0.0006084442138671875,
+          "intensity_delta": -0.0006934404373168945,
+          "absolute_classification_delta": 0.0006084442138671875,
+          "absolute_intensity_delta": 0.0006934404373168945
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "be ashamed to",
+          "classification_margin_delta": 0.0006160736083984375,
+          "intensity_delta": -0.0005873441696166992,
+          "absolute_classification_delta": 0.0006160736083984375,
+          "absolute_intensity_delta": 0.0005873441696166992
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "ashamed to have",
+          "classification_margin_delta": 0.0003814697265625,
+          "intensity_delta": -0.0003859996795654297,
+          "absolute_classification_delta": 0.0003814697265625,
+          "absolute_intensity_delta": 0.0003859996795654297
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "to have made",
+          "classification_margin_delta": 0.0001430511474609375,
+          "intensity_delta": -0.0002785921096801758,
+          "absolute_classification_delta": 0.0001430511474609375,
+          "absolute_intensity_delta": 0.0002785921096801758
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "have made this",
+          "classification_margin_delta": -6.818771362304688e-05,
+          "intensity_delta": -0.0002859830856323242,
+          "absolute_classification_delta": 6.818771362304688e-05,
+          "absolute_intensity_delta": 0.0002859830856323242
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "made this film",
+          "classification_margin_delta": -0.0004017353057861328,
+          "intensity_delta": -0.0003243684768676758,
+          "absolute_classification_delta": 0.0004017353057861328,
+          "absolute_intensity_delta": 0.0003243684768676758
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "this film if",
+          "classification_margin_delta": -0.0011219978332519531,
+          "intensity_delta": -0.0002161264419555664,
+          "absolute_classification_delta": 0.0011219978332519531,
+          "absolute_intensity_delta": 0.0002161264419555664
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "film if I",
+          "classification_margin_delta": -0.0022945404052734375,
+          "intensity_delta": 0.00020599365234375,
+          "absolute_classification_delta": 0.0022945404052734375,
+          "absolute_intensity_delta": 0.00020599365234375
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "if I was",
+          "classification_margin_delta": -0.003612518310546875,
+          "intensity_delta": 0.000680088996887207,
+          "absolute_classification_delta": 0.003612518310546875,
+          "absolute_intensity_delta": 0.000680088996887207
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "I was a",
+          "classification_margin_delta": -0.0046215057373046875,
+          "intensity_delta": 0.0007804632186889648,
+          "absolute_classification_delta": 0.0046215057373046875,
+          "absolute_intensity_delta": 0.0007804632186889648
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "was a director",
+          "classification_margin_delta": -0.004915475845336914,
+          "intensity_delta": -9.238719940185547e-05,
+          "absolute_classification_delta": 0.004915475845336914,
+          "absolute_intensity_delta": 9.238719940185547e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i",
+            "would",
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "I would be ashamed to",
+          "classification_margin_delta": 0.0011463165283203125,
+          "intensity_delta": -0.001376509666442871,
+          "absolute_classification_delta": 0.0011463165283203125,
+          "absolute_intensity_delta": 0.001376509666442871
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "would",
+            "be",
+            "ashamed",
+            "to",
+            "have"
+          ],
+          "original_text_fragment": "would be ashamed to have",
+          "classification_margin_delta": 0.0007429122924804688,
+          "intensity_delta": -0.00098419189453125,
+          "absolute_classification_delta": 0.0007429122924804688,
+          "absolute_intensity_delta": 0.00098419189453125
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "be",
+            "ashamed",
+            "to",
+            "have",
+            "made"
+          ],
+          "original_text_fragment": "be ashamed to have made",
+          "classification_margin_delta": 0.0005497932434082031,
+          "intensity_delta": -0.0008374452590942383,
+          "absolute_classification_delta": 0.0005497932434082031,
+          "absolute_intensity_delta": 0.0008374452590942383
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "ashamed",
+            "to",
+            "have",
+            "made",
+            "this"
+          ],
+          "original_text_fragment": "ashamed to have made this",
+          "classification_margin_delta": 0.0003299713134765625,
+          "intensity_delta": -0.000792384147644043,
+          "absolute_classification_delta": 0.0003299713134765625,
+          "absolute_intensity_delta": 0.000792384147644043
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "to",
+            "have",
+            "made",
+            "this",
+            "film"
+          ],
+          "original_text_fragment": "to have made this film",
+          "classification_margin_delta": -8.058547973632812e-05,
+          "intensity_delta": -0.0006693601608276367,
+          "absolute_classification_delta": 8.058547973632812e-05,
+          "absolute_intensity_delta": 0.0006693601608276367
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "have",
+            "made",
+            "this",
+            "film",
+            "if"
+          ],
+          "original_text_fragment": "have made this film if",
+          "classification_margin_delta": -0.0008103847503662109,
+          "intensity_delta": -0.0005277395248413086,
+          "absolute_classification_delta": 0.0008103847503662109,
+          "absolute_intensity_delta": 0.0005277395248413086
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "made",
+            "this",
+            "film",
+            "if",
+            "i"
+          ],
+          "original_text_fragment": "made this film if I",
+          "classification_margin_delta": -0.0019230842590332031,
+          "intensity_delta": -0.0002428293228149414,
+          "absolute_classification_delta": 0.0019230842590332031,
+          "absolute_intensity_delta": 0.0002428293228149414
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "this",
+            "film",
+            "if",
+            "i",
+            "was"
+          ],
+          "original_text_fragment": "this film if I was",
+          "classification_margin_delta": -0.003278493881225586,
+          "intensity_delta": 0.00014841556549072266,
+          "absolute_classification_delta": 0.003278493881225586,
+          "absolute_intensity_delta": 0.00014841556549072266
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "film",
+            "if",
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "film if I was a",
+          "classification_margin_delta": -0.004300117492675781,
+          "intensity_delta": 4.8995018005371094e-05,
+          "absolute_classification_delta": 0.004300117492675781,
+          "absolute_intensity_delta": 4.8995018005371094e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "if",
+            "i",
+            "was",
+            "a",
+            "director"
+          ],
+          "original_text_fragment": "if I was a director",
+          "classification_margin_delta": -0.0022776126861572266,
+          "intensity_delta": -0.003296971321105957,
+          "absolute_classification_delta": 0.0022776126861572266,
+          "absolute_intensity_delta": 0.003296971321105957
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": -0.005269050598144531,
+          "intensity_delta": 0.003473639488220215,
+          "absolute_classification_delta": 0.005269050598144531,
+          "absolute_intensity_delta": 0.003473639488220215
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "i",
+            "was",
+            "a"
+          ],
+          "original_text_fragment": "I was a",
+          "classification_margin_delta": -0.0046215057373046875,
+          "intensity_delta": 0.0007804632186889648,
+          "absolute_classification_delta": 0.0046215057373046875,
+          "absolute_intensity_delta": 0.0007804632186889648
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i",
+            "would",
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "I would be ashamed to",
+          "classification_margin_delta": 0.0011463165283203125,
+          "intensity_delta": -0.001376509666442871,
+          "absolute_classification_delta": 0.0011463165283203125,
+          "absolute_intensity_delta": 0.001376509666442871
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "director"
+          ],
+          "original_text_fragment": "director",
+          "classification_margin_delta": -0.005269050598144531,
+          "intensity_delta": 0.003473639488220215,
+          "absolute_classification_delta": 0.005269050598144531,
+          "absolute_intensity_delta": 0.003473639488220215
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "i",
+            "would",
+            "be",
+            "ashamed",
+            "to"
+          ],
+          "original_text_fragment": "I would be ashamed to",
+          "classification_margin_delta": 0.0011463165283203125,
+          "intensity_delta": -0.001376509666442871,
+          "absolute_classification_delta": 0.0011463165283203125,
+          "absolute_intensity_delta": 0.001376509666442871
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.0029435157775878906,
+          "intensity_delta": 0.0008252859115600586,
+          "absolute_classification_delta": 0.0029435157775878906,
+          "absolute_intensity_delta": 0.0008252859115600586
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0003559589385986328,
+          0.0001735687255859375,
+          0.00015115737915039062,
+          0.00018167495727539062,
+          0.00015783309936523438,
+          6.818771362304688e-05,
+          0.00010204315185546875,
+          0.00016617774963378906,
+          0.00046443939208984375,
+          0.0009593963623046875,
+          0.0016064643859863281,
+          0.0023169517517089844,
+          0.0029435157775878906,
+          0.005269050598144531
+        ],
+        "3": [
+          0.00025081634521484375,
+          0.00022681554158528644,
+          0.0002196629842122396,
+          0.00017844306098090278,
+          0.00012673272026909722,
+          6.585650973849827e-05,
+          6.810824076334636e-05,
+          0.0001768800947401259,
+          0.00042425261603461375,
+          0.0007810062832302517,
+          0.0011698404947916667,
+          0.0014610555436876083,
+          0.0015894969304402669,
+          0.001638491948445638
+        ],
+        "5": [
+          0.0002292633056640625,
+          0.00018892288208007815,
+          0.00016260147094726565,
+          0.00013844966888427735,
+          0.00011398315429687501,
+          0.00010054588317871093,
+          0.00014775276184082032,
+          0.0002569007873535156,
+          0.00041570663452148435,
+          0.0005035877227783203,
+          0.0005889654159545898,
+          0.0006570816040039062,
+          0.0006577730178833007,
+          0.0004555225372314453
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.9648351648351648
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.8725274725274725
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.8945054945054945
+        }
+      ]
+    }
+  }
+}

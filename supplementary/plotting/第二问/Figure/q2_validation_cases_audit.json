@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "figure_purpose": "Frozen-valid comparison for Problem 2 cases A and C",
+  "model": "M3 / JPI-DLFR",
+  "coordinate_rule": "zero-based content coordinates; content j maps to tensor slot j+1 because slot 0 is [CLS]",
+  "claim_boundary": "No raw waveform, video frame, or timestamp is inferred; only model-visible WordPieces and aligned numerical-feature positions are shown.",
+  "source_files": {
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\resources\\missing_data\\mix_v1\\source\\valid.npz": "00d4e363de8e487f04d4d33a3dfef793c9b60a13fee8f01effbc9920009b8b93",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\resources\\missing_data\\mix_v1\\masks\\main_mixed\\valid\\mixed_v1_s0.npz": "5336b5d807566d5546a043bc89fde427ba1a2af2b774155c0bb4652377795ece",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\resources\\missing_data\\mix_v1\\metadata\\main_mixed\\valid\\mixed_v1_s0.jsonl": "a95155fd678791d7019eea640ae6c105425d1dc3d21fdc1723bb8247d9a94b0e",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\reproducibility\\reporting_revision\\prior_outputs\\fm_v1_m3_s1111\\details\\valid__clean.csv": "0b63decadc77cecd0f35677123e21c04a7c29776aea992d595c9ca1072118333",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\reproducibility\\reporting_revision\\prior_outputs\\fm_v1_m3_s1111\\details\\valid__main_mixed__mixed_v1_s0.csv": "ef6723e0f44bba2681c192d9791cee04a4457751456e25509a43cbf9823daad6",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\resources\\pretrained\\bert-base-uncased\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "cases": [
+    {
+      "panel": "A",
+      "valid_index": 15,
+      "sample_id": "102408$_$9",
+      "raw_text_from_official_label_xlsx": "Maybe it's just because I don't have little boys so I'm not really into the little (uhh) characters like that",
+      "content_length": 29,
+      "wordpieces_zero_based": [
+        "maybe",
+        "it",
+        "'",
+        "s",
+        "just",
+        "because",
+        "i",
+        "don",
+        "'",
+        "t",
+        "have",
+        "little",
+        "boys",
+        "so",
+        "i",
+        "'",
+        "m",
+        "not",
+        "really",
+        "into",
+        "the",
+        "little",
+        "(",
+        "uh",
+        "##h",
+        ")",
+        "characters",
+        "like",
+        "that"
+      ],
+      "synchronous_missing_positions_zero_based": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "synchronous_missing_intervals_zero_based_half_open": [
+        [
+          5,
+          10
+        ],
+        [
+          13,
+          20
+        ]
+      ],
+      "masked_text_replacement": "[UNK]",
+      "masked_audio_replacement": "all-zero numerical row",
+      "masked_vision_replacement": "all-zero numerical row",
+      "truth": {
+        "class": 0,
+        "class_name": "NEG",
+        "intensity": -1.6666666269302368
+      },
+      "clean_prediction": {
+        "class": 0,
+        "class_name": "NEG",
+        "intensity": -0.7217614054679871,
+        "probabilities": {
+          "negative": 0.7924488926667909,
+          "neutral": 0.1259056274060336,
+          "positive": 0.08164547992717548
+        }
+      },
+      "missing_prediction": {
+        "class": 2,
+        "class_name": "POS",
+        "intensity": 0.20224851369857788,
+        "probabilities": {
+          "negative": 0.26592905074081696,
+          "neutral": 0.32132691608023956,
+          "positive": 0.4127440331789434
+        }
+      },
+      "intensity_change_missing_minus_clean": 0.9240099191665649
+    },
+    {
+      "panel": "C",
+      "valid_index": 13,
+      "sample_id": "102408$_$2",
+      "raw_text_from_official_label_xlsx": "(umm) not necessarily by choice",
+      "content_length": 7,
+      "wordpieces_zero_based": [
+        "(",
+        "umm",
+        ")",
+        "not",
+        "necessarily",
+        "by",
+        "choice"
+      ],
+      "synchronous_missing_positions_zero_based": [
+        5
+      ],
+      "synchronous_missing_intervals_zero_based_half_open": [
+        [
+          5,
+          6
+        ]
+      ],
+      "masked_text_replacement": "[UNK]",
+      "masked_audio_replacement": "all-zero numerical row",
+      "masked_vision_replacement": "all-zero numerical row",
+      "truth": {
+        "class": 0,
+        "class_name": "NEG",
+        "intensity": -0.3333333432674408
+      },
+      "clean_prediction": {
+        "class": 1,
+        "class_name": "NEU",
+        "intensity": -0.24030962586402893,
+        "probabilities": {
+          "negative": 0.394276947771834,
+          "neutral": 0.4334085522170879,
+          "positive": 0.17231450001107823
+        }
+      },
+      "missing_prediction": {
+        "class": 0,
+        "class_name": "NEG",
+        "intensity": -0.401928573846817,
+        "probabilities": {
+          "negative": 0.520984060377274,
+          "neutral": 0.34621067062708005,
+          "positive": 0.13280526899564601
+        }
+      },
+      "intensity_change_missing_minus_clean": -0.16161894798278809
+    }
+  ],
+  "outputs": [
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\cursor_draw\\Figure\\q2_validation_cases.png",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\cursor_draw\\Figure\\q2_validation_cases.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\cursor_draw\\Figure\\q2_validation_cases.pdf",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\figures\\q2_validation_cases.png",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\figures\\q2_validation_cases.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第二问\\figures\\q2_validation_cases.pdf"
+  ]
+}

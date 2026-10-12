@@ -1,0 +1,144 @@
+{
+  "sample_id": "05",
+  "official_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "Hi",
+      "start": 0.0,
+      "end": 1.86
+    },
+    {
+      "index": 1,
+      "word": "my",
+      "start": 1.86,
+      "end": 2.08
+    },
+    {
+      "index": 2,
+      "word": "name",
+      "start": 2.08,
+      "end": 2.26
+    },
+    {
+      "index": 3,
+      "word": "is",
+      "start": 2.26,
+      "end": 2.38
+    },
+    {
+      "index": 4,
+      "word": "Chloe",
+      "start": 2.38,
+      "end": 3.08
+    },
+    {
+      "index": 5,
+      "word": "video",
+      "start": 3.08,
+      "end": 3.5
+    },
+    {
+      "index": 6,
+      "word": "marketer",
+      "start": 3.5,
+      "end": 4.06
+    },
+    {
+      "index": 7,
+      "word": "for",
+      "start": 4.06,
+      "end": 4.26
+    },
+    {
+      "index": 8,
+      "word": "Red",
+      "start": 4.26,
+      "end": 4.56
+    },
+    {
+      "index": 9,
+      "word": "Wagon",
+      "start": 4.56,
+      "end": 4.88
+    },
+    {
+      "index": 10,
+      "word": "Marketing",
+      "start": 4.88,
+      "end": 5.86
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -10.197667276528472,
+  "rms_dbfs": -30.70295276396623,
+  "signal_activity_ratio": 0.5943238731218697,
+  "speech_present": true,
+  "exact_match_count": 11,
+  "reliable_match_count": 11,
+  "official_word_recall": 1.0,
+  "asr_word_precision": 1.0,
+  "word_f1": 1.0,
+  "character_similarity": 1.0,
+  "consistency_score": 1.0,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.0,
+    1.86,
+    2.08,
+    2.26,
+    2.38,
+    3.08,
+    3.5,
+    4.06,
+    4.26,
+    4.56,
+    4.88
+  ],
+  "official_asr_ends": [
+    1.86,
+    2.08,
+    2.26,
+    2.38,
+    3.08,
+    3.5,
+    4.06,
+    4.26,
+    4.56,
+    4.88,
+    5.86
+  ],
+  "official_comparison_unit_count": 11,
+  "asr_comparison_unit_count": 11,
+  "numeric_equivalence_count": 0
+}

@@ -1,0 +1,2688 @@
+{
+  "protocol": {
+    "model": "M1 complete-input joint predictor (legacy run id mt_m0_avstd_s1111_v1)",
+    "predictor": "frozen complete-input M1 EMT multitask model",
+    "classification_target": "fixed original argmax class logit margin",
+    "regression_target": "raw intensity output",
+    "modality_method": "exact three-player Shapley masking sensitivity over 8 coalitions",
+    "local_method": "multi-scale contiguous occlusion",
+    "window_sizes": [
+      1,
+      3,
+      5
+    ],
+    "causal_claim": false
+  },
+  "sample": {
+    "sample_id": "16",
+    "raw_text": "It's a terrible, this is a terrible movie",
+    "body_length": 11,
+    "token_ids": [
+      2009,
+      1005,
+      1055,
+      1037,
+      6659,
+      1010,
+      2023,
+      2003,
+      1037,
+      6659,
+      3185
+    ],
+    "wordpieces": [
+      "it",
+      "'",
+      "s",
+      "a",
+      "terrible",
+      ",",
+      "this",
+      "is",
+      "a",
+      "terrible",
+      "movie"
+    ],
+    "text_offsets": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        17,
+        21
+      ],
+      [
+        22,
+        24
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        27,
+        35
+      ],
+      [
+        36,
+        41
+      ]
+    ],
+    "original_token_fragments": [
+      "It",
+      "'",
+      "s",
+      "a",
+      "terrible",
+      ",",
+      "this",
+      "is",
+      "a",
+      "terrible",
+      "movie"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\16.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\16.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 11,
+    "retained_wordpiece_count": 11,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 41,
+    "audio_nonzero_body_rows": 11,
+    "vision_nonzero_body_rows": 11,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "modality_explanation": {
+    "target_class": 0,
+    "original_prediction": {
+      "logits": [
+        2.3995392322540283,
+        -1.6021772623062134,
+        -1.9345308542251587
+      ],
+      "probabilities": [
+        0.969557523727417,
+        0.017727607861161232,
+        0.012714837677776814
+      ],
+      "pred_class": 0,
+      "intensity": -1.9408255815505981,
+      "classification_margin": 4.001716613769531
+    },
+    "classification": {
+      "signed_shapley": {
+        "text": 5.038026909033457,
+        "audio": -0.005430301030476888,
+        "vision": -0.0355653961499532
+      },
+      "absolute_share": {
+        "text": 0.9919284278966835,
+        "audio": 0.001069162603023903,
+        "vision": 0.007002409500292639
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "text",
+      "primary_opposing_modality": "vision"
+    },
+    "regression": {
+      "signed_shapley": {
+        "text": -1.9716754928231237,
+        "audio": 0.005024828016757965,
+        "vision": 0.0038275346159934993
+      },
+      "absolute_share": {
+        "text": 0.9955303013747747,
+        "audio": 0.002537115548723932,
+        "vision": 0.0019325830765013314
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "audio",
+      "primary_opposing_modality": "text"
+    },
+    "leave_one_modality_out": {
+      "text": {
+        "classification_margin_delta": 5.034861207008362,
+        "intensity_delta": -1.966502882540226
+      },
+      "audio": {
+        "classification_margin_delta": -0.014454841613769531,
+        "intensity_delta": 0.0007855892181396484
+      },
+      "vision": {
+        "classification_margin_delta": -0.027720928192138672,
+        "intensity_delta": 0.011875271797180176
+      }
+    },
+    "coalitions": [
+      {
+        "retained_modalities": [],
+        "classification_margin": -0.9953145980834961,
+        "intensity": 0.021997548639774323,
+        "pred_class": 1,
+        "probabilities": [
+          0.1957537978887558,
+          0.5296266078948975,
+          0.27461957931518555
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio"
+        ],
+        "classification_margin": -0.9918138980865479,
+        "intensity": 0.03126543015241623,
+        "pred_class": 1,
+        "probabilities": [
+          0.19502735137939453,
+          0.5258172154426575,
+          0.2791554033756256
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text"
+        ],
+        "classification_margin": 4.0457844734191895,
+        "intensity": -1.954846739768982,
+        "pred_class": 0,
+        "probabilities": [
+          0.9710237383842468,
+          0.016989007592201233,
+          0.011987192556262016
+        ]
+      },
+      {
+        "retained_modalities": [
+          "vision"
+        ],
+        "classification_margin": -1.0388180017471313,
+        "intensity": 0.01778116077184677,
+        "pred_class": 1,
+        "probabilities": [
+          0.18788845837116241,
+          0.5309492349624634,
+          0.281162291765213
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio"
+        ],
+        "classification_margin": 4.02943754196167,
+        "intensity": -1.9527008533477783,
+        "pred_class": 0,
+        "probabilities": [
+          0.9704222083091736,
+          0.017258308827877045,
+          0.012319421395659447
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio",
+          "vision"
+        ],
+        "classification_margin": -1.0331445932388306,
+        "intensity": 0.025677300989627838,
+        "pred_class": 1,
+        "probabilities": [
+          0.1878698170185089,
+          0.5278931260108948,
+          0.2842370271682739
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "vision"
+        ],
+        "classification_margin": 4.016171455383301,
+        "intensity": -1.9416111707687378,
+        "pred_class": 0,
+        "probabilities": [
+          0.9701159596443176,
+          0.017483266070485115,
+          0.012400766834616661
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 4.001716613769531,
+        "intensity": -1.9408255815505981,
+        "pred_class": 0,
+        "probabilities": [
+          0.969557523727417,
+          0.017727607861161232,
+          0.012714837677776814
+        ]
+      }
+    ],
+    "efficiency_error": {
+      "classification": -8.881784197001252e-16,
+      "regression": 2.220446049250313e-16
+    },
+    "interpretation_scope": "masking sensitivity relative to UNK/zero-row baselines, not causal effect"
+  },
+  "local_explanation": {
+    "text": {
+      "modality": "text",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "it",
+          "text_char_start": 0,
+          "text_char_end": 2,
+          "original_text_fragment": "It",
+          "classification_signed": 0.042013560401068795,
+          "classification_absolute": 0.042013560401068795,
+          "classification_share": 0.07067593560785151,
+          "intensity_signed": -0.021602866384718155,
+          "intensity_absolute": 0.021602866384718155,
+          "intensity_share": 0.061826919463029456
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "'",
+          "text_char_start": 2,
+          "text_char_end": 3,
+          "original_text_fragment": "'",
+          "classification_signed": 0.0297341791788737,
+          "classification_absolute": 0.038542505900065104,
+          "classification_share": 0.06483686788632513,
+          "intensity_signed": -0.01679507255554199,
+          "intensity_absolute": 0.01939793586730957,
+          "intensity_share": 0.05551645773569905
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "s",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "s",
+          "classification_signed": 0.03775386356172107,
+          "classification_absolute": 0.03775386356172107,
+          "classification_share": 0.06351020014880554,
+          "intensity_signed": -0.021547207378205802,
+          "intensity_absolute": 0.021547207378205802,
+          "intensity_share": 0.06166762463373468
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "a",
+          "text_char_start": 5,
+          "text_char_end": 6,
+          "original_text_fragment": "a",
+          "classification_signed": 0.03657138744990031,
+          "classification_absolute": 0.03657138744990031,
+          "classification_share": 0.061521018447967334,
+          "intensity_signed": -0.022412437200546264,
+          "intensity_absolute": 0.022412437200546264,
+          "intensity_share": 0.06414389299508033
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "terrible",
+          "text_char_start": 7,
+          "text_char_end": 15,
+          "original_text_fragment": "terrible",
+          "classification_signed": 0.03714860986780238,
+          "classification_absolute": 0.038925411083080154,
+          "classification_share": 0.0654809975863635,
+          "intensity_signed": -0.021488292128951463,
+          "intensity_absolute": 0.022554394050880715,
+          "intensity_share": 0.06455017031942012
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 15,
+          "text_char_end": 16,
+          "original_text_fragment": ",",
+          "classification_signed": 0.042100327103226275,
+          "classification_absolute": 0.042100327103226275,
+          "classification_share": 0.07082189605005274,
+          "intensity_signed": -0.02433745331234402,
+          "intensity_absolute": 0.02433745331234402,
+          "intensity_share": 0.06965324596656133
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "this",
+          "text_char_start": 17,
+          "text_char_end": 21,
+          "original_text_fragment": "this",
+          "classification_signed": 0.04594555430942111,
+          "classification_absolute": 0.04594555430942111,
+          "classification_share": 0.07729040354687682,
+          "intensity_signed": -0.028479974358170117,
+          "intensity_absolute": 0.028479974358170117,
+          "intensity_share": 0.0815090483639401
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "is",
+          "text_char_start": 22,
+          "text_char_end": 24,
+          "original_text_fragment": "is",
+          "classification_signed": 0.044067033131917316,
+          "classification_absolute": 0.04749513467152914,
+          "classification_share": 0.07989713434631537,
+          "intensity_signed": -0.02487407028675079,
+          "intensity_absolute": 0.02506987154483795,
+          "intensity_share": 0.07174941053413417
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "a",
+          "text_char_start": 25,
+          "text_char_end": 26,
+          "original_text_fragment": "a",
+          "classification_signed": 0.0546291124253046,
+          "classification_absolute": 0.06375087102254232,
+          "classification_share": 0.1072428142800063,
+          "intensity_signed": -0.034378544489542646,
+          "intensity_absolute": 0.034378544489542646,
+          "intensity_share": 0.09839062389029626
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "terrible",
+          "text_char_start": 27,
+          "text_char_end": 35,
+          "original_text_fragment": "terrible",
+          "classification_signed": 0.05106499036153158,
+          "classification_absolute": 0.06250221570332845,
+          "classification_share": 0.10514230477558173,
+          "intensity_signed": -0.03300526301066081,
+          "intensity_absolute": 0.03358891169230144,
+          "intensity_share": 0.09613071252062105
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "movie",
+          "text_char_start": 36,
+          "text_char_end": 41,
+          "original_text_fragment": "movie",
+          "classification_signed": 0.13885271284315323,
+          "classification_absolute": 0.13885271284315323,
+          "classification_share": 0.23358042732385387,
+          "intensity_signed": -0.09603914949629043,
+          "intensity_absolute": 0.09603914949629043,
+          "intensity_share": 0.27486189357748336
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": 0.04634571075439453,
+          "intensity_delta": -0.022871732711791992,
+          "absolute_classification_delta": 0.04634571075439453,
+          "absolute_intensity_delta": 0.022871732711791992
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "'"
+          ],
+          "original_text_fragment": "'",
+          "classification_margin_delta": -0.022020816802978516,
+          "intensity_delta": 0.006507158279418945,
+          "absolute_classification_delta": 0.022020816802978516,
+          "absolute_intensity_delta": 0.006507158279418945
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "s"
+          ],
+          "original_text_fragment": "s",
+          "classification_margin_delta": 0.018024444580078125,
+          "intensity_delta": -0.008083939552307129,
+          "absolute_classification_delta": 0.018024444580078125,
+          "absolute_intensity_delta": 0.008083939552307129
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": 0.009225845336914062,
+          "intensity_delta": -0.014997482299804688,
+          "absolute_classification_delta": 0.009225845336914062,
+          "absolute_intensity_delta": 0.014997482299804688
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": -0.00799560546875,
+          "intensity_delta": 0.004797458648681641,
+          "absolute_classification_delta": 0.00799560546875,
+          "absolute_intensity_delta": 0.004797458648681641
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": 0.03527021408081055,
+          "intensity_delta": -0.027213096618652344,
+          "absolute_classification_delta": 0.03527021408081055,
+          "absolute_intensity_delta": 0.027213096618652344
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": 0.020589828491210938,
+          "intensity_delta": -0.02900063991546631,
+          "absolute_classification_delta": 0.020589828491210938,
+          "absolute_intensity_delta": 0.02900063991546631
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": -0.013712406158447266,
+          "intensity_delta": 0.0007832050323486328,
+          "absolute_classification_delta": 0.013712406158447266,
+          "absolute_intensity_delta": 0.0007832050323486328
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.03192615509033203,
+          "intensity_delta": -0.003935098648071289,
+          "absolute_classification_delta": 0.03192615509033203,
+          "absolute_intensity_delta": 0.003935098648071289
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": -0.028593063354492188,
+          "intensity_delta": 0.0014591217041015625,
+          "absolute_classification_delta": 0.028593063354492188,
+          "absolute_intensity_delta": 0.0014591217041015625
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": 0.21326065063476562,
+          "intensity_delta": -0.15832781791687012,
+          "absolute_classification_delta": 0.21326065063476562,
+          "absolute_intensity_delta": 0.15832781791687012
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "it",
+            "'",
+            "s"
+          ],
+          "original_text_fragment": "It's",
+          "classification_margin_delta": 0.12888145446777344,
+          "intensity_delta": -0.06546998023986816,
+          "absolute_classification_delta": 0.12888145446777344,
+          "absolute_intensity_delta": 0.06546998023986816
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "'",
+            "s",
+            "a"
+          ],
+          "original_text_fragment": "'s a",
+          "classification_margin_delta": 0.14257478713989258,
+          "intensity_delta": -0.0763852596282959,
+          "absolute_classification_delta": 0.14257478713989258,
+          "absolute_intensity_delta": 0.0763852596282959
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "s a terrible",
+          "classification_margin_delta": 0.11671924591064453,
+          "intensity_delta": -0.08185720443725586,
+          "absolute_classification_delta": 0.11671924591064453,
+          "absolute_intensity_delta": 0.08185720443725586
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "a terrible,",
+          "classification_margin_delta": 0.13394737243652344,
+          "intensity_delta": -0.0746455192565918,
+          "absolute_classification_delta": 0.13394737243652344,
+          "absolute_intensity_delta": 0.0746455192565918
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "terrible, this",
+          "classification_margin_delta": 0.05733299255371094,
+          "intensity_delta": -0.04447317123413086,
+          "absolute_classification_delta": 0.05733299255371094,
+          "absolute_intensity_delta": 0.04447317123413086
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": ", this is",
+          "classification_margin_delta": 0.07624197006225586,
+          "intensity_delta": -0.049783945083618164,
+          "absolute_classification_delta": 0.07624197006225586,
+          "absolute_intensity_delta": 0.049783945083618164
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "this is a",
+          "classification_margin_delta": 0.12903046607971191,
+          "intensity_delta": -0.07710552215576172,
+          "absolute_classification_delta": 0.12903046607971191,
+          "absolute_intensity_delta": 0.07710552215576172
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "is a terrible",
+          "classification_margin_delta": 0.08728194236755371,
+          "intensity_delta": -0.03677785396575928,
+          "absolute_classification_delta": 0.08728194236755371,
+          "absolute_intensity_delta": 0.03677785396575928
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "a terrible movie",
+          "classification_margin_delta": 0.32669782638549805,
+          "intensity_delta": -0.21609175205230713,
+          "absolute_classification_delta": 0.32669782638549805,
+          "absolute_intensity_delta": 0.21609175205230713
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "it",
+            "'",
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "It's a terrible",
+          "classification_margin_delta": 0.18367242813110352,
+          "intensity_delta": -0.10056769847869873,
+          "absolute_classification_delta": 0.18367242813110352,
+          "absolute_intensity_delta": 0.10056769847869873
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": 0.21735906600952148,
+          "intensity_delta": -0.11541950702667236,
+          "absolute_classification_delta": 0.21735906600952148,
+          "absolute_intensity_delta": 0.11541950702667236
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "s a terrible, this",
+          "classification_margin_delta": 0.1832723617553711,
+          "intensity_delta": -0.12489128112792969,
+          "absolute_classification_delta": 0.1832723617553711,
+          "absolute_intensity_delta": 0.12489128112792969
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": "a terrible, this is",
+          "classification_margin_delta": 0.17702007293701172,
+          "intensity_delta": -0.09248495101928711,
+          "absolute_classification_delta": 0.17702007293701172,
+          "absolute_intensity_delta": 0.09248495101928711
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "terrible, this is a",
+          "classification_margin_delta": 0.4370088577270508,
+          "intensity_delta": -0.22263717651367188,
+          "absolute_classification_delta": 0.4370088577270508,
+          "absolute_intensity_delta": 0.22263717651367188
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "this",
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": ", this is a terrible",
+          "classification_margin_delta": 0.2576327323913574,
+          "intensity_delta": -0.12218260765075684,
+          "absolute_classification_delta": 0.2576327323913574,
+          "absolute_intensity_delta": 0.12218260765075684
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": 0.47199106216430664,
+          "intensity_delta": -0.28879523277282715,
+          "absolute_classification_delta": 0.47199106216430664,
+          "absolute_intensity_delta": 0.28879523277282715
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": 0.47199106216430664,
+          "intensity_delta": -0.28879523277282715,
+          "absolute_classification_delta": 0.47199106216430664,
+          "absolute_intensity_delta": 0.28879523277282715
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": 0.21735906600952148,
+          "intensity_delta": -0.11541950702667236,
+          "absolute_classification_delta": 0.21735906600952148,
+          "absolute_intensity_delta": 0.11541950702667236
+        },
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": 0.04634571075439453,
+          "intensity_delta": -0.022871732711791992,
+          "absolute_classification_delta": 0.04634571075439453,
+          "absolute_intensity_delta": 0.022871732711791992
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": 0.47199106216430664,
+          "intensity_delta": -0.28879523277282715,
+          "absolute_classification_delta": 0.47199106216430664,
+          "absolute_intensity_delta": 0.28879523277282715
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": 0.21735906600952148,
+          "intensity_delta": -0.11541950702667236,
+          "absolute_classification_delta": 0.21735906600952148,
+          "absolute_intensity_delta": 0.11541950702667236
+        },
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": 0.04634571075439453,
+          "intensity_delta": -0.022871732711791992,
+          "absolute_classification_delta": 0.04634571075439453,
+          "absolute_intensity_delta": 0.022871732711791992
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.04634571075439453,
+          0.022020816802978516,
+          0.018024444580078125,
+          0.009225845336914062,
+          0.00799560546875,
+          0.03527021408081055,
+          0.020589828491210938,
+          0.013712406158447266,
+          0.03192615509033203,
+          0.028593063354492188,
+          0.21326065063476562
+        ],
+        "3": [
+          0.04296048482259115,
+          0.04524270693461101,
+          0.04313060972425673,
+          0.043693489498562284,
+          0.034222178988986544,
+          0.029724703894721136,
+          0.029178380966186523,
+          0.0325060420566135,
+          0.06033447053697374,
+          0.06899662812550864,
+          0.10889927546183269
+        ],
+        "5": [
+          0.036734485626220705,
+          0.0401031494140625,
+          0.0389535903930664,
+          0.03806619644165039,
+          0.047933311462402345,
+          0.050891723632812504,
+          0.06107700347900391,
+          0.06718263626098633,
+          0.07777551015218098,
+          0.07296237945556641,
+          0.09439821243286133
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.3545454545454546
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.3272727272727273
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.33636363636363636
+        }
+      ]
+    },
+    "audio": {
+      "modality": "audio",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "it",
+          "text_char_start": 0,
+          "text_char_end": 2,
+          "original_text_fragment": "It",
+          "classification_signed": -0.0006817711724175346,
+          "classification_absolute": 0.0006817711724175346,
+          "classification_share": 0.05545708052566829,
+          "intensity_signed": 0.00038184324900309243,
+          "intensity_absolute": 0.00038184324900309243,
+          "intensity_share": 0.04822926497602183
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "'",
+          "text_char_start": 2,
+          "text_char_end": 3,
+          "original_text_fragment": "'",
+          "classification_signed": -0.0005969746907552082,
+          "classification_absolute": 0.0005969746907552082,
+          "classification_share": 0.048559509167281474,
+          "intensity_signed": 0.0003757508595784505,
+          "intensity_absolute": 0.0003757508595784505,
+          "intensity_share": 0.047459756899958426
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "s",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "s",
+          "classification_signed": -0.0005899928864978608,
+          "classification_absolute": 0.0005899928864978608,
+          "classification_share": 0.04799159063892656,
+          "intensity_signed": 0.00038556030818394247,
+          "intensity_absolute": 0.00038556030818394247,
+          "intensity_share": 0.048698753523044216
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "a",
+          "text_char_start": 5,
+          "text_char_end": 6,
+          "original_text_fragment": "a",
+          "classification_signed": -0.0005424340565999349,
+          "classification_absolute": 0.0005424340565999349,
+          "classification_share": 0.04412302891901186,
+          "intensity_signed": 0.00040366450945536296,
+          "intensity_absolute": 0.00040366450945536296,
+          "intensity_share": 0.05098543090329953
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "terrible",
+          "text_char_start": 7,
+          "text_char_end": 15,
+          "original_text_fragment": "terrible",
+          "classification_signed": -0.0006893263922797308,
+          "classification_absolute": 0.0006893263922797308,
+          "classification_share": 0.056071642204480875,
+          "intensity_signed": 0.0004810377403541847,
+          "intensity_absolute": 0.0004810377403541847,
+          "intensity_share": 0.0607581689700657
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 15,
+          "text_char_end": 16,
+          "original_text_fragment": ",",
+          "classification_signed": -0.0009182682743778935,
+          "classification_absolute": 0.0009182682743778935,
+          "classification_share": 0.07469438382935004,
+          "intensity_signed": 0.0004816178922299985,
+          "intensity_absolute": 0.0005849538026032624,
+          "intensity_share": 0.07388343781941743
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "this",
+          "text_char_start": 17,
+          "text_char_end": 21,
+          "original_text_fragment": "this",
+          "classification_signed": -0.0016494892261646416,
+          "classification_absolute": 0.0016494892261646416,
+          "classification_share": 0.13417384093443685,
+          "intensity_signed": 0.0005488952000935872,
+          "intensity_absolute": 0.0006853712929619683,
+          "intensity_share": 0.08656681447562728
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "is",
+          "text_char_start": 22,
+          "text_char_end": 24,
+          "original_text_fragment": "is",
+          "classification_signed": -0.001907189687093099,
+          "classification_absolute": 0.001907189687093099,
+          "classification_share": 0.15513588185285063,
+          "intensity_signed": 0.0003552953402201334,
+          "intensity_absolute": 0.0008018275101979574,
+          "intensity_share": 0.1012759857752204
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "a",
+          "text_char_start": 25,
+          "text_char_end": 26,
+          "original_text_fragment": "a",
+          "classification_signed": -0.0019224212283179877,
+          "classification_absolute": 0.001924237750825428,
+          "classification_share": 0.15652261670093465,
+          "intensity_signed": -2.7783711751302107e-05,
+          "intensity_absolute": 0.0008051758720761254,
+          "intensity_share": 0.10169890547506945
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "terrible",
+          "text_char_start": 27,
+          "text_char_end": 35,
+          "original_text_fragment": "terrible",
+          "classification_signed": -0.0008638572692871094,
+          "classification_absolute": 0.001085364023844401,
+          "classification_share": 0.08828639652886303,
+          "intensity_signed": -0.001471419334411621,
+          "intensity_absolute": 0.001471419334411621,
+          "intensity_share": 0.1858497515811914
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "movie",
+          "text_char_start": 36,
+          "text_char_end": 41,
+          "original_text_fragment": "movie",
+          "classification_signed": 0.00037780337863498265,
+          "classification_absolute": 0.0017086240980360243,
+          "classification_share": 0.1389840286981957,
+          "intensity_signed": 0.0006884071562025283,
+          "intensity_absolute": 0.00154064761267768,
+          "intensity_share": 0.19459372960108431
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": -0.0008406639099121094,
+          "intensity_delta": 0.0004470348358154297,
+          "absolute_classification_delta": 0.0008406639099121094,
+          "absolute_intensity_delta": 0.0004470348358154297
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "'"
+          ],
+          "original_text_fragment": "'",
+          "classification_margin_delta": -0.0008730888366699219,
+          "intensity_delta": 0.00047326087951660156,
+          "absolute_classification_delta": 0.0008730888366699219,
+          "absolute_intensity_delta": 0.00047326087951660156
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "s"
+          ],
+          "original_text_fragment": "s",
+          "classification_margin_delta": -0.0008001327514648438,
+          "intensity_delta": 0.00041496753692626953,
+          "absolute_classification_delta": 0.0008001327514648438,
+          "absolute_intensity_delta": 0.00041496753692626953
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.0004673004150390625,
+          "intensity_delta": 0.00031280517578125,
+          "absolute_classification_delta": 0.0004673004150390625,
+          "absolute_intensity_delta": 0.00031280517578125
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": -0.0002803802490234375,
+          "intensity_delta": 0.0003924369812011719,
+          "absolute_classification_delta": 0.0002803802490234375,
+          "absolute_intensity_delta": 0.0003924369812011719
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.00013256072998046875,
+          "intensity_delta": 0.0006204843521118164,
+          "absolute_classification_delta": 0.00013256072998046875,
+          "absolute_intensity_delta": 0.0006204843521118164
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": -0.0025072097778320312,
+          "intensity_delta": 0.0011763572692871094,
+          "absolute_classification_delta": 0.0025072097778320312,
+          "absolute_intensity_delta": 0.0011763572692871094
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": -0.0032033920288085938,
+          "intensity_delta": 0.0014870166778564453,
+          "absolute_classification_delta": 0.0032033920288085938,
+          "absolute_intensity_delta": 0.0014870166778564453
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.004242420196533203,
+          "intensity_delta": 0.0011039972305297852,
+          "absolute_classification_delta": 0.004242420196533203,
+          "absolute_intensity_delta": 0.0011039972305297852
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": 0.0005474090576171875,
+          "intensity_delta": -0.004441738128662109,
+          "absolute_classification_delta": 0.0005474090576171875,
+          "absolute_intensity_delta": 0.004441738128662109
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": 0.0031232833862304688,
+          "intensity_delta": 0.0033435821533203125,
+          "absolute_classification_delta": 0.0031232833862304688,
+          "absolute_intensity_delta": 0.0033435821533203125
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "it",
+            "'",
+            "s"
+          ],
+          "original_text_fragment": "It's",
+          "classification_margin_delta": -0.0021219253540039062,
+          "intensity_delta": 0.0011025667190551758,
+          "absolute_classification_delta": 0.0021219253540039062,
+          "absolute_intensity_delta": 0.0011025667190551758
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "'",
+            "s",
+            "a"
+          ],
+          "original_text_fragment": "'s a",
+          "classification_margin_delta": -0.0017681121826171875,
+          "intensity_delta": 0.001034379005432129,
+          "absolute_classification_delta": 0.0017681121826171875,
+          "absolute_intensity_delta": 0.001034379005432129
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "s a terrible",
+          "classification_margin_delta": -0.0013289451599121094,
+          "intensity_delta": 0.0010355710983276367,
+          "absolute_classification_delta": 0.0013289451599121094,
+          "absolute_intensity_delta": 0.0010355710983276367
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "a terrible,",
+          "classification_margin_delta": -0.0005311965942382812,
+          "intensity_delta": 0.001181483268737793,
+          "absolute_classification_delta": 0.0005311965942382812,
+          "absolute_intensity_delta": 0.001181483268737793
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "terrible, this",
+          "classification_margin_delta": -0.0029935836791992188,
+          "intensity_delta": 0.0021092891693115234,
+          "absolute_classification_delta": 0.0029935836791992188,
+          "absolute_intensity_delta": 0.0021092891693115234
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": ", this is",
+          "classification_margin_delta": -0.005281925201416016,
+          "intensity_delta": 0.0027550458908081055,
+          "absolute_classification_delta": 0.005281925201416016,
+          "absolute_intensity_delta": 0.0027550458908081055
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "this is a",
+          "classification_margin_delta": -0.008114814758300781,
+          "intensity_delta": 0.002864360809326172,
+          "absolute_classification_delta": 0.008114814758300781,
+          "absolute_intensity_delta": 0.002864360809326172
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "is a terrible",
+          "classification_margin_delta": -0.004466533660888672,
+          "intensity_delta": -0.003515958786010742,
+          "absolute_classification_delta": 0.004466533660888672,
+          "absolute_intensity_delta": 0.003515958786010742
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "a terrible movie",
+          "classification_margin_delta": 1.9073486328125e-05,
+          "intensity_delta": -0.0033876895904541016,
+          "absolute_classification_delta": 1.9073486328125e-05,
+          "absolute_intensity_delta": 0.0033876895904541016
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "it",
+            "'",
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "It's a terrible",
+          "classification_margin_delta": -0.002486705780029297,
+          "intensity_delta": 0.0016548633575439453,
+          "absolute_classification_delta": 0.002486705780029297,
+          "absolute_intensity_delta": 0.0016548633575439453
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": -0.0015888214111328125,
+          "intensity_delta": 0.0018110275268554688,
+          "absolute_classification_delta": 0.0015888214111328125,
+          "absolute_intensity_delta": 0.0018110275268554688
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "s a terrible, this",
+          "classification_margin_delta": -0.003875255584716797,
+          "intensity_delta": 0.0026663541793823242,
+          "absolute_classification_delta": 0.003875255584716797,
+          "absolute_intensity_delta": 0.0026663541793823242
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": "a terrible, this is",
+          "classification_margin_delta": -0.005362987518310547,
+          "intensity_delta": 0.0030312538146972656,
+          "absolute_classification_delta": 0.005362987518310547,
+          "absolute_intensity_delta": 0.0030312538146972656
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "terrible, this is a",
+          "classification_margin_delta": -0.008214473724365234,
+          "intensity_delta": 0.0033104419708251953,
+          "absolute_classification_delta": 0.008214473724365234,
+          "absolute_intensity_delta": 0.0033104419708251953
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "this",
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": ", this is a terrible",
+          "classification_margin_delta": -0.006939888000488281,
+          "intensity_delta": -0.0023250579833984375,
+          "absolute_classification_delta": 0.006939888000488281,
+          "absolute_intensity_delta": 0.0023250579833984375
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": -0.009981155395507812,
+          "intensity_delta": -0.0007456541061401367,
+          "absolute_classification_delta": 0.009981155395507812,
+          "absolute_intensity_delta": 0.0007456541061401367
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": -0.009981155395507812,
+          "intensity_delta": -0.0007456541061401367,
+          "absolute_classification_delta": 0.009981155395507812,
+          "absolute_intensity_delta": 0.0007456541061401367
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "it",
+            "'",
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "It's a terrible",
+          "classification_margin_delta": -0.002486705780029297,
+          "intensity_delta": 0.0016548633575439453,
+          "absolute_classification_delta": 0.002486705780029297,
+          "absolute_intensity_delta": 0.0016548633575439453
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.00013256072998046875,
+          "intensity_delta": 0.0006204843521118164,
+          "absolute_classification_delta": 0.00013256072998046875,
+          "absolute_intensity_delta": 0.0006204843521118164
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": 0.0005474090576171875,
+          "intensity_delta": -0.004441738128662109,
+          "absolute_classification_delta": 0.0005474090576171875,
+          "absolute_intensity_delta": 0.004441738128662109
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": 0.0031232833862304688,
+          "intensity_delta": 0.0033435821533203125,
+          "absolute_classification_delta": 0.0031232833862304688,
+          "absolute_intensity_delta": 0.0033435821533203125
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "terrible, this is a",
+          "classification_margin_delta": -0.008214473724365234,
+          "intensity_delta": 0.0033104419708251953,
+          "absolute_classification_delta": 0.008214473724365234,
+          "absolute_intensity_delta": 0.0033104419708251953
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0008406639099121094,
+          0.0008730888366699219,
+          0.0008001327514648438,
+          0.0004673004150390625,
+          0.0002803802490234375,
+          0.00013256072998046875,
+          0.0025072097778320312,
+          0.0032033920288085938,
+          0.004242420196533203,
+          0.0005474090576171875,
+          0.0031232833862304688
+        ],
+        "3": [
+          0.0007073084513346354,
+          0.0006483395894368489,
+          0.000579886966281467,
+          0.0004031393263075087,
+          0.0005393028259277344,
+          0.0009785228305392796,
+          0.0018211470709906686,
+          0.0019848081800672743,
+          0.0014000468783908421,
+          0.0007476011912027996,
+          6.357828776041667e-06
+        ],
+        "5": [
+          0.0004973411560058594,
+          0.00040755271911621096,
+          0.0005300521850585938,
+          0.0006656885147094727,
+          0.0008611297607421875,
+          0.001039257049560547,
+          0.0013749504089355469,
+          0.0015249252319335938,
+          0.001675701141357422,
+          0.0016921043395996093,
+          0.0019962310791015623
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.3727272727272728
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.36363636363636365
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.21818181818181823
+        }
+      ]
+    },
+    "vision": {
+      "modality": "vision",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "it",
+          "text_char_start": 0,
+          "text_char_end": 2,
+          "original_text_fragment": "It",
+          "classification_signed": -0.0003367000155978733,
+          "classification_absolute": 0.0003367000155978733,
+          "classification_share": 0.015086980000753914,
+          "intensity_signed": -0.00011357731289333768,
+          "intensity_absolute": 0.00011357731289333768,
+          "intensity_share": 0.009754747593420892
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "'",
+          "text_char_start": 2,
+          "text_char_end": 3,
+          "original_text_fragment": "'",
+          "classification_signed": -0.00035734176635742186,
+          "classification_absolute": 0.00035734176635742186,
+          "classification_share": 0.016011903275072358,
+          "intensity_signed": -9.274164835611981e-05,
+          "intensity_absolute": 0.00011126200358072917,
+          "intensity_share": 0.009555893989916442
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "s",
+          "text_char_start": 3,
+          "text_char_end": 4,
+          "original_text_fragment": "s",
+          "classification_signed": -0.0003703208196730841,
+          "classification_absolute": 0.0003703208196730841,
+          "classification_share": 0.016593473541573266,
+          "intensity_signed": -4.5768419901529955e-05,
+          "intensity_absolute": 0.0001143103554135277,
+          "intensity_share": 0.009817705983415682
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "a",
+          "text_char_start": 5,
+          "text_char_end": 6,
+          "original_text_fragment": "a",
+          "classification_signed": -0.00048479239145914716,
+          "classification_absolute": 0.00048479239145914716,
+          "classification_share": 0.021722758466388423,
+          "intensity_signed": 5.671977996826173e-05,
+          "intensity_absolute": 0.00017411907513936362,
+          "intensity_share": 0.014954462171326914
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "terrible",
+          "text_char_start": 7,
+          "text_char_end": 15,
+          "original_text_fragment": "terrible",
+          "classification_signed": -0.0006313041404441551,
+          "classification_absolute": 0.0006313041404441551,
+          "classification_share": 0.02828771161284813,
+          "intensity_signed": 0.00026227633158365884,
+          "intensity_absolute": 0.0002871584009241175,
+          "intensity_share": 0.02466300398368942
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": ",",
+          "text_char_start": 15,
+          "text_char_end": 16,
+          "original_text_fragment": ",",
+          "classification_signed": -0.0009064850983796298,
+          "classification_absolute": 0.0009064850983796298,
+          "classification_share": 0.040618122710658115,
+          "intensity_signed": 0.0005481684649432147,
+          "intensity_absolute": 0.0005481684649432147,
+          "intensity_share": 0.04708022119889149
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "this",
+          "text_char_start": 17,
+          "text_char_end": 21,
+          "original_text_fragment": "this",
+          "classification_signed": -0.0015063568397804545,
+          "classification_absolute": 0.001520132135461878,
+          "classification_share": 0.06811464824405417,
+          "intensity_signed": 0.0009608515986689816,
+          "intensity_absolute": 0.0009608515986689816,
+          "intensity_share": 0.08252409377349046
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "is",
+          "text_char_start": 22,
+          "text_char_end": 24,
+          "original_text_fragment": "is",
+          "classification_signed": -0.0021881381670633953,
+          "classification_absolute": 0.0021881381670633953,
+          "classification_share": 0.09804691189797583,
+          "intensity_signed": 0.0013252526521682737,
+          "intensity_absolute": 0.0013252526521682737,
+          "intensity_share": 0.11382119183919728
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "a",
+          "text_char_start": 25,
+          "text_char_end": 26,
+          "original_text_fragment": "a",
+          "classification_signed": -0.003016589936755953,
+          "classification_absolute": 0.003016589936755953,
+          "classification_share": 0.1351684880842638,
+          "intensity_signed": 0.00194875853402274,
+          "intensity_absolute": 0.00194875853402274,
+          "intensity_share": 0.16737187326987585
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "terrible",
+          "text_char_start": 27,
+          "text_char_end": 35,
+          "original_text_fragment": "terrible",
+          "classification_signed": -0.0028639856974283853,
+          "classification_absolute": 0.002874476114908854,
+          "classification_share": 0.12880059889889892,
+          "intensity_signed": 0.0023259830474853514,
+          "intensity_absolute": 0.0023259830474853514,
+          "intensity_share": 0.19977033226788427
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "movie",
+          "text_char_start": 36,
+          "text_char_end": 41,
+          "original_text_fragment": "movie",
+          "classification_signed": -0.009630976782904732,
+          "classification_absolute": 0.009630976782904732,
+          "classification_share": 0.43154840326751304,
+          "intensity_signed": 0.0037338442272610134,
+          "intensity_absolute": 0.0037338442272610134,
+          "intensity_share": 0.3206864739288913
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": -0.00033283233642578125,
+          "intensity_delta": -0.00010085105895996094,
+          "absolute_classification_delta": 0.00033283233642578125,
+          "absolute_intensity_delta": 0.00010085105895996094
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "'"
+          ],
+          "original_text_fragment": "'",
+          "classification_margin_delta": -0.0003314018249511719,
+          "intensity_delta": -9.644031524658203e-05,
+          "absolute_classification_delta": 0.0003314018249511719,
+          "absolute_intensity_delta": 9.644031524658203e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "s"
+          ],
+          "original_text_fragment": "s",
+          "classification_margin_delta": -0.0003113746643066406,
+          "intensity_delta": -0.00012385845184326172,
+          "absolute_classification_delta": 0.0003113746643066406,
+          "absolute_intensity_delta": 0.00012385845184326172
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.000293731689453125,
+          "intensity_delta": -0.00018393993377685547,
+          "absolute_classification_delta": 0.000293731689453125,
+          "absolute_intensity_delta": 0.00018393993377685547
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": -0.0003209114074707031,
+          "intensity_delta": 0.00017547607421875,
+          "absolute_classification_delta": 0.0003209114074707031,
+          "absolute_intensity_delta": 0.00017547607421875
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            ","
+          ],
+          "original_text_fragment": ",",
+          "classification_margin_delta": -0.0005035400390625,
+          "intensity_delta": 0.00038754940032958984,
+          "absolute_classification_delta": 0.0005035400390625,
+          "absolute_intensity_delta": 0.00038754940032958984
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "this"
+          ],
+          "original_text_fragment": "this",
+          "classification_margin_delta": 6.198883056640625e-05,
+          "intensity_delta": 0.0005029439926147461,
+          "absolute_classification_delta": 6.198883056640625e-05,
+          "absolute_intensity_delta": 0.0005029439926147461
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": -0.0028486251831054688,
+          "intensity_delta": 0.001071333885192871,
+          "absolute_classification_delta": 0.0028486251831054688,
+          "absolute_intensity_delta": 0.001071333885192871
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "a"
+          ],
+          "original_text_fragment": "a",
+          "classification_margin_delta": -0.0027670860290527344,
+          "intensity_delta": 0.002067089080810547,
+          "absolute_classification_delta": 0.0027670860290527344,
+          "absolute_intensity_delta": 0.002067089080810547
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "terrible"
+          ],
+          "original_text_fragment": "terrible",
+          "classification_margin_delta": 2.6226043701171875e-05,
+          "intensity_delta": 0.002503633499145508,
+          "absolute_classification_delta": 2.6226043701171875e-05,
+          "absolute_intensity_delta": 0.002503633499145508
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "movie"
+          ],
+          "original_text_fragment": "movie",
+          "classification_margin_delta": -0.017993927001953125,
+          "intensity_delta": 0.0054950714111328125,
+          "absolute_classification_delta": 0.017993927001953125,
+          "absolute_intensity_delta": 0.0054950714111328125
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "it",
+            "'",
+            "s"
+          ],
+          "original_text_fragment": "It's",
+          "classification_margin_delta": -0.0009431838989257812,
+          "intensity_delta": -0.00045228004455566406,
+          "absolute_classification_delta": 0.0009431838989257812,
+          "absolute_intensity_delta": 0.00045228004455566406
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "'",
+            "s",
+            "a"
+          ],
+          "original_text_fragment": "'s a",
+          "classification_margin_delta": -0.0009436607360839844,
+          "intensity_delta": -0.0005210638046264648,
+          "absolute_classification_delta": 0.0009436607360839844,
+          "absolute_intensity_delta": 0.0005210638046264648
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "s a terrible",
+          "classification_margin_delta": -0.0011906623840332031,
+          "intensity_delta": -6.854534149169922e-05,
+          "absolute_classification_delta": 0.0011906623840332031,
+          "absolute_intensity_delta": 6.854534149169922e-05
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "a terrible,",
+          "classification_margin_delta": -0.0015544891357421875,
+          "intensity_delta": 0.0005255937576293945,
+          "absolute_classification_delta": 0.0015544891357421875,
+          "absolute_intensity_delta": 0.0005255937576293945
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "terrible, this",
+          "classification_margin_delta": -0.0011310577392578125,
+          "intensity_delta": 0.001112222671508789,
+          "absolute_classification_delta": 0.0011310577392578125,
+          "absolute_intensity_delta": 0.001112222671508789
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": ", this is",
+          "classification_margin_delta": -0.0043487548828125,
+          "intensity_delta": 0.002338409423828125,
+          "absolute_classification_delta": 0.0043487548828125,
+          "absolute_intensity_delta": 0.002338409423828125
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "this is a",
+          "classification_margin_delta": -0.006867408752441406,
+          "intensity_delta": 0.004335165023803711,
+          "absolute_classification_delta": 0.006867408752441406,
+          "absolute_intensity_delta": 0.004335165023803711
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "is a terrible",
+          "classification_margin_delta": -0.005528926849365234,
+          "intensity_delta": 0.0058509111404418945,
+          "absolute_classification_delta": 0.005528926849365234,
+          "absolute_intensity_delta": 0.0058509111404418945
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "a terrible movie",
+          "classification_margin_delta": -0.018726348876953125,
+          "intensity_delta": 0.009993791580200195,
+          "absolute_classification_delta": 0.018726348876953125,
+          "absolute_intensity_delta": 0.009993791580200195
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "it",
+            "'",
+            "s",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": "It's a terrible",
+          "classification_margin_delta": -0.0018143653869628906,
+          "intensity_delta": -0.0004456043243408203,
+          "absolute_classification_delta": 0.0018143653869628906,
+          "absolute_intensity_delta": 0.0004456043243408203
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": -0.0023174285888671875,
+          "intensity_delta": 0.0002315044403076172,
+          "absolute_classification_delta": 0.0023174285888671875,
+          "absolute_intensity_delta": 0.0002315044403076172
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "s",
+            "a",
+            "terrible",
+            ",",
+            "this"
+          ],
+          "original_text_fragment": "s a terrible, this",
+          "classification_margin_delta": -0.002143383026123047,
+          "intensity_delta": 0.0009679794311523438,
+          "absolute_classification_delta": 0.002143383026123047,
+          "absolute_intensity_delta": 0.0009679794311523438
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ",",
+            "this",
+            "is"
+          ],
+          "original_text_fragment": "a terrible, this is",
+          "classification_margin_delta": -0.005499839782714844,
+          "intensity_delta": 0.0025413036346435547,
+          "absolute_classification_delta": 0.005499839782714844,
+          "absolute_intensity_delta": 0.0025413036346435547
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "terrible",
+            ",",
+            "this",
+            "is",
+            "a"
+          ],
+          "original_text_fragment": "terrible, this is a",
+          "classification_margin_delta": -0.008568763732910156,
+          "intensity_delta": 0.0050144195556640625,
+          "absolute_classification_delta": 0.008568763732910156,
+          "absolute_intensity_delta": 0.0050144195556640625
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            ",",
+            "this",
+            "is",
+            "a",
+            "terrible"
+          ],
+          "original_text_fragment": ", this is a terrible",
+          "classification_margin_delta": -0.008020877838134766,
+          "intensity_delta": 0.007347583770751953,
+          "absolute_classification_delta": 0.008020877838134766,
+          "absolute_intensity_delta": 0.007347583770751953
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": -0.023284435272216797,
+          "intensity_delta": 0.01187598705291748,
+          "absolute_classification_delta": 0.023284435272216797,
+          "absolute_intensity_delta": 0.01187598705291748
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": -0.023284435272216797,
+          "intensity_delta": 0.01187598705291748,
+          "absolute_classification_delta": 0.023284435272216797,
+          "absolute_intensity_delta": 0.01187598705291748
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "'",
+            "s",
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "'s a terrible,",
+          "classification_margin_delta": -0.0023174285888671875,
+          "intensity_delta": 0.0002315044403076172,
+          "absolute_classification_delta": 0.0023174285888671875,
+          "absolute_intensity_delta": 0.0002315044403076172
+        },
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "it"
+          ],
+          "original_text_fragment": "It",
+          "classification_margin_delta": -0.00033283233642578125,
+          "intensity_delta": -0.00010085105895996094,
+          "absolute_classification_delta": 0.00033283233642578125,
+          "absolute_intensity_delta": 0.00010085105895996094
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "this",
+            "is",
+            "a",
+            "terrible",
+            "movie"
+          ],
+          "original_text_fragment": "this is a terrible movie",
+          "classification_margin_delta": -0.023284435272216797,
+          "intensity_delta": 0.01187598705291748,
+          "absolute_classification_delta": 0.023284435272216797,
+          "absolute_intensity_delta": 0.01187598705291748
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "a",
+            "terrible",
+            ","
+          ],
+          "original_text_fragment": "a terrible,",
+          "classification_margin_delta": -0.0015544891357421875,
+          "intensity_delta": 0.0005255937576293945,
+          "absolute_classification_delta": 0.0015544891357421875,
+          "absolute_intensity_delta": 0.0005255937576293945
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "it",
+            "'",
+            "s"
+          ],
+          "original_text_fragment": "It's",
+          "classification_margin_delta": -0.0009431838989257812,
+          "intensity_delta": -0.00045228004455566406,
+          "absolute_classification_delta": 0.0009431838989257812,
+          "absolute_intensity_delta": 0.00045228004455566406
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.00033283233642578125,
+          0.0003314018249511719,
+          0.0003113746643066406,
+          0.000293731689453125,
+          0.0003209114074707031,
+          0.0005035400390625,
+          6.198883056640625e-05,
+          0.0028486251831054688,
+          0.0027670860290527344,
+          2.6226043701171875e-05,
+          0.017993927001953125
+        ],
+        "3": [
+          0.00031439463297526043,
+          0.00031447410583496094,
+          0.0003419452243381077,
+          0.0004098680284288195,
+          0.0004306899176703559,
+          0.000781589084201389,
+          0.0013719134860568577,
+          0.0018605656094021269,
+          0.00345807605319553,
+          0.004042545954386393,
+          0.006242116292317708
+        ],
+        "5": [
+          0.0003628730773925781,
+          0.0004131793975830078,
+          0.0004183451334635417,
+          0.0005887508392333985,
+          0.000813751220703125,
+          0.00106201171875,
+          0.0019006919860839844,
+          0.002268695831298828,
+          0.0026582717895507813,
+          0.0031305313110351566,
+          0.00465688705444336
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.23636363636363636
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.23636363636363636
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 1.0
+        }
+      ]
+    }
+  }
+}

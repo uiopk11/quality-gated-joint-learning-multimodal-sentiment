@@ -1,0 +1,164 @@
+{
+  "sample_id": "02",
+  "official_text": "We want to live by each other’s happiness - not by each other’s misery.",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "We want to live by each other's happiness, not by each other's misery.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "We",
+      "start": 0.0,
+      "end": 0.56
+    },
+    {
+      "index": 1,
+      "word": "want",
+      "start": 0.56,
+      "end": 0.7
+    },
+    {
+      "index": 2,
+      "word": "to",
+      "start": 0.7,
+      "end": 0.8
+    },
+    {
+      "index": 3,
+      "word": "live",
+      "start": 0.8,
+      "end": 0.9
+    },
+    {
+      "index": 4,
+      "word": "by",
+      "start": 0.9,
+      "end": 1.06
+    },
+    {
+      "index": 5,
+      "word": "each",
+      "start": 1.06,
+      "end": 1.2
+    },
+    {
+      "index": 6,
+      "word": "other's",
+      "start": 1.2,
+      "end": 1.42
+    },
+    {
+      "index": 7,
+      "word": "happiness",
+      "start": 1.42,
+      "end": 1.66
+    },
+    {
+      "index": 8,
+      "word": "not",
+      "start": 1.66,
+      "end": 1.92
+    },
+    {
+      "index": 9,
+      "word": "by",
+      "start": 1.92,
+      "end": 2.06
+    },
+    {
+      "index": 10,
+      "word": "each",
+      "start": 2.06,
+      "end": 2.2
+    },
+    {
+      "index": 11,
+      "word": "other's",
+      "start": 2.2,
+      "end": 2.42
+    },
+    {
+      "index": 12,
+      "word": "misery",
+      "start": 2.42,
+      "end": 3.3
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -16.12020721654614,
+  "rms_dbfs": -35.454328992881294,
+  "signal_activity_ratio": 0.6181818181818182,
+  "speech_present": true,
+  "exact_match_count": 13,
+  "reliable_match_count": 13,
+  "official_word_recall": 1.0,
+  "asr_word_precision": 1.0,
+  "word_f1": 1.0,
+  "character_similarity": 1.0,
+  "consistency_score": 1.0,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.0,
+    0.56,
+    0.7,
+    0.8,
+    0.9,
+    1.06,
+    1.2,
+    1.42,
+    1.66,
+    1.92,
+    2.06,
+    2.2,
+    2.42
+  ],
+  "official_asr_ends": [
+    0.56,
+    0.7,
+    0.8,
+    0.9,
+    1.06,
+    1.2,
+    1.42,
+    1.66,
+    1.92,
+    2.06,
+    2.2,
+    2.42,
+    3.3
+  ],
+  "official_comparison_unit_count": 13,
+  "asr_comparison_unit_count": 13,
+  "numeric_equivalence_count": 0
+}

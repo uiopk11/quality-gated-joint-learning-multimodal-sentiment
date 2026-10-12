@@ -1,0 +1,637 @@
+{
+  "passed": true,
+  "manifest_fingerprint": "ac192930c154f4589c4114d9b4f7132845a1cd1c24c3fd1a7aba79f3bd888182",
+  "structural": {
+    "train": {
+      "status": "passed",
+      "split": "train",
+      "sample_count": 3395,
+      "view_count": 1,
+      "views": [
+        {
+          "evaluation_family": "main_mixed",
+          "condition_id": "mixed_v1_s0",
+          "rows": 3395,
+          "applicable": 3395,
+          "artificial_positions": [
+            17811,
+            17598,
+            17816
+          ]
+        }
+      ],
+      "panels": {},
+      "checks": [
+        "content_coordinates",
+        "special_slots_and_padding",
+        "local_missingness",
+        "observed_information_protection",
+        "metadata_recomputed_from_masks",
+        "paired_budget_shape_intersection",
+        "supplemental_boundaries"
+      ]
+    },
+    "valid": {
+      "status": "passed",
+      "split": "valid",
+      "sample_count": 728,
+      "view_count": 21,
+      "views": [
+        {
+          "evaluation_family": "main_mixed",
+          "condition_id": "mixed_v1_s0",
+          "rows": 728,
+          "applicable": 728,
+          "artificial_positions": [
+            3973,
+            3951,
+            3967
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "complete",
+          "rows": 728,
+          "applicable": 728,
+          "artificial_positions": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_T",
+          "rows": 728,
+          "applicable": 724,
+          "artificial_positions": [
+            6858,
+            0,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_A",
+          "rows": 728,
+          "applicable": 724,
+          "artificial_positions": [
+            0,
+            6858,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_V",
+          "rows": 728,
+          "applicable": 721,
+          "artificial_positions": [
+            0,
+            0,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TA",
+          "rows": 728,
+          "applicable": 724,
+          "artificial_positions": [
+            6858,
+            6858,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TV",
+          "rows": 728,
+          "applicable": 721,
+          "artificial_positions": [
+            6858,
+            0,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_AV",
+          "rows": 728,
+          "applicable": 721,
+          "artificial_positions": [
+            0,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TAV",
+          "rows": 728,
+          "applicable": 721,
+          "artificial_positions": [
+            6858,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r20_TAV",
+          "rows": 728,
+          "applicable": 722,
+          "artificial_positions": [
+            3451,
+            3451,
+            3451
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r60_TAV",
+          "rows": 728,
+          "applicable": 719,
+          "artificial_positions": [
+            10310,
+            10310,
+            10310
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r80_TAV",
+          "rows": 728,
+          "applicable": 713,
+          "artificial_positions": [
+            13717,
+            13717,
+            13717
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "head_r40_TAV",
+          "rows": 728,
+          "applicable": 718,
+          "artificial_positions": [
+            6858,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "tail_r40_TAV",
+          "rows": 728,
+          "applicable": 717,
+          "artificial_positions": [
+            6858,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_1x8",
+          "rows": 728,
+          "applicable": 409,
+          "artificial_positions": [
+            3272,
+            3272,
+            3272
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_2x4",
+          "rows": 728,
+          "applicable": 409,
+          "artificial_positions": [
+            3272,
+            3272,
+            3272
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_4x2",
+          "rows": 728,
+          "applicable": 409,
+          "artificial_positions": [
+            3272,
+            3272,
+            3272
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_8x1",
+          "rows": 728,
+          "applicable": 409,
+          "artificial_positions": [
+            3272,
+            3272,
+            3272
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "sync_shared_r40",
+          "rows": 728,
+          "applicable": 724,
+          "artificial_positions": [
+            6858,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "sync_independent_r40",
+          "rows": 728,
+          "applicable": 724,
+          "artificial_positions": [
+            6858,
+            6858,
+            6858
+          ]
+        },
+        {
+          "evaluation_family": "exploratory_a3like",
+          "condition_id": "a3like_v1_s0",
+          "rows": 728,
+          "applicable": 728,
+          "artificial_positions": [
+            3891,
+            3891,
+            3891
+          ]
+        }
+      ],
+      "panels": {
+        "complete": {
+          "applicable": 728,
+          "excluded": 0
+        },
+        "modality": {
+          "applicable": 721,
+          "excluded": 7
+        },
+        "rate": {
+          "applicable": 713,
+          "excluded": 15
+        },
+        "position": {
+          "applicable": 708,
+          "excluded": 20
+        },
+        "shape": {
+          "applicable": 409,
+          "excluded": 319
+        },
+        "synchrony": {
+          "applicable": 724,
+          "excluded": 4
+        }
+      },
+      "checks": [
+        "content_coordinates",
+        "special_slots_and_padding",
+        "local_missingness",
+        "observed_information_protection",
+        "metadata_recomputed_from_masks",
+        "paired_budget_shape_intersection",
+        "supplemental_boundaries"
+      ]
+    },
+    "test": {
+      "status": "passed",
+      "split": "test",
+      "sample_count": 727,
+      "view_count": 21,
+      "views": [
+        {
+          "evaluation_family": "main_mixed",
+          "condition_id": "mixed_v1_s0",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            3938,
+            3980,
+            3964
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "complete",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_T",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            6740,
+            0,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_A",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            0,
+            6740,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_V",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            0,
+            0,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TA",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            6740,
+            6740,
+            0
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TV",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            6740,
+            0,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_AV",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            0,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r40_TAV",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            6740,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r20_TAV",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            3400,
+            3400,
+            3400
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r60_TAV",
+          "rows": 727,
+          "applicable": 726,
+          "artificial_positions": [
+            10115,
+            10115,
+            10115
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "center_r80_TAV",
+          "rows": 727,
+          "applicable": 719,
+          "artificial_positions": [
+            13455,
+            13455,
+            13455
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "head_r40_TAV",
+          "rows": 727,
+          "applicable": 723,
+          "artificial_positions": [
+            6740,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "tail_r40_TAV",
+          "rows": 727,
+          "applicable": 722,
+          "artificial_positions": [
+            6740,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_1x8",
+          "rows": 727,
+          "applicable": 397,
+          "artificial_positions": [
+            3176,
+            3176,
+            3176
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_2x4",
+          "rows": 727,
+          "applicable": 397,
+          "artificial_positions": [
+            3176,
+            3176,
+            3176
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_4x2",
+          "rows": 727,
+          "applicable": 397,
+          "artificial_positions": [
+            3176,
+            3176,
+            3176
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "shape_8x1",
+          "rows": 727,
+          "applicable": 397,
+          "artificial_positions": [
+            3176,
+            3176,
+            3176
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "sync_shared_r40",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            6740,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "paired",
+          "condition_id": "sync_independent_r40",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            6740,
+            6740,
+            6740
+          ]
+        },
+        {
+          "evaluation_family": "exploratory_a3like",
+          "condition_id": "a3like_v1_s0",
+          "rows": 727,
+          "applicable": 727,
+          "artificial_positions": [
+            3832,
+            3832,
+            3832
+          ]
+        }
+      ],
+      "panels": {
+        "complete": {
+          "applicable": 727,
+          "excluded": 0
+        },
+        "modality": {
+          "applicable": 726,
+          "excluded": 1
+        },
+        "rate": {
+          "applicable": 719,
+          "excluded": 8
+        },
+        "position": {
+          "applicable": 717,
+          "excluded": 10
+        },
+        "shape": {
+          "applicable": 397,
+          "excluded": 330
+        },
+        "synchrony": {
+          "applicable": 727,
+          "excluded": 0
+        }
+      },
+      "checks": [
+        "content_coordinates",
+        "special_slots_and_padding",
+        "local_missingness",
+        "observed_information_protection",
+        "metadata_recomputed_from_masks",
+        "paired_budget_shape_intersection",
+        "supplemental_boundaries"
+      ]
+    }
+  },
+  "application": {
+    "train": {
+      "passed": true,
+      "sample_views_checked": 3395,
+      "native_unobserved_excluded_from_reconstruction": true,
+      "no_source_array_mutation": true,
+      "bert_not_executed": true
+    },
+    "valid": {
+      "passed": true,
+      "sample_views_checked": 15288,
+      "native_unobserved_excluded_from_reconstruction": true,
+      "no_source_array_mutation": true,
+      "bert_not_executed": true
+    },
+    "test": {
+      "passed": true,
+      "sample_views_checked": 15267,
+      "native_unobserved_excluded_from_reconstruction": true,
+      "no_source_array_mutation": true,
+      "bert_not_executed": true
+    }
+  },
+  "reproduced": true,
+  "exploratory_toggle_independence": true,
+  "artifact_integrity": true,
+  "source_unchanged": true,
+  "preservation": {
+    "passed": true,
+    "file_count": 86
+  },
+  "scope": "data construction and read interface only; no model loading, BERT, training, prediction or metric evaluation",
+  "reader_interface": {
+    "passed": true,
+    "train_samples": 3395,
+    "valid_view_samples": {
+      "main_mixed/mixed_v1_s0": 728,
+      "paired/shape_8x1": 409,
+      "exploratory_a3like/a3like_v1_s0": 728
+    },
+    "cpu_dataloader_batch_size": 3,
+    "model_executed": false,
+    "prediction_keys": [
+      "audio",
+      "audio_lengths",
+      "id",
+      "index",
+      "labels",
+      "text",
+      "vision",
+      "vision_lengths"
+    ],
+    "training_reference_and_support_isolated": true
+  }
+}

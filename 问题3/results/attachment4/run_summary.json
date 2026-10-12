@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "sample_count": 20,
+  "device": "cuda",
+  "window_sizes": [
+    1,
+    3,
+    5
+  ],
+  "prediction_csv": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\attachment4\\attachment4_predictions_and_modality_effects.csv",
+  "sample_detail_directory": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\attachment4\\samples"
+}

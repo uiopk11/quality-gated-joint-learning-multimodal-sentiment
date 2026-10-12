@@ -1,0 +1,21 @@
+{
+  "python": "3.11.16 | packaged by conda-forge | (main, Sep  2 2026, 23:31:17) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "torch": "2.14.0+cu130",
+  "transformers": "4.57.6",
+  "opensmile": "2.6.0",
+  "praatio": "6.2.2",
+  "cuda_available": true,
+  "cuda_runtime": "13.0",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "openface": "2.2.0",
+  "mfa": "3.3.10",
+  "ffmpeg": "ffmpeg version 7.1.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "bert_model_path": "<PROJECT_ROOT>/模型/bert-base-uncased",
+  "bert_hidden_layer": -1,
+  "asr_model_path": "<PROJECT_ROOT>/模型/whisper-small",
+  "opensmile_feature_set": "ComParE_2016",
+  "opensmile_feature_level": "LowLevelDescriptors"
+}

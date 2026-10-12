@@ -1,0 +1,184 @@
+{
+  "code_version": "four_models_avstd_v1",
+  "protocol_version": "four_models_accuracy_v1",
+  "purpose": "train",
+  "method": "M1",
+  "decision": {
+    "method": "M1",
+    "decision_rule": "logits_argmax",
+    "class_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "neutral_threshold": null,
+    "calibration_split": null,
+    "calibration_conditions": [],
+    "calibration_objective": null,
+    "threshold_candidates": null,
+    "threshold_boundary": null,
+    "calibration_identity_sha256": null
+  },
+  "decision_rule": "logits_argmax",
+  "class_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "neutral_threshold": null,
+  "selection_protocol": {
+    "protocol_version": "four_models_accuracy_v1",
+    "selection_split": "valid",
+    "conditions": [
+      "clean"
+    ],
+    "condition_weights": [
+      1.0
+    ],
+    "ranking": [
+      "Accuracy:max",
+      "Macro_F1:max",
+      "MAE:min",
+      "epoch:min"
+    ],
+    "tie_tolerance": 1e-12,
+    "decision_rule": "logits_argmax",
+    "class_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "neutral_threshold": null
+  },
+  "checkpoint_sha256": "61973d0f30cc046ec0e1d65611d7ca229c4d59297457f842793359f151fa473e",
+  "valid": {
+    "clean": {
+      "n": 728,
+      "MAE": 0.5595247230318549,
+      "Pearson": 0.6918403794398038,
+      "Pearson_status": "defined",
+      "prediction_clipping": false,
+      "Accuracy": 0.6456043956043956,
+      "Macro_F1": 0.6195321114488135,
+      "Weighted_F1": 0.6437283808860729,
+      "decision_rule": "logits_argmax",
+      "neutral_threshold": null,
+      "class_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "per_class": {
+        "negative": {
+          "class_id": 0,
+          "Precision": 0.6889952153110048,
+          "Recall": 0.6990291262135923,
+          "F1": 0.6939759036144578,
+          "support": 206,
+          "predicted_count": 209
+        },
+        "neutral": {
+          "class_id": 1,
+          "Precision": 0.4540229885057471,
+          "Recall": 0.42934782608695654,
+          "F1": 0.441340782122905,
+          "support": 184,
+          "predicted_count": 174
+        },
+        "positive": {
+          "class_id": 2,
+          "Precision": 0.7159420289855073,
+          "Recall": 0.7307692307692307,
+          "F1": 0.7232796486090776,
+          "support": 338,
+          "predicted_count": 345
+        }
+      },
+      "true_class_counts": {
+        "negative": 206,
+        "neutral": 184,
+        "positive": 338
+      },
+      "predicted_class_counts": {
+        "negative": 209,
+        "neutral": 174,
+        "positive": 345
+      },
+      "confusion_matrix": [
+        [
+          144,
+          39,
+          23
+        ],
+        [
+          30,
+          79,
+          75
+        ],
+        [
+          35,
+          56,
+          247
+        ]
+      ],
+      "confusion_matrix_normalized": [
+        [
+          0.6990291262135923,
+          0.18932038834951456,
+          0.11165048543689321
+        ],
+        [
+          0.16304347826086957,
+          0.42934782608695654,
+          0.4076086956521739
+        ],
+        [
+          0.10355029585798817,
+          0.16568047337278108,
+          0.7307692307692307
+        ]
+      ],
+      "confusion_orientation": "rows=true, columns=predicted",
+      "zero_division": 0,
+      "neutral_misdirection": {
+        "true_neutral_count": 184,
+        "to_negative_count": 30,
+        "to_positive_count": 75,
+        "to_negative_rate": 0.16304347826086957,
+        "to_positive_rate": 0.4076086956521739,
+        "rate_denominator": "true_neutral_count"
+      },
+      "head_sign_disagreement_count": 178,
+      "head_sign_disagreement_rate": 0.2445054945054945,
+      "head_sign_disagreement_definition": "pred_class != sign_class(raw_intensity); exact zero is neutral",
+      "split": "valid",
+      "condition": "clean",
+      "method": "M1",
+      "decision": {
+        "method": "M1",
+        "decision_rule": "logits_argmax",
+        "class_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "neutral_threshold": null,
+        "calibration_split": null,
+        "calibration_conditions": [],
+        "calibration_objective": null,
+        "threshold_candidates": null,
+        "threshold_boundary": null,
+        "calibration_identity_sha256": null
+      },
+      "decision_sha256": "23620b382289560715c4c4048a050e3970680d3971bb157702e3de457d2eade4"
+    }
+  },
+  "training_summary": {
+    "best_epoch": 3,
+    "epochs_completed": 11,
+    "max_epochs": 20,
+    "early_stop_patience": 8,
+    "stop_reason": "early_stopping",
+    "test_run": false
+  }
+}

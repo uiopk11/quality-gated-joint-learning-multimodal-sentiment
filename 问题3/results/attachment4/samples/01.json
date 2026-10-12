@@ -1,0 +1,5047 @@
+{
+  "protocol": {
+    "model": "M1 complete-input joint predictor (legacy run id mt_m0_avstd_s1111_v1)",
+    "predictor": "frozen complete-input M1 EMT multitask model",
+    "classification_target": "fixed original argmax class logit margin",
+    "regression_target": "raw intensity output",
+    "modality_method": "exact three-player Shapley masking sensitivity over 8 coalitions",
+    "local_method": "multi-scale contiguous occlusion",
+    "window_sizes": [
+      1,
+      3,
+      5
+    ],
+    "causal_claim": false
+  },
+  "sample": {
+    "sample_id": "01",
+    "raw_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+    "body_length": 22,
+    "token_ids": [
+      6419,
+      2122,
+      4929,
+      6177,
+      2043,
+      6419,
+      1996,
+      10984,
+      5583,
+      2003,
+      6827,
+      2000,
+      12725,
+      1996,
+      2047,
+      5583,
+      10438,
+      2000,
+      2049,
+      3542,
+      4270,
+      5918
+    ],
+    "wordpieces": [
+      "replacing",
+      "these",
+      "wear",
+      "components",
+      "when",
+      "replacing",
+      "the",
+      "timing",
+      "belt",
+      "is",
+      "essential",
+      "to",
+      "ensuring",
+      "the",
+      "new",
+      "belt",
+      "performs",
+      "to",
+      "its",
+      "mile",
+      "##age",
+      "requirements"
+    ],
+    "text_offsets": [
+      [
+        0,
+        9
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        21,
+        31
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        37,
+        46
+      ],
+      [
+        47,
+        50
+      ],
+      [
+        51,
+        57
+      ],
+      [
+        58,
+        62
+      ],
+      [
+        63,
+        65
+      ],
+      [
+        66,
+        75
+      ],
+      [
+        76,
+        78
+      ],
+      [
+        79,
+        87
+      ],
+      [
+        88,
+        91
+      ],
+      [
+        92,
+        95
+      ],
+      [
+        96,
+        100
+      ],
+      [
+        101,
+        109
+      ],
+      [
+        110,
+        112
+      ],
+      [
+        113,
+        116
+      ],
+      [
+        117,
+        121
+      ],
+      [
+        121,
+        124
+      ],
+      [
+        125,
+        137
+      ]
+    ],
+    "original_token_fragments": [
+      "Replacing",
+      "these",
+      "wear",
+      "components",
+      "when",
+      "replacing",
+      "the",
+      "timing",
+      "belt",
+      "is",
+      "essential",
+      "to",
+      "ensuring",
+      "the",
+      "new",
+      "belt",
+      "performs",
+      "to",
+      "its",
+      "mile",
+      "age",
+      "requirements"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\01.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\01.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 22,
+    "retained_wordpiece_count": 22,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 137,
+    "audio_nonzero_body_rows": 22,
+    "vision_nonzero_body_rows": 22,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "modality_explanation": {
+    "target_class": 1,
+    "original_prediction": {
+      "logits": [
+        -1.3007490634918213,
+        0.5734911561012268,
+        0.46436241269111633
+      ],
+      "probabilities": [
+        0.07486100494861603,
+        0.4877842962741852,
+        0.4373547434806824
+      ],
+      "pred_class": 1,
+      "intensity": 0.05109817534685135,
+      "classification_margin": 0.10912874341011047
+    },
+    "classification": {
+      "signed_shapley": {
+        "text": -0.27536362906297046,
+        "audio": 0.08418514827887216,
+        "vision": -0.16764258344968158
+      },
+      "absolute_share": {
+        "text": 0.5223219679653703,
+        "audio": 0.15968613019848568,
+        "vision": 0.3179919018361441
+      },
+      "most_influential_modality": "text",
+      "primary_supporting_modality": "audio",
+      "primary_opposing_modality": "text"
+    },
+    "regression": {
+      "signed_shapley": {
+        "text": -0.002868851025899251,
+        "audio": -0.03358120222886403,
+        "vision": 0.030649403731028237
+      },
+      "absolute_share": {
+        "text": 0.0427552048074955,
+        "audio": 0.5004690609638605,
+        "vision": 0.456775734228644
+      },
+      "most_influential_modality": "audio",
+      "primary_supporting_modality": "vision",
+      "primary_opposing_modality": "audio"
+    },
+    "leave_one_modality_out": {
+      "text": {
+        "classification_margin_delta": -0.2886350154876709,
+        "intensity_delta": -0.00577525794506073
+      },
+      "audio": {
+        "classification_margin_delta": 0.09073737263679504,
+        "intensity_delta": -0.04056347906589508
+      },
+      "vision": {
+        "classification_margin_delta": -0.1940430998802185,
+        "intensity_delta": 0.028455540537834167
+      }
+    },
+    "coalitions": [
+      {
+        "retained_modalities": [],
+        "classification_margin": 0.4679498076438904,
+        "intensity": 0.056898824870586395,
+        "pred_class": 1,
+        "probabilities": [
+          0.2142319679260254,
+          0.48316749930381775,
+          0.30260053277015686
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio"
+        ],
+        "classification_margin": 0.5445523262023926,
+        "intensity": 0.02723699063062668,
+        "pred_class": 1,
+        "probabilities": [
+          0.2180260568857193,
+          0.49488842487335205,
+          0.28708547353744507
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text"
+        ],
+        "classification_margin": 0.20482715964317322,
+        "intensity": 0.05387347191572189,
+        "pred_class": 1,
+        "probabilities": [
+          0.0809735506772995,
+          0.506409764289856,
+          0.41261669993400574
+        ]
+      },
+      {
+        "retained_modalities": [
+          "vision"
+        ],
+        "classification_margin": 0.3256773352622986,
+        "intensity": 0.08667918294668198,
+        "pred_class": 1,
+        "probabilities": [
+          0.1875023990869522,
+          0.47182324528694153,
+          0.34067440032958984
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio"
+        ],
+        "classification_margin": 0.303171843290329,
+        "intensity": 0.02264263480901718,
+        "pred_class": 1,
+        "probabilities": [
+          0.0852319523692131,
+          0.5261907577514648,
+          0.38857728242874146
+        ]
+      },
+      {
+        "retained_modalities": [
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 0.39776375889778137,
+        "intensity": 0.05687343329191208,
+        "pred_class": 1,
+        "probabilities": [
+          0.19044677913188934,
+          0.48423442244529724,
+          0.32531875371932983
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "vision"
+        ],
+        "classification_margin": 0.01839137077331543,
+        "intensity": 0.09166165441274643,
+        "pred_class": 1,
+        "probabilities": [
+          0.07142913341522217,
+          0.46855470538139343,
+          0.4600161015987396
+        ]
+      },
+      {
+        "retained_modalities": [
+          "text",
+          "audio",
+          "vision"
+        ],
+        "classification_margin": 0.10912874341011047,
+        "intensity": 0.05109817534685135,
+        "pred_class": 1,
+        "probabilities": [
+          0.07486100494861603,
+          0.4877842962741852,
+          0.4373547434806824
+        ]
+      }
+    ],
+    "efficiency_error": {
+      "classification": 0.0,
+      "regression": 2.6020852139652106e-18
+    },
+    "interpretation_scope": "masking sensitivity relative to UNK/zero-row baselines, not causal effect"
+  },
+  "local_explanation": {
+    "text": {
+      "modality": "text",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "replacing",
+          "text_char_start": 0,
+          "text_char_end": 9,
+          "original_text_fragment": "Replacing",
+          "classification_signed": 0.16233278579182095,
+          "classification_absolute": 0.1780966924296485,
+          "classification_share": 0.1320770456166644,
+          "intensity_signed": -0.029551714327600263,
+          "intensity_absolute": 0.032376571165190805,
+          "intensity_share": 0.10158738900715594
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "these",
+          "text_char_start": 10,
+          "text_char_end": 15,
+          "original_text_fragment": "these",
+          "classification_signed": 0.04379109462102254,
+          "classification_absolute": 0.055061745643615725,
+          "classification_share": 0.040833957059464965,
+          "intensity_signed": -0.006838434735933939,
+          "intensity_absolute": 0.008957453767458597,
+          "intensity_share": 0.028105642680493786
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "wear",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "wear",
+          "classification_signed": 0.048126154286520804,
+          "classification_absolute": 0.056176619302658805,
+          "classification_share": 0.041660750736053964,
+          "intensity_signed": -0.010849026980854217,
+          "intensity_absolute": 0.012407719947042917,
+          "intensity_share": 0.03893148124058519
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "components",
+          "text_char_start": 21,
+          "text_char_end": 31,
+          "original_text_fragment": "components",
+          "classification_signed": 0.011673955619335177,
+          "classification_absolute": 0.054765332738558443,
+          "classification_share": 0.040614136352811,
+          "intensity_signed": -0.00017980386813481629,
+          "intensity_absolute": 0.012623526652654014,
+          "intensity_share": 0.03960861408585812
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "when",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "when",
+          "classification_signed": 0.02373589586328577,
+          "classification_absolute": 0.06905113105420714,
+          "classification_share": 0.05120852757965386,
+          "intensity_signed": -0.005171064811724204,
+          "intensity_absolute": 0.01307345325196231,
+          "intensity_share": 0.041020340739536004
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "replacing",
+          "text_char_start": 37,
+          "text_char_end": 46,
+          "original_text_fragment": "replacing",
+          "classification_signed": 0.08957565912493953,
+          "classification_absolute": 0.08957565912493953,
+          "classification_share": 0.06642957965690933,
+          "intensity_signed": -0.017384265087268973,
+          "intensity_absolute": 0.017384265087268973,
+          "intensity_share": 0.05454629803178866
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "the",
+          "classification_signed": 0.07479512360360888,
+          "classification_absolute": 0.07479512360360888,
+          "classification_share": 0.05546828982239621,
+          "intensity_signed": -0.013560913889496415,
+          "intensity_absolute": 0.013560913889496415,
+          "intensity_share": 0.04254983727449008
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "timing",
+          "text_char_start": 51,
+          "text_char_end": 57,
+          "original_text_fragment": "timing",
+          "classification_signed": 0.06482275260819328,
+          "classification_absolute": 0.06763150228394403,
+          "classification_share": 0.05015572659109628,
+          "intensity_signed": -0.013841816231056495,
+          "intensity_absolute": 0.014029020071029664,
+          "intensity_share": 0.04401860567857603
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "belt",
+          "text_char_start": 58,
+          "text_char_end": 62,
+          "original_text_fragment": "belt",
+          "classification_signed": 0.03580216345963655,
+          "classification_absolute": 0.03861091313538728,
+          "classification_share": 0.028633969928992673,
+          "intensity_signed": -0.010548420305605289,
+          "intensity_absolute": 0.010735624145578456,
+          "intensity_share": 0.03368497611272814
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "is",
+          "text_char_start": 63,
+          "text_char_end": 65,
+          "original_text_fragment": "is",
+          "classification_signed": 0.03236493424133018,
+          "classification_absolute": 0.035173683917080915,
+          "classification_share": 0.02608491034754923,
+          "intensity_signed": -0.010559001068274182,
+          "intensity_absolute": 0.010746204908247348,
+          "intensity_share": 0.033718175182751726
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "essential",
+          "text_char_start": 66,
+          "text_char_end": 75,
+          "original_text_fragment": "essential",
+          "classification_signed": 0.051000562199839845,
+          "classification_absolute": 0.05183625773147302,
+          "classification_share": 0.03844192547091452,
+          "intensity_signed": -0.010613936075457821,
+          "intensity_absolute": 0.011639141926059018,
+          "intensity_share": 0.0365199277131386
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "to",
+          "text_char_start": 76,
+          "text_char_end": 78,
+          "original_text_fragment": "to",
+          "classification_signed": 0.07649105014624419,
+          "classification_absolute": 0.07732674567787737,
+          "classification_share": 0.05734574840753752,
+          "intensity_signed": -0.01941312430081544,
+          "intensity_absolute": 0.020438330151416637,
+          "intensity_share": 0.06412898342925592
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "ensuring",
+          "text_char_start": 79,
+          "text_char_end": 87,
+          "original_text_fragment": "ensuring",
+          "classification_signed": 0.049892116034472425,
+          "classification_absolute": 0.059691467991581676,
+          "classification_share": 0.04426737315160455,
+          "intensity_signed": -0.007560117101227795,
+          "intensity_absolute": 0.01252628139875553,
+          "intensity_share": 0.03930348938977832
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "the",
+          "text_char_start": 88,
+          "text_char_end": 91,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0436069784341035,
+          "classification_absolute": 0.06334245513986658,
+          "classification_share": 0.04697495626025977,
+          "intensity_signed": -0.007540187074078452,
+          "intensity_absolute": 0.014000617298814981,
+          "intensity_share": 0.04392948680755251
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "new",
+          "text_char_start": 92,
+          "text_char_end": 95,
+          "original_text_fragment": "new",
+          "classification_signed": 0.031388109922409056,
+          "classification_absolute": 0.06783595151371427,
+          "classification_share": 0.050307346758086874,
+          "intensity_signed": -0.002136106733922606,
+          "intensity_absolute": 0.013489757312668695,
+          "intensity_share": 0.04232657055443707
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "belt",
+          "text_char_start": 96,
+          "text_char_end": 100,
+          "original_text_fragment": "belt",
+          "classification_signed": 0.019907150224403095,
+          "classification_absolute": 0.07123857449602199,
+          "classification_share": 0.05283074225027487,
+          "intensity_signed": -0.003377195475278076,
+          "intensity_absolute": 0.018887869351440004,
+          "intensity_share": 0.059264130272819335
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "performs",
+          "text_char_start": 101,
+          "text_char_end": 109,
+          "original_text_fragment": "performs",
+          "classification_signed": -0.05532230271233453,
+          "classification_absolute": 0.05532230271233453,
+          "classification_share": 0.041027186969473044,
+          "intensity_signed": 0.01684374224256586,
+          "intensity_absolute": 0.01684374224256586,
+          "intensity_share": 0.052850309157242696
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "to",
+          "text_char_start": 110,
+          "text_char_end": 112,
+          "original_text_fragment": "to",
+          "classification_signed": -0.038478042461253976,
+          "classification_absolute": 0.039477400426511405,
+          "classification_share": 0.029276559524087302,
+          "intensity_signed": 0.015398011936081781,
+          "intensity_absolute": 0.015398011936081781,
+          "intensity_share": 0.048314066999452496
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "its",
+          "text_char_start": 113,
+          "text_char_end": 116,
+          "original_text_fragment": "its",
+          "classification_signed": -0.019733574738105136,
+          "classification_absolute": 0.05216020767887433,
+          "classification_share": 0.03868216773143455,
+          "intensity_signed": 0.011898536731799443,
+          "intensity_absolute": 0.01639037628968557,
+          "intensity_share": 0.051427790905298615
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "mile",
+          "text_char_start": 117,
+          "text_char_end": 121,
+          "original_text_fragment": "mile",
+          "classification_signed": -0.030818353948139008,
+          "classification_absolute": 0.030818353948139008,
+          "classification_share": 0.022854984473373908,
+          "intensity_signed": 0.013973527437164669,
+          "intensity_absolute": 0.013973527437164669,
+          "intensity_share": 0.04384448743255448
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "##age",
+          "text_char_start": 121,
+          "text_char_end": 124,
+          "original_text_fragment": "age",
+          "classification_signed": -0.0035382807254791273,
+          "classification_absolute": 0.038899081945419314,
+          "classification_share": 0.028847676789848245,
+          "intensity_signed": 0.005177021225293477,
+          "intensity_absolute": 0.01271635909875234,
+          "intensity_share": 0.03989989279372869
+        },
+        {
+          "body_position": 21,
+          "source_slot": 22,
+          "wordpiece": "requirements",
+          "text_char_start": 125,
+          "text_char_end": 137,
+          "original_text_fragment": "requirements",
+          "classification_signed": -0.021543114052878485,
+          "classification_absolute": 0.021543114052878485,
+          "classification_share": 0.015976438521512697,
+          "intensity_signed": 0.003453261653582255,
+          "intensity_absolute": 0.0065078308184941605,
+          "intensity_share": 0.02041950451077756
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "Replacing",
+          "classification_margin_delta": 0.40655431151390076,
+          "intensity_delta": -0.07284404337406158,
+          "absolute_classification_delta": 0.40655431151390076,
+          "absolute_intensity_delta": 0.07284404337406158
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "these"
+          ],
+          "original_text_fragment": "these",
+          "classification_margin_delta": 0.08124372363090515,
+          "intensity_delta": -0.004800066351890564,
+          "absolute_classification_delta": 0.08124372363090515,
+          "absolute_intensity_delta": 0.004800066351890564
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "wear"
+          ],
+          "original_text_fragment": "wear",
+          "classification_margin_delta": 0.15163585543632507,
+          "intensity_delta": -0.03570179641246796,
+          "absolute_classification_delta": 0.15163585543632507,
+          "absolute_intensity_delta": 0.03570179641246796
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "components"
+          ],
+          "original_text_fragment": "components",
+          "classification_margin_delta": -0.14418888092041016,
+          "intensity_delta": 0.04431946575641632,
+          "absolute_classification_delta": 0.14418888092041016,
+          "absolute_intensity_delta": 0.04431946575641632
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "when"
+          ],
+          "original_text_fragment": "when",
+          "classification_margin_delta": -0.18027269840240479,
+          "intensity_delta": 0.031165584921836853,
+          "absolute_classification_delta": 0.18027269840240479,
+          "absolute_intensity_delta": 0.031165584921836853
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "replacing",
+          "classification_margin_delta": 0.26969924569129944,
+          "intensity_delta": -0.04740719497203827,
+          "absolute_classification_delta": 0.26969924569129944,
+          "absolute_intensity_delta": 0.04740719497203827
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.20037195086479187,
+          "intensity_delta": -0.017952129244804382,
+          "absolute_classification_delta": 0.20037195086479187,
+          "absolute_intensity_delta": 0.017952129244804382
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "timing"
+          ],
+          "original_text_fragment": "timing",
+          "classification_margin_delta": 0.22345098853111267,
+          "intensity_delta": -0.03694339096546173,
+          "absolute_classification_delta": 0.22345098853111267,
+          "absolute_intensity_delta": 0.03694339096546173
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": 0.000911414623260498,
+          "intensity_delta": -0.0025947540998458862,
+          "absolute_classification_delta": 0.000911414623260498,
+          "absolute_intensity_delta": 0.0025947540998458862
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": 0.10182461142539978,
+          "intensity_delta": -0.03238882124423981,
+          "absolute_classification_delta": 0.10182461142539978,
+          "absolute_intensity_delta": 0.03238882124423981
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "essential"
+          ],
+          "original_text_fragment": "essential",
+          "classification_margin_delta": 0.2543925344944,
+          "intensity_delta": -0.042406097054481506,
+          "absolute_classification_delta": 0.2543925344944,
+          "absolute_intensity_delta": 0.042406097054481506
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.33249732851982117,
+          "intensity_delta": -0.08940153568983078,
+          "absolute_classification_delta": 0.33249732851982117,
+          "absolute_intensity_delta": 0.08940153568983078
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "ensuring"
+          ],
+          "original_text_fragment": "ensuring",
+          "classification_margin_delta": 0.047768861055374146,
+          "intensity_delta": 0.006803050637245178,
+          "absolute_classification_delta": 0.047768861055374146,
+          "absolute_intensity_delta": 0.006803050637245178
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.07976636290550232,
+          "intensity_delta": -0.01478014886379242,
+          "absolute_classification_delta": 0.07976636290550232,
+          "absolute_intensity_delta": 0.01478014886379242
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "new"
+          ],
+          "original_text_fragment": "new",
+          "classification_margin_delta": 0.23070672154426575,
+          "intensity_delta": -0.033984437584877014,
+          "absolute_classification_delta": 0.23070672154426575,
+          "absolute_intensity_delta": 0.033984437584877014
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": 0.30757999420166016,
+          "intensity_delta": -0.07580577582120895,
+          "absolute_classification_delta": 0.30757999420166016,
+          "absolute_intensity_delta": 0.07580577582120895
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "performs"
+          ],
+          "original_text_fragment": "performs",
+          "classification_margin_delta": -0.1395139992237091,
+          "intensity_delta": 0.034717246890068054,
+          "absolute_classification_delta": 0.1395139992237091,
+          "absolute_intensity_delta": 0.034717246890068054
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.004497110843658447,
+          "intensity_delta": 0.014081969857215881,
+          "absolute_classification_delta": 0.004497110843658447,
+          "absolute_intensity_delta": 0.014081969857215881
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": 0.12970653176307678,
+          "intensity_delta": -0.017967358231544495,
+          "absolute_classification_delta": 0.12970653176307678,
+          "absolute_intensity_delta": 0.017967358231544495
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "mile"
+          ],
+          "original_text_fragment": "mile",
+          "classification_margin_delta": -0.023694634437561035,
+          "intensity_delta": 0.01951192319393158,
+          "absolute_classification_delta": 0.023694634437561035,
+          "absolute_intensity_delta": 0.01951192319393158
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "##age"
+          ],
+          "original_text_fragment": "age",
+          "classification_margin_delta": 0.08840200304985046,
+          "intensity_delta": -0.018848344683647156,
+          "absolute_classification_delta": 0.08840200304985046,
+          "absolute_intensity_delta": 0.018848344683647156
+        },
+        {
+          "window_size": 1,
+          "body_start": 21,
+          "body_end": 22,
+          "source_slot_start": 22,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "requirements"
+          ],
+          "original_text_fragment": "requirements",
+          "classification_margin_delta": -0.010178238153457642,
+          "intensity_delta": -0.004581853747367859,
+          "absolute_classification_delta": 0.010178238153457642,
+          "absolute_intensity_delta": 0.004581853747367859
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear"
+          ],
+          "original_text_fragment": "Replacing these wear",
+          "classification_margin_delta": 0.3122697174549103,
+          "intensity_delta": -0.06014515459537506,
+          "absolute_classification_delta": 0.3122697174549103,
+          "absolute_intensity_delta": 0.06014515459537506
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components"
+          ],
+          "original_text_fragment": "these wear components",
+          "classification_margin_delta": -0.013592302799224854,
+          "intensity_delta": 0.003180786967277527,
+          "absolute_classification_delta": 0.013592302799224854,
+          "absolute_intensity_delta": 0.003180786967277527
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "wear components when",
+          "classification_margin_delta": 0.018784910440444946,
+          "intensity_delta": 0.00047363340854644775,
+          "absolute_classification_delta": 0.018784910440444946,
+          "absolute_intensity_delta": 0.00047363340854644775
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "components when replacing",
+          "classification_margin_delta": 0.35232171416282654,
+          "intensity_delta": -0.06316600739955902,
+          "absolute_classification_delta": 0.35232171416282654,
+          "absolute_intensity_delta": 0.06316600739955902
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "when replacing the",
+          "classification_margin_delta": 0.22853180766105652,
+          "intensity_delta": -0.03358845412731171,
+          "absolute_classification_delta": 0.22853180766105652,
+          "absolute_intensity_delta": 0.03358845412731171
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "replacing the timing",
+          "classification_margin_delta": 0.2288828194141388,
+          "intensity_delta": -0.030623748898506165,
+          "absolute_classification_delta": 0.2288828194141388,
+          "absolute_intensity_delta": 0.030623748898506165
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "the timing belt",
+          "classification_margin_delta": 0.29208335280418396,
+          "intensity_delta": -0.06665520370006561,
+          "absolute_classification_delta": 0.29208335280418396,
+          "absolute_intensity_delta": 0.06665520370006561
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "timing belt is",
+          "classification_margin_delta": -0.03791812062263489,
+          "intensity_delta": 0.0025272518396377563,
+          "absolute_classification_delta": 0.03791812062263489,
+          "absolute_intensity_delta": 0.0025272518396377563
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "belt is essential",
+          "classification_margin_delta": 0.07093104720115662,
+          "intensity_delta": -0.02461080253124237,
+          "absolute_classification_delta": 0.07093104720115662,
+          "absolute_intensity_delta": 0.02461080253124237
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "is essential to",
+          "classification_margin_delta": 0.030873507261276245,
+          "intensity_delta": -0.014710679650306702,
+          "absolute_classification_delta": 0.030873507261276245,
+          "absolute_intensity_delta": 0.014710679650306702
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "essential to ensuring",
+          "classification_margin_delta": 0.16554424166679382,
+          "intensity_delta": -0.0329732745885849,
+          "absolute_classification_delta": 0.16554424166679382,
+          "absolute_intensity_delta": 0.0329732745885849
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "to ensuring the",
+          "classification_margin_delta": 0.4646269381046295,
+          "intensity_delta": -0.11554398387670517,
+          "absolute_classification_delta": 0.4646269381046295,
+          "absolute_intensity_delta": 0.11554398387670517
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "ensuring the new",
+          "classification_margin_delta": 0.3396773636341095,
+          "intensity_delta": -0.03583480417728424,
+          "absolute_classification_delta": 0.3396773636341095,
+          "absolute_intensity_delta": 0.03583480417728424
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "the new belt",
+          "classification_margin_delta": 0.1929531991481781,
+          "intensity_delta": -0.04193313419818878,
+          "absolute_classification_delta": 0.1929531991481781,
+          "absolute_intensity_delta": 0.04193313419818878
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "new belt performs",
+          "classification_margin_delta": -0.05866813659667969,
+          "intensity_delta": 0.01949383318424225,
+          "absolute_classification_delta": 0.05866813659667969,
+          "absolute_intensity_delta": 0.01949383318424225
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "belt performs to",
+          "classification_margin_delta": -0.09522166848182678,
+          "intensity_delta": 0.03105582296848297,
+          "absolute_classification_delta": 0.09522166848182678,
+          "absolute_intensity_delta": 0.03105582296848297
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "performs to its",
+          "classification_margin_delta": -0.2669453024864197,
+          "intensity_delta": 0.08946387469768524,
+          "absolute_classification_delta": 0.2669453024864197,
+          "absolute_intensity_delta": 0.08946387469768524
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "to its mile",
+          "classification_margin_delta": -0.14083272218704224,
+          "intensity_delta": 0.06180368363857269,
+          "absolute_classification_delta": 0.14083272218704224,
+          "absolute_intensity_delta": 0.06180368363857269
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "its mileage",
+          "classification_margin_delta": -0.03968626260757446,
+          "intensity_delta": 0.037604108452796936,
+          "absolute_classification_delta": 0.03968626260757446,
+          "absolute_intensity_delta": 0.037604108452796936
+        },
+        {
+          "window_size": 3,
+          "body_start": 19,
+          "body_end": 22,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "mileage requirements",
+          "classification_margin_delta": -0.14727023243904114,
+          "intensity_delta": 0.03146986663341522,
+          "absolute_classification_delta": 0.14727023243904114,
+          "absolute_intensity_delta": 0.03146986663341522
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "Replacing these wear components when",
+          "classification_margin_delta": -0.11822929978370667,
+          "intensity_delta": 0.021186426281929016,
+          "absolute_classification_delta": 0.11822929978370667,
+          "absolute_intensity_delta": 0.021186426281929016
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "these wear components when replacing",
+          "classification_margin_delta": 0.3089923560619354,
+          "intensity_delta": -0.0732063502073288,
+          "absolute_classification_delta": 0.3089923560619354,
+          "absolute_intensity_delta": 0.0732063502073288
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "wear components when replacing the",
+          "classification_margin_delta": 0.20636919140815735,
+          "intensity_delta": -0.05503581464290619,
+          "absolute_classification_delta": 0.20636919140815735,
+          "absolute_intensity_delta": 0.05503581464290619
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "components when replacing the timing",
+          "classification_margin_delta": 0.19491317868232727,
+          "intensity_delta": -0.02254776656627655,
+          "absolute_classification_delta": 0.19491317868232727,
+          "absolute_intensity_delta": 0.02254776656627655
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "when replacing the timing belt",
+          "classification_margin_delta": 0.3780359923839569,
+          "intensity_delta": -0.09845428913831711,
+          "absolute_classification_delta": 0.3780359923839569,
+          "absolute_intensity_delta": 0.09845428913831711
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "replacing the timing belt is",
+          "classification_margin_delta": 0.2445371448993683,
+          "intensity_delta": -0.08371471613645554,
+          "absolute_classification_delta": 0.2445371448993683,
+          "absolute_intensity_delta": 0.08371471613645554
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "the timing belt is essential",
+          "classification_margin_delta": 0.09090200066566467,
+          "intensity_delta": -0.04261554777622223,
+          "absolute_classification_delta": 0.09090200066566467,
+          "absolute_intensity_delta": 0.04261554777622223
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "timing belt is essential to",
+          "classification_margin_delta": 0.08630052208900452,
+          "intensity_delta": -0.032912954688072205,
+          "absolute_classification_delta": 0.08630052208900452,
+          "absolute_intensity_delta": 0.032912954688072205
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "belt is essential to ensuring",
+          "classification_margin_delta": 0.26493749022483826,
+          "intensity_delta": -0.0561097115278244,
+          "absolute_classification_delta": 0.26493749022483826,
+          "absolute_intensity_delta": 0.0561097115278244
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "is essential to ensuring the",
+          "classification_margin_delta": 0.15414443612098694,
+          "intensity_delta": -0.03653429448604584,
+          "absolute_classification_delta": 0.15414443612098694,
+          "absolute_intensity_delta": 0.03653429448604584
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "essential to ensuring the new",
+          "classification_margin_delta": -0.018803149461746216,
+          "intensity_delta": 0.023067131638526917,
+          "absolute_classification_delta": 0.018803149461746216,
+          "absolute_intensity_delta": 0.023067131638526917
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "to ensuring the new belt",
+          "classification_margin_delta": 0.19129016995429993,
+          "intensity_delta": -0.0520465224981308,
+          "absolute_classification_delta": 0.19129016995429993,
+          "absolute_intensity_delta": 0.0520465224981308
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "ensuring the new belt performs",
+          "classification_margin_delta": -0.20168226957321167,
+          "intensity_delta": 0.05465631186962128,
+          "absolute_classification_delta": 0.20168226957321167,
+          "absolute_intensity_delta": 0.05465631186962128
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "the new belt performs to",
+          "classification_margin_delta": -0.2235628068447113,
+          "intensity_delta": 0.06763623654842377,
+          "absolute_classification_delta": 0.2235628068447113,
+          "absolute_intensity_delta": 0.06763623654842377
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "new belt performs to its",
+          "classification_margin_delta": -0.27824798226356506,
+          "intensity_delta": 0.07760773599147797,
+          "absolute_classification_delta": 0.27824798226356506,
+          "absolute_intensity_delta": 0.07760773599147797
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "belt performs to its mile",
+          "classification_margin_delta": -0.19498097896575928,
+          "intensity_delta": 0.06484045088291168,
+          "absolute_classification_delta": 0.19498097896575928,
+          "absolute_intensity_delta": 0.06484045088291168
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "performs to its mileage",
+          "classification_margin_delta": -0.19206774234771729,
+          "intensity_delta": 0.0862855464220047,
+          "absolute_classification_delta": 0.19206774234771729,
+          "absolute_intensity_delta": 0.0862855464220047
+        },
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": -0.026805132627487183,
+          "intensity_delta": 0.022258415818214417,
+          "absolute_classification_delta": 0.026805132627487183,
+          "absolute_intensity_delta": 0.022258415818214417
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "to ensuring the",
+          "classification_margin_delta": 0.4646269381046295,
+          "intensity_delta": -0.11554398387670517,
+          "absolute_classification_delta": 0.4646269381046295,
+          "absolute_intensity_delta": 0.11554398387670517
+        },
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "Replacing",
+          "classification_margin_delta": 0.40655431151390076,
+          "intensity_delta": -0.07284404337406158,
+          "absolute_classification_delta": 0.40655431151390076,
+          "absolute_intensity_delta": 0.07284404337406158
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "when replacing the timing belt",
+          "classification_margin_delta": 0.3780359923839569,
+          "intensity_delta": -0.09845428913831711,
+          "absolute_classification_delta": 0.3780359923839569,
+          "absolute_intensity_delta": 0.09845428913831711
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "to ensuring the",
+          "classification_margin_delta": 0.4646269381046295,
+          "intensity_delta": -0.11554398387670517,
+          "absolute_classification_delta": 0.4646269381046295,
+          "absolute_intensity_delta": 0.11554398387670517
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "when replacing the timing belt",
+          "classification_margin_delta": 0.3780359923839569,
+          "intensity_delta": -0.09845428913831711,
+          "absolute_classification_delta": 0.3780359923839569,
+          "absolute_intensity_delta": 0.09845428913831711
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "performs to its",
+          "classification_margin_delta": -0.2669453024864197,
+          "intensity_delta": 0.08946387469768524,
+          "absolute_classification_delta": 0.2669453024864197,
+          "absolute_intensity_delta": 0.08946387469768524
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.40655431151390076,
+          0.08124372363090515,
+          0.15163585543632507,
+          0.14418888092041016,
+          0.18027269840240479,
+          0.26969924569129944,
+          0.20037195086479187,
+          0.22345098853111267,
+          0.000911414623260498,
+          0.10182461142539978,
+          0.2543925344944,
+          0.33249732851982117,
+          0.047768861055374146,
+          0.07976636290550232,
+          0.23070672154426575,
+          0.30757999420166016,
+          0.1395139992237091,
+          0.004497110843658447,
+          0.12970653176307678,
+          0.023694634437561035,
+          0.08840200304985046,
+          0.010178238153457642
+        ],
+        "3": [
+          0.10408990581830342,
+          0.05431033670902252,
+          0.038294103410508894,
+          0.04274432526694403,
+          0.06662649247381422,
+          0.08997070458200242,
+          0.08327755331993103,
+          0.06209825476010641,
+          0.04454805784755283,
+          0.01552474167611864,
+          0.0297054217921363,
+          0.07344940967029995,
+          0.10776094926728141,
+          0.11080638898743522,
+          0.06569985548655193,
+          0.038538111580742725,
+          0.046759456396102905,
+          0.05588885479503208,
+          0.049718254142337374,
+          0.03642102413707309,
+          0.0311594158411026,
+          0.04909007747968038
+        ],
+        "5": [
+          0.023645859956741334,
+          0.04272216558456421,
+          0.042239389816919964,
+          0.04142520129680634,
+          0.04826160073280335,
+          0.053313914537429806,
+          0.04459030032157898,
+          0.039787553548812866,
+          0.04258852601051331,
+          0.03363286375999451,
+          0.024603503942489623,
+          0.028619030714035033,
+          0.033234300613403316,
+          0.03157931327819824,
+          0.03654345512390137,
+          0.0435905683040619,
+          0.04362167119979858,
+          0.036626585721969605,
+          0.03460509181022644,
+          0.027590256929397584,
+          0.021887287497520447,
+          0.005361026525497437
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.19141727837380013
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.17447769621682668
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.15640880858272163
+        }
+      ]
+    },
+    "audio": {
+      "modality": "audio",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "replacing",
+          "text_char_start": 0,
+          "text_char_end": 9,
+          "original_text_fragment": "Replacing",
+          "classification_signed": -0.00014241735140482583,
+          "classification_absolute": 0.001194514830907186,
+          "classification_share": 0.008460684988839083,
+          "intensity_signed": 0.00041301084889305964,
+          "intensity_absolute": 0.00041301084889305964,
+          "intensity_share": 0.008356516179163076
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "these",
+          "text_char_start": 10,
+          "text_char_end": 15,
+          "original_text_fragment": "these",
+          "classification_signed": 0.0007480577627817789,
+          "classification_absolute": 0.0007480577627817789,
+          "classification_share": 0.005298453330667868,
+          "intensity_signed": 9.130656719207764e-05,
+          "intensity_absolute": 0.00010466396808624268,
+          "intensity_share": 0.00211768321590642
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "wear",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "wear",
+          "classification_signed": 0.0006988329546792166,
+          "classification_absolute": 0.0008761823177337645,
+          "classification_share": 0.0062059527360630124,
+          "intensity_signed": 3.903834592728388e-05,
+          "intensity_absolute": 9.418825308481852e-05,
+          "intensity_share": 0.0019057263577940337
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "components",
+          "text_char_start": 21,
+          "text_char_end": 31,
+          "original_text_fragment": "components",
+          "classification_signed": 0.000505145142475764,
+          "classification_absolute": 0.0010604647298653922,
+          "classification_share": 0.007511215255779912,
+          "intensity_signed": -6.512974699338276e-05,
+          "intensity_absolute": 8.083457748095195e-05,
+          "intensity_share": 0.0016355392512468637
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "when",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "when",
+          "classification_signed": -0.0003353613394278066,
+          "classification_absolute": 0.0011089166005452474,
+          "classification_share": 0.007854397277748525,
+          "intensity_signed": -4.7120451927185056e-05,
+          "intensity_absolute": 8.52415959040324e-05,
+          "intensity_share": 0.0017247071771089688
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "replacing",
+          "text_char_start": 37,
+          "text_char_end": 46,
+          "original_text_fragment": "replacing",
+          "classification_signed": -0.0019133316146002876,
+          "classification_absolute": 0.001964331997765435,
+          "classification_share": 0.013913259020792894,
+          "intensity_signed": 3.8006460225140605e-05,
+          "intensity_absolute": 8.138981130388048e-05,
+          "intensity_share": 0.0016467733881635
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "the",
+          "classification_signed": -0.0027238870108569108,
+          "classification_absolute": 0.0027238870108569108,
+          "classification_share": 0.01929314676365161,
+          "intensity_signed": 0.00010770239211894847,
+          "intensity_absolute": 0.00011192769915969286,
+          "intensity_share": 0.002264651476907459
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "timing",
+          "text_char_start": 51,
+          "text_char_end": 57,
+          "original_text_fragment": "timing",
+          "classification_signed": -0.002999754967512908,
+          "classification_absolute": 0.002999754967512908,
+          "classification_share": 0.02124710482209489,
+          "intensity_signed": 2.6513360164783612e-05,
+          "intensity_absolute": 0.00010240839587317571,
+          "intensity_share": 0.0020720458537347415
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "belt",
+          "text_char_start": 58,
+          "text_char_end": 62,
+          "original_text_fragment": "belt",
+          "classification_signed": -0.0025215720688855207,
+          "classification_absolute": 0.0025215720688855207,
+          "classification_share": 0.017860160794565563,
+          "intensity_signed": -9.887582725948757e-05,
+          "intensity_absolute": 0.00017121732234954835,
+          "intensity_share": 0.0034642681377540538
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "is",
+          "text_char_start": 63,
+          "text_char_end": 65,
+          "original_text_fragment": "is",
+          "classification_signed": -0.0021101627084943986,
+          "classification_absolute": 0.0021101627084943986,
+          "classification_share": 0.014946170185436395,
+          "intensity_signed": -0.00034507877296871607,
+          "intensity_absolute": 0.00037606524096594915,
+          "intensity_share": 0.00760898964028551
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "essential",
+          "text_char_start": 66,
+          "text_char_end": 75,
+          "original_text_fragment": "essential",
+          "classification_signed": -0.0013121799186423973,
+          "classification_absolute": 0.0013409941284744827,
+          "classification_share": 0.009498190059548092,
+          "intensity_signed": -0.0005855013926823934,
+          "intensity_absolute": 0.0005921261178122626,
+          "intensity_share": 0.011980584763971666
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "to",
+          "text_char_start": 76,
+          "text_char_end": 78,
+          "original_text_fragment": "to",
+          "classification_signed": -0.0002705761679896603,
+          "classification_absolute": 0.0009117490715450711,
+          "classification_share": 0.006457870160850883,
+          "intensity_signed": -0.0009868969519933064,
+          "intensity_absolute": 0.0009868969519933064,
+          "intensity_share": 0.019968047736765825
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "ensuring",
+          "text_char_start": 79,
+          "text_char_end": 87,
+          "original_text_fragment": "ensuring",
+          "classification_signed": 0.0004259495823471634,
+          "classification_absolute": 0.0011833599320164431,
+          "classification_share": 0.008381675433532642,
+          "intensity_signed": -0.001176361353309066,
+          "intensity_absolute": 0.001176361353309066,
+          "intensity_share": 0.02380151201310144
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "the",
+          "text_char_start": 88,
+          "text_char_end": 91,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0022424691253238255,
+          "classification_absolute": 0.0023404909504784483,
+          "classification_share": 0.016577572867963294,
+          "intensity_signed": -0.0016057039852495545,
+          "intensity_absolute": 0.0016057039852495545,
+          "intensity_share": 0.03248847183469232
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "new",
+          "text_char_start": 92,
+          "text_char_end": 95,
+          "original_text_fragment": "new",
+          "classification_signed": 0.004379406461009273,
+          "classification_absolute": 0.004379406461009273,
+          "classification_share": 0.031019102941188228,
+          "intensity_signed": -0.0019547640173523517,
+          "intensity_absolute": 0.0019547640173523517,
+          "intensity_share": 0.03955106065913621
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "belt",
+          "text_char_start": 96,
+          "text_char_end": 100,
+          "original_text_fragment": "belt",
+          "classification_signed": 0.008310857746336196,
+          "classification_absolute": 0.008310857746336196,
+          "classification_share": 0.05886536320809163,
+          "intensity_signed": -0.0028703673018349537,
+          "intensity_absolute": 0.0028703673018349537,
+          "intensity_share": 0.05807661193940015
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "performs",
+          "text_char_start": 101,
+          "text_char_end": 109,
+          "original_text_fragment": "performs",
+          "classification_signed": 0.012510969903733994,
+          "classification_absolute": 0.012510969903733994,
+          "classification_share": 0.08861453413680087,
+          "intensity_signed": -0.003926621211899652,
+          "intensity_absolute": 0.003926621211899652,
+          "intensity_share": 0.07944797037324453
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "to",
+          "text_char_start": 110,
+          "text_char_end": 112,
+          "original_text_fragment": "to",
+          "classification_signed": 0.017584904255690398,
+          "classification_absolute": 0.017584904255690398,
+          "classification_share": 0.12455294117470235,
+          "intensity_signed": -0.005829682504689252,
+          "intensity_absolute": 0.005829682504689252,
+          "intensity_share": 0.11795292133460057
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "its",
+          "text_char_start": 113,
+          "text_char_end": 116,
+          "original_text_fragment": "its",
+          "classification_signed": 0.020530347029368082,
+          "classification_absolute": 0.020530347029368082,
+          "classification_share": 0.14541535561773883,
+          "intensity_signed": -0.007037937392791112,
+          "intensity_absolute": 0.007037937392791112,
+          "intensity_share": 0.1423997404630502
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "mile",
+          "text_char_start": 117,
+          "text_char_end": 121,
+          "original_text_fragment": "mile",
+          "classification_signed": 0.020254886150360106,
+          "classification_absolute": 0.020254886150360106,
+          "classification_share": 0.14346428086861643,
+          "intensity_signed": -0.00781874472186679,
+          "intensity_absolute": 0.00781874472186679,
+          "intensity_share": 0.15819794309069948
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "##age",
+          "text_char_start": 121,
+          "text_char_end": 124,
+          "original_text_fragment": "age",
+          "classification_signed": 0.02042197227478027,
+          "classification_absolute": 0.02042197227478027,
+          "classification_share": 0.14464774299746366,
+          "intensity_signed": -0.008664309779802957,
+          "intensity_absolute": 0.008664309779802957,
+          "intensity_share": 0.17530639945720075
+        },
+        {
+          "body_position": 21,
+          "source_slot": 22,
+          "wordpiece": "requirements",
+          "text_char_start": 125,
+          "text_char_end": 137,
+          "original_text_fragment": "requirements",
+          "classification_signed": 0.009138682815763686,
+          "classification_absolute": 0.014106392198138765,
+          "classification_share": 0.09991482535786356,
+          "intensity_signed": -0.004811674687597487,
+          "intensity_absolute": 0.005339344673686558,
+          "intensity_share": 0.10803183565607229
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "Replacing",
+          "classification_margin_delta": -0.0020053982734680176,
+          "intensity_delta": 0.0009008795022964478,
+          "absolute_classification_delta": 0.0020053982734680176,
+          "absolute_intensity_delta": 0.0009008795022964478
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "these"
+          ],
+          "original_text_fragment": "these",
+          "classification_margin_delta": 0.0006112456321716309,
+          "intensity_delta": 0.00014062225818634033,
+          "absolute_classification_delta": 0.0006112456321716309,
+          "absolute_intensity_delta": 0.00014062225818634033
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "wear"
+          ],
+          "original_text_fragment": "wear",
+          "classification_margin_delta": 0.0008730292320251465,
+          "intensity_delta": 0.00011698901653289795,
+          "absolute_classification_delta": 0.0008730292320251465,
+          "absolute_intensity_delta": 0.00011698901653289795
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "components"
+          ],
+          "original_text_fragment": "components",
+          "classification_margin_delta": 0.0021363794803619385,
+          "intensity_delta": -0.00023259222507476807,
+          "absolute_classification_delta": 0.0021363794803619385,
+          "absolute_intensity_delta": 0.00023259222507476807
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "when"
+          ],
+          "original_text_fragment": "when",
+          "classification_margin_delta": 0.0006763339042663574,
+          "intensity_delta": -0.0002443641424179077,
+          "absolute_classification_delta": 0.0006763339042663574,
+          "absolute_intensity_delta": 0.0002443641424179077
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "replacing",
+          "classification_margin_delta": -0.004040718078613281,
+          "intensity_delta": 0.00012095272541046143,
+          "absolute_classification_delta": 0.004040718078613281,
+          "absolute_intensity_delta": 0.00012095272541046143
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": -0.004989534616470337,
+          "intensity_delta": 0.0003945380449295044,
+          "absolute_classification_delta": 0.004989534616470337,
+          "absolute_intensity_delta": 0.0003945380449295044
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "timing"
+          ],
+          "original_text_fragment": "timing",
+          "classification_margin_delta": -0.0049658119678497314,
+          "intensity_delta": 6.778538227081299e-05,
+          "absolute_classification_delta": 0.0049658119678497314,
+          "absolute_intensity_delta": 6.778538227081299e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": -0.002309650182723999,
+          "intensity_delta": -7.818639278411865e-05,
+          "absolute_classification_delta": 0.002309650182723999,
+          "absolute_intensity_delta": 7.818639278411865e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": -0.002593487501144409,
+          "intensity_delta": -0.0003773123025894165,
+          "absolute_classification_delta": 0.002593487501144409,
+          "absolute_intensity_delta": 0.0003773123025894165
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "essential"
+          ],
+          "original_text_fragment": "essential",
+          "classification_margin_delta": -0.0014474093914031982,
+          "intensity_delta": -0.0003368109464645386,
+          "absolute_classification_delta": 0.0014474093914031982,
+          "absolute_intensity_delta": 0.0003368109464645386
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.00034737586975097656,
+          "intensity_delta": -0.001262947916984558,
+          "absolute_classification_delta": 0.00034737586975097656,
+          "absolute_intensity_delta": 0.001262947916984558
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "ensuring"
+          ],
+          "original_text_fragment": "ensuring",
+          "classification_margin_delta": -0.0010300874710083008,
+          "intensity_delta": -0.0011035054922103882,
+          "absolute_classification_delta": 0.0010300874710083008,
+          "absolute_intensity_delta": 0.0011035054922103882
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.000998765230178833,
+          "intensity_delta": -0.0018214434385299683,
+          "absolute_classification_delta": 0.000998765230178833,
+          "absolute_intensity_delta": 0.0018214434385299683
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "new"
+          ],
+          "original_text_fragment": "new",
+          "classification_margin_delta": 0.00038683414459228516,
+          "intensity_delta": -0.0013024359941482544,
+          "absolute_classification_delta": 0.00038683414459228516,
+          "absolute_intensity_delta": 0.0013024359941482544
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": 0.006120473146438599,
+          "intensity_delta": -0.002418801188468933,
+          "absolute_classification_delta": 0.006120473146438599,
+          "absolute_intensity_delta": 0.002418801188468933
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "performs"
+          ],
+          "original_text_fragment": "performs",
+          "classification_margin_delta": 0.00948837399482727,
+          "intensity_delta": -0.001958712935447693,
+          "absolute_classification_delta": 0.00948837399482727,
+          "absolute_intensity_delta": 0.001958712935447693
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.022339344024658203,
+          "intensity_delta": -0.006863400340080261,
+          "absolute_classification_delta": 0.022339344024658203,
+          "absolute_intensity_delta": 0.006863400340080261
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": 0.024217158555984497,
+          "intensity_delta": -0.0073117464780807495,
+          "absolute_classification_delta": 0.024217158555984497,
+          "absolute_intensity_delta": 0.0073117464780807495
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "mile"
+          ],
+          "original_text_fragment": "mile",
+          "classification_margin_delta": 0.01933068037033081,
+          "intensity_delta": -0.008045896887779236,
+          "absolute_classification_delta": 0.01933068037033081,
+          "absolute_intensity_delta": 0.008045896887779236
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "##age"
+          ],
+          "original_text_fragment": "age",
+          "classification_margin_delta": 0.019889235496520996,
+          "intensity_delta": -0.010180279612541199,
+          "absolute_classification_delta": 0.019889235496520996,
+          "absolute_intensity_delta": 0.010180279612541199
+        },
+        {
+          "window_size": 1,
+          "body_start": 21,
+          "body_end": 22,
+          "source_slot_start": 22,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "requirements"
+          ],
+          "original_text_fragment": "requirements",
+          "classification_margin_delta": -0.007451564073562622,
+          "intensity_delta": 0.000791504979133606,
+          "absolute_classification_delta": 0.007451564073562622,
+          "absolute_intensity_delta": 0.000791504979133606
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear"
+          ],
+          "original_text_fragment": "Replacing these wear",
+          "classification_margin_delta": 0.0015403926372528076,
+          "intensity_delta": 0.0008594542741775513,
+          "absolute_classification_delta": 0.0015403926372528076,
+          "absolute_intensity_delta": 0.0008594542741775513
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components"
+          ],
+          "original_text_fragment": "these wear components",
+          "classification_margin_delta": 0.00396418571472168,
+          "intensity_delta": 3.345310688018799e-05,
+          "absolute_classification_delta": 0.00396418571472168,
+          "absolute_intensity_delta": 3.345310688018799e-05
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "wear components when",
+          "classification_margin_delta": 0.004531443119049072,
+          "intensity_delta": -0.0004681199789047241,
+          "absolute_classification_delta": 0.004531443119049072,
+          "absolute_intensity_delta": 0.0004681199789047241
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "components when replacing",
+          "classification_margin_delta": -0.00048220157623291016,
+          "intensity_delta": -0.00042845308780670166,
+          "absolute_classification_delta": 0.00048220157623291016,
+          "absolute_intensity_delta": 0.00042845308780670166
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "when replacing the",
+          "classification_margin_delta": -0.007111549377441406,
+          "intensity_delta": 0.0002443045377731323,
+          "absolute_classification_delta": 0.007111549377441406,
+          "absolute_intensity_delta": 0.0002443045377731323
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "replacing the timing",
+          "classification_margin_delta": -0.011782974004745483,
+          "intensity_delta": 0.0005604773759841919,
+          "absolute_classification_delta": 0.011782974004745483,
+          "absolute_intensity_delta": 0.0005604773759841919
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "the timing belt",
+          "classification_margin_delta": -0.010123074054718018,
+          "intensity_delta": 0.0004429668188095093,
+          "absolute_classification_delta": 0.010123074054718018,
+          "absolute_intensity_delta": 0.0004429668188095093
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "timing belt is",
+          "classification_margin_delta": -0.010229289531707764,
+          "intensity_delta": -5.826354026794434e-06,
+          "absolute_classification_delta": 0.010229289531707764,
+          "absolute_intensity_delta": 5.826354026794434e-06
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "belt is essential",
+          "classification_margin_delta": -0.006805062294006348,
+          "intensity_delta": -0.0006394237279891968,
+          "absolute_classification_delta": 0.006805062294006348,
+          "absolute_intensity_delta": 0.0006394237279891968
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "is essential to",
+          "classification_margin_delta": -0.002562582492828369,
+          "intensity_delta": -0.002251937985420227,
+          "absolute_classification_delta": 0.002562582492828369,
+          "absolute_intensity_delta": 0.002251937985420227
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "essential to ensuring",
+          "classification_margin_delta": -0.0014565587043762207,
+          "intensity_delta": -0.0030268877744674683,
+          "absolute_classification_delta": 0.0014565587043762207,
+          "absolute_intensity_delta": 0.0030268877744674683
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "to ensuring the",
+          "classification_margin_delta": 0.0009614527225494385,
+          "intensity_delta": -0.004197999835014343,
+          "absolute_classification_delta": 0.0009614527225494385,
+          "absolute_intensity_delta": 0.004197999835014343
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "ensuring the new",
+          "classification_margin_delta": 0.001322716474533081,
+          "intensity_delta": -0.003934696316719055,
+          "absolute_classification_delta": 0.001322716474533081,
+          "absolute_intensity_delta": 0.003934696316719055
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "the new belt",
+          "classification_margin_delta": 0.010234057903289795,
+          "intensity_delta": -0.005472287535667419,
+          "absolute_classification_delta": 0.010234057903289795,
+          "absolute_intensity_delta": 0.005472287535667419
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "new belt performs",
+          "classification_margin_delta": 0.020074397325515747,
+          "intensity_delta": -0.006024673581123352,
+          "absolute_classification_delta": 0.020074397325515747,
+          "absolute_intensity_delta": 0.006024673581123352
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "belt performs to",
+          "classification_margin_delta": 0.04050061106681824,
+          "intensity_delta": -0.011952653527259827,
+          "absolute_classification_delta": 0.04050061106681824,
+          "absolute_intensity_delta": 0.011952653527259827
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "performs to its",
+          "classification_margin_delta": 0.05745461583137512,
+          "intensity_delta": -0.016942128539085388,
+          "absolute_classification_delta": 0.05745461583137512,
+          "absolute_intensity_delta": 0.016942128539085388
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "to its mile",
+          "classification_margin_delta": 0.07053932547569275,
+          "intensity_delta": -0.02401493489742279,
+          "absolute_classification_delta": 0.07053932547569275,
+          "absolute_intensity_delta": 0.02401493489742279
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "its mileage",
+          "classification_margin_delta": 0.0797170102596283,
+          "intensity_delta": -0.030903682112693787,
+          "absolute_classification_delta": 0.0797170102596283,
+          "absolute_intensity_delta": 0.030903682112693787
+        },
+        {
+          "window_size": 3,
+          "body_start": 19,
+          "body_end": 22,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "mileage requirements",
+          "classification_margin_delta": 0.043835192918777466,
+          "intensity_delta": -0.02211765944957733,
+          "absolute_classification_delta": 0.043835192918777466,
+          "absolute_intensity_delta": 0.02211765944957733
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "Replacing these wear components when",
+          "classification_margin_delta": 0.0053234100341796875,
+          "intensity_delta": 0.0002583414316177368,
+          "absolute_classification_delta": 0.0053234100341796875,
+          "absolute_intensity_delta": 0.0002583414316177368
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "these wear components when replacing",
+          "classification_margin_delta": 0.0011475086212158203,
+          "intensity_delta": -0.000166967511177063,
+          "absolute_classification_delta": 0.0011475086212158203,
+          "absolute_intensity_delta": 0.000166967511177063
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "wear components when replacing the",
+          "classification_margin_delta": -0.00310361385345459,
+          "intensity_delta": -1.7955899238586426e-05,
+          "absolute_classification_delta": 0.00310361385345459,
+          "absolute_intensity_delta": 1.7955899238586426e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "components when replacing the timing",
+          "classification_margin_delta": -0.007199108600616455,
+          "intensity_delta": -7.711350917816162e-05,
+          "absolute_classification_delta": 0.007199108600616455,
+          "absolute_intensity_delta": 7.711350917816162e-05
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "when replacing the timing belt",
+          "classification_margin_delta": -0.009537279605865479,
+          "intensity_delta": 0.00019221007823944092,
+          "absolute_classification_delta": 0.009537279605865479,
+          "absolute_intensity_delta": 0.00019221007823944092
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "replacing the timing belt is",
+          "classification_margin_delta": -0.014909297227859497,
+          "intensity_delta": 0.000548139214515686,
+          "absolute_classification_delta": 0.014909297227859497,
+          "absolute_intensity_delta": 0.000548139214515686
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "the timing belt is essential",
+          "classification_margin_delta": -0.014515280723571777,
+          "intensity_delta": 0.0001490563154220581,
+          "absolute_classification_delta": 0.014515280723571777,
+          "absolute_intensity_delta": 0.0001490563154220581
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "timing belt is essential to",
+          "classification_margin_delta": -0.010440051555633545,
+          "intensity_delta": -0.0016208142042160034,
+          "absolute_classification_delta": 0.010440051555633545,
+          "absolute_intensity_delta": 0.0016208142042160034
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "belt is essential to ensuring",
+          "classification_margin_delta": -0.007258206605911255,
+          "intensity_delta": -0.002989932894706726,
+          "absolute_classification_delta": 0.007258206605911255,
+          "absolute_intensity_delta": 0.002989932894706726
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "is essential to ensuring the",
+          "classification_margin_delta": -0.002205491065979004,
+          "intensity_delta": -0.0048997849225997925,
+          "absolute_classification_delta": 0.002205491065979004,
+          "absolute_intensity_delta": 0.0048997849225997925
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "essential to ensuring the new",
+          "classification_margin_delta": 0.0006483197212219238,
+          "intensity_delta": -0.005438283085823059,
+          "absolute_classification_delta": 0.0006483197212219238,
+          "absolute_intensity_delta": 0.005438283085823059
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "to ensuring the new belt",
+          "classification_margin_delta": 0.010438770055770874,
+          "intensity_delta": -0.007352098822593689,
+          "absolute_classification_delta": 0.010438770055770874,
+          "absolute_intensity_delta": 0.007352098822593689
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "ensuring the new belt performs",
+          "classification_margin_delta": 0.021315425634384155,
+          "intensity_delta": -0.00813932716846466,
+          "absolute_classification_delta": 0.021315425634384155,
+          "absolute_intensity_delta": 0.00813932716846466
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "the new belt performs to",
+          "classification_margin_delta": 0.04485654830932617,
+          "intensity_delta": -0.014644995331764221,
+          "absolute_classification_delta": 0.04485654830932617,
+          "absolute_intensity_delta": 0.014644995331764221
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "new belt performs to its",
+          "classification_margin_delta": 0.06516143679618835,
+          "intensity_delta": -0.0201580673456192,
+          "absolute_classification_delta": 0.06516143679618835,
+          "absolute_intensity_delta": 0.0201580673456192
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "belt performs to its mile",
+          "classification_margin_delta": 0.08359894156455994,
+          "intensity_delta": -0.027695342898368835,
+          "absolute_classification_delta": 0.08359894156455994,
+          "absolute_intensity_delta": 0.027695342898368835
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "performs to its mileage",
+          "classification_margin_delta": 0.1039033830165863,
+          "intensity_delta": -0.038067564368247986,
+          "absolute_classification_delta": 0.1039033830165863,
+          "absolute_intensity_delta": 0.038067564368247986
+        },
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": 0.10127940773963928,
+          "intensity_delta": -0.03926987946033478,
+          "absolute_classification_delta": 0.10127940773963928,
+          "absolute_intensity_delta": 0.03926987946033478
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "performs to its mileage",
+          "classification_margin_delta": 0.1039033830165863,
+          "intensity_delta": -0.038067564368247986,
+          "absolute_classification_delta": 0.1039033830165863,
+          "absolute_intensity_delta": 0.038067564368247986
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "replacing the timing belt is",
+          "classification_margin_delta": -0.014909297227859497,
+          "intensity_delta": 0.000548139214515686,
+          "absolute_classification_delta": 0.014909297227859497,
+          "absolute_intensity_delta": 0.000548139214515686
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "to ensuring the new belt",
+          "classification_margin_delta": 0.010438770055770874,
+          "intensity_delta": -0.007352098822593689,
+          "absolute_classification_delta": 0.010438770055770874,
+          "absolute_intensity_delta": 0.007352098822593689
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": 0.10127940773963928,
+          "intensity_delta": -0.03926987946033478,
+          "absolute_classification_delta": 0.10127940773963928,
+          "absolute_intensity_delta": 0.03926987946033478
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "ensuring the new belt performs",
+          "classification_margin_delta": 0.021315425634384155,
+          "intensity_delta": -0.00813932716846466,
+          "absolute_classification_delta": 0.021315425634384155,
+          "absolute_intensity_delta": 0.00813932716846466
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "is essential to",
+          "classification_margin_delta": -0.002562582492828369,
+          "intensity_delta": -0.002251937985420227,
+          "absolute_classification_delta": 0.002562582492828369,
+          "absolute_intensity_delta": 0.002251937985420227
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0020053982734680176,
+          0.0006112456321716309,
+          0.0008730292320251465,
+          0.0021363794803619385,
+          0.0006763339042663574,
+          0.004040718078613281,
+          0.004989534616470337,
+          0.0049658119678497314,
+          0.002309650182723999,
+          0.002593487501144409,
+          0.0014474093914031982,
+          0.00034737586975097656,
+          0.0010300874710083008,
+          0.000998765230178833,
+          0.00038683414459228516,
+          0.006120473146438599,
+          0.00948837399482727,
+          0.022339344024658203,
+          0.024217158555984497,
+          0.01933068037033081,
+          0.019889235496520996,
+          0.007451564073562622
+        ],
+        "3": [
+          0.0005134642124176025,
+          0.0009174297253290812,
+          0.0011151134967803955,
+          0.000997536712222629,
+          0.0013472437858581543,
+          0.0021529694398244223,
+          0.0032241774929894344,
+          0.0035705930656856964,
+          0.003017491764492459,
+          0.00217743714650472,
+          0.0012026892768012153,
+          0.0005533993244171143,
+          0.0004156364334954156,
+          0.0013909141222635906,
+          0.0035145746337042916,
+          0.007867674032847086,
+          0.013114402691523233,
+          0.01872161693043179,
+          0.023078994618521795,
+          0.021565725406010944,
+          0.020592033863067627,
+          0.014611730972925821
+        ],
+        "5": [
+          0.0010646820068359376,
+          0.0006470918655395509,
+          0.0006383021672566732,
+          0.0008386820554733276,
+          0.0010524368286132812,
+          0.0014358723163604736,
+          0.001970583200454712,
+          0.0022640407085418703,
+          0.002266404628753662,
+          0.001973133087158203,
+          0.0014026939868927,
+          0.001239633560180664,
+          0.0016746485233306886,
+          0.003178582191467285,
+          0.005696820020675659,
+          0.00901484489440918,
+          0.012753429412841799,
+          0.015951988697052003,
+          0.017697158455848693,
+          0.019252115488052366,
+          0.020518279075622557,
+          0.020255881547927856
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.8238283455674761
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.7492941840767929
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.8848108413325806
+        }
+      ]
+    },
+    "vision": {
+      "modality": "vision",
+      "observation_status": "available",
+      "window_sizes": [
+        1,
+        3,
+        5
+      ],
+      "aggregation": "mean of signed or absolute window delta divided by window width over covering windows",
+      "positions": [
+        {
+          "body_position": 0,
+          "source_slot": 1,
+          "wordpiece": "replacing",
+          "text_char_start": 0,
+          "text_char_end": 9,
+          "original_text_fragment": "Replacing",
+          "classification_signed": 0.0015296505557166205,
+          "classification_absolute": 0.0015296505557166205,
+          "classification_share": 0.008970467811011696,
+          "intensity_signed": -0.0002448946237564087,
+          "intensity_absolute": 0.0002448946237564087,
+          "intensity_share": 0.008648763677085242
+        },
+        {
+          "body_position": 1,
+          "source_slot": 2,
+          "wordpiece": "these",
+          "text_char_start": 10,
+          "text_char_end": 15,
+          "original_text_fragment": "these",
+          "classification_signed": 0.0014770189921061198,
+          "classification_absolute": 0.0014770189921061198,
+          "classification_share": 0.00866181578232007,
+          "intensity_signed": -0.0002543069918950399,
+          "intensity_absolute": 0.0002543069918950399,
+          "intensity_share": 0.008981173374056458
+        },
+        {
+          "body_position": 2,
+          "source_slot": 3,
+          "wordpiece": "wear",
+          "text_char_start": 16,
+          "text_char_end": 20,
+          "original_text_fragment": "wear",
+          "classification_signed": 0.001782851843606858,
+          "classification_absolute": 0.001782851843606858,
+          "classification_share": 0.010455338976022317,
+          "intensity_signed": -0.00032518009344736736,
+          "intensity_absolute": 0.00032518009344736736,
+          "intensity_share": 0.011484146681456812
+        },
+        {
+          "body_position": 3,
+          "source_slot": 4,
+          "wordpiece": "components",
+          "text_char_start": 21,
+          "text_char_end": 31,
+          "original_text_fragment": "components",
+          "classification_signed": 0.001690692702929179,
+          "classification_absolute": 0.001690692702929179,
+          "classification_share": 0.009914881809612624,
+          "intensity_signed": -0.00032451823353767394,
+          "intensity_absolute": 0.00032451823353767394,
+          "intensity_share": 0.011460772260824495
+        },
+        {
+          "body_position": 4,
+          "source_slot": 5,
+          "wordpiece": "when",
+          "text_char_start": 32,
+          "text_char_end": 36,
+          "original_text_fragment": "when",
+          "classification_signed": 0.0008458718105598732,
+          "classification_absolute": 0.0009274904374723082,
+          "classification_share": 0.005439165882215942,
+          "intensity_signed": -0.0002084563175837199,
+          "intensity_absolute": 0.0002084563175837199,
+          "intensity_share": 0.007361898763324086
+        },
+        {
+          "body_position": 5,
+          "source_slot": 6,
+          "wordpiece": "replacing",
+          "text_char_start": 37,
+          "text_char_end": 46,
+          "original_text_fragment": "replacing",
+          "classification_signed": 0.00048811281168902363,
+          "classification_absolute": 0.0007493732152161775,
+          "classification_share": 0.004394616979942708,
+          "intensity_signed": -0.0001383208566241794,
+          "intensity_absolute": 0.00016310645474327935,
+          "intensity_share": 0.005760310943718323
+        },
+        {
+          "body_position": 6,
+          "source_slot": 7,
+          "wordpiece": "the",
+          "text_char_start": 47,
+          "text_char_end": 50,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0009041117297278509,
+          "classification_absolute": 0.0009041117297278509,
+          "classification_share": 0.005302064016367599,
+          "intensity_signed": -0.0001776208480199178,
+          "intensity_absolute": 0.0001776208480199178,
+          "intensity_share": 0.006272905117654883
+        },
+        {
+          "body_position": 7,
+          "source_slot": 8,
+          "wordpiece": "timing",
+          "text_char_start": 51,
+          "text_char_end": 57,
+          "original_text_fragment": "timing",
+          "classification_signed": 0.0009042521317799886,
+          "classification_absolute": 0.0009042521317799886,
+          "classification_share": 0.0053028873887938,
+          "intensity_signed": -0.00017271935939788818,
+          "intensity_absolute": 0.00017271935939788818,
+          "intensity_share": 0.006099802841632595
+        },
+        {
+          "body_position": 8,
+          "source_slot": 9,
+          "wordpiece": "belt",
+          "text_char_start": 58,
+          "text_char_end": 62,
+          "original_text_fragment": "belt",
+          "classification_signed": 0.0009740540274867304,
+          "classification_absolute": 0.0009740540274867304,
+          "classification_share": 0.005712232945689033,
+          "intensity_signed": -0.00018345835032286466,
+          "intensity_absolute": 0.00018345835032286466,
+          "intensity_share": 0.006479063901821769
+        },
+        {
+          "body_position": 9,
+          "source_slot": 10,
+          "wordpiece": "is",
+          "text_char_start": 63,
+          "text_char_end": 65,
+          "original_text_fragment": "is",
+          "classification_signed": 0.0015010840362972681,
+          "classification_absolute": 0.0015010840362972681,
+          "classification_share": 0.00880294259293737,
+          "intensity_signed": -0.0002784498311855175,
+          "intensity_absolute": 0.0002784498311855175,
+          "intensity_share": 0.00983380830868403
+        },
+        {
+          "body_position": 10,
+          "source_slot": 11,
+          "wordpiece": "essential",
+          "text_char_start": 66,
+          "text_char_end": 75,
+          "original_text_fragment": "essential",
+          "classification_signed": 0.002032893233829074,
+          "classification_absolute": 0.002032893233829074,
+          "classification_share": 0.01192167926794487,
+          "intensity_signed": -0.00037788627324280915,
+          "intensity_absolute": 0.00037788627324280915,
+          "intensity_share": 0.013345532147501825
+        },
+        {
+          "body_position": 11,
+          "source_slot": 12,
+          "wordpiece": "to",
+          "text_char_start": 76,
+          "text_char_end": 78,
+          "original_text_fragment": "to",
+          "classification_signed": 0.002355651281498097,
+          "classification_absolute": 0.002355651281498097,
+          "classification_share": 0.013814458417103903,
+          "intensity_signed": -0.0004436363776524862,
+          "intensity_absolute": 0.0004436363776524862,
+          "intensity_share": 0.015667580325042087
+        },
+        {
+          "body_position": 12,
+          "source_slot": 13,
+          "wordpiece": "ensuring",
+          "text_char_start": 79,
+          "text_char_end": 87,
+          "original_text_fragment": "ensuring",
+          "classification_signed": 0.0023373261645988188,
+          "classification_absolute": 0.0023373261645988188,
+          "classification_share": 0.01370699278015587,
+          "intensity_signed": -0.0004517512189017401,
+          "intensity_absolute": 0.0004517512189017401,
+          "intensity_share": 0.015954166217232477
+        },
+        {
+          "body_position": 13,
+          "source_slot": 14,
+          "wordpiece": "the",
+          "text_char_start": 88,
+          "text_char_end": 91,
+          "original_text_fragment": "the",
+          "classification_signed": 0.0017563499786235673,
+          "classification_absolute": 0.0020153454056492564,
+          "classification_share": 0.011818771955387804,
+          "intensity_signed": -0.00036684351938742174,
+          "intensity_absolute": 0.00038543553264052777,
+          "intensity_share": 0.01361214380057277
+        },
+        {
+          "body_position": 14,
+          "source_slot": 15,
+          "wordpiece": "new",
+          "text_char_start": 92,
+          "text_char_end": 95,
+          "original_text_fragment": "new",
+          "classification_signed": 0.0005982853748180248,
+          "classification_absolute": 0.0016213982193558304,
+          "classification_share": 0.009508511915487237,
+          "intensity_signed": -0.00018933271920239483,
+          "intensity_absolute": 0.0002772272736937911,
+          "intensity_share": 0.009790632143093277
+        },
+        {
+          "body_position": 15,
+          "source_slot": 16,
+          "wordpiece": "belt",
+          "text_char_start": 96,
+          "text_char_end": 100,
+          "original_text_fragment": "belt",
+          "classification_signed": -0.0012073395428834138,
+          "classification_absolute": 0.001988060606850518,
+          "classification_share": 0.011658763247229394,
+          "intensity_signed": 8.896578241277625e-05,
+          "intensity_absolute": 0.00027139484882354736,
+          "intensity_share": 0.009584652674890384
+        },
+        {
+          "body_position": 16,
+          "source_slot": 17,
+          "wordpiece": "performs",
+          "text_char_start": 101,
+          "text_char_end": 109,
+          "original_text_fragment": "performs",
+          "classification_signed": -0.003867551353242662,
+          "classification_absolute": 0.003990865415996975,
+          "classification_share": 0.023403992250706496,
+          "intensity_signed": 0.0005123969581392077,
+          "intensity_absolute": 0.000550424059232076,
+          "intensity_share": 0.019438922494335147
+        },
+        {
+          "body_position": 17,
+          "source_slot": 18,
+          "wordpiece": "to",
+          "text_char_start": 110,
+          "text_char_end": 112,
+          "original_text_fragment": "to",
+          "classification_signed": -0.009309591849644978,
+          "classification_absolute": 0.009309591849644978,
+          "classification_share": 0.0545950797120282,
+          "intensity_signed": 0.001331488401801498,
+          "intensity_absolute": 0.001331488401801498,
+          "intensity_share": 0.047023198587713866
+        },
+        {
+          "body_position": 18,
+          "source_slot": 19,
+          "wordpiece": "its",
+          "text_char_start": 113,
+          "text_char_end": 116,
+          "original_text_fragment": "its",
+          "classification_signed": -0.012081445256868996,
+          "classification_absolute": 0.012081445256868996,
+          "classification_share": 0.07085030981894455,
+          "intensity_signed": 0.0017733700573444367,
+          "intensity_absolute": 0.0017868295311927796,
+          "intensity_share": 0.06310414703874832
+        },
+        {
+          "body_position": 19,
+          "source_slot": 20,
+          "wordpiece": "mile",
+          "text_char_start": 117,
+          "text_char_end": 121,
+          "original_text_fragment": "mile",
+          "classification_signed": -0.023182097219285512,
+          "classification_absolute": 0.023182097219285512,
+          "classification_share": 0.13594886500068684,
+          "intensity_signed": 0.0036178496621903917,
+          "intensity_absolute": 0.0036178496621903917,
+          "intensity_share": 0.1277689410553609
+        },
+        {
+          "body_position": 20,
+          "source_slot": 21,
+          "wordpiece": "##age",
+          "text_char_start": 121,
+          "text_char_end": 124,
+          "original_text_fragment": "age",
+          "classification_signed": -0.03275120059649149,
+          "classification_absolute": 0.03275120059649149,
+          "classification_share": 0.19206582158575145,
+          "intensity_signed": 0.005245128671328227,
+          "intensity_absolute": 0.005245128671328227,
+          "intensity_share": 0.18523835941512706
+        },
+        {
+          "body_position": 21,
+          "source_slot": 22,
+          "wordpiece": "requirements",
+          "text_char_start": 125,
+          "text_char_end": 137,
+          "original_text_fragment": "requirements",
+          "classification_signed": -0.06441425681114198,
+          "classification_absolute": 0.06441425681114198,
+          "classification_share": 0.3777503398636602,
+          "intensity_signed": 0.01124380131562551,
+          "intensity_absolute": 0.01124380131562551,
+          "intensity_share": 0.3970890782301232
+        }
+      ],
+      "windows": [
+        {
+          "window_size": 1,
+          "body_start": 0,
+          "body_end": 1,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 2,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "Replacing",
+          "classification_margin_delta": 0.0013343095779418945,
+          "intensity_delta": -0.00017558038234710693,
+          "absolute_classification_delta": 0.0013343095779418945,
+          "absolute_intensity_delta": 0.00017558038234710693
+        },
+        {
+          "window_size": 1,
+          "body_start": 1,
+          "body_end": 2,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 3,
+          "wordpieces": [
+            "these"
+          ],
+          "original_text_fragment": "these",
+          "classification_margin_delta": 0.0007085800170898438,
+          "intensity_delta": -8.375942707061768e-05,
+          "absolute_classification_delta": 0.0007085800170898438,
+          "absolute_intensity_delta": 8.375942707061768e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 2,
+          "body_end": 3,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "wear"
+          ],
+          "original_text_fragment": "wear",
+          "classification_margin_delta": 0.0025124847888946533,
+          "intensity_delta": -0.00041507184505462646,
+          "absolute_classification_delta": 0.0025124847888946533,
+          "absolute_intensity_delta": 0.00041507184505462646
+        },
+        {
+          "window_size": 1,
+          "body_start": 3,
+          "body_end": 4,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "components"
+          ],
+          "original_text_fragment": "components",
+          "classification_margin_delta": 0.0035714805126190186,
+          "intensity_delta": -0.0005757659673690796,
+          "absolute_classification_delta": 0.0035714805126190186,
+          "absolute_intensity_delta": 0.0005757659673690796
+        },
+        {
+          "window_size": 1,
+          "body_start": 4,
+          "body_end": 5,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "when"
+          ],
+          "original_text_fragment": "when",
+          "classification_margin_delta": -0.00036728382110595703,
+          "intensity_delta": -6.537139415740967e-05,
+          "absolute_classification_delta": 0.00036728382110595703,
+          "absolute_intensity_delta": 6.537139415740967e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 5,
+          "body_end": 6,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "replacing"
+          ],
+          "original_text_fragment": "replacing",
+          "classification_margin_delta": -0.0011756718158721924,
+          "intensity_delta": 0.00011153519153594971,
+          "absolute_classification_delta": 0.0011756718158721924,
+          "absolute_intensity_delta": 0.00011153519153594971
+        },
+        {
+          "window_size": 1,
+          "body_start": 6,
+          "body_end": 7,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.0018877983093261719,
+          "intensity_delta": -0.00027517974376678467,
+          "absolute_classification_delta": 0.0018877983093261719,
+          "absolute_intensity_delta": 0.00027517974376678467
+        },
+        {
+          "window_size": 1,
+          "body_start": 7,
+          "body_end": 8,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "timing"
+          ],
+          "original_text_fragment": "timing",
+          "classification_margin_delta": 0.0009960532188415527,
+          "intensity_delta": -0.00016923248767852783,
+          "absolute_classification_delta": 0.0009960532188415527,
+          "absolute_intensity_delta": 0.00016923248767852783
+        },
+        {
+          "window_size": 1,
+          "body_start": 8,
+          "body_end": 9,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": 1.800060272216797e-05,
+          "intensity_delta": -9.551644325256348e-06,
+          "absolute_classification_delta": 1.800060272216797e-05,
+          "absolute_intensity_delta": 9.551644325256348e-06
+        },
+        {
+          "window_size": 1,
+          "body_start": 9,
+          "body_end": 10,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "is"
+          ],
+          "original_text_fragment": "is",
+          "classification_margin_delta": 0.0013520121574401855,
+          "intensity_delta": -0.0002419501543045044,
+          "absolute_classification_delta": 0.0013520121574401855,
+          "absolute_intensity_delta": 0.0002419501543045044
+        },
+        {
+          "window_size": 1,
+          "body_start": 10,
+          "body_end": 11,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "essential"
+          ],
+          "original_text_fragment": "essential",
+          "classification_margin_delta": 0.0022087693214416504,
+          "intensity_delta": -0.0003958195447921753,
+          "absolute_classification_delta": 0.0022087693214416504,
+          "absolute_intensity_delta": 0.0003958195447921753
+        },
+        {
+          "window_size": 1,
+          "body_start": 11,
+          "body_end": 12,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": 0.0027816295623779297,
+          "intensity_delta": -0.0004954785108566284,
+          "absolute_classification_delta": 0.0027816295623779297,
+          "absolute_intensity_delta": 0.0004954785108566284
+        },
+        {
+          "window_size": 1,
+          "body_start": 12,
+          "body_end": 13,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "ensuring"
+          ],
+          "original_text_fragment": "ensuring",
+          "classification_margin_delta": 0.0032148361206054688,
+          "intensity_delta": -0.0005848556756973267,
+          "absolute_classification_delta": 0.0032148361206054688,
+          "absolute_intensity_delta": 0.0005848556756973267
+        },
+        {
+          "window_size": 1,
+          "body_start": 13,
+          "body_end": 14,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "the"
+          ],
+          "original_text_fragment": "the",
+          "classification_margin_delta": 0.002804994583129883,
+          "intensity_delta": -0.000525549054145813,
+          "absolute_classification_delta": 0.002804994583129883,
+          "absolute_intensity_delta": 0.000525549054145813
+        },
+        {
+          "window_size": 1,
+          "body_start": 14,
+          "body_end": 15,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "new"
+          ],
+          "original_text_fragment": "new",
+          "classification_margin_delta": 0.0013939440250396729,
+          "intensity_delta": -0.00029678642749786377,
+          "absolute_classification_delta": 0.0013939440250396729,
+          "absolute_intensity_delta": 0.00029678642749786377
+        },
+        {
+          "window_size": 1,
+          "body_start": 15,
+          "body_end": 16,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "belt"
+          ],
+          "original_text_fragment": "belt",
+          "classification_margin_delta": -0.0005816221237182617,
+          "intensity_delta": -2.726912498474121e-06,
+          "absolute_classification_delta": 0.0005816221237182617,
+          "absolute_intensity_delta": 2.726912498474121e-06
+        },
+        {
+          "window_size": 1,
+          "body_start": 16,
+          "body_end": 17,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "performs"
+          ],
+          "original_text_fragment": "performs",
+          "classification_margin_delta": -0.003007352352142334,
+          "intensity_delta": 0.0004249364137649536,
+          "absolute_classification_delta": 0.003007352352142334,
+          "absolute_intensity_delta": 0.0004249364137649536
+        },
+        {
+          "window_size": 1,
+          "body_start": 17,
+          "body_end": 18,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "to"
+          ],
+          "original_text_fragment": "to",
+          "classification_margin_delta": -0.004355192184448242,
+          "intensity_delta": 0.0005148202180862427,
+          "absolute_classification_delta": 0.004355192184448242,
+          "absolute_intensity_delta": 0.0005148202180862427
+        },
+        {
+          "window_size": 1,
+          "body_start": 18,
+          "body_end": 19,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "its"
+          ],
+          "original_text_fragment": "its",
+          "classification_margin_delta": -0.0020205676555633545,
+          "intensity_delta": -5.383789539337158e-05,
+          "absolute_classification_delta": 0.0020205676555633545,
+          "absolute_intensity_delta": 5.383789539337158e-05
+        },
+        {
+          "window_size": 1,
+          "body_start": 19,
+          "body_end": 20,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "mile"
+          ],
+          "original_text_fragment": "mile",
+          "classification_margin_delta": -0.01335248351097107,
+          "intensity_delta": 0.0021842271089553833,
+          "absolute_classification_delta": 0.01335248351097107,
+          "absolute_intensity_delta": 0.0021842271089553833
+        },
+        {
+          "window_size": 1,
+          "body_start": 20,
+          "body_end": 21,
+          "source_slot_start": 21,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "##age"
+          ],
+          "original_text_fragment": "age",
+          "classification_margin_delta": -0.028936445713043213,
+          "intensity_delta": 0.005041912198066711,
+          "absolute_classification_delta": 0.028936445713043213,
+          "absolute_intensity_delta": 0.005041912198066711
+        },
+        {
+          "window_size": 1,
+          "body_start": 21,
+          "body_end": 22,
+          "source_slot_start": 22,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "requirements"
+          ],
+          "original_text_fragment": "requirements",
+          "classification_margin_delta": -0.09269404411315918,
+          "intensity_delta": 0.018135979771614075,
+          "absolute_classification_delta": 0.09269404411315918,
+          "absolute_intensity_delta": 0.018135979771614075
+        },
+        {
+          "window_size": 3,
+          "body_start": 0,
+          "body_end": 3,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 4,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear"
+          ],
+          "original_text_fragment": "Replacing these wear",
+          "classification_margin_delta": 0.0048285722732543945,
+          "intensity_delta": -0.0007594674825668335,
+          "absolute_classification_delta": 0.0048285722732543945,
+          "absolute_intensity_delta": 0.0007594674825668335
+        },
+        {
+          "window_size": 3,
+          "body_start": 1,
+          "body_end": 4,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 5,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components"
+          ],
+          "original_text_fragment": "these wear components",
+          "classification_margin_delta": 0.007069230079650879,
+          "intensity_delta": -0.0011689811944961548,
+          "absolute_classification_delta": 0.007069230079650879,
+          "absolute_intensity_delta": 0.0011689811944961548
+        },
+        {
+          "window_size": 3,
+          "body_start": 2,
+          "body_end": 5,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "wear components when",
+          "classification_margin_delta": 0.005907922983169556,
+          "intensity_delta": -0.001180216670036316,
+          "absolute_classification_delta": 0.005907922983169556,
+          "absolute_intensity_delta": 0.001180216670036316
+        },
+        {
+          "window_size": 3,
+          "body_start": 3,
+          "body_end": 6,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "components when replacing",
+          "classification_margin_delta": 0.0018633008003234863,
+          "intensity_delta": -0.0005857199430465698,
+          "absolute_classification_delta": 0.0018633008003234863,
+          "absolute_intensity_delta": 0.0005857199430465698
+        },
+        {
+          "window_size": 3,
+          "body_start": 4,
+          "body_end": 7,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "when replacing the",
+          "classification_margin_delta": 0.0002751648426055908,
+          "intensity_delta": -0.0002496093511581421,
+          "absolute_classification_delta": 0.0002751648426055908,
+          "absolute_intensity_delta": 0.0002496093511581421
+        },
+        {
+          "window_size": 3,
+          "body_start": 5,
+          "body_end": 8,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "replacing the timing",
+          "classification_margin_delta": 0.0017069578170776367,
+          "intensity_delta": -0.0003530234098434448,
+          "absolute_classification_delta": 0.0017069578170776367,
+          "absolute_intensity_delta": 0.0003530234098434448
+        },
+        {
+          "window_size": 3,
+          "body_start": 6,
+          "body_end": 9,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "the timing belt",
+          "classification_margin_delta": 0.0030717849731445312,
+          "intensity_delta": -0.0004999786615371704,
+          "absolute_classification_delta": 0.0030717849731445312,
+          "absolute_intensity_delta": 0.0004999786615371704
+        },
+        {
+          "window_size": 3,
+          "body_start": 7,
+          "body_end": 10,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "timing belt is",
+          "classification_margin_delta": 0.002414405345916748,
+          "intensity_delta": -0.00044451653957366943,
+          "absolute_classification_delta": 0.002414405345916748,
+          "absolute_intensity_delta": 0.00044451653957366943
+        },
+        {
+          "window_size": 3,
+          "body_start": 8,
+          "body_end": 11,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "belt is essential",
+          "classification_margin_delta": 0.003597170114517212,
+          "intensity_delta": -0.0006736963987350464,
+          "absolute_classification_delta": 0.003597170114517212,
+          "absolute_intensity_delta": 0.0006736963987350464
+        },
+        {
+          "window_size": 3,
+          "body_start": 9,
+          "body_end": 12,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "is essential to",
+          "classification_margin_delta": 0.006452471017837524,
+          "intensity_delta": -0.0011830180883407593,
+          "absolute_classification_delta": 0.006452471017837524,
+          "absolute_intensity_delta": 0.0011830180883407593
+        },
+        {
+          "window_size": 3,
+          "body_start": 10,
+          "body_end": 13,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "essential to ensuring",
+          "classification_margin_delta": 0.008358895778656006,
+          "intensity_delta": -0.0015474408864974976,
+          "absolute_classification_delta": 0.008358895778656006,
+          "absolute_intensity_delta": 0.0015474408864974976
+        },
+        {
+          "window_size": 3,
+          "body_start": 11,
+          "body_end": 14,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "to ensuring the",
+          "classification_margin_delta": 0.008999645709991455,
+          "intensity_delta": -0.0016959458589553833,
+          "absolute_classification_delta": 0.008999645709991455,
+          "absolute_intensity_delta": 0.0016959458589553833
+        },
+        {
+          "window_size": 3,
+          "body_start": 12,
+          "body_end": 15,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "ensuring the new",
+          "classification_margin_delta": 0.0074980854988098145,
+          "intensity_delta": -0.001451238989830017,
+          "absolute_classification_delta": 0.0074980854988098145,
+          "absolute_intensity_delta": 0.001451238989830017
+        },
+        {
+          "window_size": 3,
+          "body_start": 13,
+          "body_end": 16,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "the new belt",
+          "classification_margin_delta": 0.0032521188259124756,
+          "intensity_delta": -0.0007834881544113159,
+          "absolute_classification_delta": 0.0032521188259124756,
+          "absolute_intensity_delta": 0.0007834881544113159
+        },
+        {
+          "window_size": 3,
+          "body_start": 14,
+          "body_end": 17,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "new belt performs",
+          "classification_margin_delta": -0.0030255019664764404,
+          "intensity_delta": 0.0002507716417312622,
+          "absolute_classification_delta": 0.0030255019664764404,
+          "absolute_intensity_delta": 0.0002507716417312622
+        },
+        {
+          "window_size": 3,
+          "body_start": 15,
+          "body_end": 18,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "belt performs to",
+          "classification_margin_delta": -0.009003996849060059,
+          "intensity_delta": 0.0010862499475479126,
+          "absolute_classification_delta": 0.009003996849060059,
+          "absolute_intensity_delta": 0.0010862499475479126
+        },
+        {
+          "window_size": 3,
+          "body_start": 16,
+          "body_end": 19,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "performs to its",
+          "classification_margin_delta": -0.010961055755615234,
+          "intensity_delta": 0.0010973960161209106,
+          "absolute_classification_delta": 0.010961055755615234,
+          "absolute_intensity_delta": 0.0010973960161209106
+        },
+        {
+          "window_size": 3,
+          "body_start": 17,
+          "body_end": 20,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "to its mile",
+          "classification_margin_delta": -0.02373090386390686,
+          "intensity_delta": 0.0032789260149002075,
+          "absolute_classification_delta": 0.02373090386390686,
+          "absolute_intensity_delta": 0.0032789260149002075
+        },
+        {
+          "window_size": 3,
+          "body_start": 18,
+          "body_end": 21,
+          "source_slot_start": 19,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "its mileage",
+          "classification_margin_delta": -0.05810001492500305,
+          "intensity_delta": 0.009653910994529724,
+          "absolute_classification_delta": 0.05810001492500305,
+          "absolute_intensity_delta": 0.009653910994529724
+        },
+        {
+          "window_size": 3,
+          "body_start": 19,
+          "body_end": 22,
+          "source_slot_start": 20,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "mileage requirements",
+          "classification_margin_delta": -0.181124746799469,
+          "intensity_delta": 0.028481975197792053,
+          "absolute_classification_delta": 0.181124746799469,
+          "absolute_intensity_delta": 0.028481975197792053
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "Replacing these wear components when",
+          "classification_margin_delta": 0.008225589990615845,
+          "intensity_delta": -0.0015297383069992065,
+          "absolute_classification_delta": 0.008225589990615845,
+          "absolute_intensity_delta": 0.0015297383069992065
+        },
+        {
+          "window_size": 5,
+          "body_start": 1,
+          "body_end": 6,
+          "source_slot_start": 2,
+          "source_slot_end_exclusive": 7,
+          "wordpieces": [
+            "these",
+            "wear",
+            "components",
+            "when",
+            "replacing"
+          ],
+          "original_text_fragment": "these wear components when replacing",
+          "classification_margin_delta": 0.005327314138412476,
+          "intensity_delta": -0.0011950582265853882,
+          "absolute_classification_delta": 0.005327314138412476,
+          "absolute_intensity_delta": 0.0011950582265853882
+        },
+        {
+          "window_size": 5,
+          "body_start": 2,
+          "body_end": 7,
+          "source_slot_start": 3,
+          "source_slot_end_exclusive": 8,
+          "wordpieces": [
+            "wear",
+            "components",
+            "when",
+            "replacing",
+            "the"
+          ],
+          "original_text_fragment": "wear components when replacing the",
+          "classification_margin_delta": 0.0066082775592803955,
+          "intensity_delta": -0.0014000385999679565,
+          "absolute_classification_delta": 0.0066082775592803955,
+          "absolute_intensity_delta": 0.0014000385999679565
+        },
+        {
+          "window_size": 5,
+          "body_start": 3,
+          "body_end": 8,
+          "source_slot_start": 4,
+          "source_slot_end_exclusive": 9,
+          "wordpieces": [
+            "components",
+            "when",
+            "replacing",
+            "the",
+            "timing"
+          ],
+          "original_text_fragment": "components when replacing the timing",
+          "classification_margin_delta": 0.0048750340938568115,
+          "intensity_delta": -0.001085534691810608,
+          "absolute_classification_delta": 0.0048750340938568115,
+          "absolute_intensity_delta": 0.001085534691810608
+        },
+        {
+          "window_size": 5,
+          "body_start": 4,
+          "body_end": 9,
+          "source_slot_start": 5,
+          "source_slot_end_exclusive": 10,
+          "wordpieces": [
+            "when",
+            "replacing",
+            "the",
+            "timing",
+            "belt"
+          ],
+          "original_text_fragment": "when replacing the timing belt",
+          "classification_margin_delta": 0.001453787088394165,
+          "intensity_delta": -0.0004840642213821411,
+          "absolute_classification_delta": 0.001453787088394165,
+          "absolute_intensity_delta": 0.0004840642213821411
+        },
+        {
+          "window_size": 5,
+          "body_start": 5,
+          "body_end": 10,
+          "source_slot_start": 6,
+          "source_slot_end_exclusive": 11,
+          "wordpieces": [
+            "replacing",
+            "the",
+            "timing",
+            "belt",
+            "is"
+          ],
+          "original_text_fragment": "replacing the timing belt is",
+          "classification_margin_delta": 0.0031699836254119873,
+          "intensity_delta": -0.0006368309259414673,
+          "absolute_classification_delta": 0.0031699836254119873,
+          "absolute_intensity_delta": 0.0006368309259414673
+        },
+        {
+          "window_size": 5,
+          "body_start": 6,
+          "body_end": 11,
+          "source_slot_start": 7,
+          "source_slot_end_exclusive": 12,
+          "wordpieces": [
+            "the",
+            "timing",
+            "belt",
+            "is",
+            "essential"
+          ],
+          "original_text_fragment": "the timing belt is essential",
+          "classification_margin_delta": 0.0067157745361328125,
+          "intensity_delta": -0.0011728852987289429,
+          "absolute_classification_delta": 0.0067157745361328125,
+          "absolute_intensity_delta": 0.0011728852987289429
+        },
+        {
+          "window_size": 5,
+          "body_start": 7,
+          "body_end": 12,
+          "source_slot_start": 8,
+          "source_slot_end_exclusive": 13,
+          "wordpieces": [
+            "timing",
+            "belt",
+            "is",
+            "essential",
+            "to"
+          ],
+          "original_text_fragment": "timing belt is essential to",
+          "classification_margin_delta": 0.007507920265197754,
+          "intensity_delta": -0.0013843625783920288,
+          "absolute_classification_delta": 0.007507920265197754,
+          "absolute_intensity_delta": 0.0013843625783920288
+        },
+        {
+          "window_size": 5,
+          "body_start": 8,
+          "body_end": 13,
+          "source_slot_start": 9,
+          "source_slot_end_exclusive": 14,
+          "wordpieces": [
+            "belt",
+            "is",
+            "essential",
+            "to",
+            "ensuring"
+          ],
+          "original_text_fragment": "belt is essential to ensuring",
+          "classification_margin_delta": 0.009756028652191162,
+          "intensity_delta": -0.0018327385187149048,
+          "absolute_classification_delta": 0.009756028652191162,
+          "absolute_intensity_delta": 0.0018327385187149048
+        },
+        {
+          "window_size": 5,
+          "body_start": 9,
+          "body_end": 14,
+          "source_slot_start": 10,
+          "source_slot_end_exclusive": 15,
+          "wordpieces": [
+            "is",
+            "essential",
+            "to",
+            "ensuring",
+            "the"
+          ],
+          "original_text_fragment": "is essential to ensuring the",
+          "classification_margin_delta": 0.012865602970123291,
+          "intensity_delta": -0.0024582892656326294,
+          "absolute_classification_delta": 0.012865602970123291,
+          "absolute_intensity_delta": 0.0024582892656326294
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "essential to ensuring the new",
+          "classification_margin_delta": 0.012910127639770508,
+          "intensity_delta": -0.002503916621208191,
+          "absolute_classification_delta": 0.012910127639770508,
+          "absolute_intensity_delta": 0.002503916621208191
+        },
+        {
+          "window_size": 5,
+          "body_start": 11,
+          "body_end": 16,
+          "source_slot_start": 12,
+          "source_slot_end_exclusive": 17,
+          "wordpieces": [
+            "to",
+            "ensuring",
+            "the",
+            "new",
+            "belt"
+          ],
+          "original_text_fragment": "to ensuring the new belt",
+          "classification_margin_delta": 0.009371459484100342,
+          "intensity_delta": -0.0019295960664749146,
+          "absolute_classification_delta": 0.009371459484100342,
+          "absolute_intensity_delta": 0.0019295960664749146
+        },
+        {
+          "window_size": 5,
+          "body_start": 12,
+          "body_end": 17,
+          "source_slot_start": 13,
+          "source_slot_end_exclusive": 18,
+          "wordpieces": [
+            "ensuring",
+            "the",
+            "new",
+            "belt",
+            "performs"
+          ],
+          "original_text_fragment": "ensuring the new belt performs",
+          "classification_margin_delta": 0.002774566411972046,
+          "intensity_delta": -0.0008556097745895386,
+          "absolute_classification_delta": 0.002774566411972046,
+          "absolute_intensity_delta": 0.0008556097745895386
+        },
+        {
+          "window_size": 5,
+          "body_start": 13,
+          "body_end": 18,
+          "source_slot_start": 14,
+          "source_slot_end_exclusive": 19,
+          "wordpieces": [
+            "the",
+            "new",
+            "belt",
+            "performs",
+            "to"
+          ],
+          "original_text_fragment": "the new belt performs to",
+          "classification_margin_delta": -0.005827397108078003,
+          "intensity_delta": 0.00041832029819488525,
+          "absolute_classification_delta": 0.005827397108078003,
+          "absolute_intensity_delta": 0.00041832029819488525
+        },
+        {
+          "window_size": 5,
+          "body_start": 14,
+          "body_end": 19,
+          "source_slot_start": 15,
+          "source_slot_end_exclusive": 20,
+          "wordpieces": [
+            "new",
+            "belt",
+            "performs",
+            "to",
+            "its"
+          ],
+          "original_text_fragment": "new belt performs to its",
+          "classification_margin_delta": -0.01215013861656189,
+          "intensity_delta": 0.0011413544416427612,
+          "absolute_classification_delta": 0.01215013861656189,
+          "absolute_intensity_delta": 0.0011413544416427612
+        },
+        {
+          "window_size": 5,
+          "body_start": 15,
+          "body_end": 20,
+          "source_slot_start": 16,
+          "source_slot_end_exclusive": 21,
+          "wordpieces": [
+            "belt",
+            "performs",
+            "to",
+            "its",
+            "mile"
+          ],
+          "original_text_fragment": "belt performs to its mile",
+          "classification_margin_delta": -0.030961692333221436,
+          "intensity_delta": 0.004320070147514343,
+          "absolute_classification_delta": 0.030961692333221436,
+          "absolute_intensity_delta": 0.004320070147514343
+        },
+        {
+          "window_size": 5,
+          "body_start": 16,
+          "body_end": 21,
+          "source_slot_start": 17,
+          "source_slot_end_exclusive": 22,
+          "wordpieces": [
+            "performs",
+            "to",
+            "its",
+            "mile",
+            "##age"
+          ],
+          "original_text_fragment": "performs to its mileage",
+          "classification_margin_delta": -0.07452079653739929,
+          "intensity_delta": 0.011851683259010315,
+          "absolute_classification_delta": 0.07452079653739929,
+          "absolute_intensity_delta": 0.011851683259010315
+        },
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": -0.20086905360221863,
+          "intensity_delta": 0.0305071622133255,
+          "absolute_classification_delta": 0.20086905360221863,
+          "absolute_intensity_delta": 0.0305071622133255
+        }
+      ],
+      "top_classification_windows": [
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": -0.20086905360221863,
+          "intensity_delta": 0.0305071622133255,
+          "absolute_classification_delta": 0.20086905360221863,
+          "absolute_intensity_delta": 0.0305071622133255
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "essential to ensuring the new",
+          "classification_margin_delta": 0.012910127639770508,
+          "intensity_delta": -0.002503916621208191,
+          "absolute_classification_delta": 0.012910127639770508,
+          "absolute_intensity_delta": 0.002503916621208191
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "Replacing these wear components when",
+          "classification_margin_delta": 0.008225589990615845,
+          "intensity_delta": -0.0015297383069992065,
+          "absolute_classification_delta": 0.008225589990615845,
+          "absolute_intensity_delta": 0.0015297383069992065
+        }
+      ],
+      "top_intensity_windows": [
+        {
+          "window_size": 5,
+          "body_start": 17,
+          "body_end": 22,
+          "source_slot_start": 18,
+          "source_slot_end_exclusive": 23,
+          "wordpieces": [
+            "to",
+            "its",
+            "mile",
+            "##age",
+            "requirements"
+          ],
+          "original_text_fragment": "to its mileage requirements",
+          "classification_margin_delta": -0.20086905360221863,
+          "intensity_delta": 0.0305071622133255,
+          "absolute_classification_delta": 0.20086905360221863,
+          "absolute_intensity_delta": 0.0305071622133255
+        },
+        {
+          "window_size": 5,
+          "body_start": 10,
+          "body_end": 15,
+          "source_slot_start": 11,
+          "source_slot_end_exclusive": 16,
+          "wordpieces": [
+            "essential",
+            "to",
+            "ensuring",
+            "the",
+            "new"
+          ],
+          "original_text_fragment": "essential to ensuring the new",
+          "classification_margin_delta": 0.012910127639770508,
+          "intensity_delta": -0.002503916621208191,
+          "absolute_classification_delta": 0.012910127639770508,
+          "absolute_intensity_delta": 0.002503916621208191
+        },
+        {
+          "window_size": 5,
+          "body_start": 0,
+          "body_end": 5,
+          "source_slot_start": 1,
+          "source_slot_end_exclusive": 6,
+          "wordpieces": [
+            "replacing",
+            "these",
+            "wear",
+            "components",
+            "when"
+          ],
+          "original_text_fragment": "Replacing these wear components when",
+          "classification_margin_delta": 0.008225589990615845,
+          "intensity_delta": -0.0015297383069992065,
+          "absolute_classification_delta": 0.008225589990615845,
+          "absolute_intensity_delta": 0.0015297383069992065
+        }
+      ],
+      "classification_zero_total": false,
+      "intensity_zero_total": false,
+      "per_width_classification_position_absolute": {
+        "1": [
+          0.0013343095779418945,
+          0.0007085800170898438,
+          0.0025124847888946533,
+          0.0035714805126190186,
+          0.00036728382110595703,
+          0.0011756718158721924,
+          0.0018877983093261719,
+          0.0009960532188415527,
+          1.800060272216797e-05,
+          0.0013520121574401855,
+          0.0022087693214416504,
+          0.0027816295623779297,
+          0.0032148361206054688,
+          0.002804994583129883,
+          0.0013939440250396729,
+          0.0005816221237182617,
+          0.003007352352142334,
+          0.004355192184448242,
+          0.0020205676555633545,
+          0.01335248351097107,
+          0.028936445713043213,
+          0.09269404411315918
+        ],
+        "3": [
+          0.001609524091084798,
+          0.0019829670588175454,
+          0.0019784139262305363,
+          0.0016489393181271022,
+          0.0008940431806776259,
+          0.00042726927333407936,
+          0.0005615452925364176,
+          0.0007992386817932129,
+          0.00100926227039761,
+          0.0013848940531412761,
+          0.0020453929901123047,
+          0.0026456680562761095,
+          0.0027618474430508087,
+          0.0021944277816348607,
+          0.0015306340323554145,
+          0.0016979575157165527,
+          0.0025545060634613037,
+          0.004855106274286906,
+          0.010310219393836128,
+          0.02921729617648654,
+          0.03987079362074534,
+          0.060374915599823
+        ],
+        "5": [
+          0.001645117998123169,
+          0.001355290412902832,
+          0.001344078779220581,
+          0.0012518107891082762,
+          0.0010596001148223877,
+          0.0008573758602142334,
+          0.0009129142761230468,
+          0.0009488999843597412,
+          0.0011441397666931154,
+          0.0016006124019622803,
+          0.001990218162536621,
+          0.0020964455604553225,
+          0.001907111406326294,
+          0.0017499661445617674,
+          0.0017213475704193116,
+          0.0024434101581573484,
+          0.005049383640289307,
+          0.012973163127899168,
+          0.01592508405447006,
+          0.020423436164855955,
+          0.027538985013961792,
+          0.04017381072044372
+        ]
+      },
+      "window_scale_rank_stability": [
+        {
+          "left_window": 1,
+          "right_window": 3,
+          "spearman_classification": 0.7786561264822135
+        },
+        {
+          "left_window": 1,
+          "right_window": 5,
+          "spearman_classification": 0.6679841897233203
+        },
+        {
+          "left_window": 3,
+          "right_window": 5,
+          "spearman_classification": 0.9254658385093169
+        }
+      ]
+    }
+  }
+}

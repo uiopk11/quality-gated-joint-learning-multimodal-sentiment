@@ -1,0 +1,16 @@
+{
+  "method": "M3",
+  "decision_rule": "logits_argmax",
+  "class_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "neutral_threshold": null,
+  "calibration_split": null,
+  "calibration_conditions": [],
+  "calibration_objective": null,
+  "threshold_candidates": null,
+  "threshold_boundary": null,
+  "calibration_identity_sha256": null
+}

@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "prediction_rows": 20,
+  "formal_summary_rows": 20,
+  "formal_summary_columns": 104,
+  "evidence_source_rows": 354,
+  "cards": [
+    {
+      "sample_id": "17",
+      "case": "高置信度正向样本",
+      "reason": "正向概率最高（0.9703），用于展示稳定正向判断及其证据链。",
+      "png": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\17_高置信度正向样本.png",
+      "svg": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\17_高置信度正向样本.svg"
+    },
+    {
+      "sample_id": "09",
+      "case": "高置信度负向样本",
+      "reason": "负向概率最高（0.9705），用于展示稳定负向判断及其证据链。",
+      "png": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\09_高置信度负向样本.png",
+      "svg": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\09_高置信度负向样本.svg"
+    },
+    {
+      "sample_id": "01",
+      "case": "三模态作用接近、预测困难样本",
+      "reason": "三模态分类贡献相对最均衡，且类别边际仅0.1091。",
+      "png": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\01_三模态作用接近、预测困难样本.png",
+      "svg": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\01_三模态作用接近、预测困难样本.svg"
+    },
+    {
+      "sample_id": "02",
+      "case": "模态冲突典型样本",
+      "reason": "文本支持最终正向判断，音频和视觉对分类边际均产生反向贡献。",
+      "png": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\02_模态冲突典型样本.png",
+      "svg": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\explanation_cards\\02_模态冲突典型样本.svg"
+    }
+  ],
+  "selection_rules": {
+    "17": "highest positive probability among predicted-positive samples",
+    "09": "highest negative probability among predicted-negative samples",
+    "01": "comparatively balanced modality shares plus low class margin",
+    "02": "text contribution supports final class while audio and vision contributions oppose it"
+  },
+  "claims": {
+    "causal": false,
+    "explanation_type": "model-faithful sensitivity"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_count": 100,
+  "summary_count": 100,
+  "passed_count": 100,
+  "failed_count": 0,
+  "all_passed": true,
+  "observed_video_duration_seconds": {
+    "minimum": 2.257,
+    "maximum": 29.288021
+  },
+  "alignment_type_counts": {
+    "full_mfa_windowed": 40,
+    "full_mfa": 26,
+    "no_word_alignment": 21,
+    "partial_asr_timestamp_fallback": 11,
+    "partial_asr_timestamp": 2
+  },
+  "modality_summary_count": 300,
+  "feature_dictionary_count": 109,
+  "mfa_window_candidate_count": 77,
+  "mfa_window_eligible_count": 66,
+  "report": "D:\\Huawei_cup_2026_yanshumo\\解答\\第一问\\输出\\summary\\audit_report.csv"
+}

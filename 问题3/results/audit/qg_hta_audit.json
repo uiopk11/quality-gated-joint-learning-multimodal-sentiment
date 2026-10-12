@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "sample_count": 20,
+  "token_count": 564,
+  "verified_token_count": 460,
+  "verified_token_ratio": 0.8156028368794326,
+  "alignment_type_counts": {
+    "full_mfa": 7,
+    "full_mfa_windowed": 7,
+    "no_word_alignment": 1,
+    "partial_asr_timestamp": 5
+  },
+  "evidence_rows": 354,
+  "mapped_evidence_rows": 320,
+  "fully_covered_evidence_rows": 181,
+  "partially_covered_evidence_rows": 139,
+  "unmapped_evidence_rows": 34,
+  "keyframe_image_count": 102,
+  "evidence_status_counts": {
+    "qg_hta_verified": 181,
+    "qg_hta_partial_window_coverage": 139,
+    "qg_hta_no_reliable_interval_in_window": 34
+  },
+  "q1_tracked_source_config_files": 20,
+  "q1_source_config_digest": "729d74dfd8ab3e3342e211ca313c58c4ffb5d66d397eae58c1dbc68ae5e2fbf6",
+  "q1_unchanged": true,
+  "claim_boundary": "Only quality-gated reconstructed QG-HTA word intervals are reported; they are not official feature-row timestamps and unavailable intervals remain blank."
+}

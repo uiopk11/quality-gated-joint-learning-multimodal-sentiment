@@ -1,0 +1,127 @@
+{
+  "n": 727,
+  "MAE": 0.6453841309302693,
+  "Pearson": 0.6549541803698795,
+  "Pearson_status": "defined",
+  "prediction_clipping": false,
+  "Accuracy": 0.6382393397524071,
+  "Macro_F1": 0.5446912633562723,
+  "Weighted_F1": 0.6077447671017859,
+  "decision_rule": "valid_symmetric_threshold",
+  "neutral_threshold": 0.07450816035270691,
+  "class_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "per_class": {
+    "negative": {
+      "class_id": 0,
+      "Precision": 0.5910780669144982,
+      "Recall": 0.7681159420289855,
+      "F1": 0.6680672268907563,
+      "support": 207,
+      "predicted_count": 269
+    },
+    "neutral": {
+      "class_id": 1,
+      "Precision": 0.3968253968253968,
+      "Recall": 0.15822784810126583,
+      "F1": 0.22624434389140272,
+      "support": 158,
+      "predicted_count": 63
+    },
+    "positive": {
+      "class_id": 2,
+      "Precision": 0.7088607594936709,
+      "Recall": 0.7734806629834254,
+      "F1": 0.739762219286658,
+      "support": 362,
+      "predicted_count": 395
+    }
+  },
+  "true_class_counts": {
+    "negative": 207,
+    "neutral": 158,
+    "positive": 362
+  },
+  "predicted_class_counts": {
+    "negative": 269,
+    "neutral": 63,
+    "positive": 395
+  },
+  "confusion_matrix": [
+    [
+      159,
+      16,
+      32
+    ],
+    [
+      50,
+      25,
+      83
+    ],
+    [
+      60,
+      22,
+      280
+    ]
+  ],
+  "confusion_matrix_normalized": [
+    [
+      0.7681159420289855,
+      0.07729468599033816,
+      0.15458937198067632
+    ],
+    [
+      0.31645569620253167,
+      0.15822784810126583,
+      0.5253164556962026
+    ],
+    [
+      0.16574585635359115,
+      0.06077348066298342,
+      0.7734806629834254
+    ]
+  ],
+  "confusion_orientation": "rows=true, columns=predicted",
+  "zero_division": 0,
+  "neutral_misdirection": {
+    "true_neutral_count": 158,
+    "to_negative_count": 50,
+    "to_positive_count": 83,
+    "to_negative_rate": 0.31645569620253167,
+    "to_positive_rate": 0.5253164556962026,
+    "rate_denominator": "true_neutral_count"
+  },
+  "head_sign_disagreement_count": 63,
+  "head_sign_disagreement_rate": 0.08665749656121045,
+  "head_sign_disagreement_definition": "pred_class != sign_class(raw_intensity); exact zero is neutral",
+  "split": "test",
+  "condition": "main_mixed/mixed_v1_s0",
+  "method": "M2",
+  "decision": {
+    "method": "M2",
+    "decision_rule": "valid_symmetric_threshold",
+    "class_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "neutral_threshold": 0.07450816035270691,
+    "calibration_split": "valid",
+    "calibration_conditions": [
+      "clean",
+      "main_mixed/mixed_v1_s0"
+    ],
+    "calibration_objective": [
+      "mean_condition_Accuracy:max",
+      "mean_condition_Macro_F1:max",
+      "threshold:min"
+    ],
+    "threshold_candidates": "zero_and_unique_abs_valid_predictions",
+    "threshold_boundary": "abs(raw_intensity)<=threshold_is_neutral",
+    "calibration_identity_sha256": "e26e8c7a887a4bebf2a0cef2b9f21f5f3b3363a1746db6b1099e463cd038deef"
+  },
+  "decision_sha256": "350de7bb2c773095bf06afe8095d6e2c479a0fbca0c7b3927775bcf00130a478"
+}

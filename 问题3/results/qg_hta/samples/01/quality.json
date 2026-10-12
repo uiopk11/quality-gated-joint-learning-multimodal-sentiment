@@ -1,0 +1,244 @@
+{
+  "sample_id": "01",
+  "official_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "Replacing these wear components when replacing a timing belt is essential to ensuring the new belt performs to its mileage requirements.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "Replacing",
+      "start": 0.0,
+      "end": 0.88
+    },
+    {
+      "index": 1,
+      "word": "these",
+      "start": 0.88,
+      "end": 1.1
+    },
+    {
+      "index": 2,
+      "word": "wear",
+      "start": 1.1,
+      "end": 1.34
+    },
+    {
+      "index": 3,
+      "word": "components",
+      "start": 1.34,
+      "end": 1.86
+    },
+    {
+      "index": 4,
+      "word": "when",
+      "start": 1.86,
+      "end": 2.1
+    },
+    {
+      "index": 5,
+      "word": "replacing",
+      "start": 2.1,
+      "end": 2.5
+    },
+    {
+      "index": 6,
+      "word": "a",
+      "start": 2.5,
+      "end": 2.72
+    },
+    {
+      "index": 7,
+      "word": "timing",
+      "start": 2.72,
+      "end": 2.92
+    },
+    {
+      "index": 8,
+      "word": "belt",
+      "start": 2.92,
+      "end": 3.18
+    },
+    {
+      "index": 9,
+      "word": "is",
+      "start": 3.18,
+      "end": 3.68
+    },
+    {
+      "index": 10,
+      "word": "essential",
+      "start": 3.68,
+      "end": 4.16
+    },
+    {
+      "index": 11,
+      "word": "to",
+      "start": 4.16,
+      "end": 4.52
+    },
+    {
+      "index": 12,
+      "word": "ensuring",
+      "start": 4.52,
+      "end": 4.94
+    },
+    {
+      "index": 13,
+      "word": "the",
+      "start": 4.94,
+      "end": 5.18
+    },
+    {
+      "index": 14,
+      "word": "new",
+      "start": 5.18,
+      "end": 5.38
+    },
+    {
+      "index": 15,
+      "word": "belt",
+      "start": 5.38,
+      "end": 5.7
+    },
+    {
+      "index": 16,
+      "word": "performs",
+      "start": 5.7,
+      "end": 6.52
+    },
+    {
+      "index": 17,
+      "word": "to",
+      "start": 6.52,
+      "end": 6.96
+    },
+    {
+      "index": 18,
+      "word": "its",
+      "start": 6.96,
+      "end": 7.14
+    },
+    {
+      "index": 19,
+      "word": "mileage",
+      "start": 7.14,
+      "end": 7.52
+    },
+    {
+      "index": 20,
+      "word": "requirements",
+      "start": 7.52,
+      "end": 8.96
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -12.939636718774626,
+  "rms_dbfs": -30.36366344945368,
+  "signal_activity_ratio": 0.6473214285714286,
+  "speech_present": true,
+  "exact_match_count": 20,
+  "reliable_match_count": 20,
+  "official_word_recall": 0.9523809523809523,
+  "asr_word_precision": 0.9523809523809523,
+  "word_f1": 0.9523809523809523,
+  "character_similarity": 0.9852941176470589,
+  "consistency_score": 0.9622549019607842,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    -1,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.0,
+    0.88,
+    1.1,
+    1.34,
+    1.86,
+    2.1,
+    null,
+    2.72,
+    2.92,
+    3.18,
+    3.68,
+    4.16,
+    4.52,
+    4.94,
+    5.18,
+    5.38,
+    5.7,
+    6.52,
+    6.96,
+    7.14,
+    7.52
+  ],
+  "official_asr_ends": [
+    0.88,
+    1.1,
+    1.34,
+    1.86,
+    2.1,
+    2.5,
+    null,
+    2.92,
+    3.18,
+    3.68,
+    4.16,
+    4.52,
+    4.94,
+    5.18,
+    5.38,
+    5.7,
+    6.52,
+    6.96,
+    7.14,
+    7.52,
+    8.96
+  ],
+  "official_comparison_unit_count": 21,
+  "asr_comparison_unit_count": 21,
+  "numeric_equivalence_count": 0
+}

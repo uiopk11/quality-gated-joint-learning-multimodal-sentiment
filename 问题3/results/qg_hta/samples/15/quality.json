@@ -1,0 +1,252 @@
+{
+  "sample_id": "15",
+  "official_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "Her father, the breadwinner, died when she was barely a year old, putting the family in a dire financial position. However, despite their poverty, she died.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "Her",
+      "start": 0.0,
+      "end": 0.16
+    },
+    {
+      "index": 1,
+      "word": "father",
+      "start": 0.16,
+      "end": 0.6
+    },
+    {
+      "index": 2,
+      "word": "the",
+      "start": 0.6,
+      "end": 0.72
+    },
+    {
+      "index": 3,
+      "word": "breadwinner",
+      "start": 0.72,
+      "end": 1.32
+    },
+    {
+      "index": 4,
+      "word": "died",
+      "start": 1.32,
+      "end": 1.5
+    },
+    {
+      "index": 5,
+      "word": "when",
+      "start": 1.5,
+      "end": 1.7
+    },
+    {
+      "index": 6,
+      "word": "she",
+      "start": 1.7,
+      "end": 1.84
+    },
+    {
+      "index": 7,
+      "word": "was",
+      "start": 1.84,
+      "end": 2.0
+    },
+    {
+      "index": 8,
+      "word": "barely",
+      "start": 2.0,
+      "end": 2.3
+    },
+    {
+      "index": 9,
+      "word": "a",
+      "start": 2.3,
+      "end": 2.48
+    },
+    {
+      "index": 10,
+      "word": "year",
+      "start": 2.48,
+      "end": 2.64
+    },
+    {
+      "index": 11,
+      "word": "old",
+      "start": 2.64,
+      "end": 3.26
+    },
+    {
+      "index": 12,
+      "word": "putting",
+      "start": 3.26,
+      "end": 3.46
+    },
+    {
+      "index": 13,
+      "word": "the",
+      "start": 3.46,
+      "end": 3.66
+    },
+    {
+      "index": 14,
+      "word": "family",
+      "start": 3.66,
+      "end": 3.96
+    },
+    {
+      "index": 15,
+      "word": "in",
+      "start": 4.02,
+      "end": 4.1
+    },
+    {
+      "index": 16,
+      "word": "a",
+      "start": 4.1,
+      "end": 4.24
+    },
+    {
+      "index": 17,
+      "word": "dire",
+      "start": 4.24,
+      "end": 4.44
+    },
+    {
+      "index": 18,
+      "word": "financial",
+      "start": 4.44,
+      "end": 4.92
+    },
+    {
+      "index": 19,
+      "word": "position",
+      "start": 4.92,
+      "end": 5.92
+    },
+    {
+      "index": 20,
+      "word": "However",
+      "start": 5.98,
+      "end": 6.44
+    },
+    {
+      "index": 21,
+      "word": "despite",
+      "start": 6.44,
+      "end": 6.64
+    },
+    {
+      "index": 22,
+      "word": "their",
+      "start": 6.64,
+      "end": 6.96
+    },
+    {
+      "index": 23,
+      "word": "poverty",
+      "start": 6.96,
+      "end": 7.26
+    },
+    {
+      "index": 24,
+      "word": "she",
+      "start": 7.26,
+      "end": 7.3
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -8.732615037217386,
+  "rms_dbfs": -22.93306442224624,
+  "signal_activity_ratio": 0.411522633744856,
+  "speech_present": true,
+  "exact_match_count": 4,
+  "reliable_match_count": 4,
+  "official_word_recall": 0.23529411764705882,
+  "asr_word_precision": 0.16,
+  "word_f1": 0.19047619047619052,
+  "character_similarity": 0.2471042471042471,
+  "consistency_score": 0.2074646074646075,
+  "alignment_type": "no_word_alignment",
+  "official_to_asr": [
+    20,
+    21,
+    22,
+    23,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "official_asr_starts": [
+    5.98,
+    6.44,
+    6.64,
+    6.96,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "official_asr_ends": [
+    6.44,
+    6.64,
+    6.96,
+    7.26,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "official_comparison_unit_count": 17,
+  "asr_comparison_unit_count": 25,
+  "numeric_equivalence_count": 0
+}

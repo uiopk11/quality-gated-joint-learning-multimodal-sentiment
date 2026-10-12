@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "model_role": "M1 complete-input joint polarity-intensity predictor used by Problem 3",
+  "no_retraining": true,
+  "source_prediction_file": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\q3_handoff\\checkpoint\\valid__clean.csv",
+  "sample_count": 728,
+  "metrics": {
+    "Accuracy": 0.6456043956043956,
+    "Macro_F1": 0.6195321114488135,
+    "Weighted_F1": 0.6437283808860729,
+    "MAE": 0.5595247230318549,
+    "Pearson": 0.6918403794398038
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "negative",
+      "precision": 0.6889952153110048,
+      "recall": 0.6990291262135923,
+      "f1": 0.6939759036144578,
+      "support": 206,
+      "predicted_count": 209
+    },
+    {
+      "class_id": 1,
+      "class_name": "neutral",
+      "precision": 0.4540229885057471,
+      "recall": 0.42934782608695654,
+      "f1": 0.441340782122905,
+      "support": 184,
+      "predicted_count": 174
+    },
+    {
+      "class_id": 2,
+      "class_name": "positive",
+      "precision": 0.7159420289855073,
+      "recall": 0.7307692307692307,
+      "f1": 0.7232796486090776,
+      "support": 338,
+      "predicted_count": 345
+    }
+  ],
+  "confusion_matrix": [
+    [
+      144,
+      39,
+      23
+    ],
+    [
+      30,
+      79,
+      75
+    ],
+    [
+      35,
+      56,
+      247
+    ]
+  ],
+  "confusion_orientation": "rows=true, columns=predicted; order=negative, neutral, positive",
+  "regression": {
+    "residual_mean": -0.0308878846098106,
+    "residual_median": 0.0021256618201732263,
+    "residual_std": 0.7615195978661774,
+    "mae_by_true_class": {
+      "negative": 0.6896738241815451,
+      "neutral": 0.34399850646276836,
+      "positive": 0.5975309627119606
+    }
+  },
+  "error_diagnostics": {
+    "classification_error_count": 258,
+    "classification_error_rate": 0.3543956043956044,
+    "neutral_to_positive_count": 75,
+    "neutral_to_positive_rate_among_true_neutral": 0.4076086956521739,
+    "neutral_to_negative_count": 30,
+    "head_disagreement_count": 178,
+    "head_disagreement_rate": 0.2445054945054945,
+    "accuracy_when_heads_agree": 0.7054545454545454,
+    "accuracy_when_heads_disagree": 0.4606741573033708,
+    "median_confidence_correct": 0.8072753592882145,
+    "median_confidence_incorrect": 0.5680676770400215,
+    "mean_abs_intensity_error_correct_classification": 0.440145188221272,
+    "mean_abs_intensity_error_incorrect_classification": 0.7769990693922191,
+    "high_confidence_error_threshold": 0.8,
+    "high_confidence_error_count": 51,
+    "top_high_confidence_error_ids": [
+      "x2lOwQaAn4g$_$4",
+      "f_ZJ7L14oYQ$_$21",
+      "TYJzg5IJN8o$_$7",
+      "32681$_$5",
+      "icbUzboLcDQ$_$0",
+      "bWunvAd96zI$_$4",
+      "Uc_6d-fkZEc$_$3",
+      "NzvNW7vP-Co$_$7",
+      "236021$_$3",
+      "99501$_$7"
+    ]
+  },
+  "integrity": {
+    "probability_sum_max_error": 4.440892098500626e-16,
+    "metrics_match_evaluation_json_tolerance": 1e-12,
+    "unique_ids": true
+  },
+  "figures": [
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\validation\\m1_validation_confusion_matrix.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\validation\\m1_validation_class_metrics.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\validation\\m1_validation_regression_diagnostics.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\validation\\m1_validation_error_diagnostics.svg",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\figures\\validation\\m1_training_selection_curves.svg"
+  ],
+  "tables": [
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\tables\\m1_validation_sample_analysis.csv",
+    "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\tables\\m1_validation_error_cases.csv"
+  ],
+  "claim_boundary": "This is a descriptive validation-error diagnosis of frozen M1 outputs. Associations between confidence, head agreement and errors are not causal attributions."
+}

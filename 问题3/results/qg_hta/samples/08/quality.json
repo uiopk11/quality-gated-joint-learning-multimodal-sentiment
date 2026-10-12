@@ -1,0 +1,140 @@
+{
+  "sample_id": "08",
+  "official_text": "That brings us to tonight, the Universal Design Grand Challenge",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "So, that brings us to tonight, the Universal Design Grand Challenge.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "So",
+      "start": 0.0,
+      "end": 0.6
+    },
+    {
+      "index": 1,
+      "word": "that",
+      "start": 0.6,
+      "end": 0.76
+    },
+    {
+      "index": 2,
+      "word": "brings",
+      "start": 0.76,
+      "end": 1.02
+    },
+    {
+      "index": 3,
+      "word": "us",
+      "start": 1.02,
+      "end": 1.2
+    },
+    {
+      "index": 4,
+      "word": "to",
+      "start": 1.2,
+      "end": 1.38
+    },
+    {
+      "index": 5,
+      "word": "tonight",
+      "start": 1.38,
+      "end": 1.88
+    },
+    {
+      "index": 6,
+      "word": "the",
+      "start": 1.88,
+      "end": 1.96
+    },
+    {
+      "index": 7,
+      "word": "Universal",
+      "start": 1.96,
+      "end": 2.3
+    },
+    {
+      "index": 8,
+      "word": "Design",
+      "start": 2.3,
+      "end": 2.96
+    },
+    {
+      "index": 9,
+      "word": "Grand",
+      "start": 2.96,
+      "end": 3.54
+    },
+    {
+      "index": 10,
+      "word": "Challenge",
+      "start": 3.54,
+      "end": 4.88
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -4.959462676513381,
+  "rms_dbfs": -22.028115086921503,
+  "signal_activity_ratio": 0.6413934426229508,
+  "speech_present": true,
+  "exact_match_count": 10,
+  "reliable_match_count": 10,
+  "official_word_recall": 1.0,
+  "asr_word_precision": 0.9090909090909091,
+  "word_f1": 0.9523809523809523,
+  "character_similarity": 0.9763779527559056,
+  "consistency_score": 0.9595800524934384,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "official_match_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    0.6,
+    0.76,
+    1.02,
+    1.2,
+    1.38,
+    1.88,
+    1.96,
+    2.3,
+    2.96,
+    3.54
+  ],
+  "official_asr_ends": [
+    0.76,
+    1.02,
+    1.2,
+    1.38,
+    1.88,
+    1.96,
+    2.3,
+    2.96,
+    3.54,
+    4.88
+  ],
+  "official_comparison_unit_count": 10,
+  "asr_comparison_unit_count": 11,
+  "numeric_equivalence_count": 0
+}

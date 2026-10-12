@@ -1,0 +1,52 @@
+# Local environments and caches
+.envs/
+.env-q3/
+.venv/
+venv/
+problem2_env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+_runtime/
+runtime_cache/
+.cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# External models, raw contest input, binaries and runtime work
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.exe
+*.dll
+*.zip
+*.rar
+*.mp4
+*.wav
+问题2/resources/data/
+问题3/official_data/
+问题3/external_q1/
+问题3/results/qg_hta/_work/
+q1_work/
+q3_work/
+工具/
+模型/
+
+# New local experiment directories (saved snapshot files remain tracked)
+问题1/code/输出/
+问题2/outputs/reproduce*/
+问题2/outputs/local*/
+问题3/附件4复现*/
+
+# Repository audit scratch output
+.repo-verification.json

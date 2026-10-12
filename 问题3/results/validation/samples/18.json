@@ -1,0 +1,901 @@
+{
+  "sample": {
+    "sample_id": "18",
+    "raw_text": "-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with Norway and the European Union.",
+    "body_length": 48,
+    "token_ids": [
+      1011,
+      1998,
+      1999,
+      5842,
+      1011,
+      1996,
+      2034,
+      11275,
+      19429,
+      22880,
+      2038,
+      2042,
+      23794,
+      1516,
+      7378,
+      1011,
+      5564,
+      1010,
+      1996,
+      17282,
+      3217,
+      6810,
+      11349,
+      7869,
+      2140,
+      22880,
+      2038,
+      2042,
+      6380,
+      23794,
+      10618,
+      2241,
+      2006,
+      1996,
+      2755,
+      2008,
+      1996,
+      22880,
+      2038,
+      3478,
+      2000,
+      3362,
+      2019,
+      3820,
+      2006,
+      11349,
+      7869,
+      2140
+    ],
+    "wordpieces": [
+      "-",
+      "and",
+      "in",
+      "denmark",
+      "-",
+      "the",
+      "first",
+      "baltic",
+      "cod",
+      "fishery",
+      "has",
+      "been",
+      "msc",
+      "–",
+      "certified",
+      "-",
+      "meanwhile",
+      ",",
+      "the",
+      "fae",
+      "##ro",
+      "##ese",
+      "mack",
+      "##ere",
+      "##l",
+      "fishery",
+      "has",
+      "been",
+      "denied",
+      "msc",
+      "certification",
+      "based",
+      "on",
+      "the",
+      "fact",
+      "that",
+      "the",
+      "fishery",
+      "has",
+      "failed",
+      "to",
+      "reach",
+      "an",
+      "agreement",
+      "on",
+      "mack",
+      "##ere",
+      "##l"
+    ],
+    "text_offsets": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        18,
+        21
+      ],
+      [
+        22,
+        27
+      ],
+      [
+        28,
+        34
+      ],
+      [
+        35,
+        38
+      ],
+      [
+        39,
+        46
+      ],
+      [
+        47,
+        50
+      ],
+      [
+        51,
+        55
+      ],
+      [
+        56,
+        59
+      ],
+      [
+        60,
+        61
+      ],
+      [
+        62,
+        71
+      ],
+      [
+        72,
+        73
+      ],
+      [
+        73,
+        82
+      ],
+      [
+        82,
+        83
+      ],
+      [
+        84,
+        87
+      ],
+      [
+        88,
+        91
+      ],
+      [
+        91,
+        93
+      ],
+      [
+        93,
+        96
+      ],
+      [
+        97,
+        101
+      ],
+      [
+        101,
+        104
+      ],
+      [
+        104,
+        105
+      ],
+      [
+        106,
+        113
+      ],
+      [
+        114,
+        117
+      ],
+      [
+        118,
+        122
+      ],
+      [
+        123,
+        129
+      ],
+      [
+        130,
+        133
+      ],
+      [
+        134,
+        147
+      ],
+      [
+        148,
+        153
+      ],
+      [
+        154,
+        156
+      ],
+      [
+        157,
+        160
+      ],
+      [
+        161,
+        165
+      ],
+      [
+        166,
+        170
+      ],
+      [
+        171,
+        174
+      ],
+      [
+        175,
+        182
+      ],
+      [
+        183,
+        186
+      ],
+      [
+        187,
+        193
+      ],
+      [
+        194,
+        196
+      ],
+      [
+        197,
+        202
+      ],
+      [
+        203,
+        205
+      ],
+      [
+        206,
+        215
+      ],
+      [
+        216,
+        218
+      ],
+      [
+        219,
+        223
+      ],
+      [
+        223,
+        226
+      ],
+      [
+        226,
+        227
+      ]
+    ],
+    "original_token_fragments": [
+      "-",
+      "And",
+      "in",
+      "Denmark",
+      "-",
+      "the",
+      "first",
+      "Baltic",
+      "Cod",
+      "fishery",
+      "has",
+      "been",
+      "MSC",
+      "–",
+      "certified",
+      "-",
+      "Meanwhile",
+      ",",
+      "the",
+      "Fae",
+      "ro",
+      "ese",
+      "Mack",
+      "ere",
+      "l",
+      "Fishery",
+      "has",
+      "been",
+      "denied",
+      "MSC",
+      "certification",
+      "based",
+      "on",
+      "the",
+      "fact",
+      "that",
+      "the",
+      "fishery",
+      "has",
+      "failed",
+      "to",
+      "reach",
+      "an",
+      "agreement",
+      "on",
+      "mack",
+      "ere",
+      "l"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\18.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\18.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 57,
+    "retained_wordpiece_count": 48,
+    "truncated_wordpiece_count": 9,
+    "model_visible_text_end_char": 227,
+    "audio_nonzero_body_rows": 48,
+    "vision_nonzero_body_rows": 48,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "fidelity_validation": {
+    "protocol": {
+      "fractions": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "random_repeats": 10,
+      "seed": 20260943,
+      "metric": "absolute change of fixed-class margin or raw intensity",
+      "claim_boundary": "masking faithfulness only; not causal or human-rationale agreement",
+      "unavailable_modalities_excluded": []
+    },
+    "results": {
+      "text": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              28,
+              1,
+              27,
+              47,
+              0
+            ],
+            "top_absolute_output_change": 1.4433467388153076,
+            "random_mean_absolute_output_change": 0.5715933501720428,
+            "random_std_absolute_output_change": 0.3086962320832093,
+            "top_to_random_mean_ratio": 2.525128639759153,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              28,
+              1,
+              27,
+              47,
+              0,
+              39,
+              16,
+              26,
+              2,
+              29
+            ],
+            "top_absolute_output_change": 2.0333330631256104,
+            "random_mean_absolute_output_change": 0.7738689243793487,
+            "random_std_absolute_output_change": 0.5457105440226261,
+            "top_to_random_mean_ratio": 2.627490262328812,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              28,
+              1,
+              27,
+              47,
+              0,
+              39,
+              16,
+              26,
+              2,
+              29,
+              17,
+              18,
+              15,
+              34,
+              38
+            ],
+            "top_absolute_output_change": 1.9240232706069946,
+            "random_mean_absolute_output_change": 0.8056964010000229,
+            "random_std_absolute_output_change": 0.5160087449828473,
+            "top_to_random_mean_ratio": 2.388025152177563,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              28,
+              1,
+              39,
+              0,
+              2
+            ],
+            "top_absolute_output_change": 0.43018126487731934,
+            "random_mean_absolute_output_change": 0.14874398410320283,
+            "random_std_absolute_output_change": 0.068137670043066,
+            "top_to_random_mean_ratio": 2.892091854813081,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              28,
+              1,
+              39,
+              0,
+              2,
+              16,
+              27,
+              29,
+              17,
+              26
+            ],
+            "top_absolute_output_change": 0.42681407928466797,
+            "random_mean_absolute_output_change": 0.19296461939811707,
+            "random_std_absolute_output_change": 0.07385290441342769,
+            "top_to_random_mean_ratio": 2.211877392943635,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              28,
+              1,
+              39,
+              0,
+              2,
+              16,
+              27,
+              29,
+              17,
+              26,
+              34,
+              30,
+              38,
+              18,
+              40
+            ],
+            "top_absolute_output_change": 0.4091379642486572,
+            "random_mean_absolute_output_change": 0.2510786473751068,
+            "random_std_absolute_output_change": 0.0617185313665662,
+            "top_to_random_mean_ratio": 1.6295211421838383,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "audio": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.04938223958015442,
+            "random_mean_absolute_output_change": 0.014134886860847472,
+            "random_std_absolute_output_change": 0.011826764210424917,
+            "top_to_random_mean_ratio": 3.493642366317013,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              19,
+              20,
+              18,
+              21,
+              17
+            ],
+            "top_absolute_output_change": 0.044805556535720825,
+            "random_mean_absolute_output_change": 0.007522615790367127,
+            "random_std_absolute_output_change": 0.008312438866290095,
+            "top_to_random_mean_ratio": 5.9561139082890975,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              19,
+              20,
+              18,
+              21,
+              17,
+              42,
+              14,
+              16,
+              38,
+              36
+            ],
+            "top_absolute_output_change": 0.039991915225982666,
+            "random_mean_absolute_output_change": 0.017189908027648925,
+            "random_std_absolute_output_change": 0.014579469784146357,
+            "top_to_random_mean_ratio": 2.326476393105658,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.027074605226516724,
+            "random_mean_absolute_output_change": 0.0016741156578063965,
+            "random_std_absolute_output_change": 0.0030027624997427957,
+            "top_to_random_mean_ratio": 16.17248193114252,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              11,
+              38,
+              0,
+              10
+            ],
+            "top_absolute_output_change": 0.02586543560028076,
+            "random_mean_absolute_output_change": 0.006078016757965088,
+            "random_std_absolute_output_change": 0.004979868921722408,
+            "top_to_random_mean_ratio": 4.255571616577852,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              11,
+              38,
+              0,
+              10,
+              37,
+              15,
+              16,
+              12,
+              13
+            ],
+            "top_absolute_output_change": 0.024589061737060547,
+            "random_mean_absolute_output_change": 0.005473017692565918,
+            "random_std_absolute_output_change": 0.006746664407807306,
+            "top_to_random_mean_ratio": 4.4927795081788675,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "vision": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.028714686632156372,
+            "random_mean_absolute_output_change": 0.0037551313638687135,
+            "random_std_absolute_output_change": 0.005467661043970101,
+            "top_to_random_mean_ratio": 7.64678618395207,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              25,
+              42,
+              26,
+              24,
+              27
+            ],
+            "top_absolute_output_change": 0.026754140853881836,
+            "random_mean_absolute_output_change": 0.00379810631275177,
+            "random_std_absolute_output_change": 0.003904947549433332,
+            "top_to_random_mean_ratio": 7.044073717488483,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              25,
+              42,
+              26,
+              24,
+              27,
+              1,
+              0,
+              23,
+              3,
+              2
+            ],
+            "top_absolute_output_change": 0.028206318616867065,
+            "random_mean_absolute_output_change": 0.005950650572776795,
+            "random_std_absolute_output_change": 0.006589664570240114,
+            "top_to_random_mean_ratio": 4.74003947499558,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43
+            ],
+            "top_absolute_output_change": 0.03678637742996216,
+            "random_mean_absolute_output_change": 0.0022653728723526,
+            "random_std_absolute_output_change": 0.004243601550056619,
+            "top_to_random_mean_ratio": 16.238552990068843,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 10,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              41,
+              40,
+              3,
+              25
+            ],
+            "top_absolute_output_change": 0.03812927007675171,
+            "random_mean_absolute_output_change": 0.006590920686721802,
+            "random_std_absolute_output_change": 0.006503994354287111,
+            "top_to_random_mean_ratio": 5.785120454198104,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 15,
+            "top_positions": [
+              47,
+              46,
+              45,
+              44,
+              43,
+              42,
+              41,
+              40,
+              3,
+              25,
+              26,
+              4,
+              2,
+              27,
+              1
+            ],
+            "top_absolute_output_change": 0.03823882341384888,
+            "random_mean_absolute_output_change": 0.004996186494827271,
+            "random_std_absolute_output_change": 0.0031553453592490528,
+            "top_to_random_mean_ratio": 7.653602093004111,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      }
+    },
+    "aggregate": {
+      "comparison_count": 18,
+      "top_at_least_random_mean_rate": 1.0,
+      "mean_top_percentile": 0.9888888888888889
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "source_file": "解答/第一问/输出/summary/question1_features_100.pkl.gz",
+  "submission_file": "直接提交包/问题1/问题1_100条多模态时序特征.pkl.gz",
+  "sample_count": 100,
+  "numeric_array_count": 21,
+  "numeric_arrays_bitwise_equal": true,
+  "strings_replaced": 3267,
+  "remaining_absolute_path_count": 0,
+  "source_sha256": "4cdd587cf1a153abe991686f08d4e405c8c302327fa4ed9e781d42fdd40aa361",
+  "submission_sha256": "db00103f289e5cffe9aa6d8b156623e26f7bc1c8a24a33728d9a1d59927826c3"
+}

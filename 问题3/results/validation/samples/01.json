@@ -1,0 +1,577 @@
+{
+  "sample": {
+    "sample_id": "01",
+    "raw_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+    "body_length": 22,
+    "token_ids": [
+      6419,
+      2122,
+      4929,
+      6177,
+      2043,
+      6419,
+      1996,
+      10984,
+      5583,
+      2003,
+      6827,
+      2000,
+      12725,
+      1996,
+      2047,
+      5583,
+      10438,
+      2000,
+      2049,
+      3542,
+      4270,
+      5918
+    ],
+    "wordpieces": [
+      "replacing",
+      "these",
+      "wear",
+      "components",
+      "when",
+      "replacing",
+      "the",
+      "timing",
+      "belt",
+      "is",
+      "essential",
+      "to",
+      "ensuring",
+      "the",
+      "new",
+      "belt",
+      "performs",
+      "to",
+      "its",
+      "mile",
+      "##age",
+      "requirements"
+    ],
+    "text_offsets": [
+      [
+        0,
+        9
+      ],
+      [
+        10,
+        15
+      ],
+      [
+        16,
+        20
+      ],
+      [
+        21,
+        31
+      ],
+      [
+        32,
+        36
+      ],
+      [
+        37,
+        46
+      ],
+      [
+        47,
+        50
+      ],
+      [
+        51,
+        57
+      ],
+      [
+        58,
+        62
+      ],
+      [
+        63,
+        65
+      ],
+      [
+        66,
+        75
+      ],
+      [
+        76,
+        78
+      ],
+      [
+        79,
+        87
+      ],
+      [
+        88,
+        91
+      ],
+      [
+        92,
+        95
+      ],
+      [
+        96,
+        100
+      ],
+      [
+        101,
+        109
+      ],
+      [
+        110,
+        112
+      ],
+      [
+        113,
+        116
+      ],
+      [
+        117,
+        121
+      ],
+      [
+        121,
+        124
+      ],
+      [
+        125,
+        137
+      ]
+    ],
+    "original_token_fragments": [
+      "Replacing",
+      "these",
+      "wear",
+      "components",
+      "when",
+      "replacing",
+      "the",
+      "timing",
+      "belt",
+      "is",
+      "essential",
+      "to",
+      "ensuring",
+      "the",
+      "new",
+      "belt",
+      "performs",
+      "to",
+      "its",
+      "mile",
+      "age",
+      "requirements"
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\01.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\01.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 22,
+    "retained_wordpiece_count": 22,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 137,
+    "audio_nonzero_body_rows": 22,
+    "vision_nonzero_body_rows": 22,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": false,
+    "attachment2_test_id": null,
+    "attachment2_test_index": null
+  },
+  "fidelity_validation": {
+    "protocol": {
+      "fractions": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "random_repeats": 10,
+      "seed": 20260926,
+      "metric": "absolute change of fixed-class margin or raw intensity",
+      "claim_boundary": "masking faithfulness only; not causal or human-rationale agreement",
+      "unavailable_modalities_excluded": []
+    },
+    "results": {
+      "text": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              0,
+              5,
+              11
+            ],
+            "top_absolute_output_change": 0.45748957991600037,
+            "random_mean_absolute_output_change": 0.1796392560005188,
+            "random_std_absolute_output_change": 0.10789717037012005,
+            "top_to_random_mean_ratio": 2.5467127291747365,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              0,
+              5,
+              11,
+              6,
+              15
+            ],
+            "top_absolute_output_change": 0.9058078527450562,
+            "random_mean_absolute_output_change": 0.3797642022371292,
+            "random_std_absolute_output_change": 0.21950961495530497,
+            "top_to_random_mean_ratio": 2.385184931620962,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              0,
+              5,
+              11,
+              6,
+              15,
+              4,
+              14
+            ],
+            "top_absolute_output_change": 0.9558178186416626,
+            "random_mean_absolute_output_change": 0.4341041684150696,
+            "random_std_absolute_output_change": 0.2888215888215993,
+            "top_to_random_mean_ratio": 2.201816725537073,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              0,
+              11,
+              15
+            ],
+            "top_absolute_output_change": 0.275764524936676,
+            "random_mean_absolute_output_change": 0.07544093281030655,
+            "random_std_absolute_output_change": 0.055730196823758855,
+            "top_to_random_mean_ratio": 3.655370031413527,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              0,
+              11,
+              15,
+              5,
+              16
+            ],
+            "top_absolute_output_change": 0.11017950624227524,
+            "random_mean_absolute_output_change": 0.07437771484255791,
+            "random_std_absolute_output_change": 0.056027878819531515,
+            "top_to_random_mean_ratio": 1.4813510535447647,
+            "top_percentile_among_random": 0.7,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              0,
+              11,
+              15,
+              5,
+              16,
+              18,
+              17
+            ],
+            "top_absolute_output_change": 0.03893031179904938,
+            "random_mean_absolute_output_change": 0.06917256340384484,
+            "random_std_absolute_output_change": 0.054185581294232496,
+            "top_to_random_mean_ratio": 0.5627999004716009,
+            "top_percentile_among_random": 0.5,
+            "top_at_least_random_mean": false
+          }
+        ]
+      },
+      "audio": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              18,
+              20,
+              19
+            ],
+            "top_absolute_output_change": 0.0797170102596283,
+            "random_mean_absolute_output_change": 0.01489390730857849,
+            "random_std_absolute_output_change": 0.015200757631590425,
+            "top_to_random_mean_ratio": 5.3523235110851966,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              18,
+              20,
+              19,
+              17,
+              21
+            ],
+            "top_absolute_output_change": 0.1012243926525116,
+            "random_mean_absolute_output_change": 0.03611491620540619,
+            "random_std_absolute_output_change": 0.02129673784276531,
+            "top_to_random_mean_ratio": 2.802841686708909,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              18,
+              20,
+              19,
+              17,
+              21,
+              16,
+              15
+            ],
+            "top_absolute_output_change": 0.10869541764259338,
+            "random_mean_absolute_output_change": 0.03040163218975067,
+            "random_std_absolute_output_change": 0.016759558084078394,
+            "top_to_random_mean_ratio": 3.575315199005597,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              20,
+              19,
+              18
+            ],
+            "top_absolute_output_change": 0.030903682112693787,
+            "random_mean_absolute_output_change": 0.0051015675067901615,
+            "random_std_absolute_output_change": 0.004393321027153505,
+            "top_to_random_mean_ratio": 6.057683657338874,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              21
+            ],
+            "top_absolute_output_change": 0.03925834596157074,
+            "random_mean_absolute_output_change": 0.0054552644491195675,
+            "random_std_absolute_output_change": 0.004355378136618406,
+            "top_to_random_mean_ratio": 7.196414826032255,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              20,
+              19,
+              18,
+              17,
+              21,
+              16,
+              15
+            ],
+            "top_absolute_output_change": 0.04181085526943207,
+            "random_mean_absolute_output_change": 0.015735450387001037,
+            "random_std_absolute_output_change": 0.006979894773878522,
+            "top_to_random_mean_ratio": 2.6571120775781396,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "vision": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              21,
+              20,
+              19
+            ],
+            "top_absolute_output_change": 0.181124746799469,
+            "random_mean_absolute_output_change": 0.025023028254508972,
+            "random_std_absolute_output_change": 0.03984811285414226,
+            "top_to_random_mean_ratio": 7.238322434728962,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              21,
+              20,
+              19,
+              18,
+              17
+            ],
+            "top_absolute_output_change": 0.20087754726409912,
+            "random_mean_absolute_output_change": 0.05568617880344391,
+            "random_std_absolute_output_change": 0.059727519438014756,
+            "top_to_random_mean_ratio": 3.607314266851362,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              21,
+              20,
+              19,
+              18,
+              17,
+              16,
+              11
+            ],
+            "top_absolute_output_change": 0.2047266960144043,
+            "random_mean_absolute_output_change": 0.059084221720695496,
+            "random_std_absolute_output_change": 0.0552823486955296,
+            "top_to_random_mean_ratio": 3.464997761706903,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 3,
+            "top_positions": [
+              21,
+              20,
+              19
+            ],
+            "top_absolute_output_change": 0.028481975197792053,
+            "random_mean_absolute_output_change": 0.0046163290739059445,
+            "random_std_absolute_output_change": 0.006461555914702781,
+            "top_to_random_mean_ratio": 6.169832076917565,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 5,
+            "top_positions": [
+              21,
+              20,
+              19,
+              18,
+              17
+            ],
+            "top_absolute_output_change": 0.03050769865512848,
+            "random_mean_absolute_output_change": 0.006645551323890686,
+            "random_std_absolute_output_change": 0.00841811731000275,
+            "top_to_random_mean_ratio": 4.590694912768731,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 7,
+            "top_positions": [
+              21,
+              20,
+              19,
+              18,
+              17,
+              16,
+              12
+            ],
+            "top_absolute_output_change": 0.030852392315864563,
+            "random_mean_absolute_output_change": 0.011589245498180389,
+            "random_std_absolute_output_change": 0.010844087455257374,
+            "top_to_random_mean_ratio": 2.66215711115177,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      }
+    },
+    "aggregate": {
+      "comparison_count": 18,
+      "top_at_least_random_mean_rate": 0.9444444444444444,
+      "mean_top_percentile": 0.9500000000000001
+    }
+  }
+}

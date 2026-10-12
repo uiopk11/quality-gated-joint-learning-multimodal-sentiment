@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "sample_count": 2,
+  "token_count": 57,
+  "verified_token_count": 41,
+  "verified_token_ratio": 0.7192982456140351,
+  "alignment_type_counts": {
+    "full_mfa": 1,
+    "partial_asr_timestamp": 1
+  },
+  "mfa_run_error": null,
+  "timeline_csv": "D:\\Huawei_cup_2026_yanshumo\\解答\\第三问\\results\\qg_hta\\token_timeline_samples_01_14.csv",
+  "samples": [
+    {
+      "sample_id": "01",
+      "body_length": 22,
+      "verified_token_count": 22,
+      "verified_token_ratio": 1.0,
+      "requested_alignment_type": "full_mfa",
+      "final_alignment_method": "full_mfa",
+      "consistency_score": 0.9622549019607842,
+      "speech_present": true,
+      "mfa_window_eligible": true,
+      "mfa_window_start": 0.0,
+      "mfa_window_end": 8.986125,
+      "mfa_status": "used",
+      "mfa_word_match_ratio": 1.0,
+      "duration_seconds": 9.0,
+      "fps": 30.0,
+      "presented_frame_count": 270
+    },
+    {
+      "sample_id": "14",
+      "body_length": 35,
+      "verified_token_count": 19,
+      "verified_token_ratio": 0.5428571428571428,
+      "requested_alignment_type": "full_mfa",
+      "final_alignment_method": "partial_asr_timestamp",
+      "consistency_score": 0.818104667609618,
+      "speech_present": true,
+      "mfa_window_eligible": false,
+      "mfa_window_start": null,
+      "mfa_window_end": null,
+      "mfa_status": "fallback:official_boundary_word_not_reliably_matched",
+      "mfa_word_match_ratio": null,
+      "duration_seconds": 10.350977,
+      "fps": 30.0,
+      "presented_frame_count": 311
+    }
+  ],
+  "q1_source_policy": "read-only import; no Q1 file or Q1 output modified"
+}

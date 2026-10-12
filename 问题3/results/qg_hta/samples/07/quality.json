@@ -1,0 +1,550 @@
+{
+  "sample_id": "07",
+  "official_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+  "low_threshold": 0.35,
+  "high_threshold": 0.75,
+  "minimum_contiguous_matches": 2,
+  "asr_text": "As Lynn's associate editor Michael Bodke reports in our November 28th issue, attendees enthusiastically discuss the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow.",
+  "asr_words": [
+    {
+      "index": 0,
+      "word": "As",
+      "start": 0.0,
+      "end": 0.7
+    },
+    {
+      "index": 1,
+      "word": "Lynn's",
+      "start": 0.7,
+      "end": 0.96
+    },
+    {
+      "index": 2,
+      "word": "associate",
+      "start": 0.96,
+      "end": 1.22
+    },
+    {
+      "index": 3,
+      "word": "editor",
+      "start": 1.22,
+      "end": 1.64
+    },
+    {
+      "index": 4,
+      "word": "Michael",
+      "start": 1.64,
+      "end": 1.88
+    },
+    {
+      "index": 5,
+      "word": "Bodke",
+      "start": 1.88,
+      "end": 2.26
+    },
+    {
+      "index": 6,
+      "word": "reports",
+      "start": 2.26,
+      "end": 2.66
+    },
+    {
+      "index": 7,
+      "word": "in",
+      "start": 2.66,
+      "end": 2.96
+    },
+    {
+      "index": 8,
+      "word": "our",
+      "start": 2.96,
+      "end": 3.08
+    },
+    {
+      "index": 9,
+      "word": "November",
+      "start": 3.08,
+      "end": 3.34
+    },
+    {
+      "index": 10,
+      "word": "28",
+      "start": 3.34,
+      "end": 3.69
+    },
+    {
+      "index": 11,
+      "word": "th",
+      "start": 3.69,
+      "end": 4.04
+    },
+    {
+      "index": 12,
+      "word": "issue",
+      "start": 4.04,
+      "end": 4.92
+    },
+    {
+      "index": 13,
+      "word": "attendees",
+      "start": 4.92,
+      "end": 5.36
+    },
+    {
+      "index": 14,
+      "word": "enthusiastically",
+      "start": 5.98,
+      "end": 6.96
+    },
+    {
+      "index": 15,
+      "word": "discuss",
+      "start": 6.96,
+      "end": 7.36
+    },
+    {
+      "index": 16,
+      "word": "the",
+      "start": 7.36,
+      "end": 7.66
+    },
+    {
+      "index": 17,
+      "word": "topics",
+      "start": 7.66,
+      "end": 8.02
+    },
+    {
+      "index": 18,
+      "word": "of",
+      "start": 8.02,
+      "end": 8.74
+    },
+    {
+      "index": 19,
+      "word": "growing",
+      "start": 8.74,
+      "end": 9.04
+    },
+    {
+      "index": 20,
+      "word": "the",
+      "start": 9.04,
+      "end": 9.26
+    },
+    {
+      "index": 21,
+      "word": "hobby",
+      "start": 9.26,
+      "end": 9.92
+    },
+    {
+      "index": 22,
+      "word": "the",
+      "start": 9.92,
+      "end": 10.0
+    },
+    {
+      "index": 23,
+      "word": "future",
+      "start": 10.0,
+      "end": 10.26
+    },
+    {
+      "index": 24,
+      "word": "of",
+      "start": 10.26,
+      "end": 10.48
+    },
+    {
+      "index": 25,
+      "word": "stamp",
+      "start": 10.48,
+      "end": 10.72
+    },
+    {
+      "index": 26,
+      "word": "shows",
+      "start": 10.72,
+      "end": 11.5
+    },
+    {
+      "index": 27,
+      "word": "and",
+      "start": 11.5,
+      "end": 11.72
+    },
+    {
+      "index": 28,
+      "word": "dealers",
+      "start": 11.8,
+      "end": 12.02
+    },
+    {
+      "index": 29,
+      "word": "and",
+      "start": 12.02,
+      "end": 12.3
+    },
+    {
+      "index": 30,
+      "word": "philatelic",
+      "start": 12.3,
+      "end": 12.84
+    },
+    {
+      "index": 31,
+      "word": "partnerships",
+      "start": 12.84,
+      "end": 13.88
+    },
+    {
+      "index": 32,
+      "word": "along",
+      "start": 13.88,
+      "end": 14.18
+    },
+    {
+      "index": 33,
+      "word": "with",
+      "start": 14.18,
+      "end": 14.42
+    },
+    {
+      "index": 34,
+      "word": "ways",
+      "start": 14.42,
+      "end": 14.74
+    },
+    {
+      "index": 35,
+      "word": "the",
+      "start": 14.74,
+      "end": 15.08
+    },
+    {
+      "index": 36,
+      "word": "leading",
+      "start": 15.08,
+      "end": 15.28
+    },
+    {
+      "index": 37,
+      "word": "organizations",
+      "start": 15.28,
+      "end": 15.98
+    },
+    {
+      "index": 38,
+      "word": "involved",
+      "start": 15.98,
+      "end": 16.54
+    },
+    {
+      "index": 39,
+      "word": "in",
+      "start": 16.56,
+      "end": 16.7
+    },
+    {
+      "index": 40,
+      "word": "the",
+      "start": 16.7,
+      "end": 16.82
+    },
+    {
+      "index": 41,
+      "word": "stamp",
+      "start": 16.82,
+      "end": 17.06
+    },
+    {
+      "index": 42,
+      "word": "hobby",
+      "start": 17.06,
+      "end": 17.38
+    },
+    {
+      "index": 43,
+      "word": "can",
+      "start": 17.38,
+      "end": 18.12
+    },
+    {
+      "index": 44,
+      "word": "work",
+      "start": 18.12,
+      "end": 18.32
+    },
+    {
+      "index": 45,
+      "word": "together",
+      "start": 18.32,
+      "end": 18.84
+    },
+    {
+      "index": 46,
+      "word": "to",
+      "start": 18.84,
+      "end": 19.46
+    },
+    {
+      "index": 47,
+      "word": "make",
+      "start": 19.46,
+      "end": 19.7
+    },
+    {
+      "index": 48,
+      "word": "it",
+      "start": 19.7,
+      "end": 19.84
+    },
+    {
+      "index": 49,
+      "word": "succeed",
+      "start": 19.84,
+      "end": 20.26
+    },
+    {
+      "index": 50,
+      "word": "and",
+      "start": 20.26,
+      "end": 20.7
+    },
+    {
+      "index": 51,
+      "word": "grow",
+      "start": 20.7,
+      "end": 21.24
+    }
+  ],
+  "detected_language": "not_reported",
+  "peak_dbfs": -3.300936782884123,
+  "rms_dbfs": -24.959441312422648,
+  "signal_activity_ratio": 0.2857815442561205,
+  "speech_present": true,
+  "exact_match_count": 48,
+  "reliable_match_count": 47,
+  "official_word_recall": 0.9411764705882353,
+  "asr_word_precision": 0.9230769230769231,
+  "word_f1": 0.9320388349514563,
+  "character_similarity": 0.9848024316109423,
+  "consistency_score": 0.947867913949302,
+  "alignment_type": "full_mfa",
+  "official_to_asr": [
+    -1,
+    -1,
+    2,
+    3,
+    4,
+    -1,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    -1,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "official_match_mask": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "official_asr_starts": [
+    null,
+    null,
+    0.96,
+    1.22,
+    1.64,
+    null,
+    2.26,
+    2.66,
+    2.96,
+    3.08,
+    3.34,
+    4.04,
+    4.92,
+    5.98,
+    null,
+    7.36,
+    7.66,
+    8.02,
+    8.74,
+    9.04,
+    9.26,
+    9.92,
+    10.0,
+    10.26,
+    10.48,
+    10.72,
+    11.5,
+    11.8,
+    12.02,
+    12.3,
+    12.84,
+    13.88,
+    14.18,
+    14.42,
+    14.74,
+    15.08,
+    15.28,
+    15.98,
+    16.56,
+    16.7,
+    16.82,
+    17.06,
+    17.38,
+    18.12,
+    18.32,
+    18.84,
+    19.46,
+    19.7,
+    19.84,
+    20.26,
+    20.7
+  ],
+  "official_asr_ends": [
+    null,
+    null,
+    1.22,
+    1.64,
+    1.88,
+    null,
+    2.66,
+    2.96,
+    3.08,
+    3.34,
+    3.69,
+    4.92,
+    5.36,
+    6.96,
+    null,
+    7.66,
+    8.02,
+    8.74,
+    9.04,
+    9.26,
+    9.92,
+    10.0,
+    10.26,
+    10.48,
+    10.72,
+    11.5,
+    11.72,
+    12.02,
+    12.3,
+    12.84,
+    13.88,
+    14.18,
+    14.42,
+    14.74,
+    15.08,
+    15.28,
+    15.98,
+    16.54,
+    16.7,
+    16.82,
+    17.06,
+    17.38,
+    18.12,
+    18.32,
+    18.84,
+    19.46,
+    19.7,
+    19.84,
+    20.26,
+    20.7,
+    21.24
+  ],
+  "official_comparison_unit_count": 51,
+  "asr_comparison_unit_count": 52,
+  "numeric_equivalence_count": 0
+}

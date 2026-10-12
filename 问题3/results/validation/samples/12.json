@@ -1,0 +1,829 @@
+{
+  "sample": {
+    "sample_id": "12",
+    "raw_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+    "body_length": 42,
+    "token_ids": [
+      2030,
+      4788,
+      1010,
+      2019,
+      3265,
+      3130,
+      2018,
+      2204,
+      4923,
+      1010,
+      2021,
+      2788,
+      2011,
+      2053,
+      6346,
+      1997,
+      2037,
+      2219,
+      1010,
+      2030,
+      3383,
+      2011,
+      6346,
+      1997,
+      2037,
+      2219,
+      1010,
+      2027,
+      2031,
+      2292,
+      2037,
+      4923,
+      7842,
+      2290,
+      1010,
+      1998,
+      4923,
+      7644,
+      2003,
+      2200,
+      2659,
+      1012
+    ],
+    "wordpieces": [
+      "or",
+      "worse",
+      ",",
+      "an",
+      "individual",
+      "previously",
+      "had",
+      "good",
+      "credit",
+      ",",
+      "but",
+      "usually",
+      "by",
+      "no",
+      "fault",
+      "of",
+      "their",
+      "own",
+      ",",
+      "or",
+      "perhaps",
+      "by",
+      "fault",
+      "of",
+      "their",
+      "own",
+      ",",
+      "they",
+      "have",
+      "let",
+      "their",
+      "credit",
+      "sa",
+      "##g",
+      ",",
+      "and",
+      "credit",
+      "scores",
+      "is",
+      "very",
+      "low",
+      "."
+    ],
+    "text_offsets": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        13,
+        23
+      ],
+      [
+        24,
+        34
+      ],
+      [
+        35,
+        38
+      ],
+      [
+        39,
+        43
+      ],
+      [
+        44,
+        50
+      ],
+      [
+        50,
+        51
+      ],
+      [
+        52,
+        55
+      ],
+      [
+        56,
+        63
+      ],
+      [
+        64,
+        66
+      ],
+      [
+        67,
+        69
+      ],
+      [
+        70,
+        75
+      ],
+      [
+        76,
+        78
+      ],
+      [
+        79,
+        84
+      ],
+      [
+        85,
+        88
+      ],
+      [
+        88,
+        89
+      ],
+      [
+        90,
+        92
+      ],
+      [
+        93,
+        100
+      ],
+      [
+        101,
+        103
+      ],
+      [
+        104,
+        109
+      ],
+      [
+        110,
+        112
+      ],
+      [
+        113,
+        118
+      ],
+      [
+        119,
+        122
+      ],
+      [
+        122,
+        123
+      ],
+      [
+        124,
+        128
+      ],
+      [
+        129,
+        133
+      ],
+      [
+        134,
+        137
+      ],
+      [
+        138,
+        143
+      ],
+      [
+        144,
+        150
+      ],
+      [
+        151,
+        153
+      ],
+      [
+        153,
+        154
+      ],
+      [
+        154,
+        155
+      ],
+      [
+        156,
+        159
+      ],
+      [
+        160,
+        166
+      ],
+      [
+        167,
+        173
+      ],
+      [
+        174,
+        176
+      ],
+      [
+        177,
+        181
+      ],
+      [
+        182,
+        185
+      ],
+      [
+        185,
+        186
+      ]
+    ],
+    "original_token_fragments": [
+      "Or",
+      "worse",
+      ",",
+      "an",
+      "individual",
+      "previously",
+      "had",
+      "good",
+      "credit",
+      ",",
+      "but",
+      "usually",
+      "by",
+      "no",
+      "fault",
+      "of",
+      "their",
+      "own",
+      ",",
+      "or",
+      "perhaps",
+      "by",
+      "fault",
+      "of",
+      "their",
+      "own",
+      ",",
+      "they",
+      "have",
+      "let",
+      "their",
+      "credit",
+      "sa",
+      "g",
+      ",",
+      "and",
+      "credit",
+      "scores",
+      "is",
+      "very",
+      "low",
+      "."
+    ],
+    "body_positions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "source_slots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "aligned_pickle": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\12.pkl",
+    "video": "D:\\Huawei_cup_2026_yanshumo\\华为杯正式题目与数据\\E题数据\\附件4-可解释专项视频样本与特征文件\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\12.mp4",
+    "timestamps_available": false,
+    "raw_text_offsets_verified": true,
+    "full_wordpiece_count": 42,
+    "retained_wordpiece_count": 42,
+    "truncated_wordpiece_count": 0,
+    "model_visible_text_end_char": 186,
+    "audio_nonzero_body_rows": 42,
+    "vision_nonzero_body_rows": 42,
+    "audio_observation_status": "available",
+    "vision_observation_status": "available",
+    "overlaps_attachment2_test": true,
+    "attachment2_test_id": "gE7kUqMqQ9g$_$2",
+    "attachment2_test_index": 543
+  },
+  "fidelity_validation": {
+    "protocol": {
+      "fractions": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "random_repeats": 10,
+      "seed": 20260937,
+      "metric": "absolute change of fixed-class margin or raw intensity",
+      "claim_boundary": "masking faithfulness only; not causal or human-rationale agreement",
+      "unavailable_modalities_excluded": []
+    },
+    "results": {
+      "text": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39
+            ],
+            "top_absolute_output_change": 3.0143513679504395,
+            "random_mean_absolute_output_change": 0.7339717268943786,
+            "random_std_absolute_output_change": 0.21955569532830077,
+            "top_to_random_mean_ratio": 4.1069039276280135,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39,
+              33,
+              2,
+              32,
+              38
+            ],
+            "top_absolute_output_change": 3.3496103286743164,
+            "random_mean_absolute_output_change": 1.2479717254638671,
+            "random_std_absolute_output_change": 0.7815356088198808,
+            "top_to_random_mean_ratio": 2.684043444517364,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39,
+              33,
+              2,
+              32,
+              38,
+              37,
+              31,
+              30,
+              3
+            ],
+            "top_absolute_output_change": 3.1986260414123535,
+            "random_mean_absolute_output_change": 0.9092652559280395,
+            "random_std_absolute_output_change": 0.3703637565005737,
+            "top_to_random_mean_ratio": 3.5178139938358064,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39
+            ],
+            "top_absolute_output_change": 0.9585339426994324,
+            "random_mean_absolute_output_change": 0.3101881742477417,
+            "random_std_absolute_output_change": 0.20628091925069528,
+            "top_to_random_mean_ratio": 3.0901692014018196,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39,
+              33,
+              32,
+              2,
+              37
+            ],
+            "top_absolute_output_change": 1.0498766899108887,
+            "random_mean_absolute_output_change": 0.4658076524734497,
+            "random_std_absolute_output_change": 0.25961127095866393,
+            "top_to_random_mean_ratio": 2.2538845902080364,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              1,
+              40,
+              41,
+              0,
+              39,
+              33,
+              32,
+              2,
+              37,
+              38,
+              31,
+              34,
+              3
+            ],
+            "top_absolute_output_change": 1.0771729946136475,
+            "random_mean_absolute_output_change": 0.6287564694881439,
+            "random_std_absolute_output_change": 0.2946304450026137,
+            "top_to_random_mean_ratio": 1.7131799780772818,
+            "top_percentile_among_random": 0.9,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "audio": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37
+            ],
+            "top_absolute_output_change": 0.02678966522216797,
+            "random_mean_absolute_output_change": 0.0021265506744384765,
+            "random_std_absolute_output_change": 0.0028261826397464594,
+            "top_to_random_mean_ratio": 12.59770836603359,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              1,
+              2,
+              3,
+              4
+            ],
+            "top_absolute_output_change": 0.02267909049987793,
+            "random_mean_absolute_output_change": 0.0010841846466064452,
+            "random_std_absolute_output_change": 0.0008822364325370233,
+            "top_to_random_mean_ratio": 20.918107050182524,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              1,
+              2,
+              3,
+              4,
+              0,
+              5,
+              36,
+              6
+            ],
+            "top_absolute_output_change": 0.0256345272064209,
+            "random_mean_absolute_output_change": 0.007696366310119629,
+            "random_std_absolute_output_change": 0.0056594670640693215,
+            "top_to_random_mean_ratio": 3.3307311754009334,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              41,
+              35,
+              36,
+              38,
+              40
+            ],
+            "top_absolute_output_change": 0.003317892551422119,
+            "random_mean_absolute_output_change": 0.0010354220867156982,
+            "random_std_absolute_output_change": 0.000765760618722079,
+            "top_to_random_mean_ratio": 3.2043864951213195,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              41,
+              35,
+              36,
+              38,
+              40,
+              39,
+              37,
+              34,
+              33
+            ],
+            "top_absolute_output_change": 0.009581923484802246,
+            "random_mean_absolute_output_change": 0.0024332046508789063,
+            "random_std_absolute_output_change": 0.001270390904375889,
+            "top_to_random_mean_ratio": 3.937985027827859,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              41,
+              35,
+              36,
+              38,
+              40,
+              39,
+              37,
+              34,
+              33,
+              32,
+              31,
+              30,
+              29
+            ],
+            "top_absolute_output_change": 0.010931730270385742,
+            "random_mean_absolute_output_change": 0.003222930431365967,
+            "random_std_absolute_output_change": 0.001092811697930558,
+            "top_to_random_mean_ratio": 3.391860452213538,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          }
+        ]
+      },
+      "vision": {
+        "classification": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37
+            ],
+            "top_absolute_output_change": 0.026109695434570312,
+            "random_mean_absolute_output_change": 0.002998948097229004,
+            "random_std_absolute_output_change": 0.00470205776947432,
+            "top_to_random_mean_ratio": 8.706284533131932,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              35,
+              34,
+              33
+            ],
+            "top_absolute_output_change": 0.021645069122314453,
+            "random_mean_absolute_output_change": 0.0048811912536621095,
+            "random_std_absolute_output_change": 0.0066895182314389585,
+            "top_to_random_mean_ratio": 4.434382509817713,
+            "top_percentile_among_random": 1.0,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              35,
+              34,
+              33,
+              32,
+              31,
+              30,
+              27
+            ],
+            "top_absolute_output_change": 0.020355701446533203,
+            "random_mean_absolute_output_change": 0.011958861351013183,
+            "random_std_absolute_output_change": 0.009750340353919766,
+            "top_to_random_mean_ratio": 1.7021437784968232,
+            "top_percentile_among_random": 0.6,
+            "top_at_least_random_mean": true
+          }
+        ],
+        "regression": [
+          {
+            "deleted_fraction": 0.1,
+            "deleted_count": 5,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37
+            ],
+            "top_absolute_output_change": 0.0003223419189453125,
+            "random_mean_absolute_output_change": 0.0019474685192108153,
+            "random_std_absolute_output_change": 0.0018807721596221963,
+            "top_to_random_mean_ratio": 0.16551842341253203,
+            "top_percentile_among_random": 0.3,
+            "top_at_least_random_mean": false
+          },
+          {
+            "deleted_fraction": 0.2,
+            "deleted_count": 9,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              35,
+              34,
+              31
+            ],
+            "top_absolute_output_change": 0.003581702709197998,
+            "random_mean_absolute_output_change": 0.002368521690368652,
+            "random_std_absolute_output_change": 0.0014276065253573478,
+            "top_to_random_mean_ratio": 1.512210221152975,
+            "top_percentile_among_random": 0.7,
+            "top_at_least_random_mean": true
+          },
+          {
+            "deleted_fraction": 0.3,
+            "deleted_count": 13,
+            "top_positions": [
+              41,
+              40,
+              39,
+              38,
+              37,
+              36,
+              35,
+              34,
+              31,
+              32,
+              33,
+              15,
+              30
+            ],
+            "top_absolute_output_change": 0.005265712738037109,
+            "random_mean_absolute_output_change": 0.0027428150177001955,
+            "random_std_absolute_output_change": 0.0023756073044949415,
+            "top_to_random_mean_ratio": 1.919820587263782,
+            "top_percentile_among_random": 0.8,
+            "top_at_least_random_mean": true
+          }
+        ]
+      }
+    },
+    "aggregate": {
+      "comparison_count": 18,
+      "top_at_least_random_mean_rate": 0.9444444444444444,
+      "mean_top_percentile": 0.9055555555555556
+    }
+  }
+}
